@@ -1,0 +1,1 @@
+("adc:/\tadc final_project schematic" (("open" (nil hierarchy "/{final_project adc schematic }:a"))) (((-2.56875 -2.0) (2.56875 2.00625)) "a" "Schematics" 6))("ADC_mockup:/\tADC_mockup ee140_gsi schematic" (("open" (nil hierarchy "/{ee140_gsi ADC_mockup schematic }:r"))) (((-2.1375 -1.55) (2.125 1.76875)) "r" "Schematics" 2))

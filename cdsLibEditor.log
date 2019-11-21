@@ -1,0 +1,51 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.7 - CAT35 10/30/2018 21:09 (sjfnl050) $
+\o Sub version:		sub-version  s231 
+\o Arguments:		-display :53 -mpssession virtuoso20379 -mpshost eda-8.EECS.Berkeley.EDU -namespace CDBA -cdslib /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/cds.lib 
+\o Working Directory:	eda-8.EECS.Berkeley.EDU:/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		4.8.5
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "analogLib"
+\a nrResizeWindow(cdsLibEditor list(102 871 500 400))
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 9 1)
+\o Active cell: 9 1 "$IUSHOME/tools/inca/files/STD"
+\a nrListItemAction(cdsLibEditor->mainTable 9 0)
+\o Active cell: 9 0 "std"
+\a nrListItemAction(cdsLibEditor->mainTable 5 0)
+\o Active cell: 5 0 "sample"
+\a nrListItemAction(cdsLibEditor->mainTable 29 0)
+\o Active cell: 29 0 "AnalogLibs"
+\a nrListItemAction(cdsLibEditor->mainTable 30 0)
+\o Active cell: 30 0 "XFABLibs"
+\a nrListItemAction(cdsLibEditor->mainTable 28 0)
+\o Active cell: 28 0 "DigitalLibs"
+\a nrListItemAction(cdsLibEditor->mainTable 25 0)
+\o Active cell: 25 0 "cdsDefTechLib"
+\a nrListItemAction(cdsLibEditor->mainTable 23 0)
+\o Active cell: 23 0 "GATES_HD5V"
+\a nrListItemAction(cdsLibEditor->mainTable 21 0)
+\o Active cell: 21 0 "D_CELLS_HDMV"
+\a nrListItemAction(cdsLibEditor->mainTable 19 0)
+\o Active cell: 19 0 "D_CELLS_HD"
+\a nrListItemAction(cdsLibEditor->mainTable 7 0)
+\o Active cell: 7 0 "ieee"
+\a nrListItemAction(cdsLibEditor->mainTable 8 0)
+\o Active cell: 8 0 "ambit"
+\a nrListItemAction(cdsLibEditor->mainTable 10 0)
+\o Active cell: 10 0 "synopsys"
+\a nrListItemAction(cdsLibEditor->mainTable 11 0)
+\o Active cell: 11 0 "connectLib"
+\a nrListItemAction(cdsLibEditor->mainTable 12 0)
+\o Active cell: 12 0 "PRIMLIB"
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 2 0)
+\o Active cell: 2 0 "sbaLib"
+\a nrListItemAction(cdsLibEditor->mainTable 3 0)
+\o Active cell: 3 0 "ahdlLib"
+\a nrListItemAction(cdsLibEditor->mainTable 4 0)
+\o Active cell: 4 0 "basic"
+\a nrSetWindowVisibility(cdsLibEditor "hide")
+\a exit(0)

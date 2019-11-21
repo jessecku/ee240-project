@@ -1,0 +1,340 @@
+\o Program:		@(#)$CDS: libManager version 6.1.7 - CAT35 10/30/2018 21:08 (sjfnl050) $
+\o Sub version:		sub-version  s231 
+\o Arguments:		-mpssession virtuoso20379 -mpshost eda-8.EECS.Berkeley.EDU 
+\o Working Directory:	eda-8.EECS.Berkeley.EDU:/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project
+\o 64-bit offsets
+\o Qt version: 		4.8.5
+\o Log file is "/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/libManager.log".
+\o Opening libManager window.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1020 206 948 505))
+\o changeWorkingDir("/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o MPS service: map window
+\o Library Manager customization server connected.
+\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" t)
+\a cdsLibManager->libListBox->value = "CadenceLibs"
+\a cdsLibManager->libLineEdit->value = "CadenceLibs"
+\a cdsLibManager->libListBox->value = "CadenceLibs/US_8ths"
+\a cdsLibManager->libLineEdit->value = "US_8ths"
+\a cdsLibManager->libListBox->value = "CadenceLibs"
+\a cdsLibManager->libLineEdit->value = "CadenceLibs"
+\a lmgrLogShowPopup("mainListPopup0" 78 8 2 "CadenceLibs")
+\a cdsLibManager->libListBox->value = "CadenceLibs/US_8ths"
+\a cdsLibManager->libLineEdit->value = "US_8ths"
+\a cdsLibManager->libListBox->value = "CadenceLibs"
+\a cdsLibManager->libLineEdit->value = "CadenceLibs"
+\a lmgrLogShowPopup("mainListPopup0" 92 8 2 "CadenceLibs")
+\a cdsLibManager->libListBox->value = "CadenceLibs/US_8ths"
+\a cdsLibManager->libLineEdit->value = "US_8ths"
+\a cdsLibManager->libListBox->value = "CadenceLibs/sbaLib"
+\a cdsLibManager->libLineEdit->value = "sbaLib"
+\a cdsLibManager->libListBox->value = "CadenceLibs"
+\a cdsLibManager->libLineEdit->value = "CadenceLibs"
+\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" nil)
+\a cdsLibManager->libListBox->value = "XFABLibs"
+\a cdsLibManager->libLineEdit->value = "XFABLibs"
+\a nrResizeWindow(cdsLibManager list(1020 205 948 505))
+\a cdsLibManager->libListBox->value = "ee140_gsi"
+\a cdsLibManager->libLineEdit->value = "ee140_gsi"
+\a cdsLibManager->libListBox->value = "CadenceLibs"
+\a cdsLibManager->libLineEdit->value = "CadenceLibs"
+\a cdsLibManager->libListBox->value = "ee140_gsi"
+\a cdsLibManager->libLineEdit->value = "ee140_gsi"
+\a cdsLibManager->libListBox->value = "CadenceLibs"
+\a cdsLibManager->libLineEdit->value = "CadenceLibs"
+\a cdsLibManager->libListBox->value = "XFABLibs"
+\a cdsLibManager->libLineEdit->value = "XFABLibs"
+\a cdsLibManager->libListBox->value = "ee140_gsi"
+\a cdsLibManager->libLineEdit->value = "ee140_gsi"
+\a cdsLibManager->libSearchOptionsButton->value = t
+\a cdsLibManager->libListBox->value = "CadenceLibs"
+\a cdsLibManager->libLineEdit->value = "CadenceLibs"
+\a cdsLibManager->editChangeRefsButton->value = t
+\a nrSetWindowVisibility(changeRefDialog "show")
+\a nrSetCurrentWindow(changeRefDialog)
+\a nrResizeWindow(changeRefDialog list(1149 191 690 533))
+\a changeRefDialog->inLibsListWidget->value = '("CadenceLibs" )
+\a changeRefDialog->Cancel->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs" t)
+\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" t)
+\a cdsLibManager->libListBox->value = "CadenceLibs/US_8ths"
+\a cdsLibManager->libLineEdit->value = "US_8ths"
+\a cdsLibManager->libListBox->value = "CadenceLibs/ahdlLib"
+\a cdsLibManager->libLineEdit->value = "ahdlLib"
+\a cdsLibManager->libListBox->value = "CadenceLibs/analogLib"
+\a cdsLibManager->libLineEdit->value = "analogLib"
+\a cdsLibManager->libListBox->value = "CadenceLibs/avTech"
+\a cdsLibManager->libLineEdit->value = "avTech"
+\a cdsLibManager->libListBox->value = "CadenceLibs/basic"
+\a cdsLibManager->libLineEdit->value = "basic"
+\a cdsLibManager->libListBox->value = "CadenceLibs/functional"
+\a cdsLibManager->libLineEdit->value = "functional"
+\a cdsLibManager->libListBox->value = "CadenceLibs/cdsDefTechLib"
+\a cdsLibManager->libLineEdit->value = "cdsDefTechLib"
+\a cdsLibManager->libListBox->value = "CadenceLibs/US_8ths"
+\a cdsLibManager->libLineEdit->value = "US_8ths"
+\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" nil)
+\a cdsLibManager->libListBox->value = "CadenceLibs"
+\a cdsLibManager->libLineEdit->value = "CadenceLibs"
+\a cdsLibManager->editChangeRefsButton->value = t
+\a nrSetWindowVisibility(changeRefDialog "show")
+\a nrSetCurrentWindow(changeRefDialog)
+\a nrResizeWindow(changeRefDialog list(1149 191 690 533))
+\a changeRefDialog->inLibsListWidget->value = '("CadenceLibs" )
+\a changeRefDialog->inLibsListWidget->value = '("D_CELLS_HD" )
+\a changeRefDialog->inLibsListWidget->value = '("D_CELLS_HDLL" )
+\a changeRefDialog->inLibsListWidget->value = '("AnalogLibs" )
+\a changeRefDialog->fromLibsListWidget->value = '("AnalogLibs" )
+\a changeRefDialog->toLibListWidget->value = "AnalogLibs"
+\a changeRefDialog->toLibListWidget->value = "CadenceLibs"
+\a changeRefDialog->toLibListWidget->value = "AnalogLibs"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrListItemAction(cdsLibManager->libListBox "CadenceLibs" 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "ee140_gsi"
+\a cdsLibManager->libLineEdit->value = "ee140_gsi"
+\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs" nil)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "XFABLibs"
+\a cdsLibManager->libLineEdit->value = "XFABLibs"
+\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs" t)
+\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs/DigitalLibs" t)
+\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs/DigitalLibs" nil)
+\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs/AnalogLibs" t)
+\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs/AnalogLibs" nil)
+\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs" nil)
+\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" t)
+\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" nil)
+\a cdsLibManager->libListBox->value = "CadenceLibs"
+\a cdsLibManager->libLineEdit->value = "CadenceLibs"
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup0" 76 92 2 "")
+\a cdsLibManager->editChangeRefsButton->value = t
+\a nrSetWindowVisibility(changeRefDialog "show")
+\a nrSetCurrentWindow(changeRefDialog)
+\a nrResizeWindow(changeRefDialog list(1149 191 690 533))
+\a changeRefDialog->inLibsListWidget->value = '("AnalogLibs" )
+\a changeRefDialog->fromLibsListWidget->value = '("AnalogLibs" )
+\a changeRefDialog->fromLibsListWidget->value = '("CadenceLibs" )
+\a changeRefDialog->toLibListWidget->value = "xfab_connectLib"
+\a changeRefDialog->Cancel->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a lmgrLogShowPopup("mainListPopup0" 96 86 2 "")
+\a cdsLibManager->showCatsToggle->value = t
+\a cdsLibManager->QToolButton7->value = t
+\a cdsLibManager->showCategoriesAction->value = t
+\a cdsLibManager->showCatsToggle->value = nil
+\a cdsLibManager->QToolButton7->value = nil
+\a cdsLibManager->showCategoriesAction->value = nil
+\a cdsLibManager->showFilesToggle->value = t
+\a cdsLibManager->libListBox->value = "CadenceLibs"
+\a cdsLibManager->libLineEdit->value = "CadenceLibs"
+\a cdsLibManager->showFilesToggle->value = nil
+\a cdsLibManager->libListBox->value = "XFABLibs"
+\a cdsLibManager->libLineEdit->value = "XFABLibs"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1021 205 948 505))
+\a cdsLibManager->FileNewLibButton->value = t
+\a nrSetWindowVisibility(NewLibShell "show")
+\a NewLibShell->QLineEdit2->value = "/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/"
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(NewLibShell->subDialog)
+\a nrResizeWindow(NewLibShell list(1242 214 507 559))
+\a NewLibShell->newLibCancelButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup0" 119 87 2 "")
+\a cdsLibManager->libListBox->value = "CadenceLibs"
+\a cdsLibManager->libLineEdit->value = "CadenceLibs"
+\a lmgrLogShowPopup("mainListPopup0" 87 7 2 "CadenceLibs")
+\a cdsLibManager->editPropertiesButton->value = t
+\o MPS request: edit property
+\a nrResizeWindow(cdsLibManager list(1374 202 948 505))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "XFABLibs"
+\a cdsLibManager->libLineEdit->value = "XFABLibs"
+\a lmgrLogShowPopup("mainListPopup0" 79 25 2 "XFABLibs")
+\a cdsLibManager->editPropertiesButton->value = t
+\o MPS request: edit property
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "ee140_gsi"
+\a cdsLibManager->libLineEdit->value = "ee140_gsi"
+\a lmgrLogShowPopup("mainListPopup0" 91 47 2 "ee140_gsi")
+\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs" t)
+\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs" nil)
+\a cdsLibManager->libListBox->value = "XFABLibs"
+\a cdsLibManager->libLineEdit->value = "XFABLibs"
+\a cdsLibManager->libListBox->value = "CadenceLibs"
+\a cdsLibManager->libLineEdit->value = "CadenceLibs"
+\a cdsLibManager->editChangeRefsButton->value = t
+\a nrSetWindowVisibility(changeRefDialog "show")
+\a nrSetCurrentWindow(changeRefDialog)
+\a nrResizeWindow(changeRefDialog list(1503 188 690 533))
+\a changeRefDialog->inLibsListWidget->value = '("CadenceLibs" )
+\a changeRefDialog->inLibsListWidget->value = '("D_CELLS_HDLL" )
+\a changeRefDialog->Cancel->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->editLibraryPathButton->value = t
+\o Starting the cdsLibEditor...
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "ee140_gsi"
+\a cdsLibManager->libLineEdit->value = "ee140_gsi"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1186 346 948 505))
+\a cdsLibManager->FileNewLibButton->value = t
+\a NewLibShell->QLineEdit2->value = ""
+\a nrSetWindowVisibility(NewLibShell->subDialog "show")
+\a nrSetWindowVisibility(NewLibShell "show")
+\a NewLibShell->QLineEdit2->value = "/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/"
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(NewLibShell->subDialog)
+\a nrResizeWindow(NewLibShell list(1407 355 507 559))
+\a nrResizeWindow(NewLibShell list(1489 407 507 559))
+\a nrResizeWindow(NewLibShell list(1482 391 507 559))
+\a NewLibShell->newLibNameText->value = "final_project"
+\a NewLibShell->newLibCancelButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "XFABLibs"
+\a cdsLibManager->libLineEdit->value = "XFABLibs"
+\a cdsLibManager->libListBox->value = "ee140_gsi"
+\a cdsLibManager->libLineEdit->value = "ee140_gsi"
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup0" 92 74 2 "")
+\a cdsLibManager->FileNewLibButton->value = t
+\a NewLibShell->newLibNameText->value = ""
+\a NewLibShell->QLineEdit2->value = ""
+\a nrSetWindowVisibility(NewLibShell "show")
+\a NewLibShell->QLineEdit2->value = "/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/"
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(NewLibShell->subDialog)
+\a nrResizeWindow(NewLibShell list(1407 355 507 559))
+\a NewLibShell->newLibNameText->value = "final_project"
+\a NewLibShell->newLibOKButton->value = t
+\a NewLibShell->subDialog->value = '("/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project" "/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/")
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\o Created new library "final_project" at /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/final_project.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(6 27 310 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "final_project"
+\a cdsLibManager->libLineEdit->value = "final_project"
+\a lmgrLogShowPopup("mainListPopup0" 168 63 2 "final_project")
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "ee140_gsi"
+\a cdsLibManager->libLineEdit->value = "ee140_gsi"
+\a cdsLibManager->cellListBox->value = "ADC_mockup"
+\a cdsLibManager->cellLineEdit->value = "ADC_mockup"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "ee140_gsi"
+\a cdsLibManager->libLineEdit->value = "ee140_gsi"
+\a cdsLibManager->cellListBox->value = "ADC_mockup"
+\a cdsLibManager->cellLineEdit->value = "ADC_mockup"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "pmos_cascode_wrap"
+\a cdsLibManager->cellLineEdit->value = "pmos_cascode_wrap"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "mux_mockup"
+\a cdsLibManager->cellLineEdit->value = "mux_mockup"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "zz_SAR_FSM"
+\a cdsLibManager->cellLineEdit->value = "zz_SAR_FSM"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "zz_EE140_Fa19_digital"
+\a cdsLibManager->cellLineEdit->value = "zz_EE140_Fa19_digital"
+\a cdsLibManager->cellListBox->value = "zz_SAR_FSM"
+\a cdsLibManager->cellLineEdit->value = "zz_SAR_FSM"
+\a cdsLibManager->cellListBox->value = "zz_pmos_cascode"
+\a cdsLibManager->cellLineEdit->value = "zz_pmos_cascode"
+\a cdsLibManager->cellListBox->value = "zz_scratch_ll"
+\a cdsLibManager->cellLineEdit->value = "zz_scratch_ll"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "zz_EE140_Fa19_digital"
+\a cdsLibManager->cellLineEdit->value = "zz_EE140_Fa19_digital"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "PGA_mockup"
+\a cdsLibManager->cellLineEdit->value = "PGA_mockup"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "SAR_DFF"
+\a cdsLibManager->cellLineEdit->value = "SAR_DFF"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "SAR_FSM"
+\a cdsLibManager->cellLineEdit->value = "SAR_FSM"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "mux_mockup"
+\a cdsLibManager->cellLineEdit->value = "mux_mockup"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = "final_project"
+\a cdsLibManager->libLineEdit->value = "final_project"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrListItemAction(cdsLibManager->libListBox "final_project" 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "adc"
+\a cdsLibManager->cellLineEdit->value = "adc"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = "ee140_gsi"
+\a cdsLibManager->libLineEdit->value = "ee140_gsi"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "XFABLibs"
+\a cdsLibManager->libLineEdit->value = "XFABLibs"
+\a cdsLibManager->libListBox->value = "CadenceLibs"
+\a cdsLibManager->libLineEdit->value = "CadenceLibs"
+\a cdsLibManager->fileExitButton->value = t
+\o libManager is exiting.
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a exit(0)
