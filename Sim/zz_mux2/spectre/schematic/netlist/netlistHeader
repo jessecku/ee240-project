@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Nov 25 10:04:20 2019
+// Design library name: final_project
+// Design cell name: zz_mux2
+// Design view name: schematic
+simulator lang=spectre
+global 0

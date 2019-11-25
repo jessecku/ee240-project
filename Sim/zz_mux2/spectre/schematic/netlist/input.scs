@@ -1,0 +1,62 @@
+// Generated for: spectre
+// Generated on: Nov 25 10:04:20 2019
+// Design library name: final_project
+// Design cell name: zz_mux2
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters ctrl=0 in0=2 in1=3 supply=1.2
+include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/config.scs" section=default
+include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/param.scs" section=3s
+include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/bip.scs" section=tm
+include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/cap.scs" section=tm
+include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/dio.scs" section=tm
+include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/mos.scs" section=tm
+include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/res.scs" section=tm
+
+// Library name: final_project
+// Cell name: inverter
+// View name: schematic
+subckt inverter IN OUT VDD VSS
+    M0 (OUT IN VSS VSS) ne w=220.0n l=180.0n as=1.056e-13 ad=1.056e-13 \
+        ps=1.4e-06 pd=1.4e-06 nrs=1.22727 nrd=1.22727 m=(1)*(1) \
+        par1=((1)*(1))
+    M1 (OUT IN VDD VDD) pe w=220.0n l=180.0n as=1.056e-13 ad=1.056e-13 \
+        ps=1.4e-06 pd=1.4e-06 nrs=1.22727 nrd=1.22727 m=(1)*(1) \
+        par1=((1)*(1))
+ends inverter
+// End of subcircuit definition.
+
+// Library name: final_project
+// Cell name: mux2
+// View name: schematic
+subckt mux2 S\<0\> VDD VSS in0 in1 out
+    W1 (in0 out net8 VSS) relay vt1=100m vt2=900m ropen=1T rclosed=1.0
+    W0 (in1 out S\<0\> VSS) relay vt1=100m vt2=900.0m ropen=1T rclosed=1.0
+    I0 (S\<0\> net8 VDD VSS) inverter
+ends mux2
+// End of subcircuit definition.
+
+// Library name: final_project
+// Cell name: zz_mux2
+// View name: schematic
+I0 (S\<0\> VDD VSS in0 in1 out) mux2
+V4 (S\<0\> VSS) vsource dc=ctrl type=dc
+V3 (in1 VSS) vsource dc=in1 type=dc
+V2 (in0 VSS) vsource dc=in0 type=dc
+V1 (VDD VSS) vsource dc=supply type=dc
+V0 (VSS 0) vsource dc=0 type=dc
+R0 (out VSS) resistor r=1K
+simulatorOptions options reltol=100e-6 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 homotopy=all limit=delta scalem=1.0 scale=1.0 \
+    compatible=spice2 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 digits=5 \
+    cols=80 pivrel=1e-3 sensfile="../psf/sens.output" checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

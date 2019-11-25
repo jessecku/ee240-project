@@ -1,0 +1,15 @@
+CADENCE IHNL11140
+$model
+final_project/zz_mux2/schematic zz_mux2
+final_project/inverter/schematic inverter
+final_project/mux2/schematic mux2
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+in0 in0
+supply supply
+ctrl ctrl
+in1 in1
+$endparam
