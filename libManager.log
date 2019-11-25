@@ -1,288 +1,283 @@
 \o Program:		@(#)$CDS: libManager version 6.1.7 - CAT35 10/30/2018 21:08 (sjfnl050) $
 \o Sub version:		sub-version  s231 
-\o Arguments:		-mpssession virtuoso20379 -mpshost eda-8.EECS.Berkeley.EDU 
-\o Working Directory:	eda-8.EECS.Berkeley.EDU:/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project
+\o Arguments:		-mpssession virtuoso24776 -mpshost eda-7.EECS.Berkeley.EDU 
+\o Working Directory:	eda-7.EECS.Berkeley.EDU:/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project
 \o 64-bit offsets
 \o Qt version: 		4.8.5
 \o Log file is "/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/libManager.log".
 \o Opening libManager window.
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(1020 206 948 505))
+\a nrResizeWindow(cdsLibManager list(1186 346 948 505))
 \o changeWorkingDir("/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project") unnecessary.
 \o ddSetForcedLib("") unnecessary.
 \o MPS service: map window
 \o Library Manager customization server connected.
-\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" t)
-\a cdsLibManager->libListBox->value = "CadenceLibs"
-\a cdsLibManager->libLineEdit->value = "CadenceLibs"
-\a cdsLibManager->libListBox->value = "CadenceLibs/US_8ths"
-\a cdsLibManager->libLineEdit->value = "US_8ths"
-\a cdsLibManager->libListBox->value = "CadenceLibs"
-\a cdsLibManager->libLineEdit->value = "CadenceLibs"
-\a lmgrLogShowPopup("mainListPopup0" 78 8 2 "CadenceLibs")
-\a cdsLibManager->libListBox->value = "CadenceLibs/US_8ths"
-\a cdsLibManager->libLineEdit->value = "US_8ths"
-\a cdsLibManager->libListBox->value = "CadenceLibs"
-\a cdsLibManager->libLineEdit->value = "CadenceLibs"
-\a lmgrLogShowPopup("mainListPopup0" 92 8 2 "CadenceLibs")
-\a cdsLibManager->libListBox->value = "CadenceLibs/US_8ths"
-\a cdsLibManager->libLineEdit->value = "US_8ths"
-\a cdsLibManager->libListBox->value = "CadenceLibs/sbaLib"
-\a cdsLibManager->libLineEdit->value = "sbaLib"
-\a cdsLibManager->libListBox->value = "CadenceLibs"
-\a cdsLibManager->libLineEdit->value = "CadenceLibs"
-\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" nil)
-\a cdsLibManager->libListBox->value = "XFABLibs"
-\a cdsLibManager->libLineEdit->value = "XFABLibs"
-\a nrResizeWindow(cdsLibManager list(1020 205 948 505))
-\a cdsLibManager->libListBox->value = "ee140_gsi"
-\a cdsLibManager->libLineEdit->value = "ee140_gsi"
-\a cdsLibManager->libListBox->value = "CadenceLibs"
-\a cdsLibManager->libLineEdit->value = "CadenceLibs"
-\a cdsLibManager->libListBox->value = "ee140_gsi"
-\a cdsLibManager->libLineEdit->value = "ee140_gsi"
-\a cdsLibManager->libListBox->value = "CadenceLibs"
-\a cdsLibManager->libLineEdit->value = "CadenceLibs"
-\a cdsLibManager->libListBox->value = "XFABLibs"
-\a cdsLibManager->libLineEdit->value = "XFABLibs"
-\a cdsLibManager->libListBox->value = "ee140_gsi"
-\a cdsLibManager->libLineEdit->value = "ee140_gsi"
-\a cdsLibManager->libSearchOptionsButton->value = t
-\a cdsLibManager->libListBox->value = "CadenceLibs"
-\a cdsLibManager->libLineEdit->value = "CadenceLibs"
-\a cdsLibManager->editChangeRefsButton->value = t
-\a nrSetWindowVisibility(changeRefDialog "show")
-\a nrSetCurrentWindow(changeRefDialog)
-\a nrResizeWindow(changeRefDialog list(1149 191 690 533))
-\a changeRefDialog->inLibsListWidget->value = '("CadenceLibs" )
-\a changeRefDialog->Cancel->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs" t)
-\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" t)
-\a cdsLibManager->libListBox->value = "CadenceLibs/US_8ths"
-\a cdsLibManager->libLineEdit->value = "US_8ths"
-\a cdsLibManager->libListBox->value = "CadenceLibs/ahdlLib"
-\a cdsLibManager->libLineEdit->value = "ahdlLib"
-\a cdsLibManager->libListBox->value = "CadenceLibs/analogLib"
-\a cdsLibManager->libLineEdit->value = "analogLib"
-\a cdsLibManager->libListBox->value = "CadenceLibs/avTech"
-\a cdsLibManager->libLineEdit->value = "avTech"
-\a cdsLibManager->libListBox->value = "CadenceLibs/basic"
-\a cdsLibManager->libLineEdit->value = "basic"
-\a cdsLibManager->libListBox->value = "CadenceLibs/functional"
-\a cdsLibManager->libLineEdit->value = "functional"
-\a cdsLibManager->libListBox->value = "CadenceLibs/cdsDefTechLib"
-\a cdsLibManager->libLineEdit->value = "cdsDefTechLib"
-\a cdsLibManager->libListBox->value = "CadenceLibs/US_8ths"
-\a cdsLibManager->libLineEdit->value = "US_8ths"
-\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" nil)
-\a cdsLibManager->libListBox->value = "CadenceLibs"
-\a cdsLibManager->libLineEdit->value = "CadenceLibs"
-\a cdsLibManager->editChangeRefsButton->value = t
-\a nrSetWindowVisibility(changeRefDialog "show")
-\a nrSetCurrentWindow(changeRefDialog)
-\a nrResizeWindow(changeRefDialog list(1149 191 690 533))
-\a changeRefDialog->inLibsListWidget->value = '("CadenceLibs" )
-\a changeRefDialog->inLibsListWidget->value = '("D_CELLS_HD" )
-\a changeRefDialog->inLibsListWidget->value = '("D_CELLS_HDLL" )
-\a changeRefDialog->inLibsListWidget->value = '("AnalogLibs" )
-\a changeRefDialog->fromLibsListWidget->value = '("AnalogLibs" )
-\a changeRefDialog->toLibListWidget->value = "AnalogLibs"
-\a changeRefDialog->toLibListWidget->value = "CadenceLibs"
-\a changeRefDialog->toLibListWidget->value = "AnalogLibs"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrListItemAction(cdsLibManager->libListBox "CadenceLibs" 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "ee140_gsi"
-\a cdsLibManager->libLineEdit->value = "ee140_gsi"
-\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs" nil)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "XFABLibs"
-\a cdsLibManager->libLineEdit->value = "XFABLibs"
-\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs" t)
-\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs/DigitalLibs" t)
-\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs/DigitalLibs" nil)
-\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs/AnalogLibs" t)
-\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs/AnalogLibs" nil)
-\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs" nil)
-\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" t)
-\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" nil)
-\a cdsLibManager->libListBox->value = "CadenceLibs"
-\a cdsLibManager->libLineEdit->value = "CadenceLibs"
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libListBox->value = nil
-\a lmgrLogShowPopup("mainListPopup0" 76 92 2 "")
-\a cdsLibManager->editChangeRefsButton->value = t
-\a nrSetWindowVisibility(changeRefDialog "show")
-\a nrSetCurrentWindow(changeRefDialog)
-\a nrResizeWindow(changeRefDialog list(1149 191 690 533))
-\a changeRefDialog->inLibsListWidget->value = '("AnalogLibs" )
-\a changeRefDialog->fromLibsListWidget->value = '("AnalogLibs" )
-\a changeRefDialog->fromLibsListWidget->value = '("CadenceLibs" )
-\a changeRefDialog->toLibListWidget->value = "xfab_connectLib"
-\a changeRefDialog->Cancel->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a lmgrLogShowPopup("mainListPopup0" 96 86 2 "")
-\a cdsLibManager->showCatsToggle->value = t
-\a cdsLibManager->QToolButton7->value = t
-\a cdsLibManager->showCategoriesAction->value = t
-\a cdsLibManager->showCatsToggle->value = nil
-\a cdsLibManager->QToolButton7->value = nil
-\a cdsLibManager->showCategoriesAction->value = nil
-\a cdsLibManager->showFilesToggle->value = t
-\a cdsLibManager->libListBox->value = "CadenceLibs"
-\a cdsLibManager->libLineEdit->value = "CadenceLibs"
-\a cdsLibManager->showFilesToggle->value = nil
-\a cdsLibManager->libListBox->value = "XFABLibs"
-\a cdsLibManager->libLineEdit->value = "XFABLibs"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(1021 205 948 505))
-\a cdsLibManager->FileNewLibButton->value = t
-\a nrSetWindowVisibility(NewLibShell "show")
-\a NewLibShell->QLineEdit2->value = "/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/"
-\a nrSetCurrentWindow(NewLibShell)
-\a nrSetCurrentWindow(NewLibShell->subDialog)
-\a nrResizeWindow(NewLibShell list(1242 214 507 559))
-\a NewLibShell->newLibCancelButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libListBox->value = nil
-\a lmgrLogShowPopup("mainListPopup0" 119 87 2 "")
-\a cdsLibManager->libListBox->value = "CadenceLibs"
-\a cdsLibManager->libLineEdit->value = "CadenceLibs"
-\a lmgrLogShowPopup("mainListPopup0" 87 7 2 "CadenceLibs")
-\a cdsLibManager->editPropertiesButton->value = t
-\o MPS request: edit property
-\a nrResizeWindow(cdsLibManager list(1374 202 948 505))
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "XFABLibs"
-\a cdsLibManager->libLineEdit->value = "XFABLibs"
-\a lmgrLogShowPopup("mainListPopup0" 79 25 2 "XFABLibs")
-\a cdsLibManager->editPropertiesButton->value = t
-\o MPS request: edit property
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "ee140_gsi"
-\a cdsLibManager->libLineEdit->value = "ee140_gsi"
-\a lmgrLogShowPopup("mainListPopup0" 91 47 2 "ee140_gsi")
-\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs" t)
-\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs" nil)
-\a cdsLibManager->libListBox->value = "XFABLibs"
-\a cdsLibManager->libLineEdit->value = "XFABLibs"
-\a cdsLibManager->libListBox->value = "CadenceLibs"
-\a cdsLibManager->libLineEdit->value = "CadenceLibs"
-\a cdsLibManager->editChangeRefsButton->value = t
-\a nrSetWindowVisibility(changeRefDialog "show")
-\a nrSetCurrentWindow(changeRefDialog)
-\a nrResizeWindow(changeRefDialog list(1503 188 690 533))
-\a changeRefDialog->inLibsListWidget->value = '("CadenceLibs" )
-\a changeRefDialog->inLibsListWidget->value = '("D_CELLS_HDLL" )
-\a changeRefDialog->Cancel->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->editLibraryPathButton->value = t
-\o Starting the cdsLibEditor...
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "ee140_gsi"
-\a cdsLibManager->libLineEdit->value = "ee140_gsi"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(1186 346 948 505))
-\a cdsLibManager->FileNewLibButton->value = t
-\a NewLibShell->QLineEdit2->value = ""
-\a nrSetWindowVisibility(NewLibShell->subDialog "show")
-\a nrSetWindowVisibility(NewLibShell "show")
-\a NewLibShell->QLineEdit2->value = "/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/"
-\a nrSetCurrentWindow(NewLibShell)
-\a nrSetCurrentWindow(NewLibShell->subDialog)
-\a nrResizeWindow(NewLibShell list(1407 355 507 559))
-\a nrResizeWindow(NewLibShell list(1489 407 507 559))
-\a nrResizeWindow(NewLibShell list(1482 391 507 559))
-\a NewLibShell->newLibNameText->value = "final_project"
-\a NewLibShell->newLibCancelButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "XFABLibs"
-\a cdsLibManager->libLineEdit->value = "XFABLibs"
-\a cdsLibManager->libListBox->value = "ee140_gsi"
-\a cdsLibManager->libLineEdit->value = "ee140_gsi"
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libListBox->value = nil
-\a lmgrLogShowPopup("mainListPopup0" 92 74 2 "")
-\a cdsLibManager->FileNewLibButton->value = t
-\a NewLibShell->newLibNameText->value = ""
-\a NewLibShell->QLineEdit2->value = ""
-\a nrSetWindowVisibility(NewLibShell "show")
-\a NewLibShell->QLineEdit2->value = "/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/"
-\a nrSetCurrentWindow(NewLibShell)
-\a nrSetCurrentWindow(NewLibShell->subDialog)
-\a nrResizeWindow(NewLibShell list(1407 355 507 559))
-\a NewLibShell->newLibNameText->value = "final_project"
-\a NewLibShell->newLibOKButton->value = t
-\a NewLibShell->subDialog->value = '("/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project" "/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/")
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrSetCurrentWindow(workingDialogForm)
-\o Created new library "final_project" at /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/final_project.
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(workingDialogForm list(6 27 310 133))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = "final_project"
 \a cdsLibManager->libLineEdit->value = "final_project"
-\a lmgrLogShowPopup("mainListPopup0" 168 63 2 "final_project")
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "ee140_gsi"
-\a cdsLibManager->libLineEdit->value = "ee140_gsi"
-\a cdsLibManager->cellListBox->value = "ADC_mockup"
-\a cdsLibManager->cellLineEdit->value = "ADC_mockup"
+\a cdsLibManager->cellListBox->value = "zz_switchtest"
+\a cdsLibManager->cellLineEdit->value = "zz_switchtest"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = "COMP"
+\a cdsLibManager->cellLineEdit->value = "COMP"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "ADC"
+\a cdsLibManager->cellLineEdit->value = "ADC"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "COMP"
+\a cdsLibManager->cellLineEdit->value = "COMP"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "ADC"
+\a cdsLibManager->cellLineEdit->value = "ADC"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = "ee140_gsi"
+\a cdsLibManager->libLineEdit->value = "ee140_gsi"
 \a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "final_project"
+\a cdsLibManager->libLineEdit->value = "final_project"
 \a cdsLibManager->libListBox->value = "ee140_gsi"
 \a cdsLibManager->libLineEdit->value = "ee140_gsi"
 \a cdsLibManager->cellListBox->value = "ADC_mockup"
 \a cdsLibManager->cellLineEdit->value = "ADC_mockup"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "AREG_mockup"
+\a cdsLibManager->cellLineEdit->value = "AREG_mockup"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "pmos_cascode_wrap"
-\a cdsLibManager->cellLineEdit->value = "pmos_cascode_wrap"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "symbol"
 \a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->cellListBox->value = "mux_mockup"
-\a cdsLibManager->cellLineEdit->value = "mux_mockup"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->cellListBox->value = "zz_SAR_FSM"
-\a cdsLibManager->cellLineEdit->value = "zz_SAR_FSM"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "zz_EE140_Fa19_digital"
-\a cdsLibManager->cellLineEdit->value = "zz_EE140_Fa19_digital"
-\a cdsLibManager->cellListBox->value = "zz_SAR_FSM"
-\a cdsLibManager->cellLineEdit->value = "zz_SAR_FSM"
-\a cdsLibManager->cellListBox->value = "zz_pmos_cascode"
-\a cdsLibManager->cellLineEdit->value = "zz_pmos_cascode"
-\a cdsLibManager->cellListBox->value = "zz_scratch_ll"
-\a cdsLibManager->cellLineEdit->value = "zz_scratch_ll"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "zz_EE140_Fa19_digital"
-\a cdsLibManager->cellLineEdit->value = "zz_EE140_Fa19_digital"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 83 27 2 "AREG_mockup")
+\a cdsLibManager->copySimpleButton->value = t
+\a basicCopyForm->CategoryCellsEdit->value = "*"
+\a basicCopyForm->CellsSkipLibraries->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->ViewsSkipLibraries->value = t
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CopyFromLibrary->value = "AnalogLibs"
+\a basicCopyForm->CopyToLibrary->value = "AnalogLibs"
+\a basicCopyForm->CopyFromLibrary->value = "ee140_gsi"
+\a basicCopyForm->CopyFromCell->value = "AREG_mockup"
+\a basicCopyForm->CopyToLibrary->value = "ee140_gsi"
+\a basicCopyForm->CopyToCell->value = "AREG_mockup"
+\a basicCopyForm->CellsViewsToCopy->value = "schematic symbol"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
+\a nrSetWindowVisibility(basicCopyForm "show")
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrResizeWindow(basicCopyForm list(1438 328 444 642))
+\a basicCopyForm->CopyToLibrary->value = "final"
+\a basicCopyForm->CopyToLibrary->value = "final_project"
+\a basicCopyForm->CopyToCell->value = "AREG"
+\a basicCopyForm->OK->value = t
+\o Beginning simple copy to library "final_project".
+\o Processing files to be copied...
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\o ERROR (CLM-173): One or more of the following problems have occurred:\n      1. The source file does not exist.\n      2. A destination file will be overwritten.\n      3. A destination file is checked out.\n      4. A destination file is opened for edit.\n      5. A destination file conflicts with another.\n      6. A source library file is not valid in a different library.\n      7. A source OpenAccess cellview master file has zero size.
+\a nrSetWindowVisibility(copyProblemsDialog "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(copyProblemsDialog)
+\a nrResizeWindow(workingDialogForm list(6 27 274 133))
+\a nrResizeWindow(copyProblemsDialog list(1248 422 825 441))
+\a copyProblemsDialog->Cancel->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
+\a nrSetCurrentWindow(basicCopyForm)
+\a basicCopyForm->OK->value = t
+\o Beginning simple copy to library "final_project".
+\o Processing files to be copied...
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetWindowVisibility(copyProblemsDialog "show")
+\a nrSetCurrentWindow(copyProblemsDialog)
+\a nrResizeWindow(workingDialogForm list(6 27 274 133))
+\a nrResizeWindow(copyProblemsDialog list(1248 422 825 441))
+\a copyProblemsDialog->overwriteAll->value = t
+\a copyProblemsDialog->OK->value = t
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(1523 497 274 133))
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "BGR_mockup"
+\a cdsLibManager->cellLineEdit->value = "BGR_mockup"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 56 41 2 "BGR_mockup")
+\a cdsLibManager->copySimpleButton->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsViewsToCopy->value = ""
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CopyFromCell->value = ""
+\a basicCopyForm->CopyToCell->value = ""
+\a basicCopyForm->CopyFromLibrary->value = ""
+\a basicCopyForm->CopyToLibrary->value = ""
+\a basicCopyForm->CopyFromLibrary->value = "AnalogLibs"
+\a basicCopyForm->CopyToLibrary->value = "AnalogLibs"
+\a basicCopyForm->CopyFromLibrary->value = "ee140_gsi"
+\a basicCopyForm->CopyFromCell->value = "BGR_mockup"
+\a basicCopyForm->CopyToLibrary->value = "ee140_gsi"
+\a basicCopyForm->CopyToCell->value = "BGR_mockup"
+\a basicCopyForm->CellsViewsToCopy->value = "schematic symbol"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
+\a nrSetWindowVisibility(basicCopyForm "show")
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrResizeWindow(basicCopyForm list(1438 328 444 642))
+\a basicCopyForm->CopyToLibrary->value = "final_project"
+\a basicCopyForm->CopyToLibrary->value = "final_project"
+\a basicCopyForm->CopyToCell->value = "BGR"
+\a basicCopyForm->OK->value = t
+\o Beginning simple copy to library "final_project".
+\o Processing files to be copied...
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetWindowVisibility(copyProblemsDialog "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(copyProblemsDialog)
+\a nrResizeWindow(workingDialogForm list(0 0 274 133))
+\a nrResizeWindow(copyProblemsDialog list(1248 422 825 441))
+\a copyProblemsDialog->overwriteAll->value = t
+\a copyProblemsDialog->OK->value = t
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(1523 497 274 133))
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "DFRRSHDX0_dupe"
+\a cdsLibManager->cellLineEdit->value = "DFRRSHDX0_dupe"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "DREG_mockup"
+\a cdsLibManager->cellLineEdit->value = "DREG_mockup"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 58 78 2 "DREG_mockup")
+\a cdsLibManager->copySimpleButton->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsViewsToCopy->value = ""
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CopyFromCell->value = ""
+\a basicCopyForm->CopyToCell->value = ""
+\a basicCopyForm->CopyFromLibrary->value = ""
+\a basicCopyForm->CopyToLibrary->value = ""
+\a basicCopyForm->CopyFromLibrary->value = "AnalogLibs"
+\a basicCopyForm->CopyToLibrary->value = "AnalogLibs"
+\a basicCopyForm->CopyFromLibrary->value = "ee140_gsi"
+\a basicCopyForm->CopyFromCell->value = "DREG_mockup"
+\a basicCopyForm->CopyToLibrary->value = "ee140_gsi"
+\a basicCopyForm->CopyToCell->value = "DREG_mockup"
+\a basicCopyForm->CellsViewsToCopy->value = "schematic symbol"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
+\a nrSetWindowVisibility(basicCopyForm "show")
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrResizeWindow(basicCopyForm list(1438 328 444 642))
+\a basicCopyForm->CopyToLibrary->value = "final_project"
+\a basicCopyForm->CopyToLibrary->value = "final_project"
+\a basicCopyForm->OK->value = t
+\o Beginning simple copy to library "final_project".
+\o Processing files to be copied...
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetWindowVisibility(copyProblemsDialog "show")
+\a nrSetCurrentWindow(copyProblemsDialog)
+\a nrResizeWindow(workingDialogForm list(0 0 274 133))
+\a nrResizeWindow(copyProblemsDialog list(1248 422 825 441))
+\a copyProblemsDialog->overwriteAll->value = t
+\a copyProblemsDialog->OK->value = t
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(1523 497 274 133))
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "ADC_mockup"
+\a cdsLibManager->cellLineEdit->value = "ADC_mockup"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "AREG_mockup"
+\a cdsLibManager->cellLineEdit->value = "AREG_mockup"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "BGR_mockup"
+\a cdsLibManager->cellLineEdit->value = "BGR_mockup"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "DFRRSHDX0_dupe"
+\a cdsLibManager->cellLineEdit->value = "DFRRSHDX0_dupe"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "DREG_mockup"
+\a cdsLibManager->cellLineEdit->value = "DREG_mockup"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "EE140_Fa19_digital"
+\a cdsLibManager->cellLineEdit->value = "EE140_Fa19_digital"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "EE140_Fa19_studentMockup"
+\a cdsLibManager->cellLineEdit->value = "EE140_Fa19_studentMockup"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "NA2HDX0_dupe"
+\a cdsLibManager->cellLineEdit->value = "NA2HDX0_dupe"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
@@ -293,18 +288,218 @@
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SAR_DFF"
-\a cdsLibManager->cellLineEdit->value = "SAR_DFF"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 73 145 2 "PGA_mockup")
+\a cdsLibManager->copySimpleButton->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsViewsToCopy->value = ""
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CopyFromCell->value = ""
+\a basicCopyForm->CopyToCell->value = ""
+\a basicCopyForm->CopyFromLibrary->value = ""
+\a basicCopyForm->CopyToLibrary->value = ""
+\a basicCopyForm->CopyFromLibrary->value = "AnalogLibs"
+\a basicCopyForm->CopyToLibrary->value = "AnalogLibs"
+\a basicCopyForm->CopyFromLibrary->value = "ee140_gsi"
+\a basicCopyForm->CopyFromCell->value = "PGA_mockup"
+\a basicCopyForm->CopyToLibrary->value = "ee140_gsi"
+\a basicCopyForm->CopyToCell->value = "PGA_mockup"
+\a basicCopyForm->CellsViewsToCopy->value = "schematic symbol"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
+\a nrSetWindowVisibility(basicCopyForm "show")
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrResizeWindow(basicCopyForm list(1438 328 444 642))
+\a basicCopyForm->CopyToLibrary->value = "final_project"
+\a basicCopyForm->CopyToLibrary->value = "final_project"
+\a basicCopyForm->CopyToCell->value = "PGA"
+\a basicCopyForm->OK->value = t
+\o Beginning simple copy to library "final_project".
+\o Processing files to be copied...
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetWindowVisibility(copyProblemsDialog "show")
+\a nrSetCurrentWindow(copyProblemsDialog)
+\a nrResizeWindow(workingDialogForm list(0 0 274 133))
+\a nrResizeWindow(copyProblemsDialog list(1248 422 825 441))
+\a copyProblemsDialog->overwriteAll->value = t
+\a copyProblemsDialog->OK->value = t
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(1523 497 274 133))
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "VBATDIV4_mockup"
+\a cdsLibManager->cellLineEdit->value = "VBATDIV4_mockup"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 79 93 2 "VBATDIV4_mockup")
+\a cdsLibManager->copySimpleButton->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsViewsToCopy->value = ""
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CopyFromCell->value = ""
+\a basicCopyForm->CopyToCell->value = ""
+\a basicCopyForm->CopyFromLibrary->value = ""
+\a basicCopyForm->CopyToLibrary->value = ""
+\a basicCopyForm->CopyFromLibrary->value = "AnalogLibs"
+\a basicCopyForm->CopyToLibrary->value = "AnalogLibs"
+\a basicCopyForm->CopyFromLibrary->value = "ee140_gsi"
+\a basicCopyForm->CopyFromCell->value = "VBATDIV4_mockup"
+\a basicCopyForm->CopyToLibrary->value = "ee140_gsi"
+\a basicCopyForm->CopyToCell->value = "VBATDIV4_mockup"
+\a basicCopyForm->CellsViewsToCopy->value = "schematic symbol"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
+\a nrSetWindowVisibility(basicCopyForm "show")
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrResizeWindow(basicCopyForm list(1438 328 444 642))
+\a basicCopyForm->CopyToLibrary->value = "final_project"
+\a basicCopyForm->CopyToLibrary->value = "final_project"
+\a basicCopyForm->CopyToCell->value = "VBATDIV4"
+\a basicCopyForm->OK->value = t
+\o Beginning simple copy to library "final_project".
+\o Processing files to be copied...
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetWindowVisibility(copyProblemsDialog "show")
+\a nrSetCurrentWindow(copyProblemsDialog)
+\a nrResizeWindow(workingDialogForm list(0 0 274 133))
+\a nrResizeWindow(copyProblemsDialog list(1248 422 825 441))
+\a copyProblemsDialog->overwriteAll->value = t
+\a copyProblemsDialog->OK->value = t
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(1523 497 274 133))
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "mux_mockup"
+\a cdsLibManager->cellLineEdit->value = "mux_mockup"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 65 75 2 "mux_mockup")
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 86 77 2 "mux_mockup")
+\a cdsLibManager->copySimpleButton->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsViewsToCopy->value = ""
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CopyFromCell->value = ""
+\a basicCopyForm->CopyToCell->value = ""
+\a basicCopyForm->CopyFromLibrary->value = ""
+\a basicCopyForm->CopyToLibrary->value = ""
+\a basicCopyForm->CopyFromLibrary->value = "AnalogLibs"
+\a basicCopyForm->CopyToLibrary->value = "AnalogLibs"
+\a basicCopyForm->CopyFromLibrary->value = "ee140_gsi"
+\a basicCopyForm->CopyFromCell->value = "mux_mockup"
+\a basicCopyForm->CopyToLibrary->value = "ee140_gsi"
+\a basicCopyForm->CopyToCell->value = "mux_mockup"
+\a basicCopyForm->CellsViewsToCopy->value = "schematic symbol"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
+\a nrSetWindowVisibility(basicCopyForm "show")
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrResizeWindow(basicCopyForm list(1438 328 444 642))
+\a basicCopyForm->CopyToLibrary->value = "final_project"
+\a basicCopyForm->CopyToLibrary->value = "final_project"
+\a basicCopyForm->CopyToCell->value = "mux"
+\a basicCopyForm->OK->value = t
+\o Beginning simple copy to library "final_project".
+\o Processing files to be copied...
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetWindowVisibility(copyProblemsDialog "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(copyProblemsDialog)
+\a nrResizeWindow(workingDialogForm list(0 0 274 133))
+\a nrResizeWindow(copyProblemsDialog list(1248 422 825 441))
+\a copyProblemsDialog->overwriteAll->value = t
+\a copyProblemsDialog->OK->value = t
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(1523 497 274 133))
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "pmos_cascode_wrap"
+\a cdsLibManager->cellLineEdit->value = "pmos_cascode_wrap"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "zz_EE140_Fa19_digital"
+\a cdsLibManager->cellLineEdit->value = "zz_EE140_Fa19_digital"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "zz_EE140_Fa19_mockup"
+\a cdsLibManager->cellLineEdit->value = "zz_EE140_Fa19_mockup"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "zz_EE140_Fa19_system"
+\a cdsLibManager->cellLineEdit->value = "zz_EE140_Fa19_system"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SAR_FSM"
-\a cdsLibManager->cellLineEdit->value = "SAR_FSM"
+\a cdsLibManager->cellListBox->value = "zz_EE140_Fa19_mockup"
+\a cdsLibManager->cellLineEdit->value = "zz_EE140_Fa19_mockup"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "mux_mockup"
-\a cdsLibManager->cellLineEdit->value = "mux_mockup"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "zz_EE140_Fa19_system"
+\a cdsLibManager->cellLineEdit->value = "zz_EE140_Fa19_system"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "zz_EE140_Fa19_mockup"
+\a cdsLibManager->cellLineEdit->value = "zz_EE140_Fa19_mockup"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "zz_EE140_Fa19_system"
+\a cdsLibManager->cellLineEdit->value = "zz_EE140_Fa19_system"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "zz_SAR_FSM"
+\a cdsLibManager->cellLineEdit->value = "zz_SAR_FSM"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "zz_pmos_cascode"
+\a cdsLibManager->cellLineEdit->value = "zz_pmos_cascode"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "zz_scratch_ll"
+\a cdsLibManager->cellLineEdit->value = "zz_scratch_ll"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->libListBox->value = "final_project"
@@ -313,27 +508,142 @@
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrListItemAction(cdsLibManager->libListBox "final_project" 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "adc"
-\a cdsLibManager->cellLineEdit->value = "adc"
+\a cdsLibManager->cellListBox->value = "ADC"
+\a cdsLibManager->cellLineEdit->value = "ADC"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = "ee140_gsi"
-\a cdsLibManager->libLineEdit->value = "ee140_gsi"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "AREG"
+\a cdsLibManager->cellLineEdit->value = "AREG"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->libListBox->value = "XFABLibs"
-\a cdsLibManager->libLineEdit->value = "XFABLibs"
-\a cdsLibManager->libListBox->value = "CadenceLibs"
-\a cdsLibManager->libLineEdit->value = "CadenceLibs"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "BGR"
+\a cdsLibManager->cellLineEdit->value = "BGR"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "AREG"
+\a cdsLibManager->cellLineEdit->value = "AREG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "COMP"
+\a cdsLibManager->cellLineEdit->value = "COMP"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "BGR"
+\a cdsLibManager->cellLineEdit->value = "BGR"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "COMP"
+\a cdsLibManager->cellLineEdit->value = "COMP"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "DREG_mockup"
+\a cdsLibManager->cellLineEdit->value = "DREG_mockup"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 83 76 2 "DREG_mockup")
+\a cdsLibManager->editRenameButton->value = t
+\a basicRenameForm->basicRenameFromEdit->value = "DREG_mockup"
+\a nrSetWindowVisibility(basicRenameForm "show")
+\a basicRenameForm->basicRenameToEdit->value = "DREG_mockup"
+\a nrSetCurrentWindow(basicRenameForm)
+\a nrResizeWindow(basicRenameForm list(1489 480 343 182))
+\a basicRenameForm->basicRenameToEdit->value = "DREG"
+\a basicRenameForm->OK->value = t
+\o Renaming Cell "DREG_mockup" to "DREG" in library "final_project".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(1526 497 269 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "final_project"
+\a cdsLibManager->libLineEdit->value = "final_project"
+\a cdsLibManager->cellListBox->value = "VBATDIV4"
+\a cdsLibManager->cellLineEdit->value = "VBATDIV4"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "mux"
+\a cdsLibManager->cellLineEdit->value = "mux"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "zz_switchtest"
+\a cdsLibManager->cellLineEdit->value = "zz_switchtest"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "mux"
+\a cdsLibManager->cellLineEdit->value = "mux"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "VBATDIV4"
+\a cdsLibManager->cellLineEdit->value = "VBATDIV4"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "PGA"
+\a cdsLibManager->cellLineEdit->value = "PGA"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "DREG"
+\a cdsLibManager->cellLineEdit->value = "DREG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "COMP"
+\a cdsLibManager->cellLineEdit->value = "COMP"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "BGR"
+\a cdsLibManager->cellLineEdit->value = "BGR"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "AREG"
+\a cdsLibManager->cellLineEdit->value = "AREG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "ADC"
+\a cdsLibManager->cellLineEdit->value = "ADC"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->fileExitButton->value = t
 \o libManager is exiting.
 \a nrSetWindowVisibility(cdsLibManager "hide")

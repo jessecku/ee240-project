@@ -1,0 +1,11 @@
+CADENCE IHNL11140
+$model
+final_project/zz_switchtest/schematic zz_switchtest
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+vin vin
+control control
+$endparam
