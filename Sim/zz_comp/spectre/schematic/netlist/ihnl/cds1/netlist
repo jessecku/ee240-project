@@ -1,0 +1,29 @@
+    S2 (Q CLK VDD VDD) pe w=10u l=1u as=4.8e-12 ad=4.8e-12 ps=2.096e-05 \
+        pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) par1=((1)*(1))
+    S4 (Y CLK VDD VDD) pe w=10u l=1u as=4.8e-12 ad=4.8e-12 ps=2.096e-05 \
+        pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) par1=((1)*(1))
+    M3L (X Y VDD VDD) pe w=10u l=1u as=4.8e-12 ad=4.8e-12 ps=2.096e-05 \
+        pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) par1=((1)*(1))
+    S1 (P CLK VDD VDD) pe w=10u l=1u as=4.8e-12 ad=4.8e-12 ps=2.096e-05 \
+        pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) par1=((1)*(1))
+    S3 (X CLK VDD VDD) pe w=10u l=1u as=4.8e-12 ad=4.8e-12 ps=2.096e-05 \
+        pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) par1=((1)*(1))
+    M3R (Y X VDD VDD) pe w=10u l=1u as=4.8e-12 ad=4.8e-12 ps=2.096e-05 \
+        pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) par1=((1)*(1))
+    S5 (net15 CLK VSS VSS) ne w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M1R (Q INN net15 net15) ne w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M1L (P INP net15 net15) ne w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M2R (Y X Q Q) ne w=10u l=1u as=4.8e-12 ad=4.8e-12 ps=2.096e-05 \
+        pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) par1=((1)*(1))
+    M2L (X Y P P) ne w=10u l=1u as=4.8e-12 ad=4.8e-12 ps=2.096e-05 \
+        pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) par1=((1)*(1))
+    I2 (X net021 VDD VSS) inverter
+    I1 (Y OUT VDD VSS) inverter
+ends COMP
+// End of subcircuit definition.

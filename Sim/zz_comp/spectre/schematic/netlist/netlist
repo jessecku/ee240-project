@@ -1,0 +1,58 @@
+
+// Library name: final_project
+// Cell name: inverter
+// View name: schematic
+subckt inverter IN OUT VDD VSS
+    M0 (OUT IN VSS VSS) ne w=220.0n l=180.0n as=1.056e-13 ad=1.056e-13 \
+        ps=1.4e-06 pd=1.4e-06 nrs=1.22727 nrd=1.22727 m=(1)*(1) \
+        par1=((1)*(1))
+    M1 (OUT IN VDD VDD) pe w=220.0n l=180.0n as=1.056e-13 ad=1.056e-13 \
+        ps=1.4e-06 pd=1.4e-06 nrs=1.22727 nrd=1.22727 m=(1)*(1) \
+        par1=((1)*(1))
+ends inverter
+// End of subcircuit definition.
+
+// Library name: final_project
+// Cell name: COMP
+// View name: schematic
+subckt COMP INN INP OUT VDD VSS CLK
+    S2 (Q CLK VDD VDD) pe w=10u l=1u as=4.8e-12 ad=4.8e-12 ps=2.096e-05 \
+        pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) par1=((1)*(1))
+    S4 (Y CLK VDD VDD) pe w=10u l=1u as=4.8e-12 ad=4.8e-12 ps=2.096e-05 \
+        pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) par1=((1)*(1))
+    M3L (X Y VDD VDD) pe w=10u l=1u as=4.8e-12 ad=4.8e-12 ps=2.096e-05 \
+        pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) par1=((1)*(1))
+    S1 (P CLK VDD VDD) pe w=10u l=1u as=4.8e-12 ad=4.8e-12 ps=2.096e-05 \
+        pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) par1=((1)*(1))
+    S3 (X CLK VDD VDD) pe w=10u l=1u as=4.8e-12 ad=4.8e-12 ps=2.096e-05 \
+        pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) par1=((1)*(1))
+    M3R (Y X VDD VDD) pe w=10u l=1u as=4.8e-12 ad=4.8e-12 ps=2.096e-05 \
+        pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) par1=((1)*(1))
+    S5 (net15 CLK VSS VSS) ne w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M1R (Q INN net15 net15) ne w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M1L (P INP net15 net15) ne w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M2R (Y X Q Q) ne w=10u l=1u as=4.8e-12 ad=4.8e-12 ps=2.096e-05 \
+        pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) par1=((1)*(1))
+    M2L (X Y P P) ne w=10u l=1u as=4.8e-12 ad=4.8e-12 ps=2.096e-05 \
+        pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) par1=((1)*(1))
+    I2 (X net021 VDD VSS) inverter
+    I1 (Y OUT VDD VSS) inverter
+ends COMP
+// End of subcircuit definition.
+
+// Library name: final_project
+// Cell name: zz_comp
+// View name: schematic
+I0 (VIN VIP OUT VDD VSS CLK) COMP
+V3 (VIN VSS) vsource dc=Vneg type=dc
+V2 (VIP VSS) vsource dc=Vplus type=dc
+V1 (VDD VSS) vsource dc=supply type=dc
+V0 (VSS 0) vsource dc=0 type=dc
+V4 (CLK VSS) vsource dc=0 type=pulse val0=0 val1=1 period=20u delay=10n \
+        rise=10n fall=10n width=10u

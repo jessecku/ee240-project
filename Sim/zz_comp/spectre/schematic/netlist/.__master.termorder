@@ -1,0 +1,2 @@
+"final_project.COMP.schematic.termorder" (("INN" "INP" "OUT" "VDD" "VSS" "CLK") ("CLK" "INN" "INP" "OUT" "VDD" "VSS"))
+"final_project.inverter.schematic.termorder" (("IN" "OUT" "VDD" "VSS") ("IN" "OUT" "VDD" "VSS"))

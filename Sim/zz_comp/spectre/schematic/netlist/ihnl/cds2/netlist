@@ -1,0 +1,11 @@
+
+// Library name: final_project
+// Cell name: zz_comp
+// View name: schematic
+I0 (VIN VIP OUT VDD VSS CLK) COMP
+V3 (VIN VSS) vsource dc=Vneg type=dc
+V2 (VIP VSS) vsource dc=Vplus type=dc
+V1 (VDD VSS) vsource dc=supply type=dc
+V0 (VSS 0) vsource dc=0 type=dc
+V4 (CLK VSS) vsource dc=0 type=pulse val0=0 val1=1 period=20u delay=10n \
+        rise=10n fall=10n width=10u
