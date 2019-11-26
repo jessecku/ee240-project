@@ -4,21 +4,13 @@
 // View name: schematic
 I0 (CLK VIB D\<7\> D\<6\> D\<5\> D\<4\> D\<3\> D\<2\> D\<1\> D\<0\> VDD \
         VIN VREF VSS CMP LD) ADC
-V14 (D\<0\> VSS) vsource dc=d0 type=dc
-V13 (D\<1\> VSS) vsource dc=d1 type=dc
-V12 (D\<2\> VSS) vsource dc=d2 type=dc
-V11 (D\<3\> VSS) vsource dc=d3 type=dc
-V10 (D\<4\> VSS) vsource dc=d4 type=dc
-V9 (D\<5\> VSS) vsource dc=d5 type=dc
 V3 (VIN VSS) vsource dc=vin type=dc
 V2 (VREF VSS) vsource dc=ref type=dc
 V1 (VDD VSS) vsource dc=supply type=dc
 V0 (VSS 0) vsource dc=0 type=dc
-V8 (D\<6\> VSS) vsource dc=d6 type=pulse val0=0 val1=1 delay=40u rise=5n \
-        fall=5n
-V7 (D\<7\> VSS) vsource dc=0 type=pulse val0=0 val1=1 delay=20u rise=5n \
-        fall=5n width=10u
-V6 (CMP VSS) vsource type=pulse val0=0 val1=1 delay=10u rise=5n fall=5n
-V5 (LD VSS) vsource type=pulse val0=0 val1=1 rise=5n fall=5n width=10u
-V4 (CLK VSS) vsource type=pulse val0=0 val1=1 period=10u rise=5n fall=5n \
-        width=5u
+V6 (CMP VSS) vsource type=pulse val0=0 val1=1 delay=1u rise=1n fall=1n
+V5 (LD VSS) vsource type=pulse val0=0 val1=1 rise=1n fall=1n width=500n
+V4 (CLK VSS) vsource type=pulse val0=0 val1=1 period=1u rise=1n fall=1n \
+        width=500.0n
+I2 (CLK VIB D\<7\> D\<6\> D\<5\> D\<4\> D\<3\> D\<2\> D\<1\> D\<0\> VDD \
+        net1 VDD VSS) SAR_DFF
