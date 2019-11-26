@@ -1,0 +1,8 @@
+CADENCE IHNL11146
+
+final_project inverter schematic cds0
+final_project COMP schematic cds1
+final_project mux2 schematic cds2
+final_project ADC_ctrl schematic cds3
+final_project ADC schematic cds4
+final_project zz_ADC schematic cds5

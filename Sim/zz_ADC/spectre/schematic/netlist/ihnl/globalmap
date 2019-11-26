@@ -1,0 +1,26 @@
+CADENCE IHNL11140
+$model
+final_project/ADC_ctrl/schematic ADC_ctrl
+final_project/ADC/schematic ADC
+final_project/zz_ADC/schematic zz_ADC
+final_project/COMP/schematic COMP
+final_project/inverter/schematic inverter
+final_project/mux2/schematic mux2
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+vin vin
+d3 d3
+d7 d7
+d1 d1
+d4 d4
+d5 d5
+cap cap
+supply supply
+d2 d2
+d6 d6
+d0 d0
+ref ref
+$endparam

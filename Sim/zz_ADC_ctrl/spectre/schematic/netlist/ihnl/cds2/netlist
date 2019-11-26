@@ -1,0 +1,10 @@
+    I5 (S\<5\> VDD VSS VSS VREF B\<5\>) mux2
+    I7 (S\<7\> VDD VSS VSS VREF B\<7\>) mux2
+    I4 (S\<4\> VDD VSS VSS VREF B\<4\>) mux2
+    I1 (S\<1\> VDD VSS VSS VREF B\<1\>) mux2
+    I3 (S\<3\> VDD VSS VSS VREF B\<3\>) mux2
+    I6 (S\<6\> VDD VSS VSS VREF B\<6\>) mux2
+    I2 (S\<2\> VDD VSS VSS VREF B\<2\>) mux2
+    I0 (S\<0\> VDD VSS VSS VREF B\<0\>) mux2
+ends ADC_ctrl
+// End of subcircuit definition.

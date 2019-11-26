@@ -1,0 +1,17 @@
+
+// Library name: final_project
+// Cell name: zz_ADC_ctrl
+// View name: schematic
+I0 (B\<7\> B\<6\> B\<5\> B\<4\> B\<3\> B\<2\> B\<1\> B\<0\> S\<7\> S\<6\> \
+        S\<5\> S\<4\> S\<3\> S\<2\> S\<1\> S\<0\> VDD VREF VSS) ADC_ctrl
+V10 (S\<0\> VSS) vsource dc=s0 type=dc
+V9 (S\<1\> VSS) vsource dc=s1 type=dc
+V8 (S\<2\> VSS) vsource dc=s2 type=dc
+V7 (S\<3\> VSS) vsource dc=s3 type=dc
+V6 (S\<4\> VSS) vsource dc=s4 type=dc
+V5 (S\<5\> VSS) vsource dc=s5 type=dc
+V4 (S\<6\> VSS) vsource dc=s6 type=dc
+V3 (S\<7\> VSS) vsource dc=s7 type=dc
+V2 (VREF VSS) vsource dc=ref type=dc
+V1 (VDD VSS) vsource dc=supply type=dc
+V0 (VSS 0) vsource dc=0 type=dc

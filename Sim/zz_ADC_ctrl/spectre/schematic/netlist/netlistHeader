@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Nov 25 16:12:13 2019
+// Design library name: final_project
+// Design cell name: zz_ADC_ctrl
+// Design view name: schematic
+simulator lang=spectre
+global 0
