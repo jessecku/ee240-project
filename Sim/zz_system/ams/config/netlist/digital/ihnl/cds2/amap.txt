@@ -1,0 +1,4 @@
+instMap,*COMP,*I9,*I9
+instMaster,*COMP,*I9,*final_project_SR_latch_schematic
+netMap,*COMP,*gnd!,*cds_globals.\gnd! 
+cellMap,*COMP,*COMP,*final_project,*schematic

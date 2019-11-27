@@ -1,0 +1,9 @@
+
+system I28 ( COMP, VDDA, VDDD, VBAT, cds_globals.\gnd! , CLK_ADC, 
+    CLK_PGA1, CLK_PGA2, D[7:0], EXT_IN[0], EXT_IN[1], G[2:0], S[1:0]);
+
+EE140_Fa19_digital X_GSI ( .CLK_PGA1(CLK_PGA1), .CLK_ADC(CLK_ADC), 
+    .ENABLE(VDDA), .CLK_PGA2(CLK_PGA2), .VSS(cds_globals.\gnd! ), 
+    .VDD(VDDA), .DAC(D[7:0]), .DONE(DONE), .CLK(CLK), .COMP(COMP));
+
+endmodule

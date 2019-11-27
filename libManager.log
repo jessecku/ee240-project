@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.7 - CAT35 10/30/2018 21:08 (sjfnl050) $
 \o Sub version:		sub-version  s231 
-\o Arguments:		-mpssession virtuoso30789 -mpshost eda-1.EECS.Berkeley.EDU 
+\o Arguments:		-mpssession virtuoso21174 -mpshost eda-1.EECS.Berkeley.EDU 
 \o Working Directory:	eda-1.EECS.Berkeley.EDU:/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project
 \o 64-bit offsets
 \o Qt version: 		4.8.5
@@ -12,40 +12,137 @@
 \o ddSetForcedLib("") unnecessary.
 \o MPS service: map window
 \o Library Manager customization server connected.
+\a cdsLibManager->libListBox->value = "ee140_gsi"
+\a cdsLibManager->libLineEdit->value = "ee140_gsi"
 \a cdsLibManager->libListBox->value = "final_project"
 \a cdsLibManager->libLineEdit->value = "final_project"
-\a cdsLibManager->cellListBox->value = "zz_system"
-\a cdsLibManager->cellLineEdit->value = "zz_system"
+\a cdsLibManager->cellListBox->value = "COMP"
+\a cdsLibManager->cellLineEdit->value = "COMP"
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "zz_system"
-\a cdsLibManager->cellLineEdit->value = "zz_system"
+\a cdsLibManager->cellListBox->value = "COMP"
+\a cdsLibManager->cellLineEdit->value = "COMP"
 \o MPS request: edit design
-\a nrListItemAction(cdsLibManager->cellListBox 19 0)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->libListBox->value = "final_project"
-\a cdsLibManager->libLineEdit->value = "final_project"
-\a cdsLibManager->cellListBox->value = "zz_system"
-\a cdsLibManager->cellLineEdit->value = "zz_system"
-\a nrSetCurrentWindow(cdsLibManager)
+\a nrListItemAction(cdsLibManager->cellListBox 4 0)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "final_project"
 \a cdsLibManager->libLineEdit->value = "final_project"
-\a cdsLibManager->cellListBox->value = "zz_system"
-\a cdsLibManager->cellLineEdit->value = "zz_system"
+\a cdsLibManager->cellListBox->value = "COMP"
+\a cdsLibManager->cellLineEdit->value = "COMP"
 \a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "final_project"
+\a cdsLibManager->libLineEdit->value = "final_project"
+\a cdsLibManager->cellListBox->value = "COMP"
+\a cdsLibManager->cellLineEdit->value = "COMP"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "ADC_ctrl"
+\a cdsLibManager->cellLineEdit->value = "ADC_ctrl"
+\a cdsLibManager->cellListBox->value = "ADC"
+\a cdsLibManager->cellLineEdit->value = "ADC"
+\a cdsLibManager->cellListBox->value = "ADC_ctrl"
+\a cdsLibManager->cellLineEdit->value = "ADC_ctrl"
+\a cdsLibManager->cellListBox->value = "ADC"
+\a cdsLibManager->cellLineEdit->value = "ADC"
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "SR_latch"
+\a cdsLibManager->cellLineEdit->value = "SR_latch"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "SR_latch"
+\a cdsLibManager->cellLineEdit->value = "SR_latch"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
 \o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrListItemAction(cdsLibManager->cellListBox 9 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "final_project"
+\a cdsLibManager->libLineEdit->value = "final_project"
+\a cdsLibManager->cellListBox->value = "SR_latch"
+\a cdsLibManager->cellLineEdit->value = "SR_latch"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "inverter"
+\a cdsLibManager->cellLineEdit->value = "inverter"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "zz_comp"
+\a cdsLibManager->cellLineEdit->value = "zz_comp"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "zz_comp"
+\a cdsLibManager->cellLineEdit->value = "zz_comp"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 17 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "final_project"
+\a cdsLibManager->libLineEdit->value = "final_project"
+\a cdsLibManager->cellListBox->value = "zz_comp"
+\a cdsLibManager->cellLineEdit->value = "zz_comp"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "zz_ADC_ctrl"
+\a cdsLibManager->cellLineEdit->value = "zz_ADC_ctrl"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->cellListBox->value = "zz_ADC"
 \a cdsLibManager->cellLineEdit->value = "zz_ADC"
 \a cdsLibManager->viewLineEdit->value = ""
@@ -60,6 +157,221 @@
 \a cdsLibManager->cellLineEdit->value = "zz_ADC"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 15 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "final_project"
+\a cdsLibManager->libLineEdit->value = "final_project"
+\a cdsLibManager->cellListBox->value = "zz_ADC"
+\a cdsLibManager->cellLineEdit->value = "zz_ADC"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "zz_system"
+\a cdsLibManager->cellLineEdit->value = "zz_system"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "zz_system"
+\a cdsLibManager->cellLineEdit->value = "zz_system"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 20 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "final_project"
+\a cdsLibManager->libLineEdit->value = "final_project"
+\a cdsLibManager->cellListBox->value = "zz_system"
+\a cdsLibManager->cellLineEdit->value = "zz_system"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "zz_ADC"
+\a cdsLibManager->cellLineEdit->value = "zz_ADC"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "system"
+\a cdsLibManager->cellLineEdit->value = "system"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 1)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "zz_ADC"
+\a cdsLibManager->cellLineEdit->value = "zz_ADC"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "zz_system"
+\a cdsLibManager->cellLineEdit->value = "zz_system"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewListBox->value = "ams_state1"
+\a cdsLibManager->viewLineEdit->value = "ams_state1"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "final_project"
+\a cdsLibManager->libLineEdit->value = "final_project"
+\a cdsLibManager->cellListBox->value = "zz_system"
+\a cdsLibManager->cellLineEdit->value = "zz_system"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a lmgrLogShowPopup("mainListPopup2" 78 20 2 "config")
+\a cdsLibManager->editPropertiesButton->value = t
+\o MPS request: edit property
+\a lmgrLogShowPopup("mainListPopup2" 45 25 2 "config")
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "ams_state1"
+\a cdsLibManager->viewLineEdit->value = "ams_state1"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "ams_state1"
+\a cdsLibManager->viewLineEdit->value = "ams_state1"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "final_project"
+\a cdsLibManager->libLineEdit->value = "final_project"
+\a cdsLibManager->cellListBox->value = "zz_system"
+\a cdsLibManager->cellLineEdit->value = "zz_system"
+\a cdsLibManager->viewListBox->value = "ams_state1"
+\a cdsLibManager->viewLineEdit->value = "ams_state1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "ams_state1"
+\a cdsLibManager->viewLineEdit->value = "ams_state1"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "zz_system"
+\a cdsLibManager->cellLineEdit->value = "zz_system"
+\a cdsLibManager->viewListBox->value = "ams_state1"
+\a cdsLibManager->viewLineEdit->value = "ams_state1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 20 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "final_project"
+\a cdsLibManager->libLineEdit->value = "final_project"
+\a cdsLibManager->cellListBox->value = "zz_system"
+\a cdsLibManager->cellLineEdit->value = "zz_system"
+\a cdsLibManager->viewListBox->value = "ams_state1"
+\a cdsLibManager->viewLineEdit->value = "ams_state1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "ams_state1"
+\a cdsLibManager->viewLineEdit->value = "ams_state1"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "system"
+\a cdsLibManager->cellLineEdit->value = "system"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \o MPS request: edit design
@@ -70,8 +382,78 @@
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->libListBox->value = "final_project"
 \a cdsLibManager->libLineEdit->value = "final_project"
-\a cdsLibManager->cellListBox->value = "zz_ADC"
-\a cdsLibManager->cellLineEdit->value = "zz_ADC"
+\a cdsLibManager->cellListBox->value = "system"
+\a cdsLibManager->cellLineEdit->value = "system"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "ee140_gsi"
+\a cdsLibManager->libLineEdit->value = "ee140_gsi"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "clk_nonoverlapping"
+\a cdsLibManager->cellLineEdit->value = "clk_nonoverlapping"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 12 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "ee140_gsi"
+\a cdsLibManager->libLineEdit->value = "ee140_gsi"
+\a cdsLibManager->cellListBox->value = "clk_nonoverlapping"
+\a cdsLibManager->cellLineEdit->value = "clk_nonoverlapping"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(663 280 948 505))
+\a cdsLibManager->libListBox->value = "final_project"
+\a cdsLibManager->libLineEdit->value = "final_project"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "zz_system"
+\a cdsLibManager->cellLineEdit->value = "zz_system"
+\a cdsLibManager->viewListBox->value = "ams_state1"
+\a cdsLibManager->viewLineEdit->value = "ams_state1"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "ams_state1"
+\a cdsLibManager->viewLineEdit->value = "ams_state1"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewListBox->value = "ams_state1"
+\a cdsLibManager->viewLineEdit->value = "ams_state1"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "final_project"
+\a cdsLibManager->libLineEdit->value = "final_project"
+\a cdsLibManager->cellListBox->value = "zz_system"
+\a cdsLibManager->cellLineEdit->value = "zz_system"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
@@ -79,8 +461,10 @@
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetCurrentWindow(cdsLibManager)
+\a _lmgrCloseIconify("cdsLibManager" 1)
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->fileExitButton->value = t
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\o MPS service: shutdown
 \o libManager is exiting.
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a exit(0)

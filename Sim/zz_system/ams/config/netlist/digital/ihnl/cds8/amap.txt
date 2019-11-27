@@ -1,0 +1,2 @@
+netMap,*BGR,*gnd!,*cds_globals.\gnd! 
+cellMap,*BGR,*BGR,*final_project,*schematic

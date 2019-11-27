@@ -1,0 +1,8 @@
+( ( net
+( "S<0>" "S_0" )
+ )
+( model
+( "inverter" "inverter" )
+( "mux2" "mux2" )
+ )
+ )

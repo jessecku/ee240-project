@@ -1,0 +1,8 @@
+netMap,*mux,*IN<3>,*IN[3]
+netMap,*mux,*IN<2>,*IN[2]
+netMap,*mux,*IN<1>,*IN[1]
+netMap,*mux,*IN<0>,*IN[0]
+netMap,*mux,*S<1>,*S[1]
+netMap,*mux,*S<0>,*S[0]
+netMap,*mux,*gnd!,*cds_globals.\gnd! 
+cellMap,*mux,*mux,*final_project,*schematic

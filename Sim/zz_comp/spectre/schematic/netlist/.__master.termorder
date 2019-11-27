@@ -1,2 +1,3 @@
 "final_project.COMP.schematic.termorder" (("INN" "INP" "OUT" "VDD" "VSS" "CLK") ("CLK" "INN" "INP" "OUT" "VDD" "VSS"))
+"final_project.SR_latch.schematic.termorder" (("VDD" "VSS" "X" "Y" "out") ("VDD" "VSS" "X" "Y" "out"))
 "final_project.inverter.schematic.termorder" nil

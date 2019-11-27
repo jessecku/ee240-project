@@ -12,11 +12,13 @@
 ( "gnd!" "0" )
  )
 ( model
+( "final_project/SR_latch/schematic" "SR_latch" )
 ( "final_project/COMP/schematic" "COMP" )
 ( "final_project/zz_comp/schematic" "zz_comp" )
 ( "final_project/inverter/schematic" "inverter" )
  )
 ( "zz_comp" "ihnl/cds2/map" )
+( "SR_latch" "ihnl/cds3/map" )
 ( "COMP" "ihnl/cds1/map" )
 ( "inverter" "ihnl/cds0/map" )
  )

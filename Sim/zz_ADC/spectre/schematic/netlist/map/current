@@ -14,6 +14,7 @@
 ( model
 ( "final_project/SAR_DFF/schematic" "SAR_DFF" )
 ( "final_project/mux2/schematic" "mux2" )
+( "final_project/SR_latch/schematic" "SR_latch" )
 ( "final_project/COMP/schematic" "COMP" )
 ( "final_project/ADC/schematic" "ADC" )
 ( "final_project/zz_ADC/schematic" "zz_ADC" )
@@ -22,6 +23,7 @@
 ( "final_project/inverter/schematic" "inverter" )
 ( "ee140_gsi/invr_dupe/schematic" "invr_dupe" )
  )
+( "SR_latch" "ihnl/cds9/map" )
 ( "ADC" "ihnl/cds4/map" )
 ( "zz_ADC" "ihnl/cds5/map" )
 ( "COMP" "ihnl/cds1/map" )

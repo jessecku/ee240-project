@@ -1,5 +1,6 @@
 CADENCE IHNL11140
 $model
+final_project/SR_latch/schematic SR_latch
 final_project/ADC_ctrl/schematic ADC_ctrl
 final_project/ADC/schematic ADC
 ee140_gsi/DFRRSHDX0_dupe/schematic DFRRSHDX0_dupe

@@ -1,0 +1,6 @@
+
+// Library name: ee140_gsi
+// Cell name: clk_nonoverlapping
+// View name: schematic
+// Inherited view list: schematic
+subckt clk_nonoverlapping

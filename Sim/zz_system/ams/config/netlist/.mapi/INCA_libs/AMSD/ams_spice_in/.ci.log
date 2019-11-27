@@ -1,0 +1,13 @@
+ERROR: Cannot find /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi/INCA_libs/AMSD/ams_spice_in/.amsspice_pre.ckt ! 
+Notice: /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/configs/spectre.cfg is filtered . 
+Notice: /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/configs/mapsubckt.cfg is filtered . 
+Notice: /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/discipline.h is filtered . 
+Notice: /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/disciplines.vams is filtered . 
+Notice: /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/constants.h is filtered . 
+Notice: /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/constants.vams is filtered . 
+
+Copy /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi//INCA_libs/AMSD/ams_spice_in/.amsspice_pre.ckt.log ... 
+Generating TAR file... 
+Done!
+
+Pack Directory: /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi/INCA_libs/AMSD/ams_spice_in/.a 

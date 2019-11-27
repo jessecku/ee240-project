@@ -1,0 +1,2 @@
+netMap,*AREG,*gnd!,*cds_globals.\gnd! 
+cellMap,*AREG,*AREG,*final_project,*schematic

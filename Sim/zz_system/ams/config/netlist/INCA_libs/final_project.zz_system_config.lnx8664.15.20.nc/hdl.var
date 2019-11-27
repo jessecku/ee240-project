@@ -1,0 +1,8 @@
+define NCSIMRC	( /share/instsww/cadence/INCISIVE.15.20.076/tools/inca/files/ncsimrc, ~/.ncsimrc )
+include ./hdlrun.var
+define SNAPSHOT final_project.zz_system:config
+DEFINE RUNMODEDEFAULT 1
+DEFINE LIB_MAP (  => final_project )
+DEFINE LIB_MAP ($LIB_MAP, + => worklib )
+define ELAB_SNAPSHOT
+define SNAPSHOT final_project.zz_system:config

@@ -1,0 +1,1005 @@
+irun(64): 15.20-s076: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s076: Started on Nov 26, 2019 at 16:48:10 PST
+irun
+	-f irunArgs
+		-UNBUFFERED
+		-cdslib ./cds.lib
+		-errormax 50
+		-status
+		-nowarn DLNOHV
+		-nowarn DLCLAP
+		-v93
+		-incdir /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/
+		-ade
+		-timescale 1ns/1ns
+		-vtimescale 1ns/1ns
+		-delay_mode None
+		-novitalaccl
+		-access r
+		-noparamerr
+		-amspartinfo ../psf/partition.info
+		-rnm_partinfo
+		-modelincdir /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/
+		./spiceModels.scs
+		./amsControlSpectre.scs
+		-input ./probe.tcl
+		-run
+		-exit
+		-ncsimargs "+amsrawdir ../psf"
+		-simcompatible_ams spectre
+		-name final_project.zz_system:config
+		-allowredefinition
+		-amsbind
+		-top final_project.zz_system:schematic
+		-top cds_globals
+		./netlist.vams
+		./ie_card.scs
+		-f ./textInputs
+			-amscompilefile "file:/home/ff/ee140/fa19/cadence/ee140_gsi/SAR_FSM/functional/verilog.v lib:ee140_gsi cell:SAR_FSM view:functional"
+			-makelib final_project
+			-endlib
+		./cds_globals.vams
+		-l ../psf/irun.log
+file: /home/ff/ee140/fa19/cadence/ee140_gsi/SAR_FSM/functional/verilog.v
+ncvlog: *W,SPDUSD: Include directory /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/ given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+ncvlog: Memory Usage - 21.3M program + 29.1M data = 50.4M total
+ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 52.5% cpu)
+		Caching library 'final_project' ....... Done
+		Caching library 'ee140_gsi' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		zz_system
+		cds_globals
+	Discipline resolution Pass...
+	Doing auto-insertion of connection elements...
+	Connect Rules applied are:
+		logic_cr
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:               159      34
+		Primitives:              9       1
+		Registers:             337     146
+		Scalar wires:           62       -
+		Vectored wires:         60       -
+		Named events:           20       6
+		Always blocks:         110      50
+		Initial blocks:         40      22
+		Cont. assignments:      18      15
+		Pseudo assignments:     15       5
+		Interconnect:          506       -
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: final_project.zz_system:config
+ncelab: Memory Usage - 49.9M program + 54.9M data = 104.8M total (Peak 239.2M)
+ncelab: CPU Usage - 0.1s system + 0.2s user = 0.3s total (0.4s, 78.4% cpu)
+Loading snapshot final_project.zz_system:config .................... Done
+ncsim: *W,NXDMSO: This design will require a check out of DMSO license when it is run with Xcelium.
+Simulating in AMS-SIE mode...
+	Starting analog simulation engine...
+AMSD: Environment variable:
+        SPECTRE_DEFAULTS = -E
+AMSD: Using spectre solver with arguments: -E -ahdllibdir INCA_libs/AMSD/ahdlSimDB.
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 15.1.0.803.isr18 64bit -- 25 Jul 2017
+Copyright (C) 1989-2017 Cadence Design Systems, Inc. All rights reserved
+        worldwide. Cadence, Virtuoso and Spectre are registered trademarks of
+        Cadence Design Systems, Inc. All others are the property of their
+        respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
+        Security, Inc.
+
+User: ee140-abc   Host: eda-1.EECS.Berkeley.EDU   HostID: 2080F786   PID:
+        20270
+Memory  available: 39.2648 GB  physical: 50.6362 GB
+Linux   : CentOS Linux release 7.7.1908 (Core)
+CPU Type: Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [1600.0] (  8 ),  1 [1600.0] (  9 ),  2 [1600.0] ( 10 )
+                 3 [1600.0] ( 11 )
+        1:       4 [1600.0] ( 12 ),  5 [1600.0] ( 13 ),  6 [1600.0] ( 14 )
+                 7 [1600.0] ( 15 )
+        
+System load averages (1min, 5min, 15min) : 11.6 %, 9.8 %, 8.8 %
+Hyperthreading is enabled
+
+
+Analog Kernel using -ANALOGCONTROL  ./spiceModels.scs.
+Reading file: 
+        /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/spiceModels.scs
+Reading file: 
+        /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/netlist.vams
+Reading link:  /share/instsww/cadence/INCISIVE.15.20.076/tools
+Reading file: 
+        /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/affirma_ams/etc/connect_lib/Bidir_2_dynsup.vams
+Opening directory INCA_libs/AMSD/ahdlSimDB (775)
+Opening directory
+        INCA_libs/AMSD/ahdlSimDB/3651_tools_affirma_ams_etc_connect_lib_Bidir_2_dynsup.vams.connectLib__Bidir_2_dynsup__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        INCA_libs/AMSD/ahdlSimDB/3651_tools_affirma_ams_etc_connect_lib_Bidir_2_dynsup.vams.connectLib__Bidir_2_dynsup__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/INCA_libs/AMSD/ahdlSimDB/3651_tools_affirma_ams_etc_connect_lib_Bidir_2_dynsup.vams.connectLib__Bidir_2_dynsup__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__Bidir_2_dynsup__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__Bidir_2_dynsup__module__0x10000001_behavioral.
+Reading file: 
+        /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2_dynsup.vams
+Opening directory INCA_libs/AMSD/ahdlSimDB (775)
+Opening directory
+        INCA_libs/AMSD/ahdlSimDB/3651_tools_affirma_ams_etc_connect_lib_L2E_2_dynsup.vams.connectLib__L2E_2_dynsup__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        INCA_libs/AMSD/ahdlSimDB/3651_tools_affirma_ams_etc_connect_lib_L2E_2_dynsup.vams.connectLib__L2E_2_dynsup__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/INCA_libs/AMSD/ahdlSimDB/3651_tools_affirma_ams_etc_connect_lib_L2E_2_dynsup.vams.connectLib__L2E_2_dynsup__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2_dynsup__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2_dynsup__module__0x10000001_behavioral.
+Reading file: 
+        /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams
+Opening directory INCA_libs/AMSD/ahdlSimDB (775)
+Opening directory
+        INCA_libs/AMSD/ahdlSimDB/3651_tools_affirma_ams_etc_connect_lib_E2L_2_dynsup.vams.connectLib__E2L_2_dynsup__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        INCA_libs/AMSD/ahdlSimDB/3651_tools_affirma_ams_etc_connect_lib_E2L_2_dynsup.vams.connectLib__E2L_2_dynsup__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/INCA_libs/AMSD/ahdlSimDB/3651_tools_affirma_ams_etc_connect_lib_E2L_2_dynsup.vams.connectLib__E2L_2_dynsup__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__E2L_2_dynsup__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__E2L_2_dynsup__module__0x10000001_behavioral.
+Reading file: 
+        /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/config.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/param.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/bip.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/tm_bip.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpva.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpva_dbc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpvb.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpvb_dbc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpvc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpvc_dbc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpva5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpva5_dbc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpvb5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpvb5_dbc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpvc5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpvc5_dbc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpve.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpve_dbc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpvf.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpvf_dbc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpvg.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpvg_dbc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpve5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpve5_dbc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpvf5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpvf5_dbc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpvg5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpvg5_dbc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qnv5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/bip/qpv5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/cap.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/tm_cap.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cdmm4.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cdmm5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cdmm4t.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cdmm5t.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/ctmm5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/ctmm5t.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cmm3.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cmm4.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cmm5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cmm3t.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cmm4t.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cmm5t.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cmm6t.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cmmh3.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cmmh4.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cmmh5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cmmh3t.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cmmh4t.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cmmh5t.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cmmh6t.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cdmmh4.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cdmmh5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cdmmh4t.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cdmmh5t.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/ctmmh5t.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/ctmmh5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cmmh4l.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cmmh5l.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cmmh6l.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/csandwt3.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/csandwt4.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/csandwt5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cp1sub.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cp1suba.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cp1subp.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/csf2p.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/csf3p.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/csf3.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/csf4.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/csf5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/csft4.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/csft5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/csft6.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/csf3a.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/csf4a.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/csf5a.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/csft4a.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/csft5a.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/csft6a.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/p_cap.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/mosvc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/mosvc_pmos.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/mosvcti.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/mosvcti_nmos.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/mosvc5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/mosvc5_pmos.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/mosvc5ti.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/mosvc5ti_nmos.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cif3.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cif4.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/cif5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/tag_25v.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/tag_60v.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/tag_100v.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/tag_200v.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/tag_m25v.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/tag_m60v.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/tag_m100v.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/cap/tag_m200v.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/dio.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/tm_dio.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dn.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dp.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dnw.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dn5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dp5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dnw5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dhw2a.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dhw2.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dhw3.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdpa.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwnsj1_7.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwnsj1_10.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwnsj1_16c.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwpsj1_7.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwpsj1_10.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwpsj1_16c.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dpp6.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dpp7.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dnp7.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/ds5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/ds5a.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdn5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdnt.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdnu.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdpta.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdptb.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdpu.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dnpa.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dnpati.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dza.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dzati.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dzbti.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/drxw.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dnw5mva.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dnn.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dnn5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdnha.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdnhb.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdnhc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdnhd.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdnhe.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdnhf.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdpha.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdphb.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdphc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdphd.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdphe.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdphf.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdpb.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdpc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdpd.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdpe.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/dio/dfwdpf.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/mos.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/tm_mos.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nn.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nn_jf.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/ne.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/pe.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/ne5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/pe5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nmva.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/pmva.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/peti.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/pe5ti.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nhsj1_7.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nhsj1_10.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nhsj1_16c.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/phsj1_7.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/phsj1_10.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/phsj1_16c.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nn5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nn5_jf.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nhvta.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nhvtb.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/phvta.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/phvtb.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nhvu.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/phvu.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nel.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/pel.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/ndhvt.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/pe_5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/pel_5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/pe5_5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nisj1_16.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nisj1_16_m1.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nisj1_16_q1.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/ndhvta.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nd5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nd5_mos1.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nd5_mos2.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nhvra.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nhvrb.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nhvrc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nhvrd.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nhvre.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/nhvrf.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/phvra.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/phvrb.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/phvrc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/phvrd.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/phvre.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/phvrf.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/pmvb.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/pmvc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/pmvd.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/pmve.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/pmvf.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/ndhvrd.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/mos/ndhvrf.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/res.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/tm_res.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rnw.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rdn.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rdp.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rnw5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rdn5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rdp5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rnp1.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rnp1_3.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rpp1.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rpp1_3.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rpp1s.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rpp1s_3.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rnp1h.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rnp1h_3.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rpp1k1.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rpp1k1_3.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rpp1k1a.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rpp1k1a_3.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rm1.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rm2.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rm3.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rm4.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rm5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rmtp.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rmtpl.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rmrdl.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rctdn.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rsildn.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rctdp.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rsildp.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rctp1.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rsilnp1.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rsilpp1.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/pfuse.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rnw_scr.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rnw5_scr.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rsbdn.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rsbdp.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rsbnp1.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rsbpp1.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rsbpp1k1.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rsbdn5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rsbdp5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/p_rm1.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/p_rm2.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/p_rm3.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/p_rm4.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/p_rm5.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/p_rmtp.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/p_rmtpl.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/p_rvia1.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/p_rvia2.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/p_rvia3.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/p_rvia4.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/p_rviatp.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/p_rviatpl.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/p_rctdn.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/p_rctdp.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/p_rctp1.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/p_rp1s.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rxw2ti.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rdn5_dpc.scs
+Reading file: 
+        /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rdn5_pw4.scs
+Reading file: 
+        /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/amsControlSpectre.scs
+Reading file: 
+        /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/ie_card.scs
+Reading file: 
+        /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.amsbind.scs
+Reading file: 
+        /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/configs/spectre.cfg
+Time for NDB Parsing: CPU = 725.171 ms, elapsed = 1.37463 s.
+Time accumulated: CPU = 929.399 ms, elapsed = 1.37463 s.
+Peak resident memory used = 91.2 Mbytes.
+
+ncsim> source /share/instsww/cadence/INCISIVE.15.20.076/tools/inca/files/ncsimrc
+ncsim> 
+ncsim> # This is the NC-SIM(R) probe command file
+ncsim> # used in the AMS-ADE integration.
+ncsim> 
+ncsim> 
+ncsim> #
+ncsim> # Database settings
+ncsim> #
+ncsim> if { [info exists ::env(AMS_RESULTS_DIR) ] } { set AMS_RESULTS_DIR $env(AMS_RESULTS_DIR)} else {set AMS_RESULTS_DIR "../psf"}
+../psf
+ncsim> database -open ams_database -into ${AMS_RESULTS_DIR} -default
+Created default SHM database ams_database
+ncsim> 
+ncsim> #
+ncsim> # Probe settings
+ncsim> #
+ncsim> probe -create -emptyok -database ams_database {zz_system.X_GSI.RESETB_BUF}
+Created probe 1
+ncsim> probe -create -emptyok -database ams_database {zz_system.VDDD}
+Created probe 2
+ncsim> probe -create -emptyok -database ams_database {zz_system.VDDA}
+Created probe 3
+ncsim> probe -create -emptyok -database ams_database {zz_system.VBAT}
+Created probe 4
+ncsim> probe -create -emptyok -database ams_database {zz_system.S[1]}
+Created probe 5
+ncsim> probe -create -emptyok -database ams_database {zz_system.S[0]}
+Created probe 6
+ncsim> probe -create -emptyok -database ams_database {zz_system.G[2]}
+Created probe 7
+ncsim> probe -create -emptyok -database ams_database {zz_system.G[1]}
+Created probe 8
+ncsim> probe -create -emptyok -database ams_database {zz_system.G[0]}
+Created probe 9
+ncsim> probe -create -emptyok -database ams_database {zz_system.EXT_IN[1]}
+Created probe 10
+ncsim> probe -create -emptyok -database ams_database {zz_system.EXT_IN[0]}
+Created probe 11
+ncsim> probe -create -emptyok -database ams_database {zz_system.DONE}
+Created probe 12
+ncsim> probe -create -emptyok -database ams_database {zz_system.D[7]}
+Created probe 13
+ncsim> probe -create -emptyok -database ams_database {zz_system.D[6]}
+Created probe 14
+ncsim> probe -create -emptyok -database ams_database {zz_system.D[5]}
+Created probe 15
+ncsim> probe -create -emptyok -database ams_database {zz_system.D[4]}
+Created probe 16
+ncsim> probe -create -emptyok -database ams_database {zz_system.D[3]}
+Created probe 17
+ncsim> probe -create -emptyok -database ams_database {zz_system.D[2]}
+Created probe 18
+ncsim> probe -create -emptyok -database ams_database {zz_system.D[1]}
+Created probe 19
+ncsim> probe -create -emptyok -database ams_database {zz_system.D[0]}
+Created probe 20
+ncsim> probe -create -emptyok -database ams_database {zz_system.COMP}
+Created probe 21
+ncsim> probe -create -emptyok -database ams_database {zz_system.CLK_ADC}
+Created probe 22
+ncsim> probe -create -emptyok -database ams_database {zz_system.CLK}
+Created probe 23
+ncsim> probe -create -emptyok -database ams_database {zz_system.CLK_PGA1}
+Created probe 24
+ncsim> probe -create -emptyok -database ams_database {zz_system.CLK_PGA2}
+Created probe 25
+ncsim> probe -create -emptyok -database ams_database {zz_system.I28.VIN}
+Created probe 26
+ncsim> probe -create -emptyok -database ams_database {zz_system.I28.VREF_ADC}
+Created probe 27
+ncsim> probe -create -emptyok -database ams_database {zz_system.I28.I8.net8}
+Created probe 28
+ncsim> probe -create -emptyok -database ams_database -flow -ports -index -depth all -noaicms {zz_system}
+Created probe 29
+ncsim> 
+ncsim> run
+
+The CPU load for active processors is :
+        Spectre  0 (8.4 %)       1 (18.2 %)      2 (22.7 %)      3 (18.1 %)
+                 4 (1.8 %)       5 (2.3 %)       6 (14.0 %)      7 (4.7 %)
+                 8 (1.8 %)       9 (32.2 %)     10 (19.0 %)     11 (5.2 %)
+                12 (6.4 %)      13 (43.6 %)     14 (16.7 %)     15 (1.2 %)
+        Other   
+Reading link: 
+        /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file: 
+        /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link: 
+        /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file: 
+        /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 458.76 ms, elapsed = 509.275 ms.
+Time accumulated: CPU = 1.3885 s, elapsed = 1.88424 s.
+Peak resident memory used = 123 Mbytes.
+
+Time for EDB Visiting: CPU = 30.323 ms, elapsed = 30.338 ms.
+Time accumulated: CPU = 1.41912 s, elapsed = 1.91488 s.
+Peak resident memory used = 126 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (SPECTRE-294): Too many saved signals [ 4513 ]. Slow initialization
+        is expected!
+
+
+Global user options:
+      addflowsuffix = yes
+        dotprobefmt = hier
+               temp = 27
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+             pivrel = 0.001
+     checklimitdest = psf
+             rawfmt = sst2
+               save = selected
+           useterms = name
+               tnom = 27
+              scale = 1
+             scalem = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 524
+             iprobe 3668  
+              bsim4 749   
+          capacitor 16    
+connectLib__Bidir_2_dynsup__module__0x10000001_behavioral 3     
+connectLib__E2L_2_dynsup__module__0x10000001_behavioral 11    
+connectLib__L2E_2_dynsup__module__0x10000001_behavioral 6     
+            isource 1     
+              relay 35    
+           resistor 4     
+               vcvs 5     
+            vsource 7     
+
+Analysis and control statement inventory:
+               info 4     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 4513  
+
+Time for parsing: CPU = 611.197 ms, elapsed = 617.497 ms.
+Time accumulated: CPU = 2.03062 s, elapsed = 2.53267 s.
+Peak resident memory used = 139 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+************************************************
+Transient Analysis `tran': time = (0 s -> 15 us)
+************************************************
+DC simulation time: CPU = 225.39 ms, elapsed = 225.457 ms.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 15 us
+    step = 15 ns
+    maxstep = 300 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 10e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = liberal
+    method = trapgear2
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   6852    (current)
+                 save   28      (voltage)
+
+    tran: time = 380 ns      (2.53 %), step = 20 ns        (133 m%)
+    tran: time = 1.135 us    (7.57 %), step = 15 ns        (100 m%)
+    tran: time = 1.88 us     (12.5 %), step = 20 ns        (133 m%)
+    tran: time = 2.635 us    (17.6 %), step = 15 ns        (100 m%)
+    tran: time = 3.38 us     (22.5 %), step = 20 ns        (133 m%)
+    tran: time = 4.135 us    (27.6 %), step = 15 ns        (100 m%)
+    tran: time = 4.88 us     (32.5 %), step = 20 ns        (133 m%)
+    tran: time = 5.635 us    (37.6 %), step = 15 ns        (100 m%)
+    tran: time = 6.38 us     (42.5 %), step = 20 ns        (133 m%)
+    tran: time = 7.135 us    (47.6 %), step = 15 ns        (100 m%)
+    tran: time = 7.88 us     (52.5 %), step = 20 ns        (133 m%)
+    tran: time = 8.635 us    (57.6 %), step = 15 ns        (100 m%)
+    tran: time = 9.38 us     (62.5 %), step = 20 ns        (133 m%)
+    tran: time = 10.14 us    (67.6 %), step = 15 ns        (100 m%)
+    tran: time = 10.88 us    (72.5 %), step = 20 ns        (133 m%)
+    tran: time = 11.63 us    (77.6 %), step = 15 ns        (100 m%)
+    tran: time = 12.38 us    (82.5 %), step = 20 ns        (133 m%)
+    tran: time = 13.13 us    (87.6 %), step = 15 ns        (100 m%)
+    tran: time = 13.88 us    (92.5 %), step = 20 ns        (133 m%)
+    tran: time = 14.63 us    (97.6 %), step = 15 ns        (100 m%)
+
+The analog simulator has reached stop time, please use `analog -stop <new stop time>' to extend the analog stop time.
+Simulation stopped via transient analysis stoptime at time 15 US
+Memory Usage - 38.6M program + 484.2M data = 522.8M total
+CPU Usage - 0.8s system + 75.4s user = 76.2s total (96.2% cpu)
+ncsim> exit
+Number of accepted tran steps =             2552
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Features that may significantly slowing down simulation
+          iprobe = 78.79 % of total equations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (20.8 %)      1 (11.1 %)      2 (18.9 %)      3 (14.8 %)
+                 4 (23.4 %)      5 (6.6 %)       6 (7.4 %)       7 (7.2 %)
+                 8 (29.4 %)      9 (26.0 %)     10 (16.0 %)     11 (15.5 %)
+                12 (13.0 %)     13 (24.1 %)     14 (23.2 %)     15 (13.6 %)
+        Other   
+Initial condition solution time: CPU = 225.539 ms, elapsed = 225.607 ms.
+
+**** AMSD: Mixed-Signal Activity Statistics ****
+Number of A-to-D events:                     169
+  Number of A-to-D events in IEs:            169
+Number of D-to-A events:                      62
+  Number of D-to-A events in IEs:             62
+Number of VHDL-AMS Breaks:                     0
+
+Intrinsic tran analysis time:    CPU = 73.8902 s, elapsed = 75.156 s.
+Total time required for tran analysis `tran': CPU = 74.2742 s (1m  14.3s),
+        elapsed = 75.5412 s (1m  15.5s).
+Time accumulated: CPU = 76.3339 s (1m  16.3s), elapsed = 78.11 s (1m  18.1s).
+Peak resident memory used = 172 Mbytes.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+Simulation complete via transient analysis stoptime at time 15 US
+
+Aggregate audit (4:49:45 PM, Tue Nov 26, 2019):
+Time used: CPU = 76.6 s (1m  16.6s), elapsed = 78.4 s (1m  18.4s), util. =
+        97.7%.
+Time spent in licensing: elapsed = 31.6 ms.
+Peak memory used = 172 Mbytes.
+Simulation started at: 4:48:27 PM, Tue Nov 26, 2019, ended at: 4:49:45 PM, Tue
+        Nov 26, 2019, with elapsed time (wall clock): 78.4 s (1m  18.4s).
+spectre completes with 0 errors, 1 warning, and 0 notices.
+ncsim: Memory Usage - 38.6M program + 483.2M data = 521.8M total (522.8M Peak)
+ncsim: CPU Usage - 0.9s system + 75.7s user = 76.6s total (79.6s, 96.2% cpu)
+TOOL:	irun(64)	15.20-s076: Exiting on Nov 26, 2019 at 16:49:45 PST  (total: 00:01:35)

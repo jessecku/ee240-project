@@ -1,0 +1,19 @@
+// Library - final_project, Cell - COMP, View - schematic
+// LAST TIME SAVED: Nov 26 15:35:49 2019
+// NETLIST TIME: Nov 26 16:48:02 2019
+`timescale 1ns / 1ps 
+
+`worklib final_project
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="final_project", dfII_cell="COMP", dfII_view="schematic", worklib_name="final_project", view_name="schematic", last_save_time="Nov 26 15:35:49 2019" *)
+
+module COMP (OUT, VDD, VSS, CLK, INN, INP);
+
+output  OUT;
+
+inout  VDD, VSS;
+
+input  CLK, INN, INP;
+

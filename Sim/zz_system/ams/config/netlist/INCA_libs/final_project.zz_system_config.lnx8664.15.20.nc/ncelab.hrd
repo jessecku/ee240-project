@@ -1,0 +1,22 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-timescale
+1ns/1ns
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/
+
+final_project.zz_system:schematic
+
+cds_globals
+-AMSCOMPILEFILE
+"file:/home/ff/ee140/fa19/cadence/ee140_gsi/SAR_FSM/functional/verilog.v lib:ee140_gsi cell:SAR_FSM view:functional"

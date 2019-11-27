@@ -1,0 +1,10 @@
+
+inverter I3 ( .IN(Y), .VSS(VSS), .VDD(VDD), .OUT(net11));
+
+inverter I2 ( .IN(X), .VSS(VSS), .VDD(VDD), .OUT(net12));
+
+inverter I1 ( .IN(out), .VSS(VSS), .VDD(VDD), .OUT(net7));
+
+inverter I0 ( .IN(net7), .VSS(VSS), .VDD(VDD), .OUT(out));
+
+endmodule

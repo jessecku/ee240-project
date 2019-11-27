@@ -1,0 +1,5 @@
+cds.lib: ${AMS_CDS_LIB} 
+lib:  final_project 
+cell: zz_system 
+view: config 
+topCellLib: final_project 

@@ -1,0 +1,4 @@
+
+inverter I0 ( .IN(S[0]), .VSS(VSS), .VDD(VDD), .OUT(net8));
+
+endmodule

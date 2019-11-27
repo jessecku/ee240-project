@@ -1,0 +1,35 @@
+// Library - final_project, Cell - ADC, View - schematic
+// LAST TIME SAVED: Nov 26 15:52:30 2019
+// NETLIST TIME: Nov 26 16:48:02 2019
+`timescale 1ns / 1ps 
+
+`worklib final_project
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="final_project", dfII_cell="ADC", dfII_view="schematic", worklib_name="final_project", view_name="schematic", last_save_time="Nov 26 15:52:30 2019" *)
+
+module ADC (COMP_OUT, VDD, VSS, CLK, CMP, D, LD, VIN, VREF);
+
+output  COMP_OUT;
+
+inout  VDD, VSS;
+
+input  CLK, CMP, LD, VIN, VREF;
+
+input [7:0]  D;
+
+// Buses in the design
+
+wire  [7:0]  B;
+
+
+COMP I1 ( .CLK(net017), .VSS(VSS), .VDD(VDD), .OUT(COMP_OUT), 
+    .INP(VREF), .INN(net8));
+
+ADC_ctrl I7 ( .VSS(VSS), .VREF(VREF), .VDD(VDD), .B(B[7:0]), 
+    .S(D[7:0]));
+
+inverter I8 ( .IN(CLK), .VSS(VSS), .VDD(VDD), .OUT(net017));
+
+endmodule

@@ -2,7 +2,7 @@ HEADER
 "PSFversion" "1.00"
 "S2n S4n M3Ln S1n S3n M3Rn" "PRIMLIB_pe_spectre"
 "S5n M1Rn M1Ln M2Rn M2Ln" "PRIMLIB_ne_spectre"
-"I2n I1n" "inverter"
+"I9n" "SR_latch"
 "INNv" ":1v"
 "INPv" ":2v"
 "OUTv" ":3v"

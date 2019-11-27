@@ -1,0 +1,2 @@
+netMap,*inverter,*gnd!,*cds_globals.\gnd! 
+cellMap,*inverter,*inverter,*final_project,*schematic

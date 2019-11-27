@@ -391,21 +391,13 @@ hnlPrintTopCellHeader hnlPrintTopCellFooter hnlPrintPorts hnlPrintDeviceHeader
 hnlPrintDeviceFooter hnlPrintInst) .
 Loading the file
 '/share/instsww/cadence/IC.06.17.823/tools.lnx86/dfII/etc/skill/hnl/spectre.ile'.Loading the file
-'/share/instsww/cadence/IC.06.17.823/tools.lnx86/dfII/etc/skill/hnl/driver.ile'.Begin Incremental Netlisting Nov 25 17:26:10 2019
-WARNING (OSSHNL-169): The property bag for the library 'final_project', has been
-modified or added since the
-last netlisting session. Therefore, re-netlisting
-all the cell views used from
-this library as well as all the cell views where
-instances of cell views from
-this library are used.
+'/share/instsww/cadence/IC.06.17.823/tools.lnx86/dfII/etc/skill/hnl/driver.ile'.Begin Incremental Netlisting Nov 26 15:34:24 2019
+WARNING (OSSHNL-196): The value of the "nlAction" property of library 'basic',
+cell 'noConn', view 'symbol'
+has changed since the last netlisting session in
+current run directory. Some
+cell views need to be re-netlisted.
 
-End netlisting Nov 25 17:26:11 2019
-Begin Incremental Netlisting Nov 25 17:26:50 2019
-End netlisting Nov 25 17:26:50 2019
-Begin Incremental Netlisting Nov 25 17:27:34 2019
-End netlisting Nov 25 17:27:34 2019
-Begin Incremental Netlisting Nov 25 17:30:47 2019
-End netlisting Nov 25 17:30:47 2019
-Begin Incremental Netlisting Nov 25 17:31:28 2019
-End netlisting Nov 25 17:31:28 2019
+End netlisting Nov 26 15:34:24 2019
+Begin Incremental Netlisting Nov 26 15:34:59 2019
+End netlisting Nov 26 15:35:00 2019

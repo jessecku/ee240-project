@@ -1,0 +1,104 @@
+Begin Netlisting Nov 26 16:47:58 2019
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/digital/testfixture.verilog" file. To print the stimulus name
+mapped table, set 
+simVerilogPrintStimulusNameMappingTable = t either in CIW or
+the .simrc file 
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist'
+directory. This file prints the values of the netlister control variables, which
+are different from their default values. To disable the file creation, type
+'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the
+'.cdsinit' file.
+
+INFO (VLOGNET-117): Re-netlisting the entire design.
+
+INFO (VLOGNET-118): Using connection by name (explicit connections) for all
+stopping and 
+non-stopping cells.
+ 
+WARNING (VLOGNET-199): An explicit netlist for cellview
+'final_project/mux/schematic' cannot be generated because either split buses or
+bundle terminals are present in it.
+ Therefore, an implicit netlist for this
+instance has been generated. 
+
+WARNING (VLOGNET-199): An explicit netlist for cellview
+'final_project/system/schematic' cannot be generated because either split buses
+or bundle terminals are present in it.
+ Therefore, an implicit netlist for this
+instance has been generated. 
+
+WARNING (VLOGNET-105): Cannot drop port ranges because the cell
+'final_project/system/schematic' has split busses 
+across module ports.
+Therefore, ignoring the flag simVerilogDropPortRange.
+ 
+WARNING (VLOGNET-110): The cell 'final_project/zz_system/schematic' has no
+ports. Make sure that this was the intended 
+design.
+ 
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+switch                      spectre              *Stopping View*  
+cap                         spectre              *Stopping View*  
+pe                          spectre              *Stopping View*  
+ne                          spectre              *Stopping View*  
+vpulse                      spectre              *Stopping View*  
+res                         spectre              *Stopping View*  
+SAR_FSM                     functional           *Stopping View*  
+ipulse                      spectre              *Stopping View*  
+vcvs                        spectre              *Stopping View*  
+vsource                     spectre              *Stopping View*  
+zz_system                   schematic                             
+EE140_Fa19_digital          schematic                             
+SAR_DFF                     schematic                             
+DFRRSHDX0_dupe              schematic                             
+clk_nonoverlapping          schematic                             
+NA2HDX0_dupe                schematic                             
+invr_dupe                   schematic                             
+system                      schematic                             
+VBATDIV4                    schematic                             
+DREG                        schematic                             
+AREG                        schematic                             
+BGR                         schematic                             
+mux                         schematic                             
+PGA                         schematic                             
+ADC                         schematic                             
+ADC_ctrl                    schematic                             
+mux2                        schematic                             
+COMP                        schematic                             
+SR_latch                    schematic                             
+inverter                    schematic                             
+
+---------- End of netlist configuration information   ----------
+Running netlist assembly..
+End netlisting Nov 26 16:48:09 2019

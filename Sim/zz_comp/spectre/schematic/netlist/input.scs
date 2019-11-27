@@ -1,11 +1,11 @@
 // Generated for: spectre
-// Generated on: Nov 25 17:30:47 2019
+// Generated on: Nov 26 15:34:24 2019
 // Design library name: final_project
 // Design cell name: zz_comp
 // Design view name: schematic
 simulator lang=spectre
 global 0
-parameters supply=1.2 Vneg=600m Vplus=0.7
+parameters supply=1.2 Vneg=1.1 Vplus=0.7
 include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/config.scs" section=default
 include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/param.scs" section=3s
 include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/bip.scs" section=tm
@@ -25,6 +25,23 @@ subckt inverter IN OUT VDD VSS
         ps=1.4e-06 pd=1.4e-06 nrs=1.22727 nrd=1.22727 m=(1)*(1) \
         par1=((1)*(1))
 ends inverter
+// End of subcircuit definition.
+
+// Library name: final_project
+// Cell name: SR_latch
+// View name: schematic
+subckt SR_latch VDD VSS X Y out
+    I3 (Y net11 VDD VSS) inverter
+    I2 (X net12 VDD VSS) inverter
+    I1 (out net7 VDD VSS) inverter
+    I0 (net7 out VDD VSS) inverter
+    M1 (out net11 VSS VSS) ne w=220.0n l=180.0n as=1.056e-13 ad=1.056e-13 \
+        ps=1.4e-06 pd=1.4e-06 nrs=1.22727 nrd=1.22727 m=(1)*(1) \
+        par1=((1)*(1))
+    M0 (net7 net12 VSS VSS) ne w=220.0n l=180.0n as=1.056e-13 ad=1.056e-13 \
+        ps=1.4e-06 pd=1.4e-06 nrs=1.22727 nrd=1.22727 m=(1)*(1) \
+        par1=((1)*(1))
+ends SR_latch
 // End of subcircuit definition.
 
 // Library name: final_project
@@ -64,8 +81,7 @@ subckt COMP INN INP OUT VDD VSS CLK
     M2L (X Y P P) ne w=220.0n l=180.0n as=1.056e-13 ad=1.056e-13 \
         ps=1.4e-06 pd=1.4e-06 nrs=1.22727 nrd=1.22727 m=(1)*(1) \
         par1=((1)*(1))
-    I2 (X OUT VDD VSS) inverter
-    I1 (Y net025 VDD VSS) inverter
+    I9 (VDD VSS X Y OUT) SR_latch
 ends COMP
 // End of subcircuit definition.
 

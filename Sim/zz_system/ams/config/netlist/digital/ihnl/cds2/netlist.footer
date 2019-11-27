@@ -1,0 +1,4 @@
+
+SR_latch I9 ( .VSS(VSS), .VDD(VDD), .out(OUT), .X(X), .Y(Y));
+
+endmodule

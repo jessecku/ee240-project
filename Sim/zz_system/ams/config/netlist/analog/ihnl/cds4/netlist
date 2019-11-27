@@ -1,0 +1,10 @@
+    I5 mux2
+    I7 mux2
+    I4 mux2
+    I1 mux2
+    I3 mux2
+    I6 mux2
+    I2 mux2
+    I0 mux2
+ends ADC_ctrl
+// End of subcircuit definition.

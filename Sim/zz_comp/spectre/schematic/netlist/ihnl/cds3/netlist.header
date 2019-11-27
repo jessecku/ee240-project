@@ -1,0 +1,5 @@
+
+// Library name: final_project
+// Cell name: SR_latch
+// View name: schematic
+subckt SR_latch VDD VSS X Y out

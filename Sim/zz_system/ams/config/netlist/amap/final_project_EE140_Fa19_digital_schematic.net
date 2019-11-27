@@ -1,0 +1,11 @@
+HEADER
+"PSFversion" "1.00"
+"DAC<0>v" "DAC[0]v"
+"DAC<1>v" "DAC[1]v"
+"DAC<2>v" "DAC[2]v"
+"DAC<3>v" "DAC[3]v"
+"DAC<4>v" "DAC[4]v"
+"DAC<5>v" "DAC[5]v"
+"DAC<6>v" "DAC[6]v"
+"DAC<7>v" "DAC[7]v"
+"gnd!v" "cds_globals.\\gnd! v"
