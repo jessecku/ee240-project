@@ -15,11 +15,10 @@ module cds_globals;
    ground \gnd! ;
 
 // Design Variables
-   dynamicparam real vdd = 1.2;
+   dynamicparam real cap = 100p;
    dynamicparam real vdda = 1.2;
    dynamicparam real vin = 0.4;
    dynamicparam real vref = 1;
-   dynamicparam real cap = 100p;
    dynamicparam real VIN_1 = 1;
    dynamicparam real VIN_0 = 0;
    dynamicparam real VBAT = 1.6;

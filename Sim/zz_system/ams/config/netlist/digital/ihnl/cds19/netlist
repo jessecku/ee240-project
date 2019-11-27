@@ -1,17 +1,19 @@
 // Library - final_project, Cell - zz_system, View - schematic
-// LAST TIME SAVED: Nov 26 16:37:15 2019
-// NETLIST TIME: Nov 26 16:48:03 2019
+// LAST TIME SAVED: Nov 26 19:00:11 2019
+// NETLIST TIME: Nov 26 19:00:24 2019
 `timescale 1ns / 1ps 
 
 `worklib final_project
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="final_project", dfII_cell="zz_system", dfII_view="schematic", worklib_name="final_project", view_name="schematic", last_save_time="Nov 26 16:37:15 2019" *)
+(* dfII_lib="final_project", dfII_cell="zz_system", dfII_view="schematic", worklib_name="final_project", view_name="schematic", last_save_time="Nov 26 19:00:11 2019" *)
 
 module zz_system ();
 
 // Buses in the design
+
+wire  [7:0]  D;
 
 wire  [0:1]  EXT_IN;
 
@@ -19,14 +21,13 @@ wire  [1:0]  S;
 
 wire  [2:0]  G;
 
-wire  [7:0]  D;
 
+system I27 ( COMP, VDDA, VDDD, VBAT, cds_globals.\gnd! , CLK_ADC, 
+    PHI1_temp, PHI2_temp, D[7:0], EXT_IN[0], EXT_IN[1], G[2:0], 
+    S[1:0]);
 
-system I28 ( COMP, VDDA, VDDD, VBAT, cds_globals.\gnd! , CLK_ADC, 
-    CLK_PGA1, CLK_PGA2, D[7:0], EXT_IN[0], EXT_IN[1], G[2:0], S[1:0]);
-
-EE140_Fa19_digital X_GSI ( .CLK_PGA1(CLK_PGA1), .CLK_ADC(CLK_ADC), 
-    .ENABLE(VDDA), .CLK_PGA2(CLK_PGA2), .VSS(cds_globals.\gnd! ), 
+EE140_Fa19_digital X_GSI ( .CLK_PGA1(CLK_PGA1), .CLK_PGA2(CLK_PGA2), 
+    .CLK_ADC(CLK_ADC), .ENABLE(VDDA), .VSS(cds_globals.\gnd! ), 
     .VDD(VDDA), .DAC(D[7:0]), .DONE(DONE), .CLK(CLK), .COMP(COMP));
 
 endmodule

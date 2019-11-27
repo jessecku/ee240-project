@@ -16,16 +16,16 @@
     W3 (net26 B_0 CMP VSS) relay ropen=1T rclosed=1.0
     W2 (net26 VIN LD VSS) relay ropen=1T rclosed=1.0
     W23 (net071 B_0 CMP VSS) relay ropen=1T rclosed=1.0
-    W0 (VREF net8 LD VSS) relay ropen=1T rclosed=1.0
-    C0 (net8 net071) capacitor c=cap
-    C8 (net8 net04) capacitor c=128*cap
-    C7 (net8 net05) capacitor c=64*cap
-    C4 (net8 net08) capacitor c=8*cap
-    C6 (net8 net06) capacitor c=32*cap
-    C5 (net8 net07) capacitor c=16*cap
-    C1 (net8 net26) capacitor c=cap
-    C3 (net8 net09) capacitor c=4*cap
-    C2 (net8 net010) capacitor c=2*cap
+    W0 (VREF ADC_INN LD VSS) relay ropen=1T rclosed=1.0
+    C0 (ADC_INN net071) capacitor c=cap
+    C8 (ADC_INN net04) capacitor c=128*cap
+    C7 (ADC_INN net05) capacitor c=64*cap
+    C4 (ADC_INN net08) capacitor c=8*cap
+    C6 (ADC_INN net06) capacitor c=32*cap
+    C5 (ADC_INN net07) capacitor c=16*cap
+    C1 (ADC_INN net26) capacitor c=cap
+    C3 (ADC_INN net09) capacitor c=4*cap
+    C2 (ADC_INN net010) capacitor c=2*cap
     I1 COMP
     I7 ADC_ctrl
     I8 inverter

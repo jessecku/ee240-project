@@ -1,6 +1,6 @@
 // Library - final_project, Cell - AREG, View - schematic
 // LAST TIME SAVED: Nov 24 20:13:58 2019
-// NETLIST TIME: Nov 26 16:48:03 2019
+// NETLIST TIME: Nov 26 19:00:23 2019
 `timescale 1ns / 1ps 
 
 `worklib final_project

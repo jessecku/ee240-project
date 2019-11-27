@@ -1,13 +1,13 @@
 // Library - final_project, Cell - system, View - schematic
-// LAST TIME SAVED: Nov 26 16:36:59 2019
-// NETLIST TIME: Nov 26 16:48:03 2019
+// LAST TIME SAVED: Nov 26 18:44:12 2019
+// NETLIST TIME: Nov 26 19:00:23 2019
 `timescale 1ns / 1ps 
 
 `worklib final_project
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="final_project", dfII_cell="system", dfII_view="schematic", worklib_name="final_project", view_name="schematic", last_save_time="Nov 26 16:36:59 2019" *)
+(* dfII_lib="final_project", dfII_cell="system", dfII_view="schematic", worklib_name="final_project", view_name="schematic", last_save_time="Nov 26 18:44:12 2019" *)
 
 module system (COMP, VDDA, VDDD, VBAT, VSS, CLK_ADC, CLK_PGA1, 
     CLK_PGA2, D, EXT_IN[0], EXT_IN[1], G, S);
@@ -20,6 +20,6 @@ input  CLK_ADC, CLK_PGA1, CLK_PGA2;
 
 input [1:0]  S;
 input [2:0]  G;
-input [7:0]  D;
 input [0:1]  EXT_IN;
+input [7:0]  D;
 

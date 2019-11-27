@@ -1,3 +1,5 @@
+# File Created by Class Account at Tue Nov 26 18:16:26 2019
+# assisted by CdsLibEditor
 # File Created by EE140_Instructor at Tue Nov 19 17:58:12 2019
 # assisted by CdsLibEditor
 # File Created by Zhongkai  Wang,, at Wed Oct 23 12:24:26 2019
@@ -27,4 +29,4 @@ INCLUDE ./xt018_combine.lib
 # ------------------------------------------------------------------------------
 # Add user specific libraries below this line 
 DEFINE ee140_gsi /home/ff/ee140/fa19/cadence/ee140_gsi
-DEFINE final_project /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/final_project
+DEFINE final_project ../ee240-project/final_project

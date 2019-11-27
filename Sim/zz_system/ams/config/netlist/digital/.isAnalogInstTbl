@@ -6,10 +6,10 @@
 ("PRIMLIB" "ne" "spectre" nil) t
 ("final_project" "SR_latch" "schematic" nil) nil
 ("analogLib" "vpulse" "spectre" spectreSrcPrim) t
-("final_project" "EE140_Fa19_digital" "schematic" nil) nil
 ("PRIMLIB" "pe" "spectre" nil) t
 ("analogLib" "switch" "spectre" nil) t
 ("ee140_gsi" "SAR_FSM" "functional" nil) nil
+("ee140_gsi" "EE140_Fa19_digital" "schematic" nil) nil
 ("analogLib" "ipulse" "spectre" spectreSrcPrim) t
 ("final_project" "DREG" "schematic" nil) nil
 ("ee140_gsi" "invr_dupe" "schematic" ansSpectreSubcktCall) nil

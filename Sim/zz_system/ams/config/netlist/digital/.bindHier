@@ -6,10 +6,10 @@
 ("PRIMLIB" "ne" "spectre" "spectre") nil
 ("final_project" "SR_latch" "schematic" "schematic") nil
 ("analogLib" "vpulse" "spectre" "spectre") nil
-("final_project" "EE140_Fa19_digital" "schematic" "schematic") nil
 ("PRIMLIB" "pe" "spectre" "spectre") nil
 ("analogLib" "switch" "spectre" "spectre") nil
 ("ee140_gsi" "SAR_FSM" "functional" "functional") nil
+("ee140_gsi" "EE140_Fa19_digital" "schematic" "schematic") nil
 ("analogLib" "ipulse" "spectre" "spectre") nil
 ("final_project" "DREG" "schematic" "schematic") (("I14" ("final_project" "system" "schematic" "schematic")))
 ("ee140_gsi" "invr_dupe" "schematic" "schematic") nil
@@ -18,7 +18,7 @@
 ("analogLib" "cap" "spectre" "spectre") nil
 ("final_project" "ADC" "schematic" "schematic") nil
 ("ee140_gsi" "NA2HDX0_dupe" "schematic" "schematic") nil
-("final_project" "system" "schematic" "schematic") (("I28" ("final_project" "zz_system" "schematic" "schematic")))
+("final_project" "system" "schematic" "schematic") (("I27" ("final_project" "zz_system" "schematic" "schematic")))
 ("final_project" "ADC_ctrl" "schematic" "schematic") nil
 ("final_project" "AREG" "schematic" "schematic") (("I13" ("final_project" "system" "schematic" "schematic")))
 ("final_project" "VBATDIV4" "schematic" "schematic") (("I11" ("final_project" "system" "schematic" "schematic")))

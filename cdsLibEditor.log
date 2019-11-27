@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: cdsLibEditor version 6.1.7 - CAT35 10/30/2018 21:09 (sjfnl050) $
 \o Sub version:		sub-version  s231 
-\o Arguments:		-cdslib /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/cds.lib -mpssession virtuoso1551 -mpshost eda-7.EECS.Berkeley.EDU 
+\o Arguments:		-display :54 -mpssession virtuoso15052 -mpshost eda-7.EECS.Berkeley.EDU -namespace CDBA -cdslib /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/cds.lib 
 \o Working Directory:	eda-7.EECS.Berkeley.EDU:/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project
 \o 64-bit offsets
 \a nrSetWindowVisibility(cdsLibEditor "show")
@@ -8,7 +8,7 @@
 \a nrSetCurrentWindow(cdsLibEditor)
 \a nrListItemAction(cdsLibEditor->mainTable 0 0)
 \o Active cell: 0 0 "analogLib"
-\a nrResizeWindow(cdsLibEditor list(102 887 500 400))
+\a nrResizeWindow(cdsLibEditor list(1884 303 500 400))
 \a cdsLibEditor->fileExitButton->value = t
 \a nrSetWindowVisibility(cdsLibEditor "hide")
 \a exit(0)

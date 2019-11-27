@@ -12,10 +12,10 @@ hnlLastStopCellInfo = '(
                        )
 hnlLastNetlistConfig = t
 hnlLastConfigFileVersion = 3
-hnlLastConfigFileTimeStamp = "1574812582"
+hnlLastConfigFileTimeStamp = "1574822139"
 hnlLastSupportNewConfig = t
 hnlLastConfigInfo = '( 
-( "final_project" "zz_system" "config" 3 "1574812582" )
+( "final_project" "zz_system" "config" 3 "1574822139" )
 ) 
 hnlLastMaxNameLength = 2000
 hnlLastNamePrefix = "hnl_"
@@ -1629,18 +1629,17 @@ hnlLastNetNameDifferentFrom = '( "instance" "parameter" )
 hnlLastTermNameDifferentFrom = '( )
 hnlLastParamNameDifferentFrom = '( "net" )
 hnlLastLibInfo = '(
-                    ( "final_project" "1574807782" )
+                    ( "final_project" "1574822109" )
                    ( "ee140_gsi" "1574458521" )
                   )
 hnlLastConstants = '(
                       ""
                     )
 hnlLastDesignVars = '(
-                      "vdd"
+                      "cap"
                       "vdda"
                       "vin"
                       "vref"
-                      "cap"
                       "VIN_1"
                       "VIN_0"
                       "VBAT"

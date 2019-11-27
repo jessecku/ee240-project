@@ -62,12 +62,12 @@ instMap,*ADC,*I7,*I7
 instMaster,*ADC,*I7,*final_project_ADC_ctrl_schematic,*ADC_ctrl
 instMap,*ADC,*I8,*I8
 instMaster,*ADC,*I8,*final_project_inverter_schematic,*inverter
-netMap,*ADC,*B<2>,*B_2
-netMap,*ADC,*B<3>,*B_3
 netMap,*ADC,*B<4>,*B_4
 netMap,*ADC,*B<5>,*B_5
 netMap,*ADC,*B<6>,*B_6
 netMap,*ADC,*B<7>,*B_7
+netMap,*ADC,*B<3>,*B_3
+netMap,*ADC,*B<2>,*B_2
 netMap,*ADC,*B<1>,*B_1
 netMap,*ADC,*B<0>,*B_0
 netMap,*ADC,*D<7>,*D_7

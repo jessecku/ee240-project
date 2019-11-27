@@ -1,9 +1,9 @@
     I8 ADC
     V2 (net011 VSS) vsource type=pulse val0=0 val1=vin rise=TRISE_BAT
-    V1 (net016 VSS) vsource type=pulse val0=0 val1=vref rise=TRISE_BAT
+    V1 (net019 VSS) vsource type=pulse val0=0 val1=vref rise=TRISE_BAT
     V0 (net013 VSS) vsource type=pulse val0=0 val1=vdda rise=TRISE_BAT
     R2 (VIN net011) resistor r=RBAT
-    R1 (VREF_ADC net016) resistor r=RBAT
+    R1 (VREF_ADC net019) resistor r=RBAT
     R0 (VDDA net013) resistor r=RBAT
 ends system
 // End of subcircuit definition.

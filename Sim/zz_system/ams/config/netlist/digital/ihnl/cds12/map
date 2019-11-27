@@ -1,6 +1,6 @@
 ( ( defbus
-( "EXT_IN" 0 1  "EXT_IN" 0 1  )
 ( "D" 7 0  "D" 7 0  )
+( "EXT_IN" 0 1  "EXT_IN" 0 1  )
 ( "G" 2 0  "G" 2 0  )
 ( "S" 1 0  "S" 1 0  )
  )

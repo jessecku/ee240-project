@@ -8,8 +8,7 @@ desvar,*TRISE_BAT,*TRISE_BAT,*10n
 desvar,*VBAT,*VBAT,*1.6
 desvar,*VIN_0,*VIN_0,*0
 desvar,*VIN_1,*VIN_1,*1
-desvar,*cap,*cap,*100p
 desvar,*vref,*vref,*1
 desvar,*vin,*vin,*0.4
 desvar,*vdda,*vdda,*1.2
-desvar,*vdd,*vdd,*1.2
+desvar,*cap,*cap,*100p

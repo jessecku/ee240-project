@@ -4,7 +4,7 @@
 
 
 // Binding AMSD Control Block for config final_project.zz_system:config
-// Created On: Nov 26 16:48:09 2019
+// Created On: Nov 26 19:00:31 2019
 // NOTE      : DO NOT change this system generated file.
 
 amsd {
@@ -17,7 +17,7 @@ amsd {
 	config cell="BGR" lib="final_project" view="schematic"
 	config cell="vsource" view="analogtext"
 	config cell="PGA" lib="final_project" view="schematic"
-	config cell="EE140_Fa19_digital" lib="final_project" view="schematic"
+	config cell="EE140_Fa19_digital" lib="ee140_gsi" view="schematic"
 	config cell="SR_latch" lib="final_project" view="schematic"
 	config cell="SAR_FSM" lib="ee140_gsi" view="functional"
 	config cell="ne" view="analogtext"

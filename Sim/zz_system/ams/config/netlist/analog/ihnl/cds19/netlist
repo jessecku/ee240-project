@@ -3,8 +3,11 @@
 // Cell name: zz_system
 // View name: schematic
 // Inherited view list: schematic
-I28 system
+I27 system
 X_GSI EE140_Fa19_digital
+V9 (PHI2_temp 0) vsource type=pulse val0=0 val1=vdda delay=2u rise=10n
+V8 (PHI1_temp 0) vsource type=pulse val0=0 val1=vdda rise=10n fall=10n \
+        width=2u
 V3 (net1 0) vsource type=pulse edgetype=halfsine val0=0 val1=VBAT \
         rise=TRISE_BAT
 V1 (CLK 0) vsource type=pulse edgetype=halfsine val0=0 val1=1.8 period=1u \

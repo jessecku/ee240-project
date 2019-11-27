@@ -1,6 +1,6 @@
 HEADER
 "PSFversion" "1.00"
-"Time Stamp" "Nov 26 16:47:57 2019"
+"Time Stamp" "Nov 26 19:00:18 2019"
 TYPE
 "variable" STRUCT(
 "value" FLOAT DOUBLE
@@ -16,10 +16,9 @@ VALUE
 "VBAT" "variable" ( 1.6 ) PROP( )
 "VIN_0" "variable" ( 0 ) PROP( )
 "VIN_1" "variable" ( 1 ) PROP( )
-"cap" "variable" ( 100e-12 ) PROP( )
 "vref" "variable" ( 1 ) PROP( )
 "vin" "variable" ( 400e-3 ) PROP( )
 "vdda" "variable" ( 1.2 ) PROP( )
-"vdd" "variable" ( 1.2 ) PROP( )
+"cap" "variable" ( 100e-12 ) PROP( )
 "temp" "variable" ( 27 ) PROP( )
 END

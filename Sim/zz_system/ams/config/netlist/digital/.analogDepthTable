@@ -3,10 +3,10 @@
 ("final_project" "zz_system" "schematic" nil) 15
 ("final_project" "mux2" "schematic" nil) 2
 ("final_project" "SR_latch" "schematic" nil) 2
-("final_project" "EE140_Fa19_digital" "schematic" nil) 6
 ("final_project" "COMP" "schematic" nil) 3
 ("final_project" "inverter" "schematic" nil) 1
 ("ee140_gsi" "SAR_DFF" "schematic" nil) 2
+("ee140_gsi" "EE140_Fa19_digital" "schematic" nil) 6
 ("ee140_gsi" "NA2HDX0_dupe" "schematic" nil) 1
 ("final_project" "ADC" "schematic" nil) 7
 ("final_project" "system" "schematic" nil) 8

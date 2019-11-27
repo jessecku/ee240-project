@@ -1,4 +1,4 @@
-cellMap,*EE140_Fa19_digital,*EE140_Fa19_digital,*final_project,*schematic
+cellMap,*EE140_Fa19_digital,*EE140_Fa19_digital,*ee140_gsi,*schematic
 netMap,*EE140_Fa19_digital,*gnd!,*0
 instMap,*EE140_Fa19_digital,*I6,*I6
 instMaster,*EE140_Fa19_digital,*I6,*ee140_gsi_invr_dupe_schematic,*invr_dupe
