@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.7 - CAT35 10/30/2018 21:08 (sjfnl050) $
 \o Sub version:		sub-version  s231 
-\o Arguments:		-mpssession virtuoso15052 -mpshost eda-7.EECS.Berkeley.EDU 
+\o Arguments:		-mpssession virtuoso22203 -mpshost eda-7.EECS.Berkeley.EDU 
 \o Working Directory:	eda-7.EECS.Berkeley.EDU:/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project
 \o 64-bit offsets
 \o Qt version: 		4.8.5
@@ -14,168 +14,188 @@
 \o Library Manager customization server connected.
 \a cdsLibManager->libListBox->value = "final_project"
 \a cdsLibManager->libLineEdit->value = "final_project"
-\a cdsLibManager->cellListBox->value = "zz_system"
-\a cdsLibManager->cellLineEdit->value = "zz_system"
-\a cdsLibManager->libListBox->value = "ee140_gsi"
-\a cdsLibManager->libLineEdit->value = "ee140_gsi"
+\a cdsLibManager->cellListBox->value = "SAR_DFF"
+\a cdsLibManager->cellLineEdit->value = "SAR_DFF"
+\a cdsLibManager->cellListBox->value = "mux2"
+\a cdsLibManager->cellLineEdit->value = "mux2"
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "zz_EE140_Fa19_system"
-\a cdsLibManager->cellLineEdit->value = "zz_EE140_Fa19_system"
-\a lmgrLogShowPopup("mainListPopup1" 100 147 2 "zz_EE140_Fa19_system")
-\a cdsLibManager->copySimpleButton->value = t
-\a basicCopyForm->CategoryCellsEdit->value = "*"
-\a basicCopyForm->CellsSkipLibraries->value = t
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
-\a basicCopyForm->ViewsSkipLibraries->value = t
-\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
-\a basicCopyForm->CopyFromLibrary->value = "AnalogLibs"
-\a basicCopyForm->CopyToLibrary->value = "AnalogLibs"
-\a basicCopyForm->CopyFromLibrary->value = "ee140_gsi"
-\a basicCopyForm->CopyFromCell->value = "zz_EE140_Fa19_system"
-\a basicCopyForm->CopyToLibrary->value = "ee140_gsi"
-\a basicCopyForm->CopyToCell->value = "zz_EE140_Fa19_system"
-\a basicCopyForm->CellsViewsToCopy->value = "ams_state1 config schematic"
-\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
-\a basicCopyForm->ViewsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
-\a nrSetWindowVisibility(basicCopyForm "show")
-\a nrSetCurrentWindow(basicCopyForm)
-\a nrResizeWindow(basicCopyForm list(1176 285 444 642))
-\a basicCopyForm->CopyToLibrary->value = "final_project"
-\a basicCopyForm->CopyToLibrary->value = "final_project"
-\a basicCopyForm->CopyToCell->value = "zz_system"
-\a basicCopyForm->OK->value = t
-\o Beginning simple copy to library "final_project".
-\o Processing files to be copied...
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrSetCurrentWindow(workingDialogForm)
-\o ERROR (CLM-173): One or more of the following problems have occurred:\n      1. The source file does not exist.\n      2. A destination file will be overwritten.\n      3. A destination file is checked out.\n      4. A destination file is opened for edit.\n      5. A destination file conflicts with another.\n      6. A source library file is not valid in a different library.\n      7. A source OpenAccess cellview master file has zero size.
-\a nrSetWindowVisibility(copyProblemsDialog "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(copyProblemsDialog)
-\a nrResizeWindow(workingDialogForm list(6 27 274 133))
-\a nrResizeWindow(copyProblemsDialog list(986 379 825 441))
-\a copyProblemsDialog->overwriteAll->value = t
-\a copyProblemsDialog->OK->value = t
-\a nrSetCurrentWindow(basicCopyForm)
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(workingDialogForm)
-\a nrResizeWindow(workingDialogForm list(1261 454 274 133))
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "AnalogLibs CadenceLibs D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMV DigitalLibs GATES GATES_5V GATES_HD GATES_HD5V GATES_PCELL PRIMLIB TECH_XT018 TECH_XT018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib analogLib avTech basic cdsDefTechLib final_project functional sample sbaLib xfab_connectLib"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "final_project"
-\a cdsLibManager->libLineEdit->value = "final_project"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "zz_system"
-\a cdsLibManager->cellLineEdit->value = "zz_system"
-\a cdsLibManager->viewListBox->value = "ams_state1"
-\a cdsLibManager->viewLineEdit->value = "ams_state1"
+\a cdsLibManager->cellListBox->value = "mux2"
+\a cdsLibManager->cellLineEdit->value = "mux2"
 \o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrListItemAction(cdsLibManager->cellListBox 13 0)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "final_project"
 \a cdsLibManager->libLineEdit->value = "final_project"
-\a cdsLibManager->cellListBox->value = "zz_system"
-\a cdsLibManager->cellLineEdit->value = "zz_system"
-\a cdsLibManager->viewListBox->value = "ams_state1"
-\a cdsLibManager->viewLineEdit->value = "ams_state1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "ams_state1"
-\a cdsLibManager->viewLineEdit->value = "ams_state1"
+\a cdsLibManager->cellListBox->value = "mux2"
+\a cdsLibManager->cellLineEdit->value = "mux2"
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "ams_state1"
-\a cdsLibManager->viewLineEdit->value = "ams_state1"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->libListBox->value = "final_project"
 \a cdsLibManager->libLineEdit->value = "final_project"
-\a cdsLibManager->cellListBox->value = "zz_system"
-\a cdsLibManager->cellLineEdit->value = "zz_system"
-\a cdsLibManager->viewListBox->value = "ams_state1"
-\a cdsLibManager->viewLineEdit->value = "ams_state1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "ams_state1"
-\a cdsLibManager->viewLineEdit->value = "ams_state1"
+\a cdsLibManager->cellListBox->value = "mux2"
+\a cdsLibManager->cellLineEdit->value = "mux2"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "mux"
+\a cdsLibManager->cellLineEdit->value = "mux"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 12 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "final_project"
+\a cdsLibManager->libLineEdit->value = "final_project"
+\a cdsLibManager->cellListBox->value = "mux"
+\a cdsLibManager->cellLineEdit->value = "mux"
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "mux2"
+\a cdsLibManager->cellLineEdit->value = "mux2"
 \a cdsLibManager->cellListBox->value = "system"
 \a cdsLibManager->cellLineEdit->value = "system"
+\a cdsLibManager->cellListBox->value = "zz_ADC"
+\a cdsLibManager->cellLineEdit->value = "zz_ADC"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "ADC_ctrl"
+\a cdsLibManager->cellLineEdit->value = "ADC_ctrl"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a lmgrLogShowPopup("mainListPopup2" 61 11 2 "schematic")
-\a cdsLibManager->editPropertiesButton->value = t
-\o MPS request: edit property
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a lmgrLogShowPopup("mainListPopup2" 104 26 2 "")
+\a cdsLibManager->cellListBox->value = "AREG"
+\a cdsLibManager->cellLineEdit->value = "AREG"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a lmgrLogShowPopup("mainListPopup1" 42 98 2 "system")
-\a cdsLibManager->editPropertiesButton->value = t
-\o MPS request: edit property
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "zz_system"
-\a cdsLibManager->cellLineEdit->value = "zz_system"
-\a lmgrLogShowPopup("mainListPopup1" 35 196 2 "zz_system")
-\a cdsLibManager->editPropertiesButton->value = t
-\o MPS request: edit property
-\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "BGR"
+\a cdsLibManager->cellLineEdit->value = "BGR"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "COMP"
+\a cdsLibManager->cellLineEdit->value = "COMP"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "DREG"
+\a cdsLibManager->cellLineEdit->value = "DREG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "EE140_Fa19_digital"
+\a cdsLibManager->cellLineEdit->value = "EE140_Fa19_digital"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "COMP"
+\a cdsLibManager->cellLineEdit->value = "COMP"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 4 0)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->libListBox->value = "final_project"
 \a cdsLibManager->libLineEdit->value = "final_project"
-\a cdsLibManager->cellListBox->value = "zz_system"
-\a cdsLibManager->cellLineEdit->value = "zz_system"
+\a cdsLibManager->cellListBox->value = "COMP"
+\a cdsLibManager->cellLineEdit->value = "COMP"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->editLibraryPathButton->value = t
-\o Starting the cdsLibEditor...
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->fileExitButton->value = t
+\a cdsLibManager->cellListBox->value = "ADC"
+\a cdsLibManager->cellLineEdit->value = "ADC"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 0 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "final_project"
+\a cdsLibManager->libLineEdit->value = "final_project"
+\a cdsLibManager->cellListBox->value = "ADC"
+\a cdsLibManager->cellLineEdit->value = "ADC"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "PGA"
+\a cdsLibManager->cellLineEdit->value = "PGA"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "SAR_DFF"
+\a cdsLibManager->cellLineEdit->value = "SAR_DFF"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "SR_latch"
+\a cdsLibManager->cellLineEdit->value = "SR_latch"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "VBATDIV4"
+\a cdsLibManager->cellLineEdit->value = "VBATDIV4"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "EE140_Fa19_digital"
+\a cdsLibManager->cellLineEdit->value = "EE140_Fa19_digital"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "SAR_DFF"
+\a cdsLibManager->cellLineEdit->value = "SAR_DFF"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "EE140_Fa19_digital"
+\a cdsLibManager->cellLineEdit->value = "EE140_Fa19_digital"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\o MPS service: shutdown
 \o libManager is exiting.
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a exit(0)
