@@ -1,4 +1,4 @@
-Begin Netlisting Nov 26 19:00:18 2019
+Begin Netlisting Nov 27 11:49:23 2019
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
 
 "/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/digital/testfixture.verilog" file. To print the stimulus name
@@ -100,13 +100,5 @@ SR_latch                    schematic
 inverter                    schematic                             
 
 ---------- End of netlist configuration information   ----------
-WARNING (OSSHNL-225): The design variable 'VDDA', used in the last netlisting
-session in the current
-run directory is not used in this netlisting session. The
-netlist(s) generated
-in the last netlisting session cannot be reused for
-incremental netlisting.
-Therefore re-netlisting the design.
-
 Running netlist assembly..
-End netlisting Nov 26 19:00:31 2019
+End netlisting Nov 27 11:49:35 2019

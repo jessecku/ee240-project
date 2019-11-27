@@ -15,8 +15,4 @@
 ( "EXT_IN<1>" "EXT_IN_1" )
 ( "EXT_IN<0>" "EXT_IN_0" )
  )
-( model
-( "ADC" "ADC" )
-( "system" "system" )
- )
  )

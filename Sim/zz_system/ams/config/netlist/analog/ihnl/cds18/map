@@ -8,10 +8,4 @@
 ( "DAC<1>" "DAC_1" )
 ( "DAC<4>" "DAC_4" )
  )
-( model
-( "clk_nonoverlapping" "clk_nonoverlapping" )
-( "EE140_Fa19_digital" "EE140_Fa19_digital" )
-( "SAR_DFF" "SAR_DFF" )
-( "invr_dupe" "invr_dupe" )
- )
  )

@@ -16,8 +16,4 @@
 ( "S<2>" "S_2" )
 ( "B<5>" "B_5" )
  )
-( model
-( "ADC_ctrl" "ADC_ctrl" )
-( "mux2" "mux2" )
- )
  )

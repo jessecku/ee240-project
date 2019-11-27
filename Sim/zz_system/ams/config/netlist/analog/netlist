@@ -122,7 +122,7 @@ subckt ADC
     W10 (net09 B_2 CMP VSS) relay ropen=1T rclosed=1.0
     W3 (net26 B_0 CMP VSS) relay ropen=1T rclosed=1.0
     W2 (net26 VIN LD VSS) relay ropen=1T rclosed=1.0
-    W23 (net071 B_0 CMP VSS) relay ropen=1T rclosed=1.0
+    W23 (net071 VSS CMP VSS) relay ropen=1T rclosed=1.0
     W0 (VREF ADC_INN LD VSS) relay ropen=1T rclosed=1.0
     C0 (ADC_INN net071) capacitor c=cap
     C8 (ADC_INN net04) capacitor c=128*cap

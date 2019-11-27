@@ -16,10 +16,4 @@
 ( "B<7>" "B_7" )
 ( "B<5>" "B_5" )
  )
-( model
-( "ADC" "ADC" )
-( "COMP" "COMP" )
-( "inverter" "inverter" )
-( "ADC_ctrl" "ADC_ctrl" )
- )
  )

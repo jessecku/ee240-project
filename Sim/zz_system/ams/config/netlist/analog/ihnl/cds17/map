@@ -16,8 +16,4 @@
 ( "X<5>" "X_5" )
 ( "X<4>" "X_4" )
  )
-( model
-( "SAR_DFF" "SAR_DFF" )
-( "DFRRSHDX0_dupe" "DFRRSHDX0_dupe" )
- )
  )

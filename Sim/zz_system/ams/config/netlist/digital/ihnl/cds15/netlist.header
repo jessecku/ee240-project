@@ -1,6 +1,6 @@
 // Library - ee140_gsi, Cell - clk_nonoverlapping, View - schematic
 // LAST TIME SAVED: Nov 22 13:35:03 2019
-// NETLIST TIME: Nov 26 19:00:23 2019
+// NETLIST TIME: Nov 27 11:49:29 2019
 `timescale 1ns / 1ps 
 
 `worklib ee140_gsi

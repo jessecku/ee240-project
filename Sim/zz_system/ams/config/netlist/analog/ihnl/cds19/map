@@ -16,9 +16,4 @@
 ( "EXT_IN<1>" "EXT_IN_1" )
 ( "EXT_IN<0>" "EXT_IN_0" )
  )
-( model
-( "zz_system" "zz_system" )
-( "EE140_Fa19_digital" "EE140_Fa19_digital" )
-( "system" "system" )
- )
  )

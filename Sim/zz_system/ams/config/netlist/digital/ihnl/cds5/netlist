@@ -1,13 +1,13 @@
 // Library - final_project, Cell - ADC, View - schematic
-// LAST TIME SAVED: Nov 26 18:49:56 2019
-// NETLIST TIME: Nov 26 19:00:23 2019
+// LAST TIME SAVED: Nov 27 10:51:58 2019
+// NETLIST TIME: Nov 27 11:49:28 2019
 `timescale 1ns / 1ps 
 
 `worklib final_project
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="final_project", dfII_cell="ADC", dfII_view="schematic", worklib_name="final_project", view_name="schematic", last_save_time="Nov 26 18:49:56 2019" *)
+(* dfII_lib="final_project", dfII_cell="ADC", dfII_view="schematic", worklib_name="final_project", view_name="schematic", last_save_time="Nov 27 10:51:58 2019" *)
 
 module ADC (COMP_OUT, VDD, VSS, CLK, CMP, D, LD, VIN, VREF);
 

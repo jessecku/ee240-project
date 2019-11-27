@@ -3,8 +3,8 @@ ADC I8 ( .CMP(CLK_PGA2), .LD(CLK_PGA1), .VSS(VSS), .VDD(VDDA),
     .COMP_OUT(COMP), .D(D[7:0]), .VIN(VIN), .VREF(VREF_ADC), 
     .CLK(CLK_ADC));
 
-PGA I9 ( .G(G[2:0]), .VSS(VSS), .VDD(VDDA), .VOUT(VIN), .CLK(CLK_PGA1), 
-    .VIN(net4));
+PGA I9 ( .G(G[2:0]), .VSS(VSS), .VDD(VDDA), .VOUT(net015), 
+    .CLK(CLK_PGA1), .VIN(net4));
 
 mux I10 ( net4, VDDA, VSS, EXT_IN[0], EXT_IN[1], VBATDIV4, VPTAT, 
     S[1:0]);

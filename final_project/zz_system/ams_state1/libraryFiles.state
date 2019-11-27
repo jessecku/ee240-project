@@ -1,5 +1,5 @@
-viewName "module"
 libName ""
+viewName "module"
 libDirs ""
 libFiles ""
 extDirs ".v"
