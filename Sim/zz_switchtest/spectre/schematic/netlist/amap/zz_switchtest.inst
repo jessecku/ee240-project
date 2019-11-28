@@ -1,5 +1,7 @@
 HEADER
 "PSFversion" "1.00"
-"W0n" "analogLib_switch_spectre"
-"V1n V0n" "analogLib_vdc_spectre"
-"R0n" "analogLib_res_spectre"
+"I0n" "sw_cmos"
+"I1n" "sw_pmos"
+"I2n" "sw_nmos"
+"R3n R1n R0n" "analogLib_res_spectre"
+"V4n V3n V2n V1n V0n" "analogLib_vdc_spectre"

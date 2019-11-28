@@ -1,11 +1,20 @@
 CADENCE IHNL11140
 $model
+final_project/sw_cmos/schematic sw_cmos
 final_project/zz_switchtest/schematic zz_switchtest
+final_project/sw_nmos/schematic sw_nmos
+final_project/inverter/schematic inverter
+final_project/sw_pmos/schematic sw_pmos
 $endmodel
 $net
 gnd! 0
 $endnet
 $param
 vin vin
+test test
 control control
+ctrl_n ctrl_n
+ctrl_c ctrl_c
+supply supply
+ctrl_p ctrl_p
 $endparam

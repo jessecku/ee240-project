@@ -5,8 +5,8 @@ Copyright (C) 1989-2017 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: ee140-abc   Host: eda-7.EECS.Berkeley.EDU   HostID: 2080B086   PID: 26042
-Memory  available: 6.7414 GB  physical: 25.2693 GB
+User: ee140-abc   Host: eda-7.EECS.Berkeley.EDU   HostID: 2080B086   PID: 28705
+Memory  available: 3.7947 GB  physical: 25.2693 GB
 Linux   : CentOS Linux release 7.7.1908 (Core)
 CPU Type: Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
@@ -15,11 +15,11 @@ CPU Type: Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz
         1:       4 [1600.0] ( 12 ),  5 [1600.0] ( 13 ),  6 [1600.0] ( 14 )
                  7 [1600.0] ( 15 )
         
-System load averages (1min, 5min, 15min) : 6.4 %, 6.1 %, 5.9 %
+System load averages (1min, 5min, 15min) : 3.3 %, 4.4 %, 5.3 %
 Hyperthreading is enabled
 
 
-Simulating `input.scs' on eda-7.EECS.Berkeley.EDU at 7:41:01 PM, Sun Nov 24, 2019 (process id: 26042).
+Simulating `input.scs' on eda-7.EECS.Berkeley.EDU at 2:29:48 PM, Thur Nov 28, 2019 (process id: 28705).
 Current working directory: /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_switchtest/spectre/schematic/netlist
 Environment variable:
     SPECTRE_DEFAULTS=-E
@@ -317,27 +317,27 @@ Reading file:  /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/l
 Reading file:  /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rxw2ti.scs
 Reading file:  /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rdn5_dpc.scs
 Reading file:  /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rdn5_pw4.scs
-Time for NDB Parsing: CPU = 483.007 ms, elapsed = 1.03745 s.
-Time accumulated: CPU = 529.279 ms, elapsed = 1.03746 s.
-Peak resident memory used = 46.3 Mbytes.
+Time for NDB Parsing: CPU = 419.979 ms, elapsed = 559.531 ms.
+Time accumulated: CPU = 448.885 ms, elapsed = 559.541 ms.
+Peak resident memory used = 42.9 Mbytes.
 
 
 The CPU load for active processors is :
-        Spectre  0 (15.8 %)      1 (12.6 %)      2 (18.8 %)      3 (21.6 %)
-                 4 (2.9 %)       8 (2.9 %)       9 (11.7 %)     10 (14.7 %)
-                11 (27.5 %)     12 (22.5 %)     13 (24.3 %)     14 (6.7 %)
+        Spectre  0 (20.4 %)      1 (19.3 %)      2 (7.5 %)       3 (27.3 %)
+                 5 (16.4 %)      6 (1.8 %)       9 (12.7 %)     10 (25.5 %)
+                12 (20.0 %)     13 (29.1 %)     14 (14.3 %)     15 (17.9 %)
         Other   
 Reading link:  /share/instsww/cadence/MMSIM151/tools.lnx86/spectre/etc/ahdl/discipline.h
 Reading file:  /share/instsww/cadence/MMSIM.15.10.803/tools.lnx86/spectre/etc/ahdl/disciplines.vams
 Reading link:  /share/instsww/cadence/MMSIM151/tools.lnx86/spectre/etc/ahdl/constants.h
 Reading file:  /share/instsww/cadence/MMSIM.15.10.803/tools.lnx86/spectre/etc/ahdl/constants.vams
-Time for Elaboration: CPU = 37.14 ms, elapsed = 45.0418 ms.
-Time accumulated: CPU = 566.825 ms, elapsed = 1.0829 s.
-Peak resident memory used = 53.6 Mbytes.
+Time for Elaboration: CPU = 36.052 ms, elapsed = 37.4491 ms.
+Time accumulated: CPU = 485.249 ms, elapsed = 597.299 ms.
+Peak resident memory used = 50.7 Mbytes.
 
-Time for EDB Visiting: CPU = 487 us, elapsed = 488.043 us.
-Time accumulated: CPU = 567.574 ms, elapsed = 1.08365 s.
-Peak resident memory used = 54 Mbytes.
+Time for EDB Visiting: CPU = 1.18 ms, elapsed = 1.17993 ms.
+Time accumulated: CPU = 486.714 ms, elapsed = 598.762 ms.
+Peak resident memory used = 51.2 Mbytes.
 
 
 Global user options:
@@ -365,10 +365,10 @@ Global user options:
 Scoped user options:
 
 Circuit inventory:
-              nodes 3
-              relay 1     
-           resistor 1     
-            vsource 2     
+              nodes 10
+              bsim4 8     
+           resistor 3     
+            vsource 5     
 
 Analysis and control statement inventory:
                  dc 1     
@@ -379,9 +379,9 @@ Output statements:
            .measure 0     
                save 1     
 
-Time for parsing: CPU = 3.519 ms, elapsed = 7.05504 ms.
-Time accumulated: CPU = 571.351 ms, elapsed = 1.09097 s.
-Peak resident memory used = 55.1 Mbytes.
+Time for parsing: CPU = 3.981 ms, elapsed = 8.55184 ms.
+Time accumulated: CPU = 490.937 ms, elapsed = 607.555 ms.
+Peak resident memory used = 52.4 Mbytes.
 
 ~~~~~~~~~~~~~~~~~~~~~~
 Pre-Simulation Summary
@@ -405,11 +405,11 @@ Important parameter values:
     tnom = 27 C
     tempeffects = all
     gmindc = 1 pS
-Convergence achieved in 18 iterations.
-DC simulation time: CPU = 574.985 ms, elapsed = 1.10087 s.
-Total time required for dc analysis `dcOp': CPU = 3.267 ms, elapsed = 9.53984 ms.
-Time accumulated: CPU = 575.641 ms, elapsed = 1.10293 s.
-Peak resident memory used = 56.2 Mbytes.
+Convergence achieved in 5 iterations.
+DC simulation time: CPU = 495.042 ms, elapsed = 616.654 ms.
+Total time required for dc analysis `dcOp': CPU = 3.722 ms, elapsed = 8.7142 ms.
+Time accumulated: CPU = 495.415 ms, elapsed = 618.257 ms.
+Peak resident memory used = 53.7 Mbytes.
 
 dcOpInfo: writing operating point information to rawfile.
 
@@ -433,9 +433,9 @@ subckts: writing subcircuits to rawfile.
 
 Opening the PSFASCII file ../psf/subckts.info.subckts ...
 
-Aggregate audit (7:41:02 PM, Sun Nov 24, 2019):
-Time used: CPU = 608 ms, elapsed = 1.19 s, util. = 51.1%.
-Time spent in licensing: elapsed = 43.7 ms.
-Peak memory used = 57.2 Mbytes.
-Simulation started at: 7:41:01 PM, Sun Nov 24, 2019, ended at: 7:41:02 PM, Sun Nov 24, 2019, with elapsed time (wall clock): 1.19 s.
+Aggregate audit (2:29:49 PM, Thur Nov 28, 2019):
+Time used: CPU = 532 ms, elapsed = 690 ms, util. = 77%.
+Time spent in licensing: elapsed = 40.3 ms, percentage of total = 5.85%.
+Peak memory used = 55.4 Mbytes.
+Simulation started at: 2:29:48 PM, Thur Nov 28, 2019, ended at: 2:29:49 PM, Thur Nov 28, 2019, with elapsed time (wall clock): 690 ms.
 spectre completes with 0 errors, 1 warning, and 0 notices.

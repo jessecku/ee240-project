@@ -2,7 +2,7 @@ HEADER
 "PSFversion" "1.00"
 "simulator" "spectre"
 "version" "15.1.0.803.isr18"
-"date" "3:38:04 PM, Tue Nov 26, 2019"
+"date" "2:30:15 PM, Thur Nov 28, 2019"
 "design" "// Generated for: spectre"
 "analysis type" "info.subckts"
 "analysis name" "subckts"
@@ -17,31 +17,7 @@ TYPE
 "key" "sub"
 )
 VALUE
-"rdn5_pw4" "subckt" (
-""
-""
-)
-"dfwpsj1_16c" "subckt" (
-""
-""
-)
-"csft6a" "subckt" (
-""
-""
-)
 "dzbti" "subckt" (
-""
-""
-)
-"dfwdphd" "subckt" (
-""
-""
-)
-"dzati" "subckt" (
-""
-""
-)
-"dnw" "subckt" (
 ""
 ""
 )
@@ -49,35 +25,79 @@ VALUE
 ""
 ""
 )
-"mux2" "subckt" (
-""
-"S<0> VDD VSS in0 in1 out"
-)
-"qpvb5" "subckt" (
+"csf2p" "subckt" (
 ""
 ""
 )
-"cmmh6t" "subckt" (
+"pmvd" "subckt" (
 ""
 ""
 )
-"dfwdnt" "subckt" (
+"csf3" "subckt" (
 ""
 ""
 )
-"nhsj1_7" "subckt" (
+"rpp1" "subckt" (
 ""
 ""
 )
-"nisj1_16_q1" "subckt" (
+"dfwdpc" "subckt" (
 ""
 ""
 )
-"cmmh4" "subckt" (
+"phvrc" "subckt" (
 ""
 ""
 )
-"dfwnsj1_16c" "subckt" (
+"dn5" "subckt" (
+""
+""
+)
+"nd5" "subckt" (
+""
+""
+)
+"phvta" "subckt" (
+""
+""
+)
+"ctmmh5t" "subckt" (
+""
+""
+)
+"tag_200v" "subckt" (
+""
+""
+)
+"cmmh5t" "subckt" (
+""
+""
+)
+"cmmh4t" "subckt" (
+""
+""
+)
+"dfwnsj1_7" "subckt" (
+""
+""
+)
+"tag_m100v" "subckt" (
+""
+""
+)
+"sw_pmos" "subckt" (
+""
+"VSS io0 io1 sw_ctrl VDD"
+)
+"csf4a" "subckt" (
+""
+""
+)
+"csft6" "subckt" (
+""
+""
+)
+"drxw" "subckt" (
 ""
 ""
 )
@@ -89,11 +109,7 @@ VALUE
 ""
 ""
 )
-"nn5" "subckt" (
-""
-""
-)
-"rm2" "subckt" (
+"dfwdnu" "subckt" (
 ""
 ""
 )
@@ -101,463 +117,7 @@ VALUE
 ""
 ""
 )
-"csandwt4" "subckt" (
-""
-""
-)
-"dnpati" "subckt" (
-""
-""
-)
-"csf5" "subckt" (
-""
-""
-)
-"rdp5" "subckt" (
-""
-""
-)
-"cmm3t" "subckt" (
-""
-""
-)
-"dfwdphb" "subckt" (
-""
-""
-)
-"nhvre" "subckt" (
-""
-""
-)
-"qpve" "subckt" (
-""
-""
-)
-"cmm5t" "subckt" (
-""
-""
-)
-"csf3p" "subckt" (
-""
-""
-)
-"dnw5mva" "subckt" (
-""
-""
-)
-"csft4a" "subckt" (
-""
-""
-)
-"dza" "subckt" (
-""
-""
-)
-"nel" "subckt" (
-""
-""
-)
-"cmmh4t" "subckt" (
-""
-""
-)
-"cdmmh5" "subckt" (
-""
-""
-)
-"phvrc" "subckt" (
-""
-""
-)
-"dfwdphc" "subckt" (
-""
-""
-)
-"rdp" "subckt" (
-""
-""
-)
-"p_rm2" "subckt" (
-""
-""
-)
-"DFRRSHDX0_dupe" "subckt" (
-""
-"C D Q QN RN SN VDD VSS"
-)
-"cdmmh4" "subckt" (
-""
-""
-)
-"nn5_jf" "subckt" (
-""
-""
-)
-"cmm6t" "subckt" (
-""
-""
-)
-"tag_60v" "subckt" (
-""
-""
-)
-"csandwt3" "subckt" (
-""
-""
-)
-"dpp7" "subckt" (
-""
-""
-)
-"tag_25v" "subckt" (
-""
-""
-)
-"dfwdphf" "subckt" (
-""
-""
-)
-"nhvtb" "subckt" (
-""
-""
-)
-"p_rm4" "subckt" (
-""
-""
-)
-"dfwdnha" "subckt" (
-""
-""
-)
-"dfwdnhf" "subckt" (
-""
-""
-)
-"pfuse" "subckt" (
-""
-""
-)
-"dnp7" "subckt" (
-""
-""
-)
-"pel_5" "subckt" (
-""
-""
-)
-"dfwnsj1_7" "subckt" (
-""
-""
-)
-"csf4a" "subckt" (
-""
-""
-)
-"dpp6" "subckt" (
-""
-""
-)
-"csft5a" "subckt" (
-""
-""
-)
-"dfwpsj1_7" "subckt" (
-""
-""
-)
-"nhsj1_16c" "subckt" (
-""
-""
-)
-"phsj1_10" "subckt" (
-""
-""
-)
-"phvtb" "subckt" (
-""
-""
-)
-"dfwdpb" "subckt" (
-""
-""
-)
-"dp5" "subckt" (
-""
-""
-)
-"rnw5" "subckt" (
-""
-""
-)
-"rmrdl" "subckt" (
-""
-""
-)
-"phsj1_7" "subckt" (
-""
-""
-)
-"rpp1s" "subckt" (
-""
-""
-)
-"dhw2a" "subckt" (
-""
-""
-)
-"phvrf" "subckt" (
-""
-""
-)
-"dfwdpe" "subckt" (
-""
-""
-)
-"dhw3" "subckt" (
-""
-""
-)
-"rpp1s_3" "subckt" (
-""
-""
-)
-"cmm4" "subckt" (
-""
-""
-)
-"rnw_scr" "subckt" (
-""
-""
-)
-"qpvg" "subckt" (
-""
-""
-)
-"cdmmh5t" "subckt" (
-""
-""
-)
-"cmmh6l" "subckt" (
-""
-""
-)
-"rm4" "subckt" (
-""
-""
-)
-"rmtp" "subckt" (
-""
-""
-)
-"csf3a" "subckt" (
-""
-""
-)
-"cdmm5t" "subckt" (
-""
-""
-)
-"p_rmtp" "subckt" (
-""
-""
-)
-"pe5ti" "subckt" (
-""
-""
-)
-"dfwdpc" "subckt" (
-""
-""
-)
-"SR_latch" "subckt" (
-""
-"VDD VSS X Y out"
-)
-"dfwdptb" "subckt" (
-""
-""
-)
-"p_rviatp" "subckt" (
-""
-""
-)
-"pe" "subckt" (
-"sbl stimodl psl sb scc sdl mfu0 sccl ad wpemod nrs nrsl xf_subext as par1 pd sa sca w adl scb ps scal sd mfvt nrdl stimod l wpemodl asl nrd pdl sal scbl"
-"d g s b"
-)
-"rnp1h_3" "subckt" (
-""
-""
-)
-"csft5" "subckt" (
-""
-""
-)
-"phvrb" "subckt" (
-""
-""
-)
-"rxw2ti" "subckt" (
-""
-""
-)
-"ADC_ctrl" "subckt" (
-""
-"B<7> B<6> B<5> B<4> B<3> B<2> B<1> B<0> S<7> S<6> S<5> S<4> S<3> S<2> S<1> S<0> VDD VREF VSS"
-)
-"ne5" "subckt" (
-""
-""
-)
-"SAR_DFF" "subckt" (
-""
-"CLK COMP D<7> D<6> D<5> D<4> D<3> D<2> D<1> D<0> RESETB DONE VDD VSS"
-)
-"dn5" "subckt" (
-""
-""
-)
-"nd5" "subckt" (
-""
-""
-)
-"p_rctdp" "subckt" (
-""
-""
-)
-"qpvc5" "subckt" (
-""
-""
-)
-"cdmm5" "subckt" (
-""
-""
-)
-"dfwdpd" "subckt" (
-""
-""
-)
-"ctmm5" "subckt" (
-""
-""
-)
-"dfwdpf" "subckt" (
-""
-""
-)
-"nhvrb" "subckt" (
-""
-""
-)
-"rpp1k1a" "subckt" (
-""
-""
-)
-"dfwdnhc" "subckt" (
-""
-""
-)
-"nhvra" "subckt" (
-""
-""
-)
-"csf3" "subckt" (
-""
-""
-)
-"p_rvia3" "subckt" (
-""
-""
-)
-"p_rctp1" "subckt" (
-""
-""
-)
-"nmva" "subckt" (
-""
-""
-)
-"qpvc" "subckt" (
-""
-""
-)
-"tag_m60v" "subckt" (
-""
-""
-)
-"phvra" "subckt" (
-""
-""
-)
-"dnw5" "subckt" (
-""
-""
-)
-"qnv5" "subckt" (
-""
-""
-)
-"cmmh5l" "subckt" (
-""
-""
-)
-"csft4" "subckt" (
-""
-""
-)
-"ctmm5t" "subckt" (
-""
-""
-)
-"p_rvia1" "subckt" (
-""
-""
-)
-"dfwdphe" "subckt" (
-""
-""
-)
-"nhvrd" "subckt" (
-""
-""
-)
-"nhvrf" "subckt" (
-""
-""
-)
-"phvu" "subckt" (
-""
-""
-)
-"nisj1_16" "subckt" (
-""
-""
-)
-"ds5" "subckt" (
-""
-""
-)
-"ndhvt" "subckt" (
-""
-""
-)
-"phvta" "subckt" (
-""
-""
-)
-"rnp1" "subckt" (
-""
-""
-)
-"cmmh5" "subckt" (
-""
-""
-)
-"drxw" "subckt" (
-""
-""
-)
-"rpp1k1" "subckt" (
+"tag_100v" "subckt" (
 ""
 ""
 )
@@ -565,223 +125,31 @@ VALUE
 ""
 ""
 )
-"cmmh3" "subckt" (
+"csf5a" "subckt" (
 ""
 ""
 )
-"tag_100v" "subckt" (
+"dnw5mva" "subckt" (
 ""
 ""
 )
-"rpp1" "subckt" (
+"tag_60v" "subckt" (
 ""
 ""
 )
-"dn" "subckt" (
+"p_rvia3" "subckt" (
 ""
 ""
 )
-"csf2p" "subckt" (
+"SAR_DFF" "subckt" (
 ""
-""
-)
-"dp" "subckt" (
-""
-""
-)
-"p_rm5" "subckt" (
-""
-""
-)
-"pe5_5" "subckt" (
-""
-""
-)
-"pmva" "subckt" (
-""
-""
-)
-"p_rviatpl" "subckt" (
-""
-""
-)
-"rpp1k1a_3" "subckt" (
-""
-""
-)
-"cmmh4l" "subckt" (
-""
-""
-)
-"dfwpsj1_10" "subckt" (
-""
-""
-)
-"p_rvia4" "subckt" (
-""
-""
-)
-"phvre" "subckt" (
-""
-""
-)
-"qpva5" "subckt" (
-""
-""
-)
-"tag_m25v" "subckt" (
-""
-""
-)
-"dfwdpa" "subckt" (
-""
-""
-)
-"pe_5" "subckt" (
-""
-""
-)
-"nhsj1_10" "subckt" (
-""
-""
-)
-"nhvrc" "subckt" (
-""
-""
-)
-"p_rm1" "subckt" (
-""
-""
-)
-"dfwdnu" "subckt" (
-""
-""
-)
-"dfwnsj1_10" "subckt" (
-""
-""
-)
-"mosvcti" "subckt" (
-""
-""
-)
-"qpvf5" "subckt" (
-""
-""
-)
-"ctmmh5t" "subckt" (
-""
-""
-)
-"dfwdnhd" "subckt" (
-""
-""
-)
-"qpve5" "subckt" (
-""
-""
-)
-"cmm3" "subckt" (
-""
-""
-)
-"pe5" "subckt" (
-""
-""
-)
-"cif4" "subckt" (
-""
-""
-)
-"rnp1_3" "subckt" (
-""
-""
-)
-"dfwdnhe" "subckt" (
-""
-""
-)
-"tag_200v" "subckt" (
-""
-""
-)
-"rm5" "subckt" (
-""
-""
-)
-"csandwt5" "subckt" (
-""
-""
-)
-"dnn" "subckt" (
-""
-""
+"CLK COMP D<7> D<6> D<5> D<4> D<3> D<2> D<1> D<0> RESETB DONE VDD VSS"
 )
 "rdn" "subckt" (
 ""
 ""
 )
-"nhvu" "subckt" (
-""
-""
-)
-"p_cap" "subckt" (
-""
-""
-)
-"rpp1k1_3" "subckt" (
-""
-""
-)
-"phvrd" "subckt" (
-""
-""
-)
-"dfwdpu" "subckt" (
-""
-""
-)
-"rpp1_3" "subckt" (
-""
-""
-)
-"p_rp1s" "subckt" (
-""
-""
-)
-"cif5" "subckt" (
-""
-""
-)
-"qpv5" "subckt" (
-""
-""
-)
-"rnw" "subckt" (
-""
-""
-)
-"rdn5" "subckt" (
-""
-""
-)
-"nn_jf" "subckt" (
-""
-""
-)
-"pel" "subckt" (
-""
-""
-)
-"ndhvrd" "subckt" (
-""
-""
-)
-"ne" "subckt" (
-"sbl stimodl psl sb scc sdl mfu0 sccl ad wpemod nrs nrsl xf_subext as par1 pd sa sca w adl scb ps scal sd mfvt nrdl stimod l wpemodl asl nrd pdl sal scbl"
-"d g s b"
-)
-"qpvf" "subckt" (
+"phvra" "subckt" (
 ""
 ""
 )
@@ -789,127 +157,11 @@ VALUE
 ""
 ""
 )
-"pmvd" "subckt" (
+"rnp1_3" "subckt" (
 ""
 ""
 )
-"dnn5" "subckt" (
-""
-""
-)
-"cif3" "subckt" (
-""
-""
-)
-"p_rvia2" "subckt" (
-""
-""
-)
-"p_rctdn" "subckt" (
-""
-""
-)
-"tag_m100v" "subckt" (
-""
-""
-)
-"pmvc" "subckt" (
-""
-""
-)
-"pmve" "subckt" (
-""
-""
-)
-"COMP" "subckt" (
-""
-"INN INP OUT VDD VSS CLK"
-)
-"mosvc5ti" "subckt" (
-""
-""
-)
-"qpva" "subckt" (
-""
-""
-)
-"cdmm4" "subckt" (
-""
-""
-)
-"inverter" "subckt" (
-""
-"IN OUT VDD VSS"
-)
-"ndhvrf" "subckt" (
-""
-""
-)
-"p_rm3" "subckt" (
-""
-""
-)
-"cmm4t" "subckt" (
-""
-""
-)
-"dfwdpta" "subckt" (
-""
-""
-)
-"pmvb" "subckt" (
-""
-""
-)
-"dfwdpha" "subckt" (
-""
-""
-)
-"cdmm4t" "subckt" (
-""
-""
-)
-"cmmh3t" "subckt" (
-""
-""
-)
-"csf5a" "subckt" (
-""
-""
-)
-"ndhvta" "subckt" (
-""
-""
-)
-"dhw2" "subckt" (
-""
-""
-)
-"cdmmh4t" "subckt" (
-""
-""
-)
-"rmtpl" "subckt" (
-""
-""
-)
-"cmmh5t" "subckt" (
-""
-""
-)
-"ADC" "subckt" (
-""
-"CLK COMP_OUT D<7> D<6> D<5> D<4> D<3> D<2> D<1> D<0> VDD VIN VREF VSS CMP LD"
-)
-"rnw5_scr" "subckt" (
-""
-""
-)
-"csf4" "subckt" (
-""
-""
-)
-"rm1" "subckt" (
+"dfwpsj1_16c" "subckt" (
 ""
 ""
 )
@@ -917,55 +169,23 @@ VALUE
 ""
 ""
 )
-"rm3" "subckt" (
+"p_rp1s" "subckt" (
 ""
 ""
 )
-"ctmmh5" "subckt" (
+"pe" "subckt" (
+"sbl stimodl psl sb scc sdl mfu0 sccl ad wpemod nrs nrsl xf_subext as par1 pd sa sca w adl scb ps scal sd mfvt nrdl stimod l wpemodl asl nrd pdl sal scbl"
+"d g s b"
+)
+"nhsj1_16c" "subckt" (
 ""
 ""
 )
-"phsj1_16c" "subckt" (
+"cif5" "subckt" (
 ""
 ""
 )
-"rdn5_dpc" "subckt" (
-""
-""
-)
-"dfwdn5" "subckt" (
-""
-""
-)
-"dfwdnhb" "subckt" (
-""
-""
-)
-"invr_dupe" "subckt" (
-"sx lc GT_PDL GT_PDW GT_PUW GT_PUL"
-"in out VDD VSS"
-)
-"nhvta" "subckt" (
-""
-""
-)
-"ds5a" "subckt" (
-""
-""
-)
-"dnpa" "subckt" (
-""
-""
-)
-"mosvc5" "subckt" (
-""
-""
-)
-"csft6" "subckt" (
-""
-""
-)
-"p_rmtpl" "subckt" (
+"dfwnsj1_10" "subckt" (
 ""
 ""
 )
@@ -973,7 +193,795 @@ VALUE
 ""
 ""
 )
+"cif3" "subckt" (
+""
+""
+)
+"p_rmtp" "subckt" (
+""
+""
+)
+"pfuse" "subckt" (
+""
+""
+)
+"nhvre" "subckt" (
+""
+""
+)
+"dfwdnt" "subckt" (
+""
+""
+)
+"nhvu" "subckt" (
+""
+""
+)
+"rmrdl" "subckt" (
+""
+""
+)
+"dfwdpta" "subckt" (
+""
+""
+)
+"cdmmh4" "subckt" (
+""
+""
+)
+"rm1" "subckt" (
+""
+""
+)
+"DFRRSHDX0_dupe" "subckt" (
+""
+"C D Q QN RN SN VDD VSS"
+)
+"p_rm2" "subckt" (
+""
+""
+)
+"pe5ti" "subckt" (
+""
+""
+)
+"dfwdnhf" "subckt" (
+""
+""
+)
+"dhw3" "subckt" (
+""
+""
+)
+"ds5a" "subckt" (
+""
+""
+)
+"ne" "subckt" (
+"sbl stimodl psl sb scc sdl mfu0 sccl ad wpemod nrs nrsl xf_subext as par1 pd sa sca w adl scb ps scal sd mfvt nrdl stimod l wpemodl asl nrd pdl sal scbl"
+"d g s b"
+)
+"rmtp" "subckt" (
+""
+""
+)
+"cmm4" "subckt" (
+""
+""
+)
+"nhvrf" "subckt" (
+""
+""
+)
+"p_rctdn" "subckt" (
+""
+""
+)
+"dnpa" "subckt" (
+""
+""
+)
+"cmm3" "subckt" (
+""
+""
+)
+"dfwpsj1_10" "subckt" (
+""
+""
+)
+"nisj1_16" "subckt" (
+""
+""
+)
+"p_rctp1" "subckt" (
+""
+""
+)
+"dza" "subckt" (
+""
+""
+)
+"mosvc5ti" "subckt" (
+""
+""
+)
+"pmvc" "subckt" (
+""
+""
+)
+"rpp1k1a_3" "subckt" (
+""
+""
+)
+"dfwdnhc" "subckt" (
+""
+""
+)
+"ndhvt" "subckt" (
+""
+""
+)
+"nhvrb" "subckt" (
+""
+""
+)
+"p_rm1" "subckt" (
+""
+""
+)
+"nmva" "subckt" (
+""
+""
+)
+"p_rviatp" "subckt" (
+""
+""
+)
+"phvtb" "subckt" (
+""
+""
+)
+"dfwdnha" "subckt" (
+""
+""
+)
+"p_rvia1" "subckt" (
+""
+""
+)
+"qpve" "subckt" (
+""
+""
+)
+"csf3p" "subckt" (
+""
+""
+)
+"cmmh5" "subckt" (
+""
+""
+)
 "cmm5" "subckt" (
+""
+""
+)
+"dpp6" "subckt" (
+""
+""
+)
+"dpp7" "subckt" (
+""
+""
+)
+"nhsj1_7" "subckt" (
+""
+""
+)
+"cmm6t" "subckt" (
+""
+""
+)
+"dnw" "subckt" (
+""
+""
+)
+"pmvb" "subckt" (
+""
+""
+)
+"ctmm5t" "subckt" (
+""
+""
+)
+"dnp7" "subckt" (
+""
+""
+)
+"inverter" "subckt" (
+""
+"IN OUT VDD VSS"
+)
+"pe5_5" "subckt" (
+""
+""
+)
+"dfwdpd" "subckt" (
+""
+""
+)
+"cmmh6l" "subckt" (
+""
+""
+)
+"rpp1s" "subckt" (
+""
+""
+)
+"cmmh3" "subckt" (
+""
+""
+)
+"tag_m25v" "subckt" (
+""
+""
+)
+"ctmmh5" "subckt" (
+""
+""
+)
+"rm5" "subckt" (
+""
+""
+)
+"nhvra" "subckt" (
+""
+""
+)
+"csandwt3" "subckt" (
+""
+""
+)
+"csf4" "subckt" (
+""
+""
+)
+"dfwdpf" "subckt" (
+""
+""
+)
+"dp5" "subckt" (
+""
+""
+)
+"p_rmtpl" "subckt" (
+""
+""
+)
+"pmva" "subckt" (
+""
+""
+)
+"dfwdpe" "subckt" (
+""
+""
+)
+"ds5" "subckt" (
+""
+""
+)
+"rm2" "subckt" (
+""
+""
+)
+"nn5_jf" "subckt" (
+""
+""
+)
+"mosvcti" "subckt" (
+""
+""
+)
+"p_rviatpl" "subckt" (
+""
+""
+)
+"ndhvta" "subckt" (
+""
+""
+)
+"cmm4t" "subckt" (
+""
+""
+)
+"phvrf" "subckt" (
+""
+""
+)
+"rnw" "subckt" (
+""
+""
+)
+"p_rctdp" "subckt" (
+""
+""
+)
+"rpp1s_3" "subckt" (
+""
+""
+)
+"cdmmh4t" "subckt" (
+""
+""
+)
+"csft6a" "subckt" (
+""
+""
+)
+"dfwdphb" "subckt" (
+""
+""
+)
+"dn" "subckt" (
+""
+""
+)
+"cdmm4t" "subckt" (
+""
+""
+)
+"csandwt4" "subckt" (
+""
+""
+)
+"dfwdphf" "subckt" (
+""
+""
+)
+"pe5" "subckt" (
+""
+""
+)
+"rdp" "subckt" (
+""
+""
+)
+"csf3a" "subckt" (
+""
+""
+)
+"qpva" "subckt" (
+""
+""
+)
+"rpp1_3" "subckt" (
+""
+""
+)
+"nel" "subckt" (
+""
+""
+)
+"phvre" "subckt" (
+""
+""
+)
+"phvrb" "subckt" (
+""
+""
+)
+"dfwdnhe" "subckt" (
+""
+""
+)
+"dfwdphd" "subckt" (
+""
+""
+)
+"tag_25v" "subckt" (
+""
+""
+)
+"dfwdpa" "subckt" (
+""
+""
+)
+"invr_dupe" "subckt" (
+"sx lc GT_PDL GT_PDW GT_PUW GT_PUL"
+"in out VDD VSS"
+)
+"mosvc5" "subckt" (
+""
+""
+)
+"nn_jf" "subckt" (
+""
+""
+)
+"rmtpl" "subckt" (
+""
+""
+)
+"dfwdphc" "subckt" (
+""
+""
+)
+"qpvb5" "subckt" (
+""
+""
+)
+"rdn5" "subckt" (
+""
+""
+)
+"nhvta" "subckt" (
+""
+""
+)
+"p_rvia2" "subckt" (
+""
+""
+)
+"csft4a" "subckt" (
+""
+""
+)
+"dp" "subckt" (
+""
+""
+)
+"pel" "subckt" (
+""
+""
+)
+"phsj1_16c" "subckt" (
+""
+""
+)
+"rnp1h_3" "subckt" (
+""
+""
+)
+"p_rm5" "subckt" (
+""
+""
+)
+"dfwdnhb" "subckt" (
+""
+""
+)
+"phsj1_10" "subckt" (
+""
+""
+)
+"cif4" "subckt" (
+""
+""
+)
+"dfwdn5" "subckt" (
+""
+""
+)
+"pmve" "subckt" (
+""
+""
+)
+"dfwdptb" "subckt" (
+""
+""
+)
+"dnw5" "subckt" (
+""
+""
+)
+"rnw_scr" "subckt" (
+""
+""
+)
+"csf5" "subckt" (
+""
+""
+)
+"p_cap" "subckt" (
+""
+""
+)
+"rnp1" "subckt" (
+""
+""
+)
+"dfwdpb" "subckt" (
+""
+""
+)
+"rm4" "subckt" (
+""
+""
+)
+"rpp1k1_3" "subckt" (
+""
+""
+)
+"dhw2" "subckt" (
+""
+""
+)
+"dfwdnhd" "subckt" (
+""
+""
+)
+"dfwdphe" "subckt" (
+""
+""
+)
+"dfwpsj1_7" "subckt" (
+""
+""
+)
+"nhvrc" "subckt" (
+""
+""
+)
+"qnv5" "subckt" (
+""
+""
+)
+"nhvrd" "subckt" (
+""
+""
+)
+"dzati" "subckt" (
+""
+""
+)
+"rdp5" "subckt" (
+""
+""
+)
+"csft5a" "subckt" (
+""
+""
+)
+"p_rm4" "subckt" (
+""
+""
+)
+"rm3" "subckt" (
+""
+""
+)
+"ndhvrd" "subckt" (
+""
+""
+)
+"nhsj1_10" "subckt" (
+""
+""
+)
+"cdmmh5t" "subckt" (
+""
+""
+)
+"dfwdpha" "subckt" (
+""
+""
+)
+"mux2" "subckt" (
+""
+"S<0> VDD VSS in0 in1 out"
+)
+"dfwdpu" "subckt" (
+""
+""
+)
+"COMP" "subckt" (
+""
+"INN INP OUT VDD VSS CLK"
+)
+"qpve5" "subckt" (
+""
+""
+)
+"p_rvia4" "subckt" (
+""
+""
+)
+"cdmm5t" "subckt" (
+""
+""
+)
+"ndhvrf" "subckt" (
+""
+""
+)
+"phsj1_7" "subckt" (
+""
+""
+)
+"qpvc5" "subckt" (
+""
+""
+)
+"qpvf5" "subckt" (
+""
+""
+)
+"rnw5" "subckt" (
+""
+""
+)
+"cmm5t" "subckt" (
+""
+""
+)
+"csandwt5" "subckt" (
+""
+""
+)
+"rxw2ti" "subckt" (
+""
+""
+)
+"nn5" "subckt" (
+""
+""
+)
+"cdmm5" "subckt" (
+""
+""
+)
+"ADC" "subckt" (
+""
+"CLK COMP_OUT D<7> D<6> D<5> D<4> D<3> D<2> D<1> D<0> VDD VIN VREF VSS CMP LD"
+)
+"ADC_ctrl" "subckt" (
+""
+"B<7> B<6> B<5> B<4> B<3> B<2> B<1> B<0> S<7> S<6> S<5> S<4> S<3> S<2> S<1> S<0> VDD VREF VSS"
+)
+"rpp1k1" "subckt" (
+""
+""
+)
+"cmm3t" "subckt" (
+""
+""
+)
+"pe_5" "subckt" (
+""
+""
+)
+"nisj1_16_q1" "subckt" (
+""
+""
+)
+"dnn5" "subckt" (
+""
+""
+)
+"qpva5" "subckt" (
+""
+""
+)
+"cmmh3t" "subckt" (
+""
+""
+)
+"phvrd" "subckt" (
+""
+""
+)
+"dfwnsj1_16c" "subckt" (
+""
+""
+)
+"cdmmh5" "subckt" (
+""
+""
+)
+"qpvc" "subckt" (
+""
+""
+)
+"SR_latch" "subckt" (
+""
+"VDD VSS X Y out"
+)
+"sw_cmos" "subckt" (
+""
+"VDD VSS io0 io1 sw_ctrl"
+)
+"cmmh4l" "subckt" (
+""
+""
+)
+"tag_m60v" "subckt" (
+""
+""
+)
+"phvu" "subckt" (
+""
+""
+)
+"qpvg" "subckt" (
+""
+""
+)
+"cmmh6t" "subckt" (
+""
+""
+)
+"ne5" "subckt" (
+""
+""
+)
+"rdn5_pw4" "subckt" (
+""
+""
+)
+"rpp1k1a" "subckt" (
+""
+""
+)
+"csft4" "subckt" (
+""
+""
+)
+"pel_5" "subckt" (
+""
+""
+)
+"cmmh5l" "subckt" (
+""
+""
+)
+"dnpati" "subckt" (
+""
+""
+)
+"nhvtb" "subckt" (
+""
+""
+)
+"csft5" "subckt" (
+""
+""
+)
+"rnw5_scr" "subckt" (
+""
+""
+)
+"cdmm4" "subckt" (
+""
+""
+)
+"p_rm3" "subckt" (
+""
+""
+)
+"ctmm5" "subckt" (
+""
+""
+)
+"qpvf" "subckt" (
+""
+""
+)
+"qpv5" "subckt" (
+""
+""
+)
+"dnn" "subckt" (
+""
+""
+)
+"cmmh4" "subckt" (
+""
+""
+)
+"dhw2a" "subckt" (
+""
+""
+)
+"rdn5_dpc" "subckt" (
 ""
 ""
 )

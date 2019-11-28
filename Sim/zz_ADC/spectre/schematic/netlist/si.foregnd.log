@@ -1,10 +1,2 @@
-Begin Incremental Netlisting Nov 26 15:36:28 2019
-WARNING (OSSHNL-196): The value of the "nlAction" property of library 'basic',
-cell 'noConn', view 'symbol'
-has changed since the last netlisting session in
-current run directory. Some
-cell views need to be re-netlisted.
-
-End netlisting Nov 26 15:36:29 2019
-Begin Incremental Netlisting Nov 26 15:38:02 2019
-End netlisting Nov 26 15:38:03 2019
+Begin Incremental Netlisting Nov 28 14:30:13 2019
+End netlisting Nov 28 14:30:14 2019

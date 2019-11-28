@@ -1,0 +1,4 @@
+"final_project.sw_cmos.schematic.termorder" (("VDD" "VSS" "io0" "io1" "sw_ctrl") ("VDD" "VSS" "io0" "io1" "sw_ctrl"))
+"final_project.sw_pmos.schematic.termorder" (("VSS" "io0" "io1" "sw_ctrl" "VDD") ("VDD" "VSS" "io0" "io1" "sw_ctrl"))
+"final_project.sw_nmos.schematic.termorder" (("VSS" "io0" "io1" "sw_ctrl") ("VSS" "io0" "io1" "sw_ctrl"))
+"final_project.inverter.schematic.termorder" nil

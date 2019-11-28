@@ -1,5 +1,6 @@
 CADENCE IHNL11140
 $model
+final_project/sw_cmos/schematic sw_cmos
 final_project/SR_latch/schematic SR_latch
 final_project/ADC_ctrl/schematic ADC_ctrl
 final_project/ADC/schematic ADC
@@ -10,6 +11,7 @@ final_project/COMP/schematic COMP
 final_project/SAR_DFF/schematic SAR_DFF
 final_project/inverter/schematic inverter
 final_project/mux2/schematic mux2
+final_project/sw_pmos/schematic sw_pmos
 $endmodel
 $net
 gnd! 0

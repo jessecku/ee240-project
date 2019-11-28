@@ -1,4 +1,6 @@
 "ee140_gsi.DFRRSHDX0_dupe.schematic.termorder" nil
+"final_project.sw_pmos.schematic.termorder" (("VSS" "io0" "io1" "sw_ctrl" "VDD") ("VDD" "VSS" "io0" "io1" "sw_ctrl"))
+"final_project.sw_cmos.schematic.termorder" (("VDD" "VSS" "io0" "io1" "sw_ctrl") ("VDD" "VSS" "io0" "io1" "sw_ctrl"))
 "final_project.COMP.schematic.termorder" (("INN" "INP" "OUT" "VDD" "VSS" "CLK") ("CLK" "INN" "INP" "OUT" "VDD" "VSS"))
 "final_project.SAR_DFF.schematic.termorder" (("CLK" "COMP" "D<7>" "D<6>" "D<5>" "D<4>" "D<3>" "D<2>" "D<1>" "D<0>" "RESETB" "DONE" "VDD" "VSS") ("CLK" "COMP" "D<7>" "D<6>" "D<5>" "D<4>" "D<3>" "D<2>" "D<1>" "D<0>" "DONE" "RESETB" "VDD" "VSS"))
 "final_project.SR_latch.schematic.termorder" (("VDD" "VSS" "X" "Y" "out") ("VDD" "VSS" "X" "Y" "out"))

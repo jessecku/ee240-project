@@ -1,7 +1,7 @@
 HEADER
 "PSFversion" "1.00"
-"W1n W0n" "analogLib_switch_spectre"
 "I0n" "inverter"
+"I2n I1n" "sw_cmos"
 "S<0>v" ":1v"
 "VDDv" ":2v"
 "VSSv" ":3v"

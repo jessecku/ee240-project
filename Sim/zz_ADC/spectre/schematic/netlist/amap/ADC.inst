@@ -1,10 +1,11 @@
 HEADER
 "PSFversion" "1.00"
-"W21n W20n W19n W18n W17n W16n W15n W14n W13n W12n W9n W8n W22n W11n W10n W3n W2n W23n W0n" "analogLib_switch_spectre"
+"I29n" "sw_pmos"
 "C0n C8n C7n C4n C6n C5n C1n C3n C2n" "analogLib_cap_spectre"
 "I1n" "COMP"
 "I7n" "ADC_ctrl"
 "I8n" "inverter"
+"I24n I23n I25n I26n I20n I19n I21n I22n I18n I17n I14n I13n I15n I16n I12n I11n I10n I27n" "sw_cmos"
 "CLKv" ":1v"
 "COMP_OUTv" ":2v"
 "D<7>v" ":3v"
