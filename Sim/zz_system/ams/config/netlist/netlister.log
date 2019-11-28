@@ -1,4 +1,4 @@
-Begin Netlisting Nov 27 11:49:23 2019
+Begin Netlisting Nov 27 20:14:48 2019
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
 
 "/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/digital/testfixture.verilog" file. To print the stimulus name
@@ -101,4 +101,4 @@ inverter                    schematic
 
 ---------- End of netlist configuration information   ----------
 Running netlist assembly..
-End netlisting Nov 27 11:49:35 2019
+End netlisting Nov 27 20:15:01 2019

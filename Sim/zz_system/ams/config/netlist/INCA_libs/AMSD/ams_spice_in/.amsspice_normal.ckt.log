@@ -5,21 +5,21 @@ Copyright (C) 1989-2017 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: ee140-abc   Host: eda-7.EECS.Berkeley.EDU   HostID: 2080B086   PID: 16169
-Memory  available: 4.3871 GB  physical: 25.2693 GB
+User: ee140-abc   Host: eda-7.EECS.Berkeley.EDU   HostID: 2080B086   PID: 11782
+Memory  available: 3.5059 GB  physical: 25.2693 GB
 Linux   : CentOS Linux release 7.7.1908 (Core)
 CPU Type: Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [1600.0] (  8 ),  1 [1600.0] (  9 ),  2 [1600.0] ( 10 )
+        0:       0 [1600.0] (  8 ),  1 [1733.0] (  9 ),  2 [1600.0] ( 10 )
                  3 [1600.0] ( 11 )
         1:       4 [1600.0] ( 12 ),  5 [1600.0] ( 13 ),  6 [1600.0] ( 14 )
                  7 [1600.0] ( 15 )
         
-System load averages (1min, 5min, 15min) : 10.5 %, 7.1 %, 6.3 %
+System load averages (1min, 5min, 15min) : 6.1 %, 5.9 %, 6.3 %
 Hyperthreading is enabled
 
 
-Simulating `./INCA_libs/AMSD/ams_spice_in/.amsspice_normal.ckt' on eda-7.EECS.Berkeley.EDU at 11:49:50 AM, Wed Nov 27, 2019 (process id: 16169).
+Simulating `./INCA_libs/AMSD/ams_spice_in/.amsspice_normal.ckt' on eda-7.EECS.Berkeley.EDU at 8:15:15 PM, Wed Nov 27, 2019 (process id: 11782).
 Current working directory: /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist
 Environment variable:
     SPECTRE_DEFAULTS=
@@ -29,7 +29,7 @@ Command line:
         ./INCA_libs/AMSD/ams_spice_in/.amsspice_normal.ckt.log  \
         -I/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/  \
         -token  \
-        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080CF5C9E5D13BA59FEB270F31D11B6639FEA2FE10B0F887DC39431F37A3ED44FD9B63EAA3E399863C0B43FE90F319762DDE37DF76A64CE3084AE7CEA0B60FB2390A83DEEB8537F10B0A924E93B3199209DFE3ECD1D15BE279EBC4A9A6F64FB2A85A83DED3C50FB10B0A83DED3C50FB10B0F5E33E6783A04D6E000042E6
+        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080CF5C9E5D13BA59FEB270F31D11B6639FEA2FE10B0F887DC39431F37A3ED44FD9B63EAA3E399863C0B43FE90F319762DDE32AFA6D69C930D3FB7CE55860FB2290A83DEEB8537F10B0A924E93B3199209DFE3ECD1D15BE279EBC4A9A6F64FB2A85A83DED3C50FB10B0A83DED3C50FB10B0F5E2A4ED192A4D6F000042F9
 
 Loading /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
 Loading /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
@@ -322,16 +322,15 @@ Reading file:  /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/l
 Reading file:  /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/amsControlSpectre.scs
 Reading file:  /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/ie_card.scs
 Reading file:  /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.amsbind.scs
-Time for NDB Parsing: CPU = 363.981 ms, elapsed = 484.517 ms.
-Time accumulated: CPU = 414.434 ms, elapsed = 484.527 ms.
+Time for NDB Parsing: CPU = 323.563 ms, elapsed = 453.788 ms.
+Time accumulated: CPU = 376.205 ms, elapsed = 453.798 ms.
 Peak resident memory used = 45.7 Mbytes.
 
 
 The CPU load for active processors is :
-        Spectre  0 (22.9 %)      2 (2.1 %)       3 (4.3 %)       4 (4.2 %)
-                 5 (47.9 %)      6 (6.2 %)       7 (30.6 %)      8 (2.1 %)
-                 9 (2.1 %)      10 (12.8 %)     11 (2.1 %)      13 (6.2 %)
-                14 (8.5 %)      
+        Spectre  1 (4.4 %)       4 (2.2 %)       5 (68.9 %)      6 (4.4 %)
+                 8 (2.2 %)       9 (41.3 %)     10 (17.8 %)     11 (2.2 %)
+                12 (11.1 %)     13 (11.4 %)     14 (13.3 %)     15 (11.4 %)
         Other   
 Reading link:  /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/discipline.h
 Reading file:  /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/disciplines.vams

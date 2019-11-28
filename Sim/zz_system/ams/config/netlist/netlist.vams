@@ -2,7 +2,7 @@
 // IC subversion:  IC6.1.7-64b.500.23 
 // IUS version: 15.20-s076
 // Copyright(C) 2005-2009, Cadence Design Systems, Inc
-// User: ee140-abc Pid: 13515
+// User: ee140-abc Pid: 5107
 // Design library name: final_project
 // Design cell name: zz_system
 // Design view name: config
@@ -13,7 +13,7 @@
 // HDL file - ee140_gsi, SAR_FSM, functional.
 // Library - ee140_gsi, Cell - invr_dupe, View - schematic
 // LAST TIME SAVED: Nov 19 11:06:49 2019
-// NETLIST TIME: Nov 27 11:49:33 2019
+// NETLIST TIME: Nov 27 20:14:58 2019
 
 `worklib ee140_gsi
 `view schematic
@@ -41,7 +41,7 @@ pe #(.w(GT_PUW), .l(GT_PUL), .as(sx*(GT_PUW)), .ad(sx*(GT_PUW)), .ps(2*(sx+(GT_P
 endmodule
 // Library - ee140_gsi, Cell - NA2HDX0_dupe, View - schematic
 // LAST TIME SAVED: Nov 22 13:18:46 2019
-// NETLIST TIME: Nov 27 11:49:33 2019
+// NETLIST TIME: Nov 27 20:14:59 2019
 
 `worklib ee140_gsi
 `view schematic
@@ -69,7 +69,7 @@ pe #(.w(7.2e-07), .l(1.8e-07), .as(3.456e-13), .ad(3.456e-13), .ps(2.4e-06), .pd
 endmodule
 // Library - ee140_gsi, Cell - clk_nonoverlapping, View - schematic
 // LAST TIME SAVED: Nov 22 13:35:03 2019
-// NETLIST TIME: Nov 27 11:49:33 2019
+// NETLIST TIME: Nov 27 20:14:59 2019
 
 `worklib ee140_gsi
 `view schematic
@@ -107,7 +107,7 @@ capacitor #(.c(1e-13)) C0 (net1, VSS);
 endmodule
 // Library - ee140_gsi, Cell - DFRRSHDX0_dupe, View - schematic
 // LAST TIME SAVED: Nov 19 18:00:26 2019
-// NETLIST TIME: Nov 27 11:49:33 2019
+// NETLIST TIME: Nov 27 20:14:59 2019
 
 `worklib ee140_gsi
 `view schematic
@@ -221,7 +221,7 @@ pe #(.w(7.05e-07), .l(1.8e-07), .as(3.384e-13), .ad(3.384e-13), .ps(2.37e-06), .
 endmodule
 // Library - ee140_gsi, Cell - SAR_DFF, View - schematic
 // LAST TIME SAVED: Nov 19 18:00:08 2019
-// NETLIST TIME: Nov 27 11:49:33 2019
+// NETLIST TIME: Nov 27 20:14:59 2019
 
 `worklib ee140_gsi
 `view schematic
@@ -276,7 +276,7 @@ DFRRSHDX0_dupe I0 (.VSS( VSS ), .VDD( VDD ), .Q( X[7] ), .QN( net2 ), .D( VSS ),
 endmodule
 // Library - ee140_gsi, Cell - EE140_Fa19_digital, View - schematic
 // LAST TIME SAVED: Nov 22 13:41:36 2019
-// NETLIST TIME: Nov 27 11:49:33 2019
+// NETLIST TIME: Nov 27 20:14:59 2019
 
 `worklib ee140_gsi
 `view schematic
@@ -303,7 +303,7 @@ SAR_DFF X_SAR (.VDD( VDD ), .VSS( VSS ), .DONE( DONE ), .RESETB( RESETB_BUF ), .
 endmodule
 // Library - final_project, Cell - inverter, View - schematic
 // LAST TIME SAVED: Nov 24 23:08:27 2019
-// NETLIST TIME: Nov 27 11:49:33 2019
+// NETLIST TIME: Nov 27 20:14:59 2019
 
 `worklib final_project
 `view schematic
@@ -325,7 +325,7 @@ pe #(.w(2.2e-07), .l(1.8e-07), .as(1.056e-13), .ad(1.056e-13), .ps(1.4e-06), .pd
 endmodule
 // Library - final_project, Cell - SR_latch, View - schematic
 // LAST TIME SAVED: Nov 26 15:29:08 2019
-// NETLIST TIME: Nov 27 11:49:33 2019
+// NETLIST TIME: Nov 27 20:14:59 2019
 
 `worklib final_project
 `view schematic
@@ -354,7 +354,7 @@ ne #(.w(2.2e-07), .l(1.8e-07), .as(1.056e-13), .ad(1.056e-13), .ps(1.4e-06), .pd
 endmodule
 // Library - final_project, Cell - DREG, View - schematic
 // LAST TIME SAVED: Nov 24 20:15:42 2019
-// NETLIST TIME: Nov 27 11:49:33 2019
+// NETLIST TIME: Nov 27 20:14:59 2019
 
 `worklib final_project
 `view schematic
@@ -370,7 +370,7 @@ inout  VBAT, VSS;
 endmodule
 // Library - final_project, Cell - VBATDIV4, View - schematic
 // LAST TIME SAVED: Nov 24 20:14:58 2019
-// NETLIST TIME: Nov 27 11:49:33 2019
+// NETLIST TIME: Nov 27 20:14:59 2019
 
 `worklib final_project
 `view schematic
@@ -385,7 +385,7 @@ inout  VBAT, VSS;
 endmodule
 // Library - final_project, Cell - system, View - schematic
 // LAST TIME SAVED: Nov 27 11:34:53 2019
-// NETLIST TIME: Nov 27 11:49:33 2019
+// NETLIST TIME: Nov 27 20:14:59 2019
 
 `worklib final_project
 `view schematic
@@ -426,7 +426,7 @@ resistor #(.r(cds_globals.RBAT)) R0 (VDDA, net013);
 endmodule
 // Library - final_project, Cell - zz_system, View - schematic
 // LAST TIME SAVED: Nov 26 19:00:11 2019
-// NETLIST TIME: Nov 27 11:49:33 2019
+// NETLIST TIME: Nov 27 20:14:59 2019
 
 `worklib final_project
 `view schematic
@@ -470,7 +470,7 @@ vsource #(.dc(cds_globals.VIN_1), .type("dc")) V0 (EXT_IN[1], cds_globals.\gnd! 
 endmodule
 // Library - final_project, Cell - COMP, View - schematic
 // LAST TIME SAVED: Nov 27 00:20:42 2019
-// NETLIST TIME: Nov 27 11:49:33 2019
+// NETLIST TIME: Nov 27 20:14:59 2019
 
 `worklib final_project
 `view schematic
@@ -522,7 +522,7 @@ ne #(.w(2.2e-07), .l(1.8e-07), .as(1.056e-13), .ad(1.056e-13), .ps(1.4e-06), .pd
 endmodule
 // Library - final_project, Cell - mux2, View - schematic
 // LAST TIME SAVED: Nov 27 00:18:59 2019
-// NETLIST TIME: Nov 27 11:49:33 2019
+// NETLIST TIME: Nov 27 20:14:59 2019
 
 `worklib final_project
 `view schematic
@@ -543,7 +543,7 @@ relay #(.vt1(0.1), .vt2(0.9), .ropen(1e+12), .rclosed(1)) W0 (in1, out, S[0], VS
 endmodule
 // Library - final_project, Cell - ADC_ctrl, View - schematic
 // LAST TIME SAVED: Nov 25 10:14:02 2019
-// NETLIST TIME: Nov 27 11:49:33 2019
+// NETLIST TIME: Nov 27 20:14:59 2019
 
 `worklib final_project
 `view schematic
@@ -568,7 +568,7 @@ mux2 I0 (.S( S[0] ), .VSS( VSS ), .VDD( VDD ), .out( B[0] ), .in0( VSS ), .in1( 
 endmodule
 // Library - final_project, Cell - ADC, View - schematic
 // LAST TIME SAVED: Nov 27 10:51:58 2019
-// NETLIST TIME: Nov 27 11:49:33 2019
+// NETLIST TIME: Nov 27 20:14:59 2019
 
 `worklib final_project
 `view schematic
@@ -619,7 +619,7 @@ capacitor #(.c(2*cds_globals.cap)) C2 (ADC_INN, net010);
 endmodule
 // Library - final_project, Cell - PGA, View - schematic
 // LAST TIME SAVED: Nov 24 20:14:45 2019
-// NETLIST TIME: Nov 27 11:49:33 2019
+// NETLIST TIME: Nov 27 20:14:59 2019
 
 `worklib final_project
 `view schematic
@@ -636,7 +636,7 @@ input [2:0] G;
 endmodule
 // Library - final_project, Cell - mux, View - schematic
 // LAST TIME SAVED: Nov 24 20:15:12 2019
-// NETLIST TIME: Nov 27 11:49:33 2019
+// NETLIST TIME: Nov 27 20:14:59 2019
 
 `worklib final_project
 `view schematic
@@ -653,7 +653,7 @@ input [3:0] IN;
 endmodule
 // Library - final_project, Cell - BGR, View - schematic
 // LAST TIME SAVED: Nov 24 20:14:13 2019
-// NETLIST TIME: Nov 27 11:49:33 2019
+// NETLIST TIME: Nov 27 20:14:59 2019
 
 `worklib final_project
 `view schematic
@@ -668,7 +668,7 @@ inout  VBAT, VSS;
 endmodule
 // Library - final_project, Cell - AREG, View - schematic
 // LAST TIME SAVED: Nov 24 20:13:58 2019
-// NETLIST TIME: Nov 27 11:49:33 2019
+// NETLIST TIME: Nov 27 20:14:59 2019
 
 `worklib final_project
 `view schematic

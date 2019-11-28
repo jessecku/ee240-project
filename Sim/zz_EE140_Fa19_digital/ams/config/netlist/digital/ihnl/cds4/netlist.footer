@@ -1,0 +1,56 @@
+
+DFRRSHDX0_dupe I18 ( .VSS(VSS), .VDD(VDD), .Q(DONE), .QN(net019), 
+    .D(VSS), .C(VSS), .SN(net010), .RN(RESETB));
+
+DFRRSHDX0_dupe I17 ( .VSS(VSS), .VDD(VDD), .Q(D[0]), .QN(net067), 
+    .D(COMP), .C(DONE), .SN(net014), .RN(RESETB));
+
+DFRRSHDX0_dupe I16 ( .VSS(VSS), .VDD(VDD), .Q(D[1]), .QN(net025), 
+    .D(COMP), .C(D[0]), .SN(net018), .RN(RESETB));
+
+DFRRSHDX0_dupe I15 ( .VSS(VSS), .VDD(VDD), .Q(D[2]), .QN(net029), 
+    .D(COMP), .C(D[1]), .SN(net022), .RN(RESETB));
+
+DFRRSHDX0_dupe I14 ( .VSS(VSS), .VDD(VDD), .Q(D[3]), .QN(net033), 
+    .D(COMP), .C(D[2]), .SN(net026), .RN(RESETB));
+
+DFRRSHDX0_dupe I13 ( .VSS(VSS), .VDD(VDD), .Q(D[4]), .QN(net065), 
+    .D(COMP), .C(D[3]), .SN(net030), .RN(RESETB));
+
+DFRRSHDX0_dupe I12 ( .VSS(VSS), .VDD(VDD), .Q(D[5]), .QN(net043), 
+    .D(COMP), .C(D[4]), .SN(net034), .RN(RESETB));
+
+DFRRSHDX0_dupe I11 ( .VSS(VSS), .VDD(VDD), .Q(D[6]), .QN(net048), 
+    .D(COMP), .C(D[5]), .SN(net038), .RN(RESETB));
+
+DFRRSHDX0_dupe I10 ( .VSS(VSS), .VDD(VDD), .Q(D[7]), .QN(net053), 
+    .D(COMP), .C(D[6]), .SN(net2), .RN(RESETB));
+
+DFRRSHDX0_dupe I8 ( .VSS(VSS), .VDD(VDD), .Q(net09), .QN(net010), 
+    .D(X[0]), .C(CLK), .SN(VDD), .RN(RESETB));
+
+DFRRSHDX0_dupe I7 ( .VSS(VSS), .VDD(VDD), .Q(X[0]), .QN(net014), 
+    .D(X[1]), .C(CLK), .SN(VDD), .RN(RESETB));
+
+DFRRSHDX0_dupe I6 ( .VSS(VSS), .VDD(VDD), .Q(X[1]), .QN(net018), 
+    .D(X[2]), .C(CLK), .SN(VDD), .RN(RESETB));
+
+DFRRSHDX0_dupe I5 ( .VSS(VSS), .VDD(VDD), .Q(X[2]), .QN(net022), 
+    .D(X[3]), .C(CLK), .SN(VDD), .RN(RESETB));
+
+DFRRSHDX0_dupe I4 ( .VSS(VSS), .VDD(VDD), .Q(X[3]), .QN(net026), 
+    .D(X[4]), .C(CLK), .SN(VDD), .RN(RESETB));
+
+DFRRSHDX0_dupe I3 ( .VSS(VSS), .VDD(VDD), .Q(X[4]), .QN(net030), 
+    .D(X[5]), .C(CLK), .SN(VDD), .RN(RESETB));
+
+DFRRSHDX0_dupe I2 ( .VSS(VSS), .VDD(VDD), .Q(X[5]), .QN(net034), 
+    .D(X[6]), .C(CLK), .SN(VDD), .RN(RESETB));
+
+DFRRSHDX0_dupe I1 ( .VSS(VSS), .VDD(VDD), .Q(X[6]), .QN(net038), 
+    .D(X[7]), .C(CLK), .SN(VDD), .RN(RESETB));
+
+DFRRSHDX0_dupe I0 ( .VSS(VSS), .VDD(VDD), .Q(X[7]), .QN(net2), .D(VSS), 
+    .C(CLK), .SN(RESETB), .RN(VDD));
+
+endmodule

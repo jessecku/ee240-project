@@ -1,0 +1,7 @@
+( ( model
+( "ADC" "ADC" )
+( "COMP" "COMP" )
+( "inverter" "inverter" )
+( "ADC_ctrl" "ADC_ctrl" )
+ )
+ )

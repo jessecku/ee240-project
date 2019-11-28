@@ -1,0 +1,19 @@
+// Library - ee140_gsi, Cell - zz_EE140_Fa19_digital, View - schematic
+// LAST TIME SAVED: Nov 20 17:20:32 2019
+// NETLIST TIME: Nov 27 20:11:57 2019
+`timescale 1ns / 1ps 
+
+`worklib ee140_gsi
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="ee140_gsi", dfII_cell="zz_EE140_Fa19_digital", dfII_view="schematic", worklib_name="ee140_gsi", view_name="schematic", last_save_time="Nov 20 17:20:32 2019" *)
+
+module zz_EE140_Fa19_digital ();
+
+// Buses in the design
+
+wire  [7:0]  DAC;
+
+
+endmodule

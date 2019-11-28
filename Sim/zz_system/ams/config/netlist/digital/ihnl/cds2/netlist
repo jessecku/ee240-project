@@ -1,6 +1,6 @@
 // Library - final_project, Cell - COMP, View - schematic
 // LAST TIME SAVED: Nov 27 00:20:42 2019
-// NETLIST TIME: Nov 27 11:49:28 2019
+// NETLIST TIME: Nov 27 20:14:52 2019
 `timescale 1ns / 1ps 
 
 `worklib final_project

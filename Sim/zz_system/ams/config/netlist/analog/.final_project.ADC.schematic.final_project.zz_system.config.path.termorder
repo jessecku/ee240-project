@@ -1,2 +1,0 @@
-("CLK" "COMP_OUT" "D<7>" "D<6>" "D<5>" "D<4>" "D<3>" "D<2>" "D<1>" "D<0>" "VDD" "VIN" "VREF" "VSS" "CMP" "LD")
-("CLK" "CMP" "COMP_OUT" "D<7>" "D<6>" "D<5>" "D<4>" "D<3>" "D<2>" "D<1>" "D<0>" "LD" "VDD" "VIN" "VREF" "VSS")

@@ -1,0 +1,28 @@
+// Library - ee140_gsi, Cell - invr_dupe, View - schematic
+// LAST TIME SAVED: Nov 19 11:06:49 2019
+// NETLIST TIME: Nov 27 20:11:57 2019
+`timescale 1ns / 1ps 
+
+`worklib ee140_gsi
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="ee140_gsi", dfII_cell="invr_dupe", dfII_view="schematic", worklib_name="ee140_gsi", view_name="schematic", last_save_time="Nov 19 11:06:49 2019" *)
+
+module invr_dupe (out, VDD, VSS, in);
+
+parameter GT_PDW=0;
+parameter GT_PDL=180.00n;
+parameter sx=4.8e-07;
+parameter lc=2.7e-07;
+parameter GT_PUW=0;
+parameter GT_PUL=180.00n;
+
+output  out;
+
+inout  VDD, VSS;
+
+input  in;
+
+
+endmodule

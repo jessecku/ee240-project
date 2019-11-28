@@ -43,4 +43,6 @@ probe -create -emptyok -database ams_database {zz_system.PHI2_temp}
 probe -create -emptyok -database ams_database {zz_system.I27.VREF_ADC}
 probe -create -emptyok -database ams_database {zz_system.I27.VIN}
 probe -create -emptyok -database ams_database -flow -ports -index -depth all -noaicms {zz_system}
+probe -create -emptyok -database ams_database -flow {zz_system.I22.sink}
+probe -create -emptyok -database ams_database -flow {zz_system.I22.sink}
 

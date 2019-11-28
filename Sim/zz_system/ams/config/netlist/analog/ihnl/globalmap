@@ -3,8 +3,8 @@ $model
 final_project/PGA/schematic final_project/PGA/schematic/schematic/final_project_zz_system_config/0 PGA
 final_project/VBATDIV4/schematic final_project/VBATDIV4/schematic/schematic/final_project_zz_system_config/0 VBATDIV4
 final_project/SR_latch/schematic final_project/SR_latch/schematic/schematic/final_project_zz_system_config/0 SR_latch
-final_project/ADC_ctrl/schematic final_project/ADC_ctrl/schematic/schematic/final_project_zz_system_config/0 ADC_ctrl
 final_project/zz_system/schematic final_project/zz_system/schematic/schematic/final_project_zz_system_config/1 zz_system
+final_project/ADC_ctrl/schematic final_project/ADC_ctrl/schematic/schematic/final_project_zz_system_config/0 ADC_ctrl
 final_project/ADC/schematic final_project/ADC/schematic/schematic/final_project_zz_system_config/0 ADC
 final_project/BGR/schematic final_project/BGR/schematic/schematic/final_project_zz_system_config/0 BGR
 ee140_gsi/DFRRSHDX0_dupe/schematic ee140_gsi/DFRRSHDX0_dupe/schematic/schematic/final_project_zz_system_config/0 DFRRSHDX0_dupe
@@ -13,8 +13,8 @@ final_project/AREG/schematic final_project/AREG/schematic/schematic/final_projec
 final_project/system/schematic final_project/system/schematic/schematic/final_project_zz_system_config/0 system
 final_project/COMP/schematic final_project/COMP/schematic/schematic/final_project_zz_system_config/0 COMP
 ee140_gsi/EE140_Fa19_digital/schematic ee140_gsi/EE140_Fa19_digital/schematic/schematic/final_project_zz_system_config/0 EE140_Fa19_digital
-final_project/inverter/schematic final_project/inverter/schematic/schematic/final_project_zz_system_config/0 inverter
 final_project/DREG/schematic final_project/DREG/schematic/schematic/final_project_zz_system_config/0 DREG
+final_project/inverter/schematic final_project/inverter/schematic/schematic/final_project_zz_system_config/0 inverter
 final_project/mux/schematic final_project/mux/schematic/schematic/final_project_zz_system_config/0 mux
 ee140_gsi/clk_nonoverlapping/schematic ee140_gsi/clk_nonoverlapping/schematic/schematic/final_project_zz_system_config/0 clk_nonoverlapping
 ee140_gsi/NA2HDX0_dupe/schematic ee140_gsi/NA2HDX0_dupe/schematic/schematic/final_project_zz_system_config/0 NA2HDX0_dupe
@@ -28,11 +28,11 @@ $param
 vin vin
 G_1 G_1
 vref vref
-cap cap
-VIN_1 VIN_1
 G_2 G_2
-VBAT VBAT
+VIN_1 VIN_1
+cap cap
 G_0 G_0
+VBAT VBAT
 S_1 S_1
 S_0 S_0
 vdda vdda

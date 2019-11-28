@@ -1,6 +1,6 @@
 // Library - final_project, Cell - ADC_ctrl, View - schematic
 // LAST TIME SAVED: Nov 25 10:14:02 2019
-// NETLIST TIME: Nov 27 11:49:28 2019
+// NETLIST TIME: Nov 27 20:14:53 2019
 `timescale 1ns / 1ps 
 
 `worklib final_project
