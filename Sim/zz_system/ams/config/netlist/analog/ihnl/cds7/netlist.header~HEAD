@@ -1,0 +1,6 @@
+
+// Library name: final_project
+// Cell name: mux
+// View name: schematic
+// Inherited view list: schematic
+subckt mux
