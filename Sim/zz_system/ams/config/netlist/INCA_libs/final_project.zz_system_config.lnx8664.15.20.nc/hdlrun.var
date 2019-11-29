@@ -83,5 +83,6 @@ define VIEW_MAP ( $VIEW_MAP \
 , .svms => svms \
 , .SVMS => SVMS \
 )
+define ELAB_SNAPSHOT
 define SNAPSHOT final_project.zz_system:config
 define SNAPSHOT final_project.zz_system:config

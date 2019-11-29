@@ -1,6 +1,6 @@
 // Library - ee140_gsi, Cell - invr_dupe, View - schematic
 // LAST TIME SAVED: Nov 19 11:06:49 2019
-// NETLIST TIME: Nov 27 20:14:53 2019
+// NETLIST TIME: Nov 29 01:25:26 2019
 `timescale 1ns / 1ps 
 
 `worklib ee140_gsi

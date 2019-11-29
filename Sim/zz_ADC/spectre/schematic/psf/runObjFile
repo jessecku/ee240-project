@@ -1,9 +1,9 @@
 HEADER
 "PSFversion" "1.00"
 "Run Generator" "drlRun rev. 1.0"
-"Run Time Stamp" "Nov 28 14:30:14 2019"
+"Run Time Stamp" "Nov 29 00:32:04 2019"
 "simulator" "spectre"
-"date" "Nov 28 14:30:14 2019"
+"date" "Nov 29 00:32:04 2019"
  "externalSweepVariableCount" 0
 "netlistDir" "../netlist"
 TYPE

@@ -5,8 +5,8 @@ Copyright (C) 1989-2017 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: ee140-abc   Host: eda-7.EECS.Berkeley.EDU   HostID: 2080B086   PID: 10876
-Memory  available: 3.5074 GB  physical: 25.2693 GB
+User: ee140-abc   Host: eda-7.EECS.Berkeley.EDU   HostID: 2080B086   PID: 5726
+Memory  available: 4.5537 GB  physical: 25.2693 GB
 Linux   : CentOS Linux release 7.7.1908 (Core)
 CPU Type: Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
@@ -15,11 +15,11 @@ CPU Type: Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz
         1:       4 [1600.0] ( 12 ),  5 [1600.0] ( 13 ),  6 [1600.0] ( 14 )
                  7 [1600.0] ( 15 )
         
-System load averages (1min, 5min, 15min) : 4.9 %, 5.7 %, 6.2 %
+System load averages (1min, 5min, 15min) : 7.2 %, 8.1 %, 7.5 %
 Hyperthreading is enabled
 
 
-Simulating `./INCA_libs/AMSD/ams_spice_in/./.amsspice_pre.ckt' on eda-7.EECS.Berkeley.EDU at 8:15:04 PM, Wed Nov 27, 2019 (process id: 10876).
+Simulating `./INCA_libs/AMSD/ams_spice_in/./.amsspice_pre.ckt' on eda-7.EECS.Berkeley.EDU at 1:25:36 AM, Fri Nov 29, 2019 (process id: 5726).
 Current working directory: /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist
 Environment variable:
     SPECTRE_DEFAULTS=
@@ -30,7 +30,7 @@ Command line:
         ./INCA_libs/AMSD/ams_spice_in/./.amsspice_pre.ckt.log  \
         -I/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/  \
         -token  \
-        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080CF5C9E5D13BA59FEB270F31D11B6639FEA2FE10B0F887DC39431F37A3ED44FD9EB2FB063238B7DC3BD10E17135D560C2EE2ABF3461982287EE35885E50FB3080A83DEEB8537F10B0A924E93B3199209DFE3ECD1D15BE279EBC4A9A6F64FB2A85A83DED3C50FB10B0A83DED3C50FB10B0F5E2A4FA193D4D6F000042B2
+        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080CF5C9E5D13BA59FEB270F31D11B6639FEA2FE10B0F887DC39431F37A3ED44FD9EB2FB063238B7DC3BD10E17135D560C2EA7EBF36619A26D3BB3BDE0550FB3080A83DEEB8537F10B0A924E93B3199209DFE3ECD1D15BE279EBC4A9B6F65FB2A85A83DED3C50FB10B0A83DED3C50FB10B0F5DD0932B4F54D50000042B7
 
 Loading /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
 Loading /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
@@ -322,15 +322,16 @@ Reading file:  /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/l
 Reading file:  /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rdn5_pw4.scs
 Reading file:  /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/amsControlSpectre.scs
 Reading file:  /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/ie_card.scs
-Time for NDB Parsing: CPU = 327.266 ms, elapsed = 470.828 ms.
-Time accumulated: CPU = 372.939 ms, elapsed = 470.84 ms.
-Peak resident memory used = 45.3 Mbytes.
+Time for NDB Parsing: CPU = 344.043 ms, elapsed = 458.44 ms.
+Time accumulated: CPU = 390.492 ms, elapsed = 458.449 ms.
+Peak resident memory used = 50.6 Mbytes.
 
 
 The CPU load for active processors is :
-        Spectre  0 (8.7 %)       2 (4.3 %)       3 (8.7 %)       5 (70.8 %)
-                 8 (17.4 %)      9 (25.5 %)     10 (14.9 %)     11 (32.6 %)
-                12 (13.0 %)     13 (8.3 %)      14 (17.0 %)     15 (17.0 %)
+        Spectre  0 (13.6 %)      1 (31.9 %)      2 (48.9 %)      3 (2.3 %)
+                 7 (2.2 %)       8 (2.2 %)       9 (20.0 %)     10 (2.2 %)
+                11 (4.3 %)      12 (10.9 %)     13 (39.1 %)     14 (31.1 %)
+                15 (11.1 %)     
         Other   
 Reading link:  /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/discipline.h
 Reading file:  /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/disciplines.vams

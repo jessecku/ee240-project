@@ -5,21 +5,21 @@ Copyright (C) 1989-2017 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: ee140-abc   Host: eda-7.EECS.Berkeley.EDU   HostID: 2080B086   PID: 10156
-Memory  available: 3.5231 GB  physical: 25.2693 GB
+User: ee140-abc   Host: eda-7.EECS.Berkeley.EDU   HostID: 2080B086   PID: 5164
+Memory  available: 4.5626 GB  physical: 25.2693 GB
 Linux   : CentOS Linux release 7.7.1908 (Core)
 CPU Type: Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
         0:       0 [1600.0] (  8 ),  1 [1600.0] (  9 ),  2 [1600.0] ( 10 )
                  3 [1600.0] ( 11 )
-        1:       4 [2533.0] ( 12 ),  5 [1600.0] ( 13 ),  6 [1733.0] ( 14 )
+        1:       4 [1600.0] ( 12 ),  5 [1600.0] ( 13 ),  6 [1600.0] ( 14 )
                  7 [1600.0] ( 15 )
         
-System load averages (1min, 5min, 15min) : 4.2 %, 5.6 %, 6.2 %
+System load averages (1min, 5min, 15min) : 6.3 %, 8.1 %, 7.5 %
 Hyperthreading is enabled
 
 
-Simulating `/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi//INCA_libs/AMSD/ams_spice_in/./.amsspice_pre.ckt' on eda-7.EECS.Berkeley.EDU at 8:14:51 PM, Wed Nov 27, 2019 (process id: 10156).
+Simulating `/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi//INCA_libs/AMSD/ams_spice_in/./.amsspice_pre.ckt' on eda-7.EECS.Berkeley.EDU at 1:25:24 AM, Fri Nov 29, 2019 (process id: 5164).
 Current working directory: /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist
 Environment variable:
     SPECTRE_DEFAULTS=
@@ -30,7 +30,7 @@ Command line:
         INCA_libs/AMSD/ams_spice_in/ahdlSimDB =log  \
         /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi//INCA_libs/AMSD/ams_spice_in/./.amsspice_pre.ckt.log  \
         -token  \
-        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080E838B83335D47FDDE269BA6F64CB7581F023A1363397299FBE77BD7B61CF75D5AA70997E1494739FAB2CFD6623D47EC4AA24F82B2089209DB971D13F0392649F8D34F96029884FC3A47FEA7623D471DDAF3CA13D7F9579D7B720A7667FD563C4F77BC91319B53F9F9E33DD5223D479D2D418C1023D883FD1BB31ED260F9273D5A873EE603D883ED1A401EE3E208975EFBF76BD2A65C36490AA61FA6870CB27D4A83DEEB8537F10B0A924E93B3199209DFE3ECD1D15BE279EBC4A9A6F64FB2A85A83DED3C50FB10B0A83DED3C50FB10B0F5E2A48519424D6F00006DFB
+        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080E838B83335D47FDDE269BA6F64CB7581F023A1363397299FBE77BD7B61CF75D5AA70997E1494739FAB2CFD6623D47EC4AA24F82B2089209DB971D13F0392649F8D34F96029884FC3A47FEA7623D471DDAF3CA13D7F9579D7B720A7667FD563C4F77BC91319B53F9F9E33DD5223D479D2D418C1023D883FD1BB31ED260F9273D5A873EE603D883ED1A401EE3E208975EFBF76BA73629A6490A96DFE3D70CB2381A83DEEB8537F10B0A924E93B3199209DFE3ECD1D15BE279EBC4A9B6F65FB2A85A83DED3C50FB10B0A83DED3C50FB10B0F5DD093EB4F94D5000006E15
 
 Loading /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
 Loading /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
@@ -40,15 +40,15 @@ Loading /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/cmi/lib/64bit/5.0/
 Reading file:  /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi/INCA_libs/AMSD/ams_spice_in/.amsspice_pre.ckt
 Reading file:  /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/configs/spectre.cfg
 Reading file:  /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
-Time for NDB Parsing: CPU = 98.544 ms, elapsed = 205.037 ms.
-Time accumulated: CPU = 165.378 ms, elapsed = 205.047 ms.
-Peak resident memory used = 39.7 Mbytes.
+Time for NDB Parsing: CPU = 95.475 ms, elapsed = 219.209 ms.
+Time accumulated: CPU = 150.414 ms, elapsed = 219.217 ms.
+Peak resident memory used = 45 Mbytes.
 
 
 The CPU load for active processors is :
-        Spectre  0 (5.3 %)       1 (5.0 %)       4 (23.8 %)      5 (50.0 %)
-                 8 (19.0 %)      9 (10.5 %)     10 (66.7 %)     11 (10.0 %)
-                12 (4.8 %)      13 (35.0 %)     14 (5.0 %)      15 (33.3 %)
+        Spectre  0 (4.8 %)       2 (8.7 %)       6 (45.5 %)      7 (4.5 %)
+                 8 (54.5 %)      9 (23.8 %)     10 (27.3 %)     11 (14.3 %)
+                12 (27.3 %)     13 (61.9 %)     14 (4.5 %)      15 (36.4 %)
         Other   
 Reading link:  /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/discipline.h
 Reading file:  /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/disciplines.vams

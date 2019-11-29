@@ -1,0 +1,5 @@
+
+// Library name: final_project
+// Cell name: mux2_ideal
+// View name: schematic
+subckt mux2_ideal S\<0\> VDD VSS in0 in1 out

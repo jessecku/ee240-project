@@ -1,0 +1,8 @@
+    I6 invr_dupe GT_PDW=420n GT_PDL=180.00n sx=4.8e-07 lc=2.7e-07 \
+        GT_PUW=720n GT_PUL=180.00n
+    I5 invr_dupe GT_PDW=420n GT_PDL=180.00n sx=4.8e-07 lc=2.7e-07 \
+        GT_PUW=720n GT_PUL=180.00n
+    I8 clk_nonoverlapping
+    X_SAR SAR_DFF
+ends EE140_Fa19_digital
+// End of subcircuit definition.

@@ -1,13 +1,13 @@
-// Library - ee140_gsi, Cell - EE140_Fa19_digital, View - schematic
-// LAST TIME SAVED: Nov 22 13:41:36 2019
-// NETLIST TIME: Nov 27 20:14:53 2019
+// Library - final_project, Cell - EE140_Fa19_digital, View - schematic
+// LAST TIME SAVED: Nov 29 01:08:31 2019
+// NETLIST TIME: Nov 29 01:25:26 2019
 `timescale 1ns / 1ps 
 
-`worklib ee140_gsi
+`worklib final_project
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="ee140_gsi", dfII_cell="EE140_Fa19_digital", dfII_view="schematic", worklib_name="ee140_gsi", view_name="schematic", last_save_time="Nov 22 13:41:36 2019" *)
+(* dfII_lib="final_project", dfII_cell="EE140_Fa19_digital", dfII_view="schematic", worklib_name="final_project", view_name="schematic", last_save_time="Nov 29 01:08:31 2019" *)
 
 module EE140_Fa19_digital (CLK_ADC, CLK_PGA1, CLK_PGA2, DAC, DONE, VDD, 
     VSS, CLK, COMP, ENABLE);
@@ -33,8 +33,8 @@ SAR_FSM X_FSM ( .clk_pga(CLK_PGA), .clk_dff(CLK_ADC),
     .run_conversion(ENABLE), .adc_convert(CONVERT), 
     .adc_resetb(RESETB), .adc_done(DONE), .clk(CLK));
 
-clk_nonoverlapping X_PGACLKGEN ( .CLK_IN(CLK_PGA), .VSS(VSS), 
-    .VDD(VDD), .PHI1(CLK_PGA1), .PHI2(CLK_PGA2));
+clk_nonoverlapping I8 ( .CLK_IN(CLK_PGA), .VSS(VSS), .VDD(VDD), 
+    .PHI1(CLK_PGA1), .PHI2(CLK_PGA2));
 
 SAR_DFF X_SAR ( .VDD(VDD), .VSS(VSS), .DONE(DONE), .RESETB(RESETB_BUF), 
     .D(DAC[7:0]), .CLK(CLK_ADC), .COMP(COMP));

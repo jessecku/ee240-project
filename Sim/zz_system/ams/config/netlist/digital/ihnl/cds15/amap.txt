@@ -1,7 +1,3 @@
-instMap,*clk_nonoverlapping,*I9,*I9
-instMaster,*clk_nonoverlapping,*I9,*ee140_gsi_invr_dupe_schematic
-instMap,*clk_nonoverlapping,*I8,*I8
-instMaster,*clk_nonoverlapping,*I8,*ee140_gsi_invr_dupe_schematic
 instMap,*clk_nonoverlapping,*I6,*I6
 instMaster,*clk_nonoverlapping,*I6,*ee140_gsi_invr_dupe_schematic
 instMap,*clk_nonoverlapping,*I5,*I5
@@ -17,4 +13,4 @@ instMaster,*clk_nonoverlapping,*I7,*ee140_gsi_NA2HDX0_dupe_schematic
 instMap,*clk_nonoverlapping,*I0,*I0
 instMaster,*clk_nonoverlapping,*I0,*ee140_gsi_NA2HDX0_dupe_schematic
 netMap,*clk_nonoverlapping,*gnd!,*cds_globals.\gnd! 
-cellMap,*clk_nonoverlapping,*clk_nonoverlapping,*ee140_gsi,*schematic
+cellMap,*clk_nonoverlapping,*clk_nonoverlapping,*final_project,*schematic

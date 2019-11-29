@@ -1,5 +1,0 @@
-    I0 (S\<0\> net8 VDD VSS) inverter
-    I2 (VDD VSS in0 out net8) sw_cmos
-    I1 (VDD VSS in1 out S\<0\>) sw_cmos
-ends mux2
-// End of subcircuit definition.

@@ -1,6 +1,6 @@
 
 // Library name: final_project
-// Cell name: ADC_ctrl
+// Cell name: sw_cmos
 // View name: schematic
 // Inherited view list: schematic
-subckt ADC_ctrl
+subckt sw_cmos

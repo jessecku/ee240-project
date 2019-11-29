@@ -1,6 +1,6 @@
 
 // Library name: final_project
-// Cell name: SR_latch
+// Cell name: sw_pmos
 // View name: schematic
 // Inherited view list: schematic
-subckt SR_latch
+subckt sw_pmos

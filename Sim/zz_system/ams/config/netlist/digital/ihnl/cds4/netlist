@@ -1,15 +1,15 @@
-// Library - final_project, Cell - ADC_ctrl, View - schematic
-// LAST TIME SAVED: Nov 25 10:14:02 2019
-// NETLIST TIME: Nov 27 20:14:53 2019
+// Library - final_project, Cell - ADC_ctrl_ideal, View - schematic
+// LAST TIME SAVED: Nov 28 13:41:17 2019
+// NETLIST TIME: Nov 29 01:25:26 2019
 `timescale 1ns / 1ps 
 
 `worklib final_project
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="final_project", dfII_cell="ADC_ctrl", dfII_view="schematic", worklib_name="final_project", view_name="schematic", last_save_time="Nov 25 10:14:02 2019" *)
+(* dfII_lib="final_project", dfII_cell="ADC_ctrl_ideal", dfII_view="schematic", worklib_name="final_project", view_name="schematic", last_save_time="Nov 28 13:41:17 2019" *)
 
-module ADC_ctrl (B, VDD, VSS, S, VREF);
+module ADC_ctrl_ideal (B, VDD, VSS, S, VREF);
 
 
 inout  VDD, VSS;
@@ -21,28 +21,28 @@ output [7:0]  B;
 input [7:0]  S;
 
 
-mux2 I5 ( .S(S[5]), .VSS(VSS), .VDD(VDD), .out(B[5]), .in0(VSS), 
+mux2_ideal I17 ( .S(S[2]), .VSS(VSS), .VDD(VDD), .out(B[2]), .in0(VSS), 
     .in1(VREF));
 
-mux2 I7 ( .S(S[7]), .VSS(VSS), .VDD(VDD), .out(B[7]), .in0(VSS), 
+mux2_ideal I15 ( .S(S[0]), .VSS(VSS), .VDD(VDD), .out(B[0]), .in0(VSS), 
     .in1(VREF));
 
-mux2 I4 ( .S(S[4]), .VSS(VSS), .VDD(VDD), .out(B[4]), .in0(VSS), 
+mux2_ideal I18 ( .S(S[3]), .VSS(VSS), .VDD(VDD), .out(B[3]), .in0(VSS), 
     .in1(VREF));
 
-mux2 I1 ( .S(S[1]), .VSS(VSS), .VDD(VDD), .out(B[1]), .in0(VSS), 
+mux2_ideal I21 ( .S(S[6]), .VSS(VSS), .VDD(VDD), .out(B[6]), .in0(VSS), 
     .in1(VREF));
 
-mux2 I3 ( .S(S[3]), .VSS(VSS), .VDD(VDD), .out(B[3]), .in0(VSS), 
+mux2_ideal I19 ( .S(S[4]), .VSS(VSS), .VDD(VDD), .out(B[4]), .in0(VSS), 
     .in1(VREF));
 
-mux2 I6 ( .S(S[6]), .VSS(VSS), .VDD(VDD), .out(B[6]), .in0(VSS), 
+mux2_ideal I16 ( .S(S[1]), .VSS(VSS), .VDD(VDD), .out(B[1]), .in0(VSS), 
     .in1(VREF));
 
-mux2 I2 ( .S(S[2]), .VSS(VSS), .VDD(VDD), .out(B[2]), .in0(VSS), 
+mux2_ideal I20 ( .S(S[5]), .VSS(VSS), .VDD(VDD), .out(B[5]), .in0(VSS), 
     .in1(VREF));
 
-mux2 I0 ( .S(S[0]), .VSS(VSS), .VDD(VDD), .out(B[0]), .in0(VSS), 
+mux2_ideal I22 ( .S(S[7]), .VSS(VSS), .VDD(VDD), .out(B[7]), .in0(VSS), 
     .in1(VREF));
 
 endmodule

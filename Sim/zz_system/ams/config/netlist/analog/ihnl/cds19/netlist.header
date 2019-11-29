@@ -1,0 +1,6 @@
+
+// Library name: ee140_gsi
+// Cell name: SAR_DFF
+// View name: schematic
+// Inherited view list: schematic
+subckt SAR_DFF

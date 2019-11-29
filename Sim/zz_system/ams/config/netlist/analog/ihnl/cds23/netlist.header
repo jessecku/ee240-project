@@ -1,0 +1,6 @@
+
+// Library name: final_project
+// Cell name: ADC_ctrl_ideal
+// View name: schematic
+// Inherited view list: schematic
+subckt ADC_ctrl_ideal
