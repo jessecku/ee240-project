@@ -1,13 +1,13 @@
 // Library - final_project, Cell - PGA, View - schematic
-// LAST TIME SAVED: Nov 24 20:14:45 2019
-// NETLIST TIME: Nov 27 11:49:28 2019
+// LAST TIME SAVED: Nov 28 16:28:35 2019
+// NETLIST TIME: Nov 28 16:30:05 2019
 `timescale 1ns / 1ps 
 
 `worklib final_project
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="final_project", dfII_cell="PGA", dfII_view="schematic", worklib_name="final_project", view_name="schematic", last_save_time="Nov 24 20:14:45 2019" *)
+(* dfII_lib="final_project", dfII_cell="PGA", dfII_view="schematic", worklib_name="final_project", view_name="schematic", last_save_time="Nov 28 16:28:35 2019" *)
 
 module PGA (VOUT, VDD, VSS, CLK, G, VIN);
 
@@ -19,5 +19,11 @@ input  CLK, VIN;
 
 input [2:0]  G;
 
+
+opamp #( .freq_unitygain(100M), .gain(2000) )  I0 ( .vin_p(VSS), 
+    .vin_n(net9), .vout(VOUT), .vspply_p(VDD), .vref(net017), 
+    .vspply_n(VSS));
+
+inverter I3 ( .IN(CLK), .VSS(VSS), .VDD(VDD), .OUT(CLK2));
 
 endmodule

@@ -1,0 +1,6 @@
+
+// Library name: final_project
+// Cell name: PGA
+// View name: schematic
+// Inherited view list: schematic
+subckt PGA

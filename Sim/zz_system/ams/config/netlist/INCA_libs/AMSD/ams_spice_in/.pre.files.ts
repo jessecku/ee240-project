@@ -1,4 +1,5 @@
-1574884176 /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/spiceModels.scs
+1574987414 /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/INCA_libs/AMSD/ahdl_in/ahdlIncludes.scs
+1574987413 /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/spiceModels.scs
 1562913998 /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/config.scs
 1562913998 /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/param.scs
 1562913997 /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/bip.scs
@@ -278,5 +279,5 @@
 1562913997 /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rxw2ti.scs
 1562913997 /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rdn5_dpc.scs
 1562913997 /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rdn5_pw4.scs
-1574884176 /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/amsControlSpectre.scs
-1574884176 /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/ie_card.scs
+1574987413 /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/amsControlSpectre.scs
+1574987413 /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/ie_card.scs

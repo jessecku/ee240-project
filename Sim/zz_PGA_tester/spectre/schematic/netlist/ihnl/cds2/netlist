@@ -1,0 +1,9 @@
+
+// Library name: final_project
+// Cell name: zz_PGA_tester
+// View name: schematic
+I0 (net4 net08 net3 net5 0 0 0 0) PGA
+V3 (net3 0) vsource dc=10.00m type=dc
+V0 (net08 0) vsource dc=1.2 type=dc
+V1 (net4 0) vsource type=pulse val0=1.8 val1=-1.8 period=1u
+R0 (net5 0) resistor r=100K

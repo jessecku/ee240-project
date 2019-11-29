@@ -124,8 +124,16 @@
 ( net zz_system.X_GSI.ENABLE zz_system.VDDA digital/mixed logic )
 ( net zz_system.X_GSI.X_FSM.run_conversion zz_system.VDDA digital/mixed logic )
 ( net zz_system.I27.VDDA zz_system.VDDA analog/mixed electrical )
-( net zz_system.I27.I10.VDD zz_system.VDDA digital/mixed logic )
-( net zz_system.I27.I9.VDD zz_system.VDDA digital/mixed logic )
+( net zz_system.I27.I10.VDD zz_system.VDDA analog/mixed electrical )
+( net zz_system.I27.I10.I0.VDD zz_system.VDDA analog/mixed electrical )
+( net zz_system.I27.I10.I0.I0.VDD zz_system.VDDA analog/mixed electrical )
+( net zz_system.I27.I10.I1.VDD zz_system.VDDA analog/mixed electrical )
+( net zz_system.I27.I10.I1.I0.VDD zz_system.VDDA analog/mixed electrical )
+( net zz_system.I27.I10.I2.VDD zz_system.VDDA analog/mixed electrical )
+( net zz_system.I27.I10.I2.I0.VDD zz_system.VDDA analog/mixed electrical )
+( net zz_system.I27.I9.VDD zz_system.VDDA analog/mixed electrical )
+( net zz_system.I27.I9.I3.VDD zz_system.VDDA analog/mixed electrical )
+( net zz_system.I27.I9.I0.vspply_p zz_system.VDDA analog/mixed electrical )
 ( net zz_system.I27.I8.VDD zz_system.VDDA analog/mixed electrical )
 ( net zz_system.I27.I8.I8.VDD zz_system.VDDA analog/mixed electrical )
 ( net zz_system.I27.I8.I7.VDD zz_system.VDDA analog/mixed electrical )
@@ -157,8 +165,17 @@
 ( net zz_system.I27.I14.VSS zz_system.I27.VSS digital/mixed logic )
 ( net zz_system.I27.I13.VSS zz_system.I27.VSS digital/mixed logic )
 ( net zz_system.I27.I12.VSS zz_system.I27.VSS digital/mixed logic )
-( net zz_system.I27.I10.VSS zz_system.I27.VSS digital/mixed logic )
-( net zz_system.I27.I9.VSS zz_system.I27.VSS digital/mixed logic )
+( net zz_system.I27.I10.VSS zz_system.I27.VSS analog/mixed electrical )
+( net zz_system.I27.I10.I0.VSS zz_system.I27.VSS analog/mixed electrical )
+( net zz_system.I27.I10.I0.I0.VSS zz_system.I27.VSS analog/mixed electrical )
+( net zz_system.I27.I10.I1.VSS zz_system.I27.VSS analog/mixed electrical )
+( net zz_system.I27.I10.I1.I0.VSS zz_system.I27.VSS analog/mixed electrical )
+( net zz_system.I27.I10.I2.VSS zz_system.I27.VSS analog/mixed electrical )
+( net zz_system.I27.I10.I2.I0.VSS zz_system.I27.VSS analog/mixed electrical )
+( net zz_system.I27.I9.VSS zz_system.I27.VSS analog/mixed electrical )
+( net zz_system.I27.I9.I3.VSS zz_system.I27.VSS analog/mixed electrical )
+( net zz_system.I27.I9.I0.vspply_n zz_system.I27.VSS analog/mixed electrical )
+( net zz_system.I27.I9.I0.vin_p zz_system.I27.VSS analog/mixed electrical )
 ( net zz_system.I27.I8.VSS zz_system.I27.VSS analog/mixed electrical )
 ( net zz_system.I27.I8.I8.VSS zz_system.I27.VSS analog/mixed electrical )
 ( net zz_system.I27.I8.I7.VSS zz_system.I27.VSS analog/mixed electrical )
@@ -546,10 +563,11 @@
 ( net zz_system.I27.CLK_PGA2 zz_system.PHI2_temp analog electrical )
 ( net zz_system.I27.I8.CMP zz_system.PHI2_temp analog electrical )
 
-( net zz_system.PHI1_temp zz_system.PHI1_temp analog/mixed electrical )
-( net zz_system.I27.CLK_PGA1 zz_system.PHI1_temp analog/mixed electrical )
-( net zz_system.I27.I9.CLK zz_system.PHI1_temp digital/mixed logic )
-( net zz_system.I27.I8.LD zz_system.PHI1_temp analog/mixed electrical )
+( net zz_system.PHI1_temp zz_system.PHI1_temp analog electrical )
+( net zz_system.I27.CLK_PGA1 zz_system.PHI1_temp analog electrical )
+( net zz_system.I27.I9.CLK zz_system.PHI1_temp analog electrical )
+( net zz_system.I27.I9.I3.IN zz_system.PHI1_temp analog electrical )
+( net zz_system.I27.I8.LD zz_system.PHI1_temp analog electrical )
 
 ( net zz_system.I27.VIN zz_system.I27.VIN analog electrical )
 ( net zz_system.I27.I8.VIN zz_system.I27.VIN analog electrical )
@@ -572,12 +590,25 @@
 
 ( net zz_system.I27.I8.net26 zz_system.I27.I8.net26 analog electrical )
 
-( net zz_system.I27.net015 zz_system.I27.net015 digital logic )
-( net zz_system.I27.I9.VOUT zz_system.I27.net015 digital logic )
+( net zz_system.I27.I9.net017 zz_system.I27.I9.net017 analog electrical )
+( net zz_system.I27.I9.I0.vref zz_system.I27.I9.net017 analog electrical )
 
-( net zz_system.I27.net4 zz_system.I27.net4 digital logic )
-( net zz_system.I27.I10.OUT zz_system.I27.net4 digital logic )
-( net zz_system.I27.I9.VIN zz_system.I27.net4 digital logic )
+( net zz_system.I27.net015 zz_system.I27.net015 analog electrical )
+( net zz_system.I27.I9.VOUT zz_system.I27.net015 analog electrical )
+( net zz_system.I27.I9.I0.vout zz_system.I27.net015 analog electrical )
+
+( net zz_system.I27.I9.net9 zz_system.I27.I9.net9 analog electrical )
+( net zz_system.I27.I9.I0.vin_n zz_system.I27.I9.net9 analog electrical )
+
+( net zz_system.I27.I9.I0.cout zz_system.I27.I9.I0.cout analog electrical )
+
+( net zz_system.I27.I9.CLK2 zz_system.I27.I9.CLK2 analog electrical )
+( net zz_system.I27.I9.I3.OUT zz_system.I27.I9.CLK2 analog electrical )
+
+( net zz_system.I27.net4 zz_system.I27.net4 analog electrical )
+( net zz_system.I27.I10.OUT zz_system.I27.net4 analog electrical )
+( net zz_system.I27.I10.I2.out zz_system.I27.net4 analog electrical )
+( net zz_system.I27.I9.VIN zz_system.I27.net4 analog electrical )
 
 ( net zz_system.G[2] zz_system.G[2] analog/mixed electrical )
 ( net zz_system.I27.G[2] zz_system.G[2] digital/mixed logic )
@@ -591,29 +622,58 @@
 ( net zz_system.I27.G[0] zz_system.G[0] digital/mixed logic )
 ( net zz_system.I27.I9.G[0] zz_system.G[0] digital/mixed logic )
 
-( net zz_system.S[1] zz_system.S[1] analog/mixed electrical )
-( net zz_system.I27.S[1] zz_system.S[1] digital/mixed logic )
-( net zz_system.I27.I10.S[1] zz_system.S[1] digital/mixed logic )
+( net zz_system.I27.I9.net014 zz_system.I27.I9.net014 analog electrical )
 
-( net zz_system.S[0] zz_system.S[0] analog/mixed electrical )
-( net zz_system.I27.S[0] zz_system.S[0] digital/mixed logic )
-( net zz_system.I27.I10.S[0] zz_system.S[0] digital/mixed logic )
+( net zz_system.I27.I10.I2.net8 zz_system.I27.I10.I2.net8 analog electrical )
+( net zz_system.I27.I10.I2.I0.OUT zz_system.I27.I10.I2.net8 analog electrical )
 
-( net zz_system.I27.VPTAT zz_system.I27.VPTAT digital logic )
-( net zz_system.I27.I12.VPTAT zz_system.I27.VPTAT digital logic )
-( net zz_system.I27.I10.IN[3] zz_system.I27.VPTAT digital logic )
+( net zz_system.S[1] zz_system.S[1] analog electrical )
+( net zz_system.I27.S[1] zz_system.S[1] analog electrical )
+( net zz_system.I27.I10.S[1] zz_system.S[1] analog electrical )
+( net zz_system.I27.I10.I2.S[0] zz_system.S[1] analog electrical )
+( net zz_system.I27.I10.I2.I0.IN zz_system.S[1] analog electrical )
 
-( net zz_system.I27.VBATDIV4 zz_system.I27.VBATDIV4 digital logic )
-( net zz_system.I27.I11.VBATDIV4 zz_system.I27.VBATDIV4 digital logic )
-( net zz_system.I27.I10.IN[2] zz_system.I27.VBATDIV4 digital logic )
+( net zz_system.I27.I10.net11 zz_system.I27.I10.net11 analog electrical )
+( net zz_system.I27.I10.I0.out zz_system.I27.I10.net11 analog electrical )
+( net zz_system.I27.I10.I2.in0 zz_system.I27.I10.net11 analog electrical )
 
-( net zz_system.EXT_IN[1] zz_system.EXT_IN[1] analog/mixed electrical )
-( net zz_system.I27.EXT_IN[1] zz_system.EXT_IN[1] digital/mixed logic )
-( net zz_system.I27.I10.IN[1] zz_system.EXT_IN[1] digital/mixed logic )
+( net zz_system.I27.I10.net10 zz_system.I27.I10.net10 analog electrical )
+( net zz_system.I27.I10.I1.out zz_system.I27.I10.net10 analog electrical )
+( net zz_system.I27.I10.I2.in1 zz_system.I27.I10.net10 analog electrical )
 
-( net zz_system.EXT_IN[0] zz_system.EXT_IN[0] analog/mixed electrical )
-( net zz_system.I27.EXT_IN[0] zz_system.EXT_IN[0] digital/mixed logic )
-( net zz_system.I27.I10.IN[0] zz_system.EXT_IN[0] digital/mixed logic )
+( net zz_system.I27.I10.I1.net8 zz_system.I27.I10.I1.net8 analog electrical )
+( net zz_system.I27.I10.I1.I0.OUT zz_system.I27.I10.I1.net8 analog electrical )
+
+( net zz_system.S[0] zz_system.S[0] analog electrical )
+( net zz_system.I27.S[0] zz_system.S[0] analog electrical )
+( net zz_system.I27.I10.S[0] zz_system.S[0] analog electrical )
+( net zz_system.I27.I10.I0.S[0] zz_system.S[0] analog electrical )
+( net zz_system.I27.I10.I0.I0.IN zz_system.S[0] analog electrical )
+( net zz_system.I27.I10.I1.S[0] zz_system.S[0] analog electrical )
+( net zz_system.I27.I10.I1.I0.IN zz_system.S[0] analog electrical )
+
+( net zz_system.EXT_IN[1] zz_system.EXT_IN[1] analog electrical )
+( net zz_system.I27.EXT_IN[1] zz_system.EXT_IN[1] analog electrical )
+( net zz_system.I27.I10.IN[1] zz_system.EXT_IN[1] analog electrical )
+( net zz_system.I27.I10.I1.in0 zz_system.EXT_IN[1] analog electrical )
+
+( net zz_system.EXT_IN[0] zz_system.EXT_IN[0] analog electrical )
+( net zz_system.I27.EXT_IN[0] zz_system.EXT_IN[0] analog electrical )
+( net zz_system.I27.I10.IN[0] zz_system.EXT_IN[0] analog electrical )
+( net zz_system.I27.I10.I1.in1 zz_system.EXT_IN[0] analog electrical )
+
+( net zz_system.I27.I10.I0.net8 zz_system.I27.I10.I0.net8 analog electrical )
+( net zz_system.I27.I10.I0.I0.OUT zz_system.I27.I10.I0.net8 analog electrical )
+
+( net zz_system.I27.VPTAT zz_system.I27.VPTAT analog/mixed electrical )
+( net zz_system.I27.I12.VPTAT zz_system.I27.VPTAT digital/mixed logic )
+( net zz_system.I27.I10.IN[3] zz_system.I27.VPTAT analog/mixed electrical )
+( net zz_system.I27.I10.I0.in0 zz_system.I27.VPTAT analog/mixed electrical )
+
+( net zz_system.I27.VBATDIV4 zz_system.I27.VBATDIV4 analog/mixed electrical )
+( net zz_system.I27.I11.VBATDIV4 zz_system.I27.VBATDIV4 digital/mixed logic )
+( net zz_system.I27.I10.IN[2] zz_system.I27.VBATDIV4 analog/mixed electrical )
+( net zz_system.I27.I10.I0.in1 zz_system.I27.VBATDIV4 analog/mixed electrical )
 
 ( net zz_system.I27.VREF_REG zz_system.I27.VREF_REG digital logic )
 ( net zz_system.I27.I14.VREF zz_system.I27.VREF_REG digital logic )
@@ -1681,8 +1741,6 @@
    electrical
    analog
    (
-    ( zz_system.I27.I9.VSS logic digital )
-    ( zz_system.I27.I10.VSS logic digital )
     ( zz_system.I27.I12.VSS logic digital )
     ( zz_system.I27.I13.VSS logic digital )
     ( zz_system.I27.I14.VSS logic digital )
@@ -1692,35 +1750,34 @@
    ( (vsup_min 0.500000000000000) (vthi (0 + (((1 - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + ((1 - 0) / 3.000000000000000))) (vtol (((0 + (((1 - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + ((1 - 0) / 3.000000000000000))) / 4.000000000000000)) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (rhi 200) (rlo 200) (rx 200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) (vddnet "zz_system.VDDA") (vssnet "cds_globals.\gnd! ") )
 )
 ( connect
-   connectLib.Bidir_2_dynsup:module
-   zz_system.I27.VDDA
-   electrical
-   analog
-   (
-    ( zz_system.I27.I9.VDD logic digital )
-    ( zz_system.I27.I10.VDD logic digital )
-   )
-   "connect Bidir_2_dynsup merged logic, electrical"
-   ( (vsup_min 0.500000000000000) (vthi (0 + (((1 - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + ((1 - 0) / 3.000000000000000))) (vtol (((0 + (((1 - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + ((1 - 0) / 3.000000000000000))) / 4.000000000000000)) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (rhi 200) (rlo 200) (rx 200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) (vddnet "zz_system.VDDA") (vssnet "cds_globals.\gnd! ") )
-)
-( connect
-   connectLib.E2L_2_dynsup:module
-   zz_system.I27.CLK_PGA1
-   electrical
-   analog
-   (
-    ( zz_system.I27.I9.CLK logic digital )
-   )
-   "connect E2L_2_dynsup merged logic, electrical"
-   ( (vsup_min 0.500000000000000) (vthi (0 + (((1 - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + ((1 - 0) / 3.000000000000000))) (vtol (((0 + (((1 - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + ((1 - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (vddnet "zz_system.VDDA") (vssnet "cds_globals.\gnd! ") )
-)
-( connect
    connectLib.L2E_2_dynsup:module
    zz_system.I27.VREF_ADC
    electrical
    analog
    (
     ( zz_system.I27.I12.VREF_ADC logic digital )
+   )
+   "connect L2E_2_dynsup merged logic, electrical"
+   ( (vthi (0 + (((1 - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + ((1 - 0) / 3.000000000000000))) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (rhi 200) (rlo 200) (rx 200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) (vddnet "zz_system.VDDA") (vssnet "cds_globals.\gnd! ") )
+)
+( connect
+   connectLib.L2E_2_dynsup:module
+   zz_system.I27.VPTAT
+   electrical
+   analog
+   (
+    ( zz_system.I27.I12.VPTAT logic digital )
+   )
+   "connect L2E_2_dynsup merged logic, electrical"
+   ( (vthi (0 + (((1 - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + ((1 - 0) / 3.000000000000000))) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (rhi 200) (rlo 200) (rx 200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) (vddnet "zz_system.VDDA") (vssnet "cds_globals.\gnd! ") )
+)
+( connect
+   connectLib.L2E_2_dynsup:module
+   zz_system.I27.VBATDIV4
+   electrical
+   analog
+   (
+    ( zz_system.I27.I11.VBATDIV4 logic digital )
    )
    "connect L2E_2_dynsup merged logic, electrical"
    ( (vthi (0 + (((1 - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + ((1 - 0) / 3.000000000000000))) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (rhi 200) (rlo 200) (rx 200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) (vddnet "zz_system.VDDA") (vssnet "cds_globals.\gnd! ") )
@@ -1793,28 +1850,6 @@
 )
 ( connect
    connectLib.E2L_2_dynsup:module
-   zz_system.EXT_IN[0]
-   electrical
-   analog
-   (
-    ( zz_system.I27.EXT_IN[0] logic digital )
-   )
-   "connect E2L_2_dynsup merged logic, electrical"
-   ( (vsup_min 0.500000000000000) (vthi (0 + (((1 - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + ((1 - 0) / 3.000000000000000))) (vtol (((0 + (((1 - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + ((1 - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (vddnet "zz_system.VDDA") (vssnet "cds_globals.\gnd! ") )
-)
-( connect
-   connectLib.E2L_2_dynsup:module
-   zz_system.EXT_IN[1]
-   electrical
-   analog
-   (
-    ( zz_system.I27.EXT_IN[1] logic digital )
-   )
-   "connect E2L_2_dynsup merged logic, electrical"
-   ( (vsup_min 0.500000000000000) (vthi (0 + (((1 - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + ((1 - 0) / 3.000000000000000))) (vtol (((0 + (((1 - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + ((1 - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (vddnet "zz_system.VDDA") (vssnet "cds_globals.\gnd! ") )
-)
-( connect
-   connectLib.E2L_2_dynsup:module
    zz_system.G[2]
    electrical
    analog
@@ -1842,28 +1877,6 @@
    analog
    (
     ( zz_system.I27.G[0] logic digital )
-   )
-   "connect E2L_2_dynsup merged logic, electrical"
-   ( (vsup_min 0.500000000000000) (vthi (0 + (((1 - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + ((1 - 0) / 3.000000000000000))) (vtol (((0 + (((1 - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + ((1 - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (vddnet "zz_system.VDDA") (vssnet "cds_globals.\gnd! ") )
-)
-( connect
-   connectLib.E2L_2_dynsup:module
-   zz_system.S[1]
-   electrical
-   analog
-   (
-    ( zz_system.I27.S[1] logic digital )
-   )
-   "connect E2L_2_dynsup merged logic, electrical"
-   ( (vsup_min 0.500000000000000) (vthi (0 + (((1 - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + ((1 - 0) / 3.000000000000000))) (vtol (((0 + (((1 - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + ((1 - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (vddnet "zz_system.VDDA") (vssnet "cds_globals.\gnd! ") )
-)
-( connect
-   connectLib.E2L_2_dynsup:module
-   zz_system.S[0]
-   electrical
-   analog
-   (
-    ( zz_system.I27.S[0] logic digital )
    )
    "connect E2L_2_dynsup merged logic, electrical"
    ( (vsup_min 0.500000000000000) (vthi (0 + (((1 - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + ((1 - 0) / 3.000000000000000))) (vtol (((0 + (((1 - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + ((1 - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (vddnet "zz_system.VDDA") (vssnet "cds_globals.\gnd! ") )
@@ -1998,8 +2011,38 @@
 (instance zz_system.I27.I8.C3 analog)
 (instance zz_system.I27.I8.C2 analog)
 (instance zz_system.I27.I8 analog)
-(instance zz_system.I27.I9 digital)
-(instance zz_system.I27.I10 digital)
+(instance zz_system.I27.I9.I0 analog)
+(instance zz_system.I27.I9.I3.M0 analog)
+(instance zz_system.I27.I9.I3.M1 analog)
+(instance zz_system.I27.I9.I3 analog)
+(instance zz_system.I27.I9.R0 analog)
+(instance zz_system.I27.I9.C4 analog)
+(instance zz_system.I27.I9.C0 analog)
+(instance zz_system.I27.I9.V1 analog)
+(instance zz_system.I27.I9.V0 analog)
+(instance zz_system.I27.I9.W1 analog)
+(instance zz_system.I27.I9.W0 analog)
+(instance zz_system.I27.I9.W21 analog)
+(instance zz_system.I27.I9 mixed)
+(instance zz_system.I27.I10.I2.I0.M0 analog)
+(instance zz_system.I27.I10.I2.I0.M1 analog)
+(instance zz_system.I27.I10.I2.I0 analog)
+(instance zz_system.I27.I10.I2.W1 analog)
+(instance zz_system.I27.I10.I2.W0 analog)
+(instance zz_system.I27.I10.I2 analog)
+(instance zz_system.I27.I10.I1.I0.M0 analog)
+(instance zz_system.I27.I10.I1.I0.M1 analog)
+(instance zz_system.I27.I10.I1.I0 analog)
+(instance zz_system.I27.I10.I1.W1 analog)
+(instance zz_system.I27.I10.I1.W0 analog)
+(instance zz_system.I27.I10.I1 analog)
+(instance zz_system.I27.I10.I0.I0.M0 analog)
+(instance zz_system.I27.I10.I0.I0.M1 analog)
+(instance zz_system.I27.I10.I0.I0 analog)
+(instance zz_system.I27.I10.I0.W1 analog)
+(instance zz_system.I27.I10.I0.W0 analog)
+(instance zz_system.I27.I10.I0 analog)
+(instance zz_system.I27.I10 analog)
 (instance zz_system.I27.I12 digital)
 (instance zz_system.I27.I13 digital)
 (instance zz_system.I27.I14 digital)

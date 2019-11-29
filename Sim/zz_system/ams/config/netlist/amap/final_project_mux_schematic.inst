@@ -27,3 +27,4 @@ HEADER
 "OUTv" "(FUNCTION or(mappedRoot(\".1@index\") mappedRoot(\".OUT\")))v"
 "OUTv" ".OUTv"
 "OUTv" ".\\1 v"
+"I0n I1n I2n" "final_project_mux2_schematic"

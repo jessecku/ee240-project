@@ -1,3 +1,9 @@
+instMap,*mux,*I2,*I2
+instMaster,*mux,*I2,*final_project_mux2_schematic
+instMap,*mux,*I1,*I1
+instMaster,*mux,*I1,*final_project_mux2_schematic
+instMap,*mux,*I0,*I0
+instMaster,*mux,*I0,*final_project_mux2_schematic
 netMap,*mux,*IN<3>,*IN[3]
 netMap,*mux,*IN<2>,*IN[2]
 netMap,*mux,*IN<1>,*IN[1]

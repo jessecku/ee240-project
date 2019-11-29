@@ -1,7 +1,7 @@
 ("final_project" "BGR" "schematic" nil) nil
 ("final_project" "mux2" "schematic" nil) nil
-("final_project" "PGA" "schematic" nil) nil
 ("ee140_gsi" "SAR_DFF" "schematic" nil) nil
+("final_project" "PGA" "schematic" nil) nil
 ("analogLib" "vsource" "spectre" spectreVandISourcePrim) t
 ("PRIMLIB" "ne" "spectre" nil) t
 ("final_project" "SR_latch" "schematic" nil) nil
@@ -22,7 +22,9 @@
 ("final_project" "ADC_ctrl" "schematic" nil) nil
 ("final_project" "AREG" "schematic" nil) nil
 ("final_project" "VBATDIV4" "schematic" nil) nil
+("analogLib" "vdc" "spectre" spectreSrcPrim) t
 ("analogLib" "vcvs" "spectre" _spectreVCPrim) t
+("ahdlLib" "opamp" "veriloga" nil) nil
 ("final_project" "mux" "schematic" nil) nil
 ("final_project" "COMP" "schematic" nil) nil
 ("analogLib" "res" "spectre" nil) t

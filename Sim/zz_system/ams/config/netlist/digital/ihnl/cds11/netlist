@@ -1,6 +1,6 @@
 // Library - final_project, Cell - VBATDIV4, View - schematic
 // LAST TIME SAVED: Nov 24 20:14:58 2019
-// NETLIST TIME: Nov 27 11:49:28 2019
+// NETLIST TIME: Nov 28 16:30:06 2019
 `timescale 1ns / 1ps 
 
 `worklib final_project

@@ -1,5 +1,6 @@
 CADENCE IHNL04120
 $model
+opamp opamp opamp
 final_project/PGA/schematic final_project/PGA/schematic/schematic/final_project_zz_system_config/0 PGA
 final_project/VBATDIV4/schematic final_project/VBATDIV4/schematic/schematic/final_project_zz_system_config/0 VBATDIV4
 final_project/SR_latch/schematic final_project/SR_latch/schematic/schematic/final_project_zz_system_config/0 SR_latch

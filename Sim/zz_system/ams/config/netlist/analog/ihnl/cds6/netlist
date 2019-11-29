@@ -1,0 +1,11 @@
+    R0 (VOUT VSS) resistor r=100K
+    C4 (net9 VOUT) capacitor c=40p
+    C0 (net014 net9) capacitor c=400p
+    V1 (VDD VSS) vsource dc=1.2 type=dc
+    V0 (VIN VSS) vsource dc=50.00m mag=100m type=dc
+    W1 (VIN VSS CLK2 VSS) relay ropen=1T rclosed=1.0
+    W0 (net014 VIN CLK VSS) relay ropen=1T rclosed=1.0
+    W21 (VOUT net9 CLK2 VSS) relay ropen=1T rclosed=1.0
+    I3 inverter
+ends PGA
+// End of subcircuit definition.

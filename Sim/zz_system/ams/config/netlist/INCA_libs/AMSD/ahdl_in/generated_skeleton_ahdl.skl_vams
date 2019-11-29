@@ -1,0 +1,209 @@
+
+`include "constants.vams"
+nature Current
+  access = I;
+  units = "A";
+  abstol = 1e-12;
+  idt_nature = Charge;
+endnature
+
+
+nature Charge
+  access = Q;
+  units = "coul";
+  abstol = 1e-14;
+  ddt_nature = Current;
+endnature
+
+
+nature Voltage
+  access = V;
+  units = "V";
+  abstol = 1e-06;
+  idt_nature = Flux;
+endnature
+
+
+nature Flux
+  access = Phi;
+  units = "Wb";
+  abstol = 1e-09;
+  ddt_nature = Voltage;
+endnature
+
+
+nature Magneto_Motive_Force
+  access = MMF;
+  units = "A*turn";
+  abstol = 1e-12;
+endnature
+
+
+nature Temperature
+  access = Temp;
+  units = "C";
+  abstol = 0.0001;
+endnature
+
+
+nature Power
+  access = Pwr;
+  units = "W";
+  abstol = 1e-09;
+endnature
+
+
+nature Position
+  access = Pos;
+  units = "m";
+  abstol = 1e-06;
+  ddt_nature = Velocity;
+endnature
+
+
+nature Velocity
+  access = Vel;
+  units = "m/s";
+  abstol = 1e-06;
+  idt_nature = Position;
+  ddt_nature = Acceleration;
+endnature
+
+
+nature Acceleration
+  access = Acc;
+  units = "m/s^2";
+  abstol = 1e-06;
+  idt_nature = Velocity;
+  ddt_nature = Impulse;
+endnature
+
+
+nature Impulse
+  access = Imp;
+  units = "m/s^3";
+  abstol = 1e-06;
+  idt_nature = Acceleration;
+endnature
+
+
+nature Force
+  access = F;
+  units = "N";
+  abstol = 1e-06;
+endnature
+
+
+nature Angle
+  access = Theta;
+  units = "rads";
+  abstol = 1e-06;
+  ddt_nature = Angular_Velocity;
+endnature
+
+
+nature Angular_Velocity
+  access = Omega;
+  units = "rads/s";
+  abstol = 1e-06;
+  idt_nature = Angle;
+  ddt_nature = Angular_Acceleration;
+endnature
+
+
+nature Angular_Acceleration
+  access = Alpha;
+  units = "rads/s^2";
+  abstol = 1e-06;
+  idt_nature = Angular_Velocity;
+endnature
+
+
+nature Angular_Force
+  access = Tau;
+  units = "N*m";
+  abstol = 1e-06;
+endnature
+
+
+discipline logic
+  domain discrete;
+enddiscipline
+
+
+discipline ddiscrete
+  domain discrete;
+enddiscipline
+
+
+discipline electrical
+  potential Voltage;
+  flow Current;
+enddiscipline
+
+
+discipline voltage
+  potential Voltage;
+enddiscipline
+
+
+discipline current
+  potential Current;
+enddiscipline
+
+
+discipline magnetic
+  potential Magneto_Motive_Force;
+  flow Flux;
+enddiscipline
+
+
+discipline thermal
+  potential Temperature;
+  flow Power;
+enddiscipline
+
+
+discipline kinematic
+  potential Position;
+  flow Force;
+enddiscipline
+
+
+discipline kinematic_v
+  potential Velocity;
+  flow Force;
+enddiscipline
+
+
+discipline rotational
+  potential Angle;
+  flow Angular_Force;
+enddiscipline
+
+
+discipline rotational_omega
+  potential Angular_Velocity;
+  flow Angular_Force;
+enddiscipline
+
+
+`worklib \ahdlLib
+`view veriloga
+(* ahdlskeleton, sourcefile="/share/instsww/cadence/IC.06.17.823/tools.lnx86/dfII/samples/artist/ahdlLib/opamp/veriloga/veriloga.va" *)
+module opamp(vout, vref, vin_p, vin_n, vspply_p, vspply_n);
+ input vref, vspply_p, vspply_n;
+inout vout, vin_p, vin_n;
+electrical vout, vref, vin_p, vin_n, vspply_p, vspply_n;
+parameter real gain = 835000;
+parameter real freq_unitygain = 1e+06;
+parameter real rin = 1e+06;
+parameter real vin_offset = 0;
+parameter real ibias = 0;
+parameter real iin_max = 0.0001;
+parameter real slew_rate = 500000;
+parameter real rout = 80;
+parameter real vsoft = 0.5;
+electrical cout;
+
+endmodule

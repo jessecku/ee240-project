@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      ee140-abd
+HostName                       c125m-14.EECS.Berkeley.EDU
+ProcessIdentifier              8377
+ProcessCreationTime_UTC        1575057904
+ProcessCreationTime_Readable   Fri Nov 29 12:05:04 2019 PST
+AppIdentifier                  /share/instsww/cadence/IC617/tools/dfII/bin/64bit/libManager
+OSType                         lnx86
+ReasonForPlacingEditLock       log file
+FilePathUsedToEditLock         /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/libManager.log
+TimeEditLocked                 Fri Nov 29 12:05:04 2019 PST

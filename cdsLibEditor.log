@@ -1,14 +1,35 @@
 \o Program:		@(#)$CDS: cdsLibEditor version 6.1.7 - CAT35 10/30/2018 21:09 (sjfnl050) $
 \o Sub version:		sub-version  s231 
-\o Arguments:		-display :54 -mpssession virtuoso15052 -mpshost eda-7.EECS.Berkeley.EDU -namespace CDBA -cdslib /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/cds.lib 
-\o Working Directory:	eda-7.EECS.Berkeley.EDU:/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project
+\o Arguments:		-display :55.0 -mpssession virtuoso721 -mpshost eda-1.EECS.Berkeley.EDU -namespace CDBA -cdslib /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/cds.lib 
+\o Working Directory:	eda-1.EECS.Berkeley.EDU:/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project
 \o 64-bit offsets
 \a nrSetWindowVisibility(cdsLibEditor "show")
 \o Qt version: 		4.8.5
 \a nrSetCurrentWindow(cdsLibEditor)
 \a nrListItemAction(cdsLibEditor->mainTable 0 0)
 \o Active cell: 0 0 "analogLib"
-\a nrResizeWindow(cdsLibEditor list(1884 303 500 400))
+\a nrResizeWindow(cdsLibEditor list(6 49 500 400))
+\a nrListItemAction(cdsLibEditor->mainTable 33 1)
+\o Active cell: 33 1 ""
+\a nrListItemAction(cdsLibEditor->mainTable 32 0)
+\o Active cell: 32 0 "final_project"
+\a nrListItemAction(cdsLibEditor->mainTable 33 0)
+\o Active cell: 33 0 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 33 0 "a")
+\a nrListItemAction(cdsLibEditor->mainTable 33 1)
+\o Active cell: 33 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 33 1 "Cadence Install Path>/tools.lnx86/dfII/etc/cdslib/artist/functional/allFunc.scs")
+\o QUESTION (CLE-200): The directory "Cadence Install Path>/tools.lnx86/dfII/etc/cdslib/artist/functional/allFunc.scs" \ndoesn't exist. If other tools use this file, \nan error will occur unless you either create \nthe directory you have specified or change the \npath to an existing directory. \n\nDo you want to create a new library? 
+\a nrSetWindowVisibility(needCreateDialog "show")
+\a nrResizeWindow(needCreateDialog list(0 140 527 200))
+\a nrSetCurrentWindow(needCreateDialog)
+\a needCreateDialog->cancelButton->value = t
+\a nrSetCurrentWindow(cdsLibEditor)
 \a cdsLibEditor->fileExitButton->value = t
+\o QUESTION (CLE-205): You have made changes which have not been saved. \n\nWould you like to save your changes? 
+\a nrSetWindowVisibility(needSaveDialog "show")
+\a nrResizeWindow(needSaveDialog list(72 162 369 136))
+\a nrSetCurrentWindow(needSaveDialog)
+\a needSaveDialog->noButton->value = t
 \a nrSetWindowVisibility(cdsLibEditor "hide")
 \a exit(0)

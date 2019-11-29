@@ -1,13 +1,24 @@
 irun(64): 15.20-s076: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+file: ./netlist.vams
+	module final_project.PGA:schematic
+		errors: 0, warnings: 0
+	module final_project.mux:schematic
+		errors: 0, warnings: 0
+	module final_project.BGR:schematic
+		errors: 0, warnings: 0
+	module final_project.AREG:schematic
+		errors: 0, warnings: 0
 file: ./cds_globals.vams
 	module worklib.cds_globals:vams
 		errors: 0, warnings: 0
 file: /home/ff/ee140/fa19/cadence/ee140_gsi/SAR_FSM/functional/verilog.v
-ncvlog: *W,SPDUSD: Include directory /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/ given but not used.
+	module ee140_gsi.SAR_FSM:functional
+		errors: 0, warnings: 0
+ncvlog: *W,SPDUSD: Include directory /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/ given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
-ncvlog: Memory Usage - 21.3M program + 29.6M data = 50.9M total
-ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 57.1% cpu)
+ncvlog: Memory Usage - 21.3M program + 29.5M data = 50.9M total
+ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 42.7% cpu)
 
 		Caching library 'final_project' ....... Done
 		Caching library 'ee140_gsi' ....... Done
@@ -22,31 +33,33 @@ ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 57.1% cpu)
 		logic_cr
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		final_project.ADC:schematic <0x6db2afd9>
+		ee140_gsi.SAR_FSM:functional <0x4c2defb0>
+			streams:   4, words:  1794
+		final_project.ADC:schematic <0x15cfdaf2>
 			streams:   0, words:     0
-		final_project.system:schematic <0x75951058>
+		final_project.system:schematic <0x1e9b8364>
 			streams:   0, words:     0
-		final_project.zz_system:schematic <0x10cb3f3a>
+		final_project.zz_system:schematic <0x3be2b0be>
 			streams:   0, words:     0
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                 Instances  Unique
-		Modules:               158      34
-		Primitives:              9       1
-		Registers:             320     146
-		Scalar wires:           60       -
-		Vectored wires:         57       -
-		Named events:           19       6
-		Always blocks:         107      50
-		Initial blocks:         38      22
-		Cont. assignments:      17      15
-		Pseudo assignments:     15       5
-		Interconnect:          506       -
+		Modules:               162      35
+		Primitives:              6       1
+		Registers:             257     146
+		Scalar wires:           45       -
+		Vectored wires:         45       -
+		Named events:           15       6
+		Always blocks:          75      50
+		Initial blocks:         30      22
+		Cont. assignments:      14      15
+		Pseudo assignments:     10       5
+		Interconnect:          512       -
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: final_project.zz_system:config
-ncelab: Memory Usage - 49.9M program + 55.0M data = 105.0M total (Peak 239.2M)
-ncelab: CPU Usage - 0.2s system + 0.2s user = 0.4s total (0.5s, 79.3% cpu)
+ncelab: Memory Usage - 49.9M program + 55.4M data = 105.3M total (Peak 239.3M)
+ncelab: CPU Usage - 0.1s system + 0.2s user = 0.3s total (0.4s, 69.6% cpu)
 Loading snapshot final_project.zz_system:config .................... Done
 ncsim: *W,NXDMSO: This design will require a check out of DMSO license when it is run with Xcelium.
 Simulating in AMS-SIE mode...
@@ -65,47 +78,61 @@ Copyright (C) 1989-2017 Cadence Design Systems, Inc. All rights reserved
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
         Security, Inc.
 
-User: ee140-abc   Host: eda-7.EECS.Berkeley.EDU   HostID: 2080B086   PID:
-        15283
-Memory  available: 4.3749 GB  physical: 25.2693 GB
+User: ee140-abd   Host: eda-1.EECS.Berkeley.EDU   HostID: 2080F786   PID:
+        12423
+Memory  available: 31.7013 GB  physical: 50.6362 GB
 Linux   : CentOS Linux release 7.7.1908 (Core)
 CPU Type: Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [1600.0] (  8 ),  1 [2000.0] (  9 ),  2 [1600.0] ( 10 )
+        0:       0 [1600.0] (  8 ),  1 [2667.0] (  9 ),  2 [2667.0] ( 10 )
                  3 [1600.0] ( 11 )
-        1:       4 [1600.0] ( 12 ),  5 [1600.0] ( 13 ),  6 [1600.0] ( 14 )
+        1:       4 [2267.0] ( 12 ),  5 [1600.0] ( 13 ),  6 [1600.0] ( 14 )
                  7 [1600.0] ( 15 )
         
-System load averages (1min, 5min, 15min) : 10.5 %, 7.1 %, 6.3 %
+System load averages (1min, 5min, 15min) : 15.6 %, 14.7 %, 15.3 %
 Hyperthreading is enabled
 
 
 Analog Kernel using -ANALOGCONTROL  ./spiceModels.scs.
 Reading file: 
-        /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/spiceModels.scs
+        /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/spiceModels.scs
 Reading file: 
-        /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/netlist.vams
+        /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/netlist.vams
 Reading link:  /share/instsww/cadence/INCISIVE.15.20.076/tools
 Reading file: 
         /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/affirma_ams/etc/connect_lib/Bidir_2_dynsup.vams
 Reading file: 
-        /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/INCA_libs/AMSD/ahdlSimDB/3651_tools_affirma_ams_etc_connect_lib_Bidir_2_dynsup.vams.connectLib__Bidir_2_dynsup__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__Bidir_2_dynsup__module__0x10000001_behavioral.so
+        /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/INCA_libs/AMSD/ahdlSimDB/3651_tools_affirma_ams_etc_connect_lib_Bidir_2_dynsup.vams.connectLib__Bidir_2_dynsup__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__Bidir_2_dynsup__module__0x10000001_behavioral.so
 Installed compiled interface for
         connectLib__Bidir_2_dynsup__module__0x10000001_behavioral.
 Reading file: 
-        /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams
-Reading file: 
-        /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/INCA_libs/AMSD/ahdlSimDB/3651_tools_affirma_ams_etc_connect_lib_E2L_2_dynsup.vams.connectLib__E2L_2_dynsup__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__E2L_2_dynsup__module__0x10000001_behavioral.so
-Installed compiled interface for
-        connectLib__E2L_2_dynsup__module__0x10000001_behavioral.
-Reading file: 
         /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2_dynsup.vams
 Reading file: 
-        /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/INCA_libs/AMSD/ahdlSimDB/3651_tools_affirma_ams_etc_connect_lib_L2E_2_dynsup.vams.connectLib__L2E_2_dynsup__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2_dynsup__module__0x10000001_behavioral.so
+        /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/INCA_libs/AMSD/ahdlSimDB/3651_tools_affirma_ams_etc_connect_lib_L2E_2_dynsup.vams.connectLib__L2E_2_dynsup__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2_dynsup__module__0x10000001_behavioral.so
 Installed compiled interface for
         connectLib__L2E_2_dynsup__module__0x10000001_behavioral.
 Reading file: 
+        /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams
+Reading file: 
+        /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/INCA_libs/AMSD/ahdlSimDB/3651_tools_affirma_ams_etc_connect_lib_E2L_2_dynsup.vams.connectLib__E2L_2_dynsup__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__E2L_2_dynsup__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__E2L_2_dynsup__module__0x10000001_behavioral.
+Reading file: 
         /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/INCA_libs/AMSD/ahdl_in/ahdlIncludes.scs
+Reading link: 
+        /share/instsww/cadence/IC.06.17.823/tools.lnx86/dfII/samples/artist/ahdlLib/opamp/veriloga/veriloga.va
+Reading file: 
+        /share/instsww/cadence/IC.06.17.823/tools.lnx86/dfII/samples/artist/spectreHDL/Verilog-A/analog/opamp.va
+Reading link: 
+        /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file: 
+        /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading link: 
+        /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file: 
+        /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/disciplines.vams
 Reading file: 
         /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/config.scs
 Reading file: 
@@ -665,16 +692,16 @@ Reading file:
 Reading file: 
         /home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/models/res/rdn5_pw4.scs
 Reading file: 
-        /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/amsControlSpectre.scs
+        /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/amsControlSpectre.scs
 Reading file: 
-        /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/ie_card.scs
+        /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/ie_card.scs
 Reading file: 
-        /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.amsbind.scs
+        /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/.amsbind.scs
 Reading file: 
         /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/configs/spectre.cfg
-Time for NDB Parsing: CPU = 754.254 ms, elapsed = 1.42075 s.
-Time accumulated: CPU = 943.451 ms, elapsed = 1.42076 s.
-Peak resident memory used = 89.8 Mbytes.
+Time for NDB Parsing: CPU = 535.13 ms, elapsed = 788.56 ms.
+Time accumulated: CPU = 702.16 ms, elapsed = 788.564 ms.
+Peak resident memory used = 91.6 Mbytes.
 
 ncsim> source /share/instsww/cadence/INCISIVE.15.20.076/tools/inca/files/ncsimrc
 ncsim> 
@@ -755,34 +782,56 @@ ncsim> probe -create -emptyok -database ams_database {zz_system.I27.VIN}
 Created probe 30
 ncsim> probe -create -emptyok -database ams_database -flow -ports -index -depth all -noaicms {zz_system}
 Created probe 31
+ncsim> probe -create -emptyok -database ams_database -flow {zz_system.I22.sink}
+Created probe 32
+ncsim> probe -create -emptyok -database ams_database -flow {zz_system.I22.sink}
+Created probe 33
 ncsim> 
 ncsim> run
 
 The CPU load for active processors is :
-        Spectre  0 (17.9 %)      1 (25.9 %)      2 (10.3 %)      3 (5.7 %)
-                 4 (7.5 %)       5 (15.0 %)      6 (14.9 %)      7 (10.9 %)
-                 8 (16.2 %)      9 (23.7 %)     10 (18.5 %)     11 (12.2 %)
-                12 (4.6 %)      13 (20.7 %)     14 (9.7 %)      15 (24.7 %)
+        Spectre  0 (21.8 %)      1 (35.2 %)      2 (82.4 %)      3 (81.7 %)
+                 4 (22.0 %)      5 (6.5 %)       6 (10.1 %)      7 (2.8 %)
+                 8 (10.3 %)      9 (15.7 %)     10 (3.7 %)      11 (23.6 %)
+                12 (16.7 %)     13 (61.5 %)     14 (35.2 %)     15 (50.0 %)
         Other   
-Reading link: 
-        /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/discipline.h
-Reading file: 
-        /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/disciplines.vams
-Reading link: 
-        /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/constants.h
-Reading file: 
-        /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/constants.vams
-Time for Elaboration: CPU = 442.827 ms, elapsed = 494.396 ms.
-Time accumulated: CPU = 1.38656 s, elapsed = 1.91544 s.
-Peak resident memory used = 122 Mbytes.
+Existing shared object for module ahdlLib__opamp__veriloga is up to date.
+Installed compiled interface for ahdlLib__opamp__veriloga.
+Time for Elaboration: CPU = 429.418 ms, elapsed = 479.443 ms.
+Time accumulated: CPU = 1.13187 s, elapsed = 1.2683 s.
+Peak resident memory used = 126 Mbytes.
 
-Time for EDB Visiting: CPU = 28.115 ms, elapsed = 28.1291 ms.
-Time accumulated: CPU = 1.41497 s, elapsed = 1.94386 s.
-Peak resident memory used = 125 Mbytes.
+Time for EDB Visiting: CPU = 29.375 ms, elapsed = 29.3968 ms.
+Time accumulated: CPU = 1.16153 s, elapsed = 1.29798 s.
+Peak resident memory used = 129 Mbytes.
 
 
+Notice from spectre during topology check.
+    Only one connection to node `zz_system.I27.I9.net017'.
 Warning from spectre during initial setup.
-    WARNING (SPECTRE-294): Too many saved signals [ 4517 ]. Slow initialization
+    WARNING (SPECTRE-8061): `zz_system.I27': Does not have a terminal named
+        `EXT_IN[1]'.
+    WARNING (SPECTRE-8287): Ignoring invalid item `zz_system.I27:EXT_IN[1]' in
+        save statement.
+    WARNING (SPECTRE-8061): `zz_system.I27': Does not have a terminal named
+        `EXT_IN[0]'.
+    WARNING (SPECTRE-8287): Ignoring invalid item `zz_system.I27:EXT_IN[0]' in
+        save statement.
+    WARNING (SPECTRE-8061): `zz_system.I27.I10': Does not have a terminal named
+        `IN[0]'.
+    WARNING (SPECTRE-8287): Ignoring invalid item `zz_system.I27.I10:IN[0]' in
+        save statement.
+    WARNING (SPECTRE-8061): `zz_system.I27.I10': Does not have a terminal named
+        `IN[1]'.
+    WARNING (SPECTRE-8287): Ignoring invalid item `zz_system.I27.I10:IN[1]' in
+        save statement.
+    WARNING (SPECTRE-8061): `zz_system.I27.I10': Does not have a terminal named
+        `IN[2]'.
+        Further occurrences of this warning will be suppressed.
+    WARNING (SPECTRE-8287): Ignoring invalid item `zz_system.I27.I10:IN[2]' in
+        save statement.
+        Further occurrences of this warning will be suppressed.
+    WARNING (SPECTRE-294): Too many saved signals [ 4624 ]. Slow initialization
         is expected!
 
 Global user options:
@@ -809,18 +858,19 @@ Global user options:
 Scoped user options:
 
 Circuit inventory:
-              nodes 525
-             iprobe 3668  
-              bsim4 749   
-          capacitor 16    
-connectLib__Bidir_2_dynsup__module__0x10000001_behavioral 3     
-connectLib__E2L_2_dynsup__module__0x10000001_behavioral 11    
-connectLib__L2E_2_dynsup__module__0x10000001_behavioral 5     
+              nodes 522
+             iprobe 3752  
+ahdlLib__opamp__veriloga_behavioral 1     
+              bsim4 757   
+          capacitor 18    
+connectLib__Bidir_2_dynsup__module__0x10000001_behavioral 2     
+connectLib__E2L_2_dynsup__module__0x10000001_behavioral 6     
+connectLib__L2E_2_dynsup__module__0x10000001_behavioral 7     
             isource 1     
-              relay 35    
-           resistor 4     
+              relay 44    
+           resistor 5     
                vcvs 5     
-            vsource 9     
+            vsource 11    
 
 Analysis and control statement inventory:
                info 4     
@@ -829,11 +879,15 @@ Analysis and control statement inventory:
 Output statements:
              .probe 0     
            .measure 0     
-               save 4517  
+               save 4630  
 
-Time for parsing: CPU = 624.615 ms, elapsed = 629.558 ms.
-Time accumulated: CPU = 2.03987 s, elapsed = 2.5737 s.
-Peak resident memory used = 138 Mbytes.
+
+Notice from spectre.
+    2 warnings suppressed.
+
+Time for parsing: CPU = 633.846 ms, elapsed = 638.71 ms.
+Time accumulated: CPU = 1.79568 s, elapsed = 1.93699 s.
+Peak resident memory used = 142 Mbytes.
 
 ~~~~~~~~~~~~~~~~~~~~~~
 Pre-Simulation Summary
@@ -843,7 +897,15 @@ Pre-Simulation Summary
 ************************************************
 Transient Analysis `tran': time = (0 s -> 15 us)
 ************************************************
-DC simulation time: CPU = 213.052 ms, elapsed = 213.295 ms.
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(zz_system.X_GSI.X_PGACLKGEN.I0.MN1.m1:int_s) = 67.9801 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is
+        recommended for possible improvement of convergence.
+
+DC simulation time: CPU = 334.697 ms, elapsed = 334.949 ms.
 Important parameter values:
     start = 0 s
     outputstart = 0 s
@@ -868,48 +930,36 @@ Important parameter values:
 
 
 Output and IC/nodeset summary:
-                 save   6854    (current)
+                 save   7011    (current)
                  save   30      (voltage)
 
-    tran: time = 9.76 ns    (65.1 m%), step = 7.165 ps    (47.8 u%)
-    tran: time = 389.8 ns     (2.6 %), step = 19.87 ns     (132 m%)
+    tran: time = 390.1 ns     (2.6 %), step = 20.04 ns     (134 m%)
     tran: time = 1.135 us    (7.57 %), step = 15 ns        (100 m%)
     tran: time = 1.88 us     (12.5 %), step = 20 ns        (133 m%)
-    tran: time = 2.02 us     (13.5 %), step = 26.9 ps      (179 u%)
     tran: time = 2.635 us    (17.6 %), step = 15 ns        (100 m%)
-    tran: time = 3.02 us     (20.1 %), step = 78.66 ps     (524 u%)
     tran: time = 3.38 us     (22.5 %), step = 20 ns        (133 m%)
-    tran: time = 4.006 us    (26.7 %), step = 5.873 ps    (39.2 u%)
-    tran: time = 4.127 us    (27.5 %), step = 6.811 ns    (45.4 m%)
+    tran: time = 4.135 us    (27.6 %), step = 15 ns        (100 m%)
     tran: time = 4.88 us     (32.5 %), step = 20 ns        (133 m%)
-    tran: time = 5.517 us    (36.8 %), step = 9.237 ps    (61.6 u%)
     tran: time = 5.635 us    (37.6 %), step = 15 ns        (100 m%)
     tran: time = 6.38 us     (42.5 %), step = 20 ns        (133 m%)
-    tran: time = 7.006 us    (46.7 %), step = 7.635 ps    (50.9 u%)
     tran: time = 7.135 us    (47.6 %), step = 15 ns        (100 m%)
     tran: time = 7.88 us     (52.5 %), step = 20 ns        (133 m%)
-    tran: time = 8.514 us    (56.8 %), step = 696.4 ps    (4.64 m%)
     tran: time = 8.635 us    (57.6 %), step = 15 ns        (100 m%)
     tran: time = 9.38 us     (62.5 %), step = 20 ns        (133 m%)
-    tran: time = 10.01 us    (66.7 %), step = 5.05 ps     (33.7 u%)
-    tran: time = 10.13 us    (67.5 %), step = 9.798 ns    (65.3 m%)
+    tran: time = 10.14 us    (67.6 %), step = 15 ns        (100 m%)
     tran: time = 10.88 us    (72.5 %), step = 20 ns        (133 m%)
-    tran: time = 11.04 us    (73.6 %), step = 5.5 ns      (36.7 m%)
-    tran: time = 11.63 us    (77.5 %), step = 9.337 ns    (62.2 m%)
-    tran: time = 12.02 us    (80.1 %), step = 25.09 ps     (167 u%)
-    tran: time = 12.39 us    (82.6 %), step = 22.09 ns     (147 m%)
-    tran: time = 13.02 us    (86.8 %), step = 273.5 ps    (1.82 m%)
+    tran: time = 11.63 us    (77.6 %), step = 15 ns        (100 m%)
+    tran: time = 12.38 us    (82.5 %), step = 20 ns        (133 m%)
     tran: time = 13.13 us    (87.6 %), step = 15 ns        (100 m%)
     tran: time = 13.88 us    (92.5 %), step = 20 ns        (133 m%)
-    tran: time = 14.01 us    (93.4 %), step = 245.4 ps    (1.64 m%)
     tran: time = 14.63 us    (97.6 %), step = 15 ns        (100 m%)
 
 The analog simulator has reached stop time, please use `analog -stop <new stop time>' to extend the analog stop time.
 Simulation stopped via transient analysis stoptime at time 15 US
-Memory Usage - 38.6M program + 548.2M data = 586.8M total
-CPU Usage - 2.7s system + 228.3s user = 231.0s total (97.3% cpu)
+Memory Usage - 38.6M program + 487.0M data = 525.6M total
+CPU Usage - 0.6s system + 40.3s user = 40.8s total (94.8% cpu)
 ncsim> exit
-Number of accepted tran steps =             9360
+Number of accepted tran steps =             1824
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Post-Transient Simulation Summary
@@ -919,31 +969,30 @@ Post-Transient Simulation Summary
    -   Non-default settings that could significantly slow down simulation
           errpreset = conservative, default moderate
    -   Features that may significantly slowing down simulation
-          iprobe = 78.75 % of total equations
+          iprobe = 78.86 % of total equations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 During simulation, the CPU load for active processors is :
-        Spectre  0 (11.9 %)      1 (11.8 %)      2 (13.7 %)      3 (12.1 %)
-                 4 (33.5 %)      5 (12.6 %)      6 (4.9 %)       7 (11.9 %)
-                 8 (11.6 %)      9 (21.7 %)     10 (19.6 %)     11 (13.2 %)
-                12 (6.0 %)      13 (15.3 %)     14 (15.5 %)     15 (8.6 %)
+        Spectre  0 (27.9 %)      1 (26.1 %)      2 (30.0 %)      3 (25.9 %)
+                 4 (48.9 %)      5 (7.4 %)       6 (35.5 %)      7 (5.3 %)
+                 8 (13.9 %)      9 (30.0 %)     10 (22.9 %)     11 (41.8 %)
+                12 (9.9 %)      13 (23.7 %)     14 (15.8 %)     15 (73.3 %)
         Other   
-Initial condition solution time: CPU = 213.176 ms, elapsed = 213.42 ms.
+Initial condition solution time: CPU = 334.782 ms, elapsed = 335.035 ms.
 
 **** AMSD: Mixed-Signal Activity Statistics ****
-Number of A-to-D events:                     129
-  Number of A-to-D events in IEs:            129
-Number of D-to-A events:                      59
-  Number of D-to-A events in IEs:             59
+Number of A-to-D events:                      93
+  Number of A-to-D events in IEs:             93
+Number of D-to-A events:                      24
+  Number of D-to-A events in IEs:             24
 Number of VHDL-AMS Breaks:                     0
 
-Intrinsic tran analysis time:    CPU = 228.711 s, elapsed = 233.328 s.
-Total time required for tran analysis `tran': CPU = 229.092 s (3m  49.1s),
-        elapsed = 233.711 s (3m  53.7s).
-Time accumulated: CPU = 231.164 s (3m  51.2s), elapsed = 236.325 s (3m 
-        56.3s).
-Peak resident memory used = 170 Mbytes.
+Intrinsic tran analysis time:    CPU = 38.6361 s, elapsed = 39.5087 s.
+Total time required for tran analysis `tran': CPU = 39.1305 s, elapsed =
+        40.0049 s.
+Time accumulated: CPU = 40.9567 s, elapsed = 41.9804 s.
+Peak resident memory used = 175 Mbytes.
 
 finalTimeOP: writing operating point information to rawfile.
 
@@ -959,13 +1008,12 @@ outputParameter: writing output parameter values to rawfile.
 Opening the PSF file ../psf/outputParameter.info ...
 Simulation complete via transient analysis stoptime at time 15 US
 
-Aggregate audit (11:53:49 AM, Wed Nov 27, 2019):
-Time used: CPU = 231 s (3m  51.4s), elapsed = 237 s (3m  56.6s), util. =
-        97.8%.
-Time spent in licensing: elapsed = 34.9 ms.
-Peak memory used = 171 Mbytes.
-Simulation started at: 11:49:52 AM, Wed Nov 27, 2019, ended at: 11:53:49 AM,
-        Wed Nov 27, 2019, with elapsed time (wall clock): 237 s (3m  56.6s).
-spectre completes with 0 errors, 1 warning, and 0 notices.
-ncsim: Memory Usage - 38.6M program + 547.2M data = 585.8M total (650.8M Peak)
-ncsim: CPU Usage - 2.8s system + 228.6s user = 231.4s total (237.8s, 97.3% cpu)
+Aggregate audit (4:31:13 PM, Thur Nov 28, 2019):
+Time used: CPU = 41.2 s, elapsed = 42.3 s, util. = 97.5%.
+Time spent in licensing: elapsed = 35.8 ms.
+Peak memory used = 176 Mbytes.
+Simulation started at: 4:30:31 PM, Thur Nov 28, 2019, ended at: 4:31:13 PM,
+        Thur Nov 28, 2019, with elapsed time (wall clock): 42.3 s.
+spectre completes with 0 errors, 11 warnings, and 4 notices.
+ncsim: Memory Usage - 38.6M program + 486.0M data = 524.6M total (525.6M Peak)
+ncsim: CPU Usage - 0.6s system + 40.6s user = 41.2s total (43.5s, 94.9% cpu)

@@ -1,6 +1,7 @@
 designtop="final_project.zz_system:schematic"
 cell="mux2" lib="final_project" view="schematic" 
 cell="SAR_DFF" lib="ee140_gsi" view="schematic" 
+cell="opamp" lib="ahdlLib" view="veriloga" stopview="yes" 
 cell="pe" view="analogtext" 
 cell="capacitor" view="analogtext" 
 cell="BGR" lib="final_project" view="schematic" 

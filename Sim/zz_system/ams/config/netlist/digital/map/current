@@ -8,7 +8,7 @@
   hierDelim "."
   globalHierPrefix "cds_globals."
   prefixHierarchyWithCV "YES"
-  netlistDir "/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/digital"
+  netlistDir "/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/digital"
   busRef   "ORDERED"
   netType   "BUS"
   leftStr  "["

@@ -17,11 +17,11 @@ DLNOHV
 -NOWARN
 DLCLAP
 -INCDIR
-/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/
+/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/
 -VTIMESCALE
 1ns/1ns
 -MODELINCDIR
-/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/
+/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/
 -AUTO_USE_REFFILE
 -AMSINPUT
 -AUTO_USE_REFFILE
@@ -30,6 +30,8 @@ DLCLAP
 ./netlist.vams
 -AUTO_USE_REFFILE
 -AMSINPUT
+-modelpath
+./INCA_libs/AMSD/ahdl_in/ahdlIncludes.scs
 ./cds_globals.vams
 -SNAPSHOT
 final_project.zz_system:config

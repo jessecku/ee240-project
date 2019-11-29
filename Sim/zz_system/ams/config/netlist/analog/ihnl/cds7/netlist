@@ -1,0 +1,5 @@
+    I2 mux2
+    I1 mux2
+    I0 mux2
+ends mux
+// End of subcircuit definition.

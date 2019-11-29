@@ -1,0 +1,14 @@
+
+// Library name: final_project
+// Cell name: PGA
+// View name: schematic
+R3 (VSS G\<0\>) resistor r=1K
+R1 (VSS G\<2\>) resistor r=1K
+R0 (VSS G\<1\>) resistor r=1K
+C4 (net9 VOUT) capacitor c=40p
+C0 (net014 net9) capacitor c=400p
+I4 (net9 VSS VOUT VDD VSS) pmos_cascode_wrap
+W1 (VIN VSS CLK2 VSS) relay ropen=1T rclosed=1.0
+W0 (net014 VIN CLK VSS) relay ropen=1T rclosed=1.0
+W21 (VOUT net9 CLK2 VSS) relay ropen=1T rclosed=1.0
+I3 (CLK CLK2 VDD VSS) inverter

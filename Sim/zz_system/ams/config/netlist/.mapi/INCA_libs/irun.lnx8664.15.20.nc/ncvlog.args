@@ -3,7 +3,7 @@
 // Do not modify this file
 //
 -XLMODE
-/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi//INCA_libs/irun.lnx8664.15.20.nc
+/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/.mapi//INCA_libs/irun.lnx8664.15.20.nc
 -RUNMODE
 -NOCOPYRIGHT
 -NOSTDOUT
@@ -15,14 +15,14 @@ DLNOHV
 DLCLAP
 -ALLOWREDEFINITION
 -INCDIR
-/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/
+/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/
 -NCLIBDIRPATH
-/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi/
+/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/.mapi/
 -CDSLIB
-/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi//INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib
-/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi//dummyMapi.vams
+/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/.mapi//INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib
+/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/.mapi//dummyMapi.vams
 -HDLVAR
-/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi//INCA_libs/irun.lnx8664.15.20.nc/hdlrun.var
+/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/.mapi//INCA_libs/irun.lnx8664.15.20.nc/hdlrun.var
 -ncfatal
 NOTCMP
 /home/ff/ee140/fa19/cadence/ee140_gsi/SAR_FSM/functional/verilog.v
@@ -31,8 +31,8 @@ NOTCMP
 -MESSAGES
 -UPDATE
 -XLLIBSTORE
-/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi//INCA_libs/irun.lnx8664.15.20.nc/xllibs
+/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/.mapi//INCA_libs/irun.lnx8664.15.20.nc/xllibs
 -ALLOWUNBOUND
 -HASVLOGAMSINPUT
 -amscommfile
-/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi//INCA_libs/AMSD/ams_spice_in/amscomm.list
+/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/.mapi//INCA_libs/AMSD/ams_spice_in/amscomm.list

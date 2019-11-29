@@ -4,6 +4,8 @@
 //
 -ahdllibdir
 INCA_libs/AMSD/ams_spice_in/ahdlSimDB
+-modelpath
+./INCA_libs/AMSD/ahdl_in/ahdlIncludes.scs
 -outdir
 ./INCA_libs/AMSD/ams_spice_in
 -runmode
@@ -28,4 +30,4 @@ spectre
 -amsi
 ./ie_card.scs
 -modelincdir
-"/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/"
+"/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/"

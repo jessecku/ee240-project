@@ -1,0 +1,2 @@
+
+ahdl_include "/share/instsww/cadence/IC.06.17.823/tools.lnx86/dfII/samples/artist/ahdlLib/opamp/veriloga/veriloga.va"  -skeletonbus "ahdlLib.opamp:veriloga" -dont_optimize_vars 

@@ -1,0 +1,5 @@
+
+// Library name: final_project
+// Cell name: inverter
+// View name: schematic
+subckt inverter IN OUT VDD VSS

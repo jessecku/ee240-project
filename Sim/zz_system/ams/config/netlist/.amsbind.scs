@@ -4,7 +4,7 @@
 
 
 // Binding AMSD Control Block for config final_project.zz_system:config
-// Created On: Nov 27 11:49:35 2019
+// Created On: Nov 28 16:30:13 2019
 // NOTE      : DO NOT change this system generated file.
 
 amsd {
@@ -12,6 +12,7 @@ amsd {
 
 	config cell="mux2" lib="final_project" view="schematic"
 	config cell="SAR_DFF" lib="ee140_gsi" view="schematic"
+	config cell="opamp" lib="ahdlLib" view="veriloga" stopview="yes"
 	config cell="pe" view="analogtext"
 	config cell="capacitor" view="analogtext"
 	config cell="BGR" lib="final_project" view="schematic"

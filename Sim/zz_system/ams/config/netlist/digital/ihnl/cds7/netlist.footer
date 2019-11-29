@@ -1,2 +1,11 @@
 
+mux2 I2 ( .S(S[1]), .VSS(VSS), .VDD(VDD), .out(OUT), .in0(net11), 
+    .in1(net10));
+
+mux2 I1 ( .S(S[0]), .VSS(VSS), .VDD(VDD), .out(net10), .in0(IN[1]), 
+    .in1(IN[0]));
+
+mux2 I0 ( .S(S[0]), .VSS(VSS), .VDD(VDD), .out(net11), .in0(IN[3]), 
+    .in1(IN[2]));
+
 endmodule

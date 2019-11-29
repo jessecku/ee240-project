@@ -13,10 +13,12 @@ r
 ../psf/partition.info
 -RNM_PARTINFO
 -MODELINCDIR
-/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/
+/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/
 
 final_project.zz_system:schematic
 
 cds_globals
 -AMSCOMPILEFILE
 "file:/home/ff/ee140/fa19/cadence/ee140_gsi/SAR_FSM/functional/verilog.v lib:ee140_gsi cell:SAR_FSM view:functional"
+-AMSCOMPILEFILE
+"file:/share/instsww/cadence/IC.06.17.823/tools.lnx86/dfII/samples/artist/ahdlLib/opamp/veriloga/veriloga.va ftype:va lib:ahdlLib cell:opamp view:veriloga"

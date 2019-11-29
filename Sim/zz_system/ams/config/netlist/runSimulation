@@ -28,7 +28,7 @@ if [[ -z $AMS_IUS_HIER ]]; then
 fi
 
 if [[ -z $IC_INVOKE_DIR ]]; then
-   export    IC_INVOKE_DIR=/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project
+   export    IC_INVOKE_DIR=/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project
 fi
 
 export TESTBENCH_TOPCELL="zz_system"

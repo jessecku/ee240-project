@@ -31,13 +31,14 @@ spectre
 -AMSINPUT
 -ANALOGCONTROL
 ./ie_card.scs
+-amsossva
 -ANALOGCONTROL
 .amsbind.scs
 -MESSAGES
 +EMGRLOG
 ../psf/irun.log
 -XLSTIME
-1574884176
+1574987414
 -XLKEEP
 -XLMODE
 ./INCA_libs/final_project.zz_system_config.lnx8664.15.20.nc
@@ -51,4 +52,4 @@ irun
 -XLVERSION
 "TOOL:	irun(64)	15.20-s076"
 -XLNAME
-./INCA_libs/final_project.zz_system_config.lnx8664.15.20.nc/eda-7.EECS.Berkeley.EDU_15283
+./INCA_libs/final_project.zz_system_config.lnx8664.15.20.nc/eda-1.EECS.Berkeley.EDU_12423

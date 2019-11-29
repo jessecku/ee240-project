@@ -5,50 +5,50 @@ Copyright (C) 1989-2017 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: ee140-abc   Host: eda-7.EECS.Berkeley.EDU   HostID: 2080B086   PID: 14772
-Memory  available: 4.3976 GB  physical: 25.2693 GB
+User: ee140-abd   Host: eda-1.EECS.Berkeley.EDU   HostID: 2080F786   PID: 11760
+Memory  available: 31.7612 GB  physical: 50.6362 GB
 Linux   : CentOS Linux release 7.7.1908 (Core)
 CPU Type: Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [1600.0] (  8 ),  1 [1600.0] (  9 ),  2 [1600.0] ( 10 )
+        0:       0 [1600.0] (  8 ),  1 [1600.0] (  9 ),  2 [2667.0] ( 10 )
                  3 [1600.0] ( 11 )
-        1:       4 [1600.0] ( 12 ),  5 [1600.0] ( 13 ),  6 [1600.0] ( 14 )
+        1:       4 [2667.0] ( 12 ),  5 [1600.0] ( 13 ),  6 [1600.0] ( 14 )
                  7 [1600.0] ( 15 )
         
-System load averages (1min, 5min, 15min) : 8.6 %, 6.5 %, 6.1 %
+System load averages (1min, 5min, 15min) : 12.1 %, 14.0 %, 15.1 %
 Hyperthreading is enabled
 
 
-Simulating `/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi//INCA_libs/AMSD/ams_spice_in/./.amsspice_pre.ckt' on eda-7.EECS.Berkeley.EDU at 11:49:27 AM, Wed Nov 27, 2019 (process id: 14772).
-Current working directory: /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist
+Simulating `/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/.mapi//INCA_libs/AMSD/ams_spice_in/./.amsspice_pre.ckt' on eda-1.EECS.Berkeley.EDU at 4:30:04 PM, Thur Nov 28, 2019 (process id: 11760).
+Current working directory: /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist
 Environment variable:
     SPECTRE_DEFAULTS=
 Command line:
     amsprimtool  \
-        /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi//INCA_libs/AMSD/ams_spice_in/./.amsspice_pre.ckt  \
+        /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/.mapi//INCA_libs/AMSD/ams_spice_in/./.amsspice_pre.ckt  \
         -noraw -va,amsspice_pre -ahdllibdir  \
         INCA_libs/AMSD/ams_spice_in/ahdlSimDB =log  \
-        /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi//INCA_libs/AMSD/ams_spice_in/./.amsspice_pre.ckt.log  \
+        /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/.mapi//INCA_libs/AMSD/ams_spice_in/./.amsspice_pre.ckt.log  \
         -token  \
-        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080E838B83335D47FDDE269BA6F64CB7581F023A1363397299FBE77BD7B61CF75D5AA70997E1494739FAB2CFD6623D47EC4AA24F82B2089209DB971D13F0392649F8D34F96029884FC3A47FEA7623D471DDAF3CA13D7F9579D7B720A7667FD563C4F77BC91319B53F9F9E33DD5223D479D2D418C1023D883FD1BB31ED260F9273D5A873EE603D883ED1A401EE3E208975EFBF76BD2265CB6490A439F43870CB2984A83DEEB8537F10B0A924E93B3199209DFE3ECD1D15BE279EBC4A9A6F64FB2A85A83DED3C50FB10B0A83DED3C50FB10B0F5E33E7983BE4D6E00006E01
+        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080E838B83335D47FDDE269BA6F64CB7581F023A1363397299FBE77BD7B61CF75D5AD709974149E749FAC7DFB32359E609FFB73B86D349E73D1BD60EC353F9160C28F7BE5703DD443D98E3DE323249E69C3BA7FE37C3394639FEE34E62E358F3FDEF467EC343D9A3F9ECE5CDE1413BA59FEB270F31D11B6639FEA2FE10B0F887DC39431F37A3ED44FD9EB2FB063238B7DC3BD10E17135D560C2E57CEF6F31C329D1E935D45D50FB3080A83DEEB8537F10B0A924E93B3199209DF83ECD1D15BE219EBC4A9B4165D52A85A83DDD3C50FB10B0A83DED3C50FB10B0F5DD8BB636714D500000720A
 
 Loading /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
 Loading /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
 Loading /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
 Loading /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
 Loading /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
-Reading file:  /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi/INCA_libs/AMSD/ams_spice_in/.amsspice_pre.ckt
+Reading file:  /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/.mapi/INCA_libs/AMSD/ams_spice_in/.amsspice_pre.ckt
 Reading file:  /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/configs/spectre.cfg
 Reading file:  /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
-Time for NDB Parsing: CPU = 97.092 ms, elapsed = 210.752 ms.
-Time accumulated: CPU = 162.874 ms, elapsed = 210.762 ms.
-Peak resident memory used = 39.7 Mbytes.
+Time for NDB Parsing: CPU = 69.065 ms, elapsed = 178.932 ms.
+Time accumulated: CPU = 125.089 ms, elapsed = 178.941 ms.
+Peak resident memory used = 44.9 Mbytes.
 
 
 The CPU load for active processors is :
-        Spectre  0 (10.5 %)      1 (15.0 %)      2 (5.0 %)       3 (31.8 %)
-                 7 (50.0 %)      8 (10.0 %)      9 (42.9 %)     10 (35.0 %)
-                11 (9.5 %)      12 (23.8 %)     13 (40.0 %)     14 (21.1 %)
+        Spectre  0 (12.5 %)      1 (11.1 %)      2 (100.0 %)     3 (11.8 %)
+                 4 (100.0 %)     5 (16.7 %)      6 (27.8 %)      9 (33.3 %)
+                10 (11.1 %)     14 (16.7 %)     15 (52.9 %)     
         Other   
 Reading link:  /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/discipline.h
 Reading file:  /share/instsww/cadence/INCISIVE.15.20.076/tools.lnx86/spectre/etc/ahdl/disciplines.vams

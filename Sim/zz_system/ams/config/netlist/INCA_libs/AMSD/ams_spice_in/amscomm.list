@@ -4,6 +4,7 @@
 //AMS_DUMPOPTIONS_END
 
 //AMS_DUMPPRIM_BEGIN
+<global>:<ahdlLib__opamp__veriloga_behavioral>:<AHDL>:<1>
 <global>:<assert>:<BUILTIN>:<1>
 <global>:<bend>:<BUILTIN>:<1>
 <global>:<bend2>:<BUILTIN>:<1>
@@ -79,6 +80,7 @@
 <global>:<zccvs>:<BUILTIN>:<1>
 <global>:<zvccs>:<BUILTIN>:<1>
 <global>:<zvcvs>:<BUILTIN>:<1>
+<global>:<ahdlLib__opamp__veriloga>:<SUBCKT>:<1>
 <global>:<qpva>:<SUBCKT>:<1>
 <global>:<qpvb>:<SUBCKT>:<1>
 <global>:<qpvc>:<SUBCKT>:<1>
@@ -345,6 +347,9 @@
 <global>:<rsbdn5>:<MODEL>:<1>
 <global>:<rsbdp5>:<MODEL>:<1>
 //AMS_DUMPPRIM_END
+MODELPATH_SECNUMS=1
+MODELPATH_INCDIR=/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/
+MODELPATH_FILES=INCA_libs/AMSD/ahdl_in/ahdlIncludes.scs
 
 //AMS_SKEL_BEGIN
 //*** amscomm.list *** 

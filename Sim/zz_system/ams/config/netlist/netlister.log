@@ -1,10 +1,10 @@
-Begin Netlisting Nov 27 11:49:23 2019
+Begin Netlisting Nov 28 16:30:00 2019
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
 
-"/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/digital/testfixture.verilog" file. To print the stimulus name
-mapped table, set 
-simVerilogPrintStimulusNameMappingTable = t either in CIW or
-the .simrc file 
+"/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/digital/testfixture.verilog" file. To print the stimulus
+name mapped table, set 
+simVerilogPrintStimulusNameMappingTable = t either in
+CIW or the .simrc file 
 before invoking Verilog netlister.
  
 INFO (VLOGNET-62): Database internal net names will be printed for floating
@@ -72,8 +72,10 @@ switch                      spectre              *Stopping View*
 cap                         spectre              *Stopping View*  
 pe                          spectre              *Stopping View*  
 ne                          spectre              *Stopping View*  
-vpulse                      spectre              *Stopping View*  
 res                         spectre              *Stopping View*  
+opamp                       veriloga             *Stopping View*  
+vdc                         spectre              *Stopping View*  
+vpulse                      spectre              *Stopping View*  
 SAR_FSM                     functional           *Stopping View*  
 ipulse                      spectre              *Stopping View*  
 vcvs                        spectre              *Stopping View*  
@@ -101,4 +103,4 @@ inverter                    schematic
 
 ---------- End of netlist configuration information   ----------
 Running netlist assembly..
-End netlisting Nov 27 11:49:35 2019
+End netlisting Nov 28 16:30:13 2019

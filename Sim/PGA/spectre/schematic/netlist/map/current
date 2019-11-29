@@ -1,0 +1,18 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "PGA"
+  repList "spectre veriloga ahdl cmos_sch schematic"
+  stopList "spectre veriloga ahdl"
+  hierDelim "."
+  netlistDir "/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/PGA/spectre/schematic/netlist"
+ )
+( model
+( "final_project/PGA/schematic" "PGA" )
+( "final_project/inverter/schematic" "inverter" )
+( "lab5/pmos_cascode_wrap/schematic" "pmos_cascode_wrap" )
+ )
+( "PGA" "ihnl/cds0/map" )
+( "inverter" "ihnl/cds1/map" )
+( "pmos_cascode_wrap" "ihnl/cds2/map" )
+ )

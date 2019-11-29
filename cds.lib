@@ -30,3 +30,5 @@ INCLUDE ./xt018_combine.lib
 # Add user specific libraries below this line 
 DEFINE ee140_gsi /home/ff/ee140/fa19/cadence/ee140_gsi
 DEFINE final_project ../ee240-project/final_project
+DEFINE final_project /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/final_project
+DEFINE lab5 /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/lab5

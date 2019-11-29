@@ -1,0 +1,2 @@
+("CLK" "VDD" "VIN" "VOUT" "VSS" "G<2>" "G<1>" "G<0>")
+("CLK" "G<2>" "G<1>" "G<0>" "VDD" "VIN" "VOUT" "VSS")

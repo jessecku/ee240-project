@@ -1,2 +1,8 @@
 
+opamp #( .freq_unitygain(100M), .gain(2000) )  I0 ( .vin_p(VSS), 
+    .vin_n(net9), .vout(VOUT), .vspply_p(VDD), .vref(net017), 
+    .vspply_n(VSS));
+
+inverter I3 ( .IN(CLK), .VSS(VSS), .VDD(VDD), .OUT(CLK2));
+
 endmodule

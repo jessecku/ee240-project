@@ -1,0 +1,15 @@
+CADENCE IHNL11140
+$model
+final_project/PGA/schematic PGA
+final_project/zz_PGA_tester/schematic zz_PGA_tester
+lab5/pmos_cascode_wrap/schematic pmos_cascode_wrap
+final_project/inverter/schematic inverter
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+WLp WLp
+Lmin Lmin
+WLn WLn
+$endparam

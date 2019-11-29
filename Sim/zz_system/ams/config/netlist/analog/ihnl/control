@@ -3,8 +3,10 @@ hnlLastStopCellInfo = '(
                           ( "analogLib" "cap" "spectre" "30" "1544975544" )
                           ( "PRIMLIB" "pe" "spectre" "53" "1560766510" )
                           ( "PRIMLIB" "ne" "spectre" "52" "1560766510" )
-                          ( "analogLib" "vpulse" "spectre" "34" "1544975544" )
                           ( "analogLib" "res" "spectre" "28" "1544975544" )
+                          ( "ahdlLib" "opamp" "veriloga" "29" "1324452154" )
+                          ( "analogLib" "vdc" "spectre" "33" "1544975544" )
+                          ( "analogLib" "vpulse" "spectre" "34" "1544975544" )
                           ( "ee140_gsi" "SAR_FSM" "functional" "1574371831" "1574370961" )
                           ( "analogLib" "ipulse" "spectre" "33" "1544975544" )
                           ( "analogLib" "vcvs" "spectre" "48" "1544975544" )
@@ -12,10 +14,10 @@ hnlLastStopCellInfo = '(
                        )
 hnlLastNetlistConfig = t
 hnlLastConfigFileVersion = 3
-hnlLastConfigFileTimeStamp = "1574822139"
+hnlLastConfigFileTimeStamp = "1574893588"
 hnlLastSupportNewConfig = t
 hnlLastConfigInfo = '( 
-( "final_project" "zz_system" "config" 3 "1574822139" )
+( "final_project" "zz_system" "config" 3 "1574893588" )
 ) 
 hnlLastMaxNameLength = 1024
 hnlLastNamePrefix = "hnl_"
@@ -774,7 +776,7 @@ hnlLastNetNameDifferentFrom = '( "instance" )
 hnlLastTermNameDifferentFrom = '( )
 hnlLastParamNameDifferentFrom = '( )
 hnlLastLibInfo = '(
-                    ( "final_project" "1574822109" )
+                    ( "final_project" "1574893587" )
                    ( "ee140_gsi" "1574458521" )
                   )
 hnlLastConstants = '(

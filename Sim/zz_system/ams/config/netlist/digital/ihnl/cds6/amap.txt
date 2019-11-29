@@ -1,3 +1,7 @@
+instMap,*PGA,*I0,*I0
+instMaster,*PGA,*I0,*ahdlLib_opamp_veriloga
+instMap,*PGA,*I3,*I3
+instMaster,*PGA,*I3,*final_project_inverter_schematic
 netMap,*PGA,*G<2>,*G[2]
 netMap,*PGA,*G<1>,*G[1]
 netMap,*PGA,*G<0>,*G[0]

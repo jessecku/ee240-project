@@ -1,9 +1,11 @@
 ("analogLib" "vcvs" "spectre" "spectre") t
 ("analogLib" "ipulse" "spectre" "spectre") t
+("ahdlLib" "opamp" "veriloga" "veriloga") t
 ("analogLib" "vpulse" "spectre" "spectre") t
 ("analogLib" "res" "spectre" "spectre") t
 ("analogLib" "switch" "spectre" "spectre") t
 ("PRIMLIB" "pe" "spectre" "spectre") t
 ("analogLib" "cap" "spectre" "spectre") t
 ("analogLib" "vsource" "spectre" "spectre") t
+("analogLib" "vdc" "spectre" "spectre") t
 ("PRIMLIB" "ne" "spectre" "spectre") t

@@ -1,0 +1,5 @@
+
+// Library name: lab5
+// Cell name: pmos_cascode_wrap
+// View name: schematic
+subckt pmos_cascode_wrap INN INP OUT VDD VSS

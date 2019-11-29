@@ -6,7 +6,7 @@
   stopList "spectre"
   globalList "gnd!"
   hierDelim "."
-  netlistDir "/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/analog"
+  netlistDir "/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_system/ams/config/netlist/analog"
  )
 ( net
 ( "gnd!" "0" )

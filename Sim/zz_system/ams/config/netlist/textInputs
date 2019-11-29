@@ -5,6 +5,9 @@
 // HDL file for Lib - ee140_gsi ,Cell - SAR_FSM, View - functional
 -amscompilefile "file:/home/ff/ee140/fa19/cadence/ee140_gsi/SAR_FSM/functional/verilog.v lib:ee140_gsi cell:SAR_FSM view:functional"
 
+// HDL file for Lib - ahdlLib ,Cell - opamp, View - veriloga
+-amscompilefile "file:${AMS_CIC_HIER}/tools.lnx86/dfII/samples/artist/ahdlLib/opamp/veriloga/veriloga.va ftype:va lib:ahdlLib cell:opamp view:veriloga"
+
 // Create required libraries 
 -makelib final_project 
 -endlib 

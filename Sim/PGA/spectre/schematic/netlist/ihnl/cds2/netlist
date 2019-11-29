@@ -1,0 +1,84 @@
+    M23 (net062 net062 VDD VDD) pel w=0.5*WLp l=Lmin as=4.8e-07*(0.5*WLp) \
+        ad=4.8e-07*(0.5*WLp) ps=1*2*(4.8e-07+(0.5*WLp)) \
+        pd=2*(4.8e-07+(0.5*WLp)) nrs=2.7e-07/(0.5*WLp) \
+        nrd=2.7e-07/(0.5*WLp) m=(1)*(1) par1=((1)*(1))
+    M22 (net052 net062 VDD VDD) pel w=1*WLp l=Lmin as=4.8e-07*(1*WLp) \
+        ad=4.8e-07*(1*WLp) ps=1*2*(4.8e-07+(1*WLp)) pd=2*(4.8e-07+(1*WLp)) \
+        nrs=2.7e-07/(1*WLp) nrd=2.7e-07/(1*WLp) m=(1)*(1) par1=((1)*(1))
+    M27 (net063 net014 VDD VDD) pel w=0.5*WLp l=Lmin as=4.8e-07*(0.5*WLp) \
+        ad=4.8e-07*(0.5*WLp) ps=1*2*(4.8e-07+(0.5*WLp)) \
+        pd=2*(4.8e-07+(0.5*WLp)) nrs=2.7e-07/(0.5*WLp) \
+        nrd=2.7e-07/(0.5*WLp) m=(1)*(1) par1=((1)*(1))
+    M12 (net039 net014 VDD VDD) pel w=0.5*WLp l=Lmin as=4.8e-07*(0.5*WLp) \
+        ad=4.8e-07*(0.5*WLp) ps=1*2*(4.8e-07+(0.5*WLp)) \
+        pd=2*(4.8e-07+(0.5*WLp)) nrs=2.7e-07/(0.5*WLp) \
+        nrd=2.7e-07/(0.5*WLp) m=(1)*(1) par1=((1)*(1))
+    M11 (net014 net014 VDD VDD) pel w=0.5*WLp l=Lmin as=4.8e-07*(0.5*WLp) \
+        ad=4.8e-07*(0.5*WLp) ps=1*2*(4.8e-07+(0.5*WLp)) \
+        pd=2*(4.8e-07+(0.5*WLp)) nrs=2.7e-07/(0.5*WLp) \
+        nrd=2.7e-07/(0.5*WLp) m=(1)*(1) par1=((1)*(1))
+    M7 (net11 net014 VDD VDD) pel w=WLp l=Lmin as=4.8e-07*(WLp) \
+        ad=4.8e-07*(WLp) ps=1*2*(4.8e-07+(WLp)) pd=2*(4.8e-07+(WLp)) \
+        nrs=2.7e-07/(WLp) nrd=2.7e-07/(WLp) m=(1)*(1) par1=((1)*(1))
+    M6 (net044 INP net11 net11) pel w=0.5*WLp l=Lmin as=4.8e-07*(0.5*WLp) \
+        ad=4.8e-07*(0.5*WLp) ps=1*2*(4.8e-07+(0.5*WLp)) \
+        pd=2*(4.8e-07+(0.5*WLp)) nrs=2.7e-07/(0.5*WLp) \
+        nrd=2.7e-07/(0.5*WLp) m=(1)*(1) par1=((1)*(1))
+    M4 (net20 net20 VDD VDD) pel w=0.5*WLp l=Lmin as=4.8e-07*(0.5*WLp) \
+        ad=4.8e-07*(0.5*WLp) ps=1*2*(4.8e-07+(0.5*WLp)) \
+        pd=2*(4.8e-07+(0.5*WLp)) nrs=2.7e-07/(0.5*WLp) \
+        nrd=2.7e-07/(0.5*WLp) m=(1)*(1) par1=((1)*(1))
+    M3 (net19 net19 net20 net20) pel w=0.5*WLp l=Lmin as=4.8e-07*(0.5*WLp) \
+        ad=4.8e-07*(0.5*WLp) ps=1*2*(4.8e-07+(0.5*WLp)) \
+        pd=2*(4.8e-07+(0.5*WLp)) nrs=2.7e-07/(0.5*WLp) \
+        nrd=2.7e-07/(0.5*WLp) m=(1)*(1) par1=((1)*(1))
+    M2 (OUT net19 net23 net23) pel w=0.5*WLp l=Lmin as=4.8e-07*(0.5*WLp) \
+        ad=4.8e-07*(0.5*WLp) ps=1*2*(4.8e-07+(0.5*WLp)) \
+        pd=2*(4.8e-07+(0.5*WLp)) nrs=2.7e-07/(0.5*WLp) \
+        nrd=2.7e-07/(0.5*WLp) m=(1)*(1) par1=((1)*(1))
+    M1 (net23 net20 VDD VDD) pel w=0.5*WLp l=Lmin as=4.8e-07*(0.5*WLp) \
+        ad=4.8e-07*(0.5*WLp) ps=1*2*(4.8e-07+(0.5*WLp)) \
+        pd=2*(4.8e-07+(0.5*WLp)) nrs=2.7e-07/(0.5*WLp) \
+        nrd=2.7e-07/(0.5*WLp) m=(1)*(1) par1=((1)*(1))
+    M5 (net35 INN net11 net11) pel w=0.5*WLp l=Lmin as=4.8e-07*(0.5*WLp) \
+        ad=4.8e-07*(0.5*WLp) ps=1*2*(4.8e-07+(0.5*WLp)) \
+        pd=2*(4.8e-07+(0.5*WLp)) nrs=2.7e-07/(0.5*WLp) \
+        nrd=2.7e-07/(0.5*WLp) m=(1)*(1) par1=((1)*(1))
+    M24 (net052 net052 VSS VSS) nel w=0.2*WLn l=Lmin as=4.8e-07*(0.2*WLn) \
+        ad=4.8e-07*(0.2*WLn) ps=1*2*(4.8e-07+(0.2*WLn)) \
+        pd=2*(4.8e-07+(0.2*WLn)) nrs=2.7e-07/(0.2*WLn) \
+        nrd=2.7e-07/(0.2*WLn) m=(1)*(1) par1=((1)*(1))
+    M26 (net063 net063 VSS VSS) nel w=0.5*WLn l=Lmin as=4.8e-07*(0.5*WLn) \
+        ad=4.8e-07*(0.5*WLn) ps=1*2*(4.8e-07+(0.5*WLn)) \
+        pd=2*(4.8e-07+(0.5*WLn)) nrs=2.7e-07/(0.5*WLn) \
+        nrd=2.7e-07/(0.5*WLn) m=(1)*(1) par1=((1)*(1))
+    M25 (net062 net063 VSS VSS) nel w=0.5*WLn l=Lmin as=4.8e-07*(0.5*WLn) \
+        ad=4.8e-07*(0.5*WLn) ps=1*2*(4.8e-07+(0.5*WLn)) \
+        pd=2*(4.8e-07+(0.5*WLn)) nrs=2.7e-07/(0.5*WLn) \
+        nrd=2.7e-07/(0.5*WLn) m=(1)*(1) par1=((1)*(1))
+    M14 (net039 net039 VSS VSS) nel w=0.5*WLn l=Lmin as=4.8e-07*(0.5*WLn) \
+        ad=4.8e-07*(0.5*WLn) ps=1*2*(4.8e-07+(0.5*WLn)) \
+        pd=2*(4.8e-07+(0.5*WLn)) nrs=2.7e-07/(0.5*WLn) \
+        nrd=2.7e-07/(0.5*WLn) m=(1)*(1) par1=((1)*(1))
+    M13 (net014 net039 net051 net051) nel w=2*WLn l=Lmin \
+        as=4.8e-07*(2*WLn) ad=4.8e-07*(2*WLn) ps=1*2*(4.8e-07+(2*WLn)) \
+        pd=2*(4.8e-07+(2*WLn)) nrs=2.7e-07/(2*WLn) nrd=2.7e-07/(2*WLn) \
+        m=(1)*(1) par1=((1)*(1))
+    M10 (net35 net063 VSS VSS) nel w=1*WLn l=Lmin as=4.8e-07*(1*WLn) \
+        ad=4.8e-07*(1*WLn) ps=1*2*(4.8e-07+(1*WLn)) pd=2*(4.8e-07+(1*WLn)) \
+        nrs=2.7e-07/(1*WLn) nrd=2.7e-07/(1*WLn) m=(1)*(1) par1=((1)*(1))
+    M9 (OUT net052 net35 net35) nel w=0.5*WLn l=Lmin as=4.8e-07*(0.5*WLn) \
+        ad=4.8e-07*(0.5*WLn) ps=1*2*(4.8e-07+(0.5*WLn)) \
+        pd=2*(4.8e-07+(0.5*WLn)) nrs=2.7e-07/(0.5*WLn) \
+        nrd=2.7e-07/(0.5*WLn) m=(1)*(1) par1=((1)*(1))
+    M8 (net044 net063 VSS VSS) nel w=1*WLn l=Lmin as=4.8e-07*(1*WLn) \
+        ad=4.8e-07*(1*WLn) ps=1*2*(4.8e-07+(1*WLn)) pd=2*(4.8e-07+(1*WLn)) \
+        nrs=2.7e-07/(1*WLn) nrd=2.7e-07/(1*WLn) m=(1)*(1) par1=((1)*(1))
+    M0 (net19 net052 net044 net044) nel w=0.5*WLn l=Lmin \
+        as=4.8e-07*(0.5*WLn) ad=4.8e-07*(0.5*WLn) \
+        ps=1*2*(4.8e-07+(0.5*WLn)) pd=2*(4.8e-07+(0.5*WLn)) \
+        nrs=2.7e-07/(0.5*WLn) nrd=2.7e-07/(0.5*WLn) m=(1)*(1) \
+        par1=((1)*(1))
+    R0 (net051 VSS) resistor r=10k
+ends pmos_cascode_wrap
+// End of subcircuit definition.
