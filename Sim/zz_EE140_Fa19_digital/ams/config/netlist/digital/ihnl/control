@@ -7,11 +7,11 @@ hnlLastStopCellInfo = '(
                           ( "analogLib" "vdc" "spectre" "33" "1544975544" )
                        )
 hnlLastNetlistConfig = t
-hnlLastConfigFileVersion = 18
-hnlLastConfigFileTimeStamp = "1574216133"
+hnlLastConfigFileVersion = 19
+hnlLastConfigFileTimeStamp = "1575018330"
 hnlLastSupportNewConfig = t
 hnlLastConfigInfo = '( 
-( "ee140_gsi" "zz_EE140_Fa19_digital" "config" 18 "1574216133" )
+( "final_project" "zz_EE140_Fa19_digital" "config" 19 "1575018330" )
 ) 
 hnlLastMaxNameLength = 2000
 hnlLastNamePrefix = "hnl_"
@@ -1626,7 +1626,18 @@ hnlLastTermNameDifferentFrom = '( )
 hnlLastParamNameDifferentFrom = '( "net" )
 hnlLastLibInfo = '(
                     ( "ee140_gsi" "1574458521" )
+                   ( "final_project" "1575018496" )
                   )
 hnlLastConstants = '(
                       ""
+                    )
+hnlLastDesignVars = '(
+                      "_EXPR_1"
+                      "VDD"
+                      "TRISE"
+                      "TFALL"
+                      "FCLK"
+                      "VCOMP"
+                      "VCLK"
+                      "TSTART"
                     )

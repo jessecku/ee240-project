@@ -1,0 +1,10 @@
+    I17 (S\<2\> VDD VSS VSS VREF B\<2\>) mux2_ideal
+    I15 (S\<0\> VDD VSS VSS VREF B\<0\>) mux2_ideal
+    I18 (S\<3\> VDD VSS VSS VREF B\<3\>) mux2_ideal
+    I21 (S\<6\> VDD VSS VSS VREF B\<6\>) mux2_ideal
+    I19 (S\<4\> VDD VSS VSS VREF B\<4\>) mux2_ideal
+    I16 (S\<1\> VDD VSS VSS VREF B\<1\>) mux2_ideal
+    I20 (S\<5\> VDD VSS VSS VREF B\<5\>) mux2_ideal
+    I22 (S\<7\> VDD VSS VSS VREF B\<7\>) mux2_ideal
+ends ADC_ctrl_ideal
+// End of subcircuit definition.

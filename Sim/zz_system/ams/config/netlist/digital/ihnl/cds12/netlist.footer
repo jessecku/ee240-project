@@ -1,5 +1,5 @@
 
-ADC I8 ( .CMP(CLK_PGA2), .LD(CLK_PGA1), .VSS(VSS), .VDD(VDDA), 
+ADC_ideal I15 ( .CMP(CLK_PGA2), .LD(CLK_PGA1), .VSS(VSS), .VDD(VDDA), 
     .COMP_OUT(COMP), .D(D[7:0]), .VIN(VIN), .VREF(VREF_ADC), 
     .CLK(CLK_ADC));
 

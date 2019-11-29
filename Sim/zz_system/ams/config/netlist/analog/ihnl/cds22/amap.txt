@@ -1,0 +1,15 @@
+cellMap,*mux2_ideal,*mux2_ideal,*final_project,*schematic
+netMap,*mux2_ideal,*gnd!,*0
+instMap,*mux2_ideal,*W1,*W1
+instMaster,*mux2_ideal,*W1,*analogLib_switch_spectre,*relay
+instMap,*mux2_ideal,*W0,*W0
+instMaster,*mux2_ideal,*W0,*analogLib_switch_spectre,*relay
+instMap,*mux2_ideal,*I0,*I0
+instMaster,*mux2_ideal,*I0,*final_project_inverter_schematic,*inverter
+netMap,*mux2_ideal,*S<0>,*S_0
+portMap,*mux2_ideal,*S<0>,*S_0
+portMap,*mux2_ideal,*VDD,*VDD
+portMap,*mux2_ideal,*VSS,*VSS
+portMap,*mux2_ideal,*in0,*in0
+portMap,*mux2_ideal,*in1,*in1
+portMap,*mux2_ideal,*out,*out

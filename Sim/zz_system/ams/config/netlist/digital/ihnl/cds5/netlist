@@ -1,15 +1,15 @@
-// Library - final_project, Cell - ADC, View - schematic
-// LAST TIME SAVED: Nov 27 10:51:58 2019
-// NETLIST TIME: Nov 27 20:14:53 2019
+// Library - final_project, Cell - ADC_ideal, View - schematic
+// LAST TIME SAVED: Nov 28 13:42:23 2019
+// NETLIST TIME: Nov 29 01:25:26 2019
 `timescale 1ns / 1ps 
 
 `worklib final_project
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="final_project", dfII_cell="ADC", dfII_view="schematic", worklib_name="final_project", view_name="schematic", last_save_time="Nov 27 10:51:58 2019" *)
+(* dfII_lib="final_project", dfII_cell="ADC_ideal", dfII_view="schematic", worklib_name="final_project", view_name="schematic", last_save_time="Nov 28 13:42:23 2019" *)
 
-module ADC (COMP_OUT, VDD, VSS, CLK, CMP, D, LD, VIN, VREF);
+module ADC_ideal (COMP_OUT, VDD, VSS, CLK, CMP, D, LD, VIN, VREF);
 
 output  COMP_OUT;
 
@@ -27,7 +27,7 @@ wire  [7:0]  B;
 COMP I1 ( .CLK(net017), .VSS(VSS), .VDD(VDD), .OUT(COMP_OUT), 
     .INP(VREF), .INN(ADC_INN));
 
-ADC_ctrl I7 ( .VSS(VSS), .VREF(VREF), .VDD(VDD), .B(B[7:0]), 
+ADC_ctrl_ideal I9 ( .VSS(VSS), .VREF(VREF), .VDD(VDD), .B(B[7:0]), 
     .S(D[7:0]));
 
 inverter I8 ( .IN(CLK), .VSS(VSS), .VDD(VDD), .OUT(net017));

@@ -76,5 +76,5 @@ HEADER
 "I12n" "final_project_BGR_schematic"
 "I13n" "final_project_AREG_schematic"
 "I14n" "final_project_DREG_schematic"
-"I8n" "final_project_ADC_schematic"
+"I15n" "final_project_ADC_ideal_schematic"
 "I9n" "final_project_PGA_schematic"

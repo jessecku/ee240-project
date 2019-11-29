@@ -1,12 +1,15 @@
 CADENCE IHNL11140
 $model
+final_project/ADC_ctrl_ideal/schematic ADC_ctrl_ideal
 final_project/sw_cmos/schematic sw_cmos
 final_project/SR_latch/schematic SR_latch
 final_project/ADC_ctrl/schematic ADC_ctrl
 final_project/ADC/schematic ADC
 ee140_gsi/DFRRSHDX0_dupe/schematic DFRRSHDX0_dupe
+final_project/mux2_ideal/schematic mux2_ideal
 ee140_gsi/invr_dupe/schematic invr_dupe
 final_project/zz_ADC/schematic zz_ADC
+final_project/ADC_ideal/schematic ADC_ideal
 final_project/COMP/schematic COMP
 final_project/SAR_DFF/schematic SAR_DFF
 final_project/inverter/schematic inverter
@@ -22,8 +25,8 @@ d3 d3
 d7 d7
 d1 d1
 d4 d4
-cap cap
 d5 d5
+cap cap
 supply supply
 d2 d2
 d6 d6

@@ -1,7 +1,8 @@
 hnlLastStopCellInfo = '(
-                           ( "PRIMLIB" "ne" "spectre" "52" "1560766510" )
-                          ( "PRIMLIB" "pe" "spectre" "53" "1560766510" )
+                           ( "analogLib" "switch" "spectre" "48" "1544975544" )
                           ( "analogLib" "cap" "spectre" "30" "1544975544" )
+                          ( "PRIMLIB" "pe" "spectre" "53" "1560766510" )
+                          ( "PRIMLIB" "ne" "spectre" "52" "1560766510" )
                           ( "analogLib" "vdc" "spectre" "33" "1544975544" )
                           ( "analogLib" "vpulse" "spectre" "34" "1544975544" )
                        )

@@ -3,9 +3,9 @@ CADENCE IHNL041220
 final_project inverter schematic nil schematic final_project zz_system config 0 cds0
 final_project SR_latch schematic nil schematic final_project zz_system config 0 cds1
 final_project COMP schematic nil schematic final_project zz_system config 0 cds2
-final_project mux2 schematic nil schematic final_project zz_system config 0 cds3
-final_project ADC_ctrl schematic nil schematic final_project zz_system config 0 cds4
-final_project ADC schematic nil schematic final_project zz_system config 0 cds5
+final_project mux2_ideal schematic nil schematic final_project zz_system config 0 cds3
+final_project ADC_ctrl_ideal schematic nil schematic final_project zz_system config 0 cds4
+final_project ADC_ideal schematic nil schematic final_project zz_system config 0 cds5
 final_project PGA schematic nil schematic final_project zz_system config 0 cds6
 final_project mux schematic nil schematic final_project zz_system config 0 cds7
 final_project BGR schematic nil schematic final_project zz_system config 0 cds8
@@ -15,8 +15,8 @@ final_project VBATDIV4 schematic nil schematic final_project zz_system config 0 
 final_project system schematic nil schematic final_project zz_system config 0 cds12
 ee140_gsi invr_dupe schematic nil schematic final_project zz_system config 0 cds13
 ee140_gsi NA2HDX0_dupe schematic nil schematic final_project zz_system config 0 cds14
-ee140_gsi clk_nonoverlapping schematic nil schematic final_project zz_system config 0 cds15
+final_project clk_nonoverlapping schematic nil schematic final_project zz_system config 0 cds15
 ee140_gsi DFRRSHDX0_dupe schematic nil schematic final_project zz_system config 0 cds16
 ee140_gsi SAR_DFF schematic nil schematic final_project zz_system config 0 cds17
-ee140_gsi EE140_Fa19_digital schematic nil schematic final_project zz_system config 0 cds18
+final_project EE140_Fa19_digital schematic nil schematic final_project zz_system config 0 cds18
 final_project zz_system schematic nil schematic final_project zz_system config 1 cds19

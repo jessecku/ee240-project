@@ -1,6 +1,6 @@
 // Library - ee140_gsi, Cell - NA2HDX0_dupe, View - schematic
 // LAST TIME SAVED: Nov 22 13:18:46 2019
-// NETLIST TIME: Nov 27 20:11:57 2019
+// NETLIST TIME: Nov 29 01:12:45 2019
 `timescale 1ns / 1ps 
 
 `worklib ee140_gsi

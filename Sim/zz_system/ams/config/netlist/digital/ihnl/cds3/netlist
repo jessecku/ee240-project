@@ -1,15 +1,15 @@
-// Library - final_project, Cell - mux2, View - schematic
-// LAST TIME SAVED: Nov 27 00:18:59 2019
-// NETLIST TIME: Nov 27 20:14:52 2019
+// Library - final_project, Cell - mux2_ideal, View - schematic
+// LAST TIME SAVED: Nov 28 13:35:47 2019
+// NETLIST TIME: Nov 29 01:25:26 2019
 `timescale 1ns / 1ps 
 
 `worklib final_project
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="final_project", dfII_cell="mux2", dfII_view="schematic", worklib_name="final_project", view_name="schematic", last_save_time="Nov 27 00:18:59 2019" *)
+(* dfII_lib="final_project", dfII_cell="mux2_ideal", dfII_view="schematic", worklib_name="final_project", view_name="schematic", last_save_time="Nov 28 13:35:47 2019" *)
 
-module mux2 (out, VDD, VSS, S, in0, in1);
+module mux2_ideal (out, VDD, VSS, S, in0, in1);
 
 output  out;
 

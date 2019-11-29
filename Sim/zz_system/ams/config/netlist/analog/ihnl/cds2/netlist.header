@@ -1,6 +1,6 @@
 
 // Library name: final_project
-// Cell name: COMP
+// Cell name: SR_latch
 // View name: schematic
 // Inherited view list: schematic
-subckt COMP
+subckt SR_latch

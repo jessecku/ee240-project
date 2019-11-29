@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<setupdb version="6">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test>ee140_gsi:zz_EE140_Fa19_digital:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>zz_EE140_Fa19_digital</value>
+					</option>
+					<option>lib
+						<value>ee140_gsi</value>
+					</option>
+					<option>sim
+						<value>ams</value>
+					</option>
+					<option>view
+						<value>config</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>ee140_gsi:zz_EE140_Fa19_digital:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>zz_EE140_Fa19_digital</value>
+					</option>
+					<option>lib
+						<value>ee140_gsi</value>
+					</option>
+					<option>sim
+						<value>ams</value>
+					</option>
+					<option>view
+						<value>config</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>tmpstate.504623694</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<vars>
+			<var>VDD
+				<value>1.2</value>
+				<dependentTests>
+					<dependentTest omitted="0">ee140_gsi:zz_EE140_Fa19_digital:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VCOMP
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">ee140_gsi:zz_EE140_Fa19_digital:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>TRISE
+				<value>10n</value>
+				<dependentTests>
+					<dependentTest omitted="0">ee140_gsi:zz_EE140_Fa19_digital:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>TFALL
+				<value>10n</value>
+				<dependentTests>
+					<dependentTest omitted="0">ee140_gsi:zz_EE140_Fa19_digital:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>FCLK
+				<value>1M</value>
+				<dependentTests>
+					<dependentTest omitted="0">ee140_gsi:zz_EE140_Fa19_digital:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VCLK
+				<value>VDD</value>
+				<dependentTests>
+					<dependentTest omitted="0">ee140_gsi:zz_EE140_Fa19_digital:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>TSTART
+				<value>1/FCLK</value>
+				<dependentTests>
+					<dependentTest omitted="0">ee140_gsi:zz_EE140_Fa19_digital:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+	</active>
+	<history>History</history>
+</setupdb>

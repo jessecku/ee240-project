@@ -11,8 +11,8 @@ SAR_FSM X_FSM ( .clk_pga(CLK_PGA), .clk_dff(CLK_ADC),
     .run_conversion(ENABLE), .adc_convert(CONVERT), 
     .adc_resetb(RESETB), .adc_done(DONE), .clk(CLK));
 
-clk_nonoverlapping X_PGACLKGEN ( .CLK_IN(CLK_PGA), .VSS(VSS), 
-    .VDD(VDD), .PHI1(CLK_PGA1), .PHI2(CLK_PGA2));
+clk_nonoverlapping I8 ( .CLK_IN(CLK_PGA), .VSS(VSS), .VDD(VDD), 
+    .PHI1(CLK_PGA1), .PHI2(CLK_PGA2));
 
 SAR_DFF X_SAR ( .VDD(VDD), .VSS(VSS), .DONE(DONE), .RESETB(RESETB_BUF), 
     .D(DAC[7:0]), .CLK(CLK_ADC), .COMP(COMP));

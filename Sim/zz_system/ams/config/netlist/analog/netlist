@@ -74,37 +74,37 @@ ends COMP
 // End of subcircuit definition.
 
 // Library name: final_project
-// Cell name: mux2
+// Cell name: mux2_ideal
 // View name: schematic
 // Inherited view list: schematic
-subckt mux2
+subckt mux2_ideal
     W1 (in0 out net8 VSS) relay vt1=100m vt2=900m ropen=1T rclosed=1.0
     W0 (in1 out S_0 VSS) relay vt1=100m vt2=900.0m ropen=1T rclosed=1.0
     I0 inverter
-ends mux2
+ends mux2_ideal
 // End of subcircuit definition.
 
 // Library name: final_project
-// Cell name: ADC_ctrl
+// Cell name: ADC_ctrl_ideal
 // View name: schematic
 // Inherited view list: schematic
-subckt ADC_ctrl
-    I5 mux2
-    I7 mux2
-    I4 mux2
-    I1 mux2
-    I3 mux2
-    I6 mux2
-    I2 mux2
-    I0 mux2
-ends ADC_ctrl
+subckt ADC_ctrl_ideal
+    I17 mux2_ideal
+    I15 mux2_ideal
+    I18 mux2_ideal
+    I21 mux2_ideal
+    I19 mux2_ideal
+    I16 mux2_ideal
+    I20 mux2_ideal
+    I22 mux2_ideal
+ends ADC_ctrl_ideal
 // End of subcircuit definition.
 
 // Library name: final_project
-// Cell name: ADC
+// Cell name: ADC_ideal
 // View name: schematic
 // Inherited view list: schematic
-subckt ADC
+subckt ADC_ideal
     W21 (net05 B_6 CMP VSS) relay ropen=1T rclosed=1.0
     W20 (net05 VIN LD VSS) relay ropen=1T rclosed=1.0
     W19 (net04 VIN LD VSS) relay ropen=1T rclosed=1.0
@@ -134,9 +134,9 @@ subckt ADC
     C3 (ADC_INN net09) capacitor c=4*cap
     C2 (ADC_INN net010) capacitor c=2*cap
     I1 COMP
-    I7 ADC_ctrl
+    I9 ADC_ctrl_ideal
     I8 inverter
-ends ADC
+ends ADC_ideal
 // End of subcircuit definition.
 
 // Library name: final_project
@@ -144,7 +144,7 @@ ends ADC
 // View name: schematic
 // Inherited view list: schematic
 subckt system
-    I8 ADC
+    I15 ADC_ideal
     V2 (net011 VSS) vsource type=pulse val0=0 val1=vin rise=TRISE_BAT
     V1 (net019 VSS) vsource type=pulse val0=0 val1=vref rise=TRISE_BAT
     V0 (net013 VSS) vsource type=pulse val0=0 val1=vdda rise=TRISE_BAT
@@ -188,15 +188,11 @@ subckt NA2HDX0_dupe
 ends NA2HDX0_dupe
 // End of subcircuit definition.
 
-// Library name: ee140_gsi
+// Library name: final_project
 // Cell name: clk_nonoverlapping
 // View name: schematic
 // Inherited view list: schematic
 subckt clk_nonoverlapping
-    I9 invr_dupe GT_PDW=420n GT_PDL=180.00n sx=4.8e-07 lc=2.7e-07 \
-        GT_PUW=720n GT_PUL=180.00n
-    I8 invr_dupe GT_PDW=420n GT_PDL=180.00n sx=4.8e-07 lc=2.7e-07 \
-        GT_PUW=720n GT_PUL=180.00n
     I6 invr_dupe GT_PDW=420n GT_PDL=180.00n sx=4.8e-07 lc=2.7e-07 \
         GT_PUW=720n GT_PUL=180.00n
     I5 invr_dupe GT_PDW=420n GT_PDL=180.00n sx=4.8e-07 lc=2.7e-07 \
@@ -209,8 +205,8 @@ subckt clk_nonoverlapping
         GT_PUW=720n GT_PUL=180.00n
     I7 NA2HDX0_dupe
     I0 NA2HDX0_dupe
-    C5 (net08 VSS) capacitor c=100f
-    C4 (net09 VSS) capacitor c=100f
+    C5 (PHI2 VSS) capacitor c=100f
+    C4 (PHI1 VSS) capacitor c=100f
     C3 (net3 VSS) capacitor c=100f
     C2 (net4 VSS) capacitor c=100f
     C1 (net2 VSS) capacitor c=100f
@@ -350,7 +346,7 @@ subckt SAR_DFF
 ends SAR_DFF
 // End of subcircuit definition.
 
-// Library name: ee140_gsi
+// Library name: final_project
 // Cell name: EE140_Fa19_digital
 // View name: schematic
 // Inherited view list: schematic
@@ -359,7 +355,7 @@ subckt EE140_Fa19_digital
         GT_PUW=720n GT_PUL=180.00n
     I5 invr_dupe GT_PDW=420n GT_PDL=180.00n sx=4.8e-07 lc=2.7e-07 \
         GT_PUW=720n GT_PUL=180.00n
-    X_PGACLKGEN clk_nonoverlapping
+    I8 clk_nonoverlapping
     X_SAR SAR_DFF
 ends EE140_Fa19_digital
 // End of subcircuit definition.
@@ -369,7 +365,7 @@ ends EE140_Fa19_digital
 // View name: schematic
 // Inherited view list: schematic
 I27 system
-X_GSI EE140_Fa19_digital
+I30 EE140_Fa19_digital
 V9 (PHI2_temp 0) vsource type=pulse val0=0 val1=vdda delay=2u rise=10n
 V8 (PHI1_temp 0) vsource type=pulse val0=0 val1=vdda rise=10n fall=10n \
         width=2u

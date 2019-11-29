@@ -12,7 +12,6 @@ database -open ams_database -into ${AMS_RESULTS_DIR} -default
 #
 # Probe settings
 #
-probe -create -emptyok -database ams_database {zz_system.X_GSI.RESETB_BUF}
 probe -create -emptyok -database ams_database {zz_system.VDDD}
 probe -create -emptyok -database ams_database {zz_system.VDDA}
 probe -create -emptyok -database ams_database {zz_system.VBAT}
@@ -37,12 +36,8 @@ probe -create -emptyok -database ams_database {zz_system.CLK_ADC}
 probe -create -emptyok -database ams_database {zz_system.CLK}
 probe -create -emptyok -database ams_database {zz_system.CLK_PGA1}
 probe -create -emptyok -database ams_database {zz_system.CLK_PGA2}
-probe -create -emptyok -database ams_database {zz_system.I27.I8.ADC_INN}
-probe -create -emptyok -database ams_database {zz_system.PHI1_temp}
-probe -create -emptyok -database ams_database {zz_system.PHI2_temp}
 probe -create -emptyok -database ams_database {zz_system.I27.VREF_ADC}
 probe -create -emptyok -database ams_database {zz_system.I27.VIN}
+probe -create -emptyok -database ams_database {zz_system.I27.I15.ADC_INN}
 probe -create -emptyok -database ams_database -flow -ports -index -depth all -noaicms {zz_system}
-probe -create -emptyok -database ams_database -flow {zz_system.I22.sink}
-probe -create -emptyok -database ams_database -flow {zz_system.I22.sink}
 

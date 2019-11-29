@@ -1,14 +1,12 @@
-CADENCE IHNL111413
+CADENCE IHNL111416
 
 final_project inverter schematic cds0
 final_project COMP schematic cds1
-final_project mux2 schematic cds2
-final_project ADC_ctrl schematic cds3
-final_project ADC schematic cds4
 final_project zz_ADC schematic cds5
 ee140_gsi invr_dupe schematic cds6
 ee140_gsi DFRRSHDX0_dupe schematic cds7
 final_project SAR_DFF schematic cds8
 final_project SR_latch schematic cds9
-final_project sw_cmos schematic cds11
-final_project sw_pmos schematic cds12
+final_project mux2_ideal schematic cds13
+final_project ADC_ctrl_ideal schematic cds14
+final_project ADC_ideal schematic cds15

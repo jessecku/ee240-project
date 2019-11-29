@@ -13,17 +13,6 @@ ends inverter
 // End of subcircuit definition.
 
 // Library name: final_project
-// Cell name: sw_pmos
-// View name: schematic
-subckt sw_pmos VSS io0 io1 sw_ctrl VDD
-    I0 (sw_ctrl net13 VDD VSS) inverter
-    M0 (io1 net13 io0 VDD) pe w=220.0n l=180.0n as=1.056e-13 ad=1.056e-13 \
-        ps=1.4e-06 pd=1.4e-06 nrs=1.22727 nrd=1.22727 m=(1)*(1) \
-        par1=((1)*(1))
-ends sw_pmos
-// End of subcircuit definition.
-
-// Library name: final_project
 // Cell name: SR_latch
 // View name: schematic
 subckt SR_latch VDD VSS X Y out
@@ -82,52 +71,56 @@ ends COMP
 // End of subcircuit definition.
 
 // Library name: final_project
-// Cell name: sw_cmos
+// Cell name: mux2_ideal
 // View name: schematic
-subckt sw_cmos VDD VSS io0 io1 sw_ctrl
-    M0 (io0 sw_ctrl io1 VSS) ne w=220.0n l=180.0n as=1.056e-13 \
-        ad=1.056e-13 ps=1.4e-06 pd=1.4e-06 nrs=1.22727 nrd=1.22727 \
-        m=(1)*(1) par1=((1)*(1))
-    M1 (io0 sw_ctrl_bar io1 VDD) pe w=220.0n l=180.0n as=1.056e-13 \
-        ad=1.056e-13 ps=1.4e-06 pd=1.4e-06 nrs=1.22727 nrd=1.22727 \
-        m=(1)*(1) par1=((1)*(1))
-    I0 (sw_ctrl sw_ctrl_bar VDD VSS) inverter
-ends sw_cmos
-// End of subcircuit definition.
-
-// Library name: final_project
-// Cell name: mux2
-// View name: schematic
-subckt mux2 S\<0\> VDD VSS in0 in1 out
+subckt mux2_ideal S\<0\> VDD VSS in0 in1 out
+    W1 (in0 out net8 VSS) relay vt1=100m vt2=900m ropen=1T rclosed=1.0
+    W0 (in1 out S\<0\> VSS) relay vt1=100m vt2=900.0m ropen=1T rclosed=1.0
     I0 (S\<0\> net8 VDD VSS) inverter
-    I2 (VDD VSS in0 out net8) sw_cmos
-    I1 (VDD VSS in1 out S\<0\>) sw_cmos
-ends mux2
+ends mux2_ideal
 // End of subcircuit definition.
 
 // Library name: final_project
-// Cell name: ADC_ctrl
+// Cell name: ADC_ctrl_ideal
 // View name: schematic
-subckt ADC_ctrl B\<7\> B\<6\> B\<5\> B\<4\> B\<3\> B\<2\> B\<1\> B\<0\> \
-        S\<7\> S\<6\> S\<5\> S\<4\> S\<3\> S\<2\> S\<1\> S\<0\> VDD VREF \
-        VSS
-    I5 (S\<5\> VDD VSS VSS VREF B\<5\>) mux2
-    I7 (S\<7\> VDD VSS VSS VREF B\<7\>) mux2
-    I4 (S\<4\> VDD VSS VSS VREF B\<4\>) mux2
-    I1 (S\<1\> VDD VSS VSS VREF B\<1\>) mux2
-    I3 (S\<3\> VDD VSS VSS VREF B\<3\>) mux2
-    I6 (S\<6\> VDD VSS VSS VREF B\<6\>) mux2
-    I2 (S\<2\> VDD VSS VSS VREF B\<2\>) mux2
-    I0 (S\<0\> VDD VSS VSS VREF B\<0\>) mux2
-ends ADC_ctrl
+subckt ADC_ctrl_ideal B\<7\> B\<6\> B\<5\> B\<4\> B\<3\> B\<2\> B\<1\> \
+        B\<0\> S\<7\> S\<6\> S\<5\> S\<4\> S\<3\> S\<2\> S\<1\> S\<0\> VDD \
+        VREF VSS
+    I17 (S\<2\> VDD VSS VSS VREF B\<2\>) mux2_ideal
+    I15 (S\<0\> VDD VSS VSS VREF B\<0\>) mux2_ideal
+    I18 (S\<3\> VDD VSS VSS VREF B\<3\>) mux2_ideal
+    I21 (S\<6\> VDD VSS VSS VREF B\<6\>) mux2_ideal
+    I19 (S\<4\> VDD VSS VSS VREF B\<4\>) mux2_ideal
+    I16 (S\<1\> VDD VSS VSS VREF B\<1\>) mux2_ideal
+    I20 (S\<5\> VDD VSS VSS VREF B\<5\>) mux2_ideal
+    I22 (S\<7\> VDD VSS VSS VREF B\<7\>) mux2_ideal
+ends ADC_ctrl_ideal
 // End of subcircuit definition.
 
 // Library name: final_project
-// Cell name: ADC
+// Cell name: ADC_ideal
 // View name: schematic
-subckt ADC CLK COMP_OUT D\<7\> D\<6\> D\<5\> D\<4\> D\<3\> D\<2\> D\<1\> \
-        D\<0\> VDD VIN VREF VSS CMP LD
-    I29 (VSS VREF ADC_INN LD VDD) sw_pmos
+subckt ADC_ideal CLK COMP_OUT D\<7\> D\<6\> D\<5\> D\<4\> D\<3\> D\<2\> \
+        D\<1\> D\<0\> VDD VIN VREF VSS CMP LD
+    W21 (net05 B\<6\> CMP VSS) relay ropen=1T rclosed=1.0
+    W20 (net05 VIN LD VSS) relay ropen=1T rclosed=1.0
+    W19 (net04 VIN LD VSS) relay ropen=1T rclosed=1.0
+    W18 (net04 B\<7\> CMP VSS) relay ropen=1T rclosed=1.0
+    W17 (net07 B\<4\> CMP VSS) relay ropen=1T rclosed=1.0
+    W16 (net07 VIN LD VSS) relay ropen=1T rclosed=1.0
+    W15 (net06 VIN LD VSS) relay ropen=1T rclosed=1.0
+    W14 (net06 B\<5\> CMP VSS) relay ropen=1T rclosed=1.0
+    W13 (net08 B\<3\> CMP VSS) relay ropen=1T rclosed=1.0
+    W12 (net08 VIN LD VSS) relay ropen=1T rclosed=1.0
+    W9 (net010 B\<1\> CMP VSS) relay ropen=1T rclosed=1.0
+    W8 (net010 VIN LD VSS) relay ropen=1T rclosed=1.0
+    W22 (net071 VIN LD VSS) relay ropen=1T rclosed=1.0
+    W11 (net09 VIN LD VSS) relay ropen=1T rclosed=1.0
+    W10 (net09 B\<2\> CMP VSS) relay ropen=1T rclosed=1.0
+    W3 (net26 B\<0\> CMP VSS) relay ropen=1T rclosed=1.0
+    W2 (net26 VIN LD VSS) relay ropen=1T rclosed=1.0
+    W23 (net071 VSS CMP VSS) relay ropen=1T rclosed=1.0
+    W0 (VREF ADC_INN LD VSS) relay ropen=1T rclosed=1.0
     C0 (ADC_INN net071) capacitor c=cap
     C8 (ADC_INN net04) capacitor c=128*cap
     C7 (ADC_INN net05) capacitor c=64*cap
@@ -138,29 +131,11 @@ subckt ADC CLK COMP_OUT D\<7\> D\<6\> D\<5\> D\<4\> D\<3\> D\<2\> D\<1\> \
     C3 (ADC_INN net09) capacitor c=4*cap
     C2 (ADC_INN net010) capacitor c=2*cap
     I1 (ADC_INN VREF COMP_OUT VDD VSS net017) COMP
-    I7 (B\<7\> B\<6\> B\<5\> B\<4\> B\<3\> B\<2\> B\<1\> B\<0\> D\<7\> \
+    I9 (B\<7\> B\<6\> B\<5\> B\<4\> B\<3\> B\<2\> B\<1\> B\<0\> D\<7\> \
         D\<6\> D\<5\> D\<4\> D\<3\> D\<2\> D\<1\> D\<0\> VDD VREF VSS) \
-        ADC_ctrl
+        ADC_ctrl_ideal
     I8 (CLK net017 VDD VSS) inverter
-    I24 (VDD VSS B\<0\> net26 CMP) sw_cmos
-    I23 (VDD VSS VIN net010 LD) sw_cmos
-    I25 (VDD VSS VIN net26 LD) sw_cmos
-    I26 (VDD VSS VIN net071 LD) sw_cmos
-    I20 (VDD VSS B\<2\> net09 CMP) sw_cmos
-    I19 (VDD VSS VIN net08 LD) sw_cmos
-    I21 (VDD VSS VIN net09 LD) sw_cmos
-    I22 (VDD VSS B\<1\> net010 CMP) sw_cmos
-    I18 (VDD VSS B\<3\> net08 CMP) sw_cmos
-    I17 (VDD VSS B\<4\> net07 CMP) sw_cmos
-    I14 (VDD VSS B\<5\> net06 CMP) sw_cmos
-    I13 (VDD VSS VIN net05 LD) sw_cmos
-    I15 (VDD VSS VIN net06 LD) sw_cmos
-    I16 (VDD VSS VIN net07 LD) sw_cmos
-    I12 (VDD VSS B\<6\> net05 CMP) sw_cmos
-    I11 (VDD VSS VIN net04 LD) sw_cmos
-    I10 (VDD VSS B\<7\> net04 CMP) sw_cmos
-    I27 (VDD VSS VSS net071 CMP) sw_cmos
-ends ADC
+ends ADC_ideal
 // End of subcircuit definition.
 
 // Library name: ee140_gsi
@@ -313,15 +288,11 @@ ends SAR_DFF
 // Cell name: zz_ADC
 // View name: schematic
 I0 (CLK VIB D\<7\> D\<6\> D\<5\> D\<4\> D\<3\> D\<2\> D\<1\> D\<0\> VDD \
-        VIN VREF VSS CMP LD) ADC
+        VIN VREF VSS CMP LD) ADC_ideal
 V3 (VIN VSS) vsource dc=vin type=dc
 V2 (VREF VSS) vsource dc=ref type=dc
 V1 (VDD VSS) vsource dc=supply type=dc
 V0 (VSS 0) vsource dc=0 type=dc
-V14 (D\<2\> VSS) vsource type=pulse val0=0 val1=d2 delay=3u rise=10n \
-        fall=10n
-V13 (D\<1\> VSS) vsource type=pulse val0=0 val1=d1 delay=3u rise=10n \
-        fall=10n
 V12 (D\<0\> VSS) vsource type=pulse val0=0 val1=d0 delay=3u rise=10n \
         fall=10n
 V11 (D\<3\> VSS) vsource type=pulse val0=0 val1=d3 delay=3u rise=10n \
@@ -333,6 +304,10 @@ V9 (D\<5\> VSS) vsource type=pulse val0=0 val1=d5 delay=3u rise=10n \
 V8 (D\<6\> VSS) vsource type=pulse val0=0 val1=d6 delay=3u rise=10n \
         fall=10n
 V7 (D\<7\> VSS) vsource type=pulse val0=0 val1=d7 delay=3u rise=10n \
+        fall=10n
+V14 (D\<2\> VSS) vsource type=pulse val0=0 val1=d2 delay=3u rise=10n \
+        fall=10n
+V13 (D\<1\> VSS) vsource type=pulse val0=0 val1=d1 delay=3u rise=10n \
         fall=10n
 V6 (CMP VSS) vsource type=pulse val0=0 val1=supply delay=2u rise=10n \
         fall=10n
