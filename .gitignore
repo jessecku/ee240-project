@@ -39,3 +39,7 @@ Thumbs.db
 # Large cadence files #
 #######################
 *.trn
+
+# Other cadence files #
+#######################
+*.history
