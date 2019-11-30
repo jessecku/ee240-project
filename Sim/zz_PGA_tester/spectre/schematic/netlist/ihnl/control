@@ -1,13 +1,12 @@
 hnlLastStopCellInfo = '(
-                           ( "analogLib" "res" "spectre" "28" "1544975544" )
-                          ( "analogLib" "cap" "spectre" "30" "1544975544" )
-                          ( "PRIMLIB" "pel" "spectre" "53" "1560766510" )
-                          ( "PRIMLIB" "nel" "spectre" "52" "1560766510" )
+                           ( "analogLib" "cap" "spectre" "30" "1544975544" )
                           ( "analogLib" "switch" "spectre" "48" "1544975544" )
                           ( "PRIMLIB" "ne" "spectre" "52" "1560766510" )
                           ( "PRIMLIB" "pe" "spectre" "53" "1560766510" )
+                          ( "analogLib" "vcvs" "spectre" "48" "1544975544" )
                           ( "analogLib" "vdc" "spectre" "33" "1544975544" )
                           ( "analogLib" "vpulse" "spectre" "34" "1544975544" )
+                          ( "analogLib" "res" "spectre" "28" "1544975544" )
                        )
 hnlLastMaxNameLength = 1024
 hnlLastNamePrefix = "hnl_"
@@ -764,8 +763,7 @@ hnlLastNetNameDifferentFrom = '( )
 hnlLastTermNameDifferentFrom = '( )
 hnlLastParamNameDifferentFrom = '( )
 hnlLastLibInfo = '(
-                    ( "final_project" "1574893587" )
-                   ( "lab5" "1574656914" )
+                    ( "final_project" "1575066883" )
                   )
 hnlLastConstants = '(
                       "P_CELSIUS0"
@@ -795,4 +793,7 @@ hnlLastDesignVars = '(
                       "Lmin"
                       "WLn"
                       "WLp"
+                      "vin"
+                      "cap"
+                      "ratio"
                     )

@@ -1,11 +1,14 @@
 HEADER
 "PSFversion" "1.00"
-"Time Stamp" "Nov 29 13:26:24 2019"
+"Time Stamp" "Nov 29 17:26:09 2019"
 TYPE
 "variable" STRUCT(
 "value" FLOAT DOUBLE
 ) PROP( "key" "element" )
 VALUE
+"ratio" "variable" ( 3 ) PROP( )
+"cap" "variable" ( 20e-9 ) PROP( )
+"vin" "variable" ( 30e-3 ) PROP( )
 "WLp" "variable" ( 62e-6 ) PROP( )
 "WLn" "variable" ( 25e-6 ) PROP( )
 "Lmin" "variable" ( 1e-6 ) PROP( )

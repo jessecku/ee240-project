@@ -1,8 +1,20 @@
-    M0 (OUT IN VSS VSS) ne w=220.0n l=180.0n as=1.056e-13 ad=1.056e-13 \
-        ps=1.4e-06 pd=1.4e-06 nrs=1.22727 nrd=1.22727 m=(1)*(1) \
-        par1=((1)*(1))
-    M1 (OUT IN VDD VDD) pe w=220.0n l=180.0n as=1.056e-13 ad=1.056e-13 \
-        ps=1.4e-06 pd=1.4e-06 nrs=1.22727 nrd=1.22727 m=(1)*(1) \
-        par1=((1)*(1))
-ends inverter
+    C2 (net9 net034) capacitor c=4*cap
+    C7 (net9 net032) capacitor c=cap
+    C1 (net9 net033) capacitor c=2*cap
+    C4 (net9 VOUT) capacitor c=cap
+    C0 (net014 net9) capacitor c=cap
+    I1 (G\<1\> VDD VSS VSS net040 B\<1\>) mux2
+    I2 (G\<2\> VDD VSS VSS net039 B\<2\>) mux2
+    I0 (G\<0\> VDD VSS VSS net041 B\<0\>) mux2
+    W9 (net034 B\<2\> CLK_PGA_2 VSS) relay ropen=1T rclosed=1.0
+    W8 (net034 VIN CLK_PGA_1 VSS) relay ropen=1T rclosed=1.0
+    W22 (net032 VIN CLK_PGA_1 VSS) relay ropen=1T rclosed=1.0
+    W3 (net033 B\<1\> CLK_PGA_2 VSS) relay ropen=1T rclosed=1.0
+    W2 (net033 VIN CLK_PGA_1 VSS) relay ropen=1T rclosed=1.0
+    W23 (net032 B\<0\> CLK_PGA_2 VSS) relay ropen=1T rclosed=1.0
+    W1 (net014 VSS CLK_PGA_2 VSS) relay ropen=1T rclosed=1.0
+    W21 (VOUT net9 CLK_PGA_1 VSS) relay ropen=1T rclosed=1.0
+    W0 (net014 VIN CLK_PGA_1 VSS) relay ropen=1T rclosed=1.0
+    E1 (VOUT VSS VSS net9) vcvs gain=2000
+ends PGA
 // End of subcircuit definition.

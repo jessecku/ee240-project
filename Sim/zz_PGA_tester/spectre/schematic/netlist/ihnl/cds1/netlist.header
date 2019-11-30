@@ -1,5 +1,0 @@
-
-// Library name: final_project
-// Cell name: PGA
-// View name: schematic
-subckt PGA CLK VDD VIN VOUT VSS G\<2\> G\<1\> G\<0\>

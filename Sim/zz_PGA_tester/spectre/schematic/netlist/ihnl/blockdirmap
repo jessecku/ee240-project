@@ -1,6 +1,6 @@
 CADENCE IHNL11144
 
-final_project inverter schematic cds0
-final_project PGA schematic cds1
-final_project zz_PGA_tester schematic cds2
-lab5 pmos_cascode_wrap schematic cds3
+final_project PGA schematic cds0
+final_project zz_PGA_tester schematic cds1
+final_project inverter schematic cds2
+final_project mux2 schematic cds3

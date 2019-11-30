@@ -6,19 +6,19 @@
   stopList "spectre veriloga ahdl"
   globalList "gnd!"
   hierDelim "."
-  netlistDir "/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/project/Sim/zz_PGA_tester/spectre/schematic/netlist"
+  netlistDir "/home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/ee240-project/Sim/zz_PGA_tester/spectre/schematic/netlist"
  )
 ( net
 ( "gnd!" "0" )
  )
 ( model
 ( "final_project/PGA/schematic" "PGA" )
+( "final_project/mux2/schematic" "mux2" )
 ( "final_project/zz_PGA_tester/schematic" "zz_PGA_tester" )
 ( "final_project/inverter/schematic" "inverter" )
-( "lab5/pmos_cascode_wrap/schematic" "pmos_cascode_wrap" )
  )
-( "zz_PGA_tester" "ihnl/cds2/map" )
-( "PGA" "ihnl/cds1/map" )
-( "inverter" "ihnl/cds0/map" )
-( "pmos_cascode_wrap" "ihnl/cds3/map" )
+( "zz_PGA_tester" "ihnl/cds1/map" )
+( "PGA" "ihnl/cds0/map" )
+( "inverter" "ihnl/cds2/map" )
+( "mux2" "ihnl/cds3/map" )
  )

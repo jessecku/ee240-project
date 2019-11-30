@@ -2,7 +2,7 @@ HEADER
 "PSFversion" "1.00"
 "simulator" "spectre"
 "version" "15.1.0.803.isr18"
-"date" "1:26:26 PM, Fri Nov 29, 2019"
+"date" "5:26:10 PM, Fri Nov 29, 2019"
 "design" "// Generated for: spectre"
 "analysis type" "info"
 "analysis name" "designParamVals"
@@ -17,6 +17,9 @@ TYPE
 "Lmin" FLOAT DOUBLE
 "WLn" FLOAT DOUBLE
 "WLp" FLOAT DOUBLE
+"vin" FLOAT DOUBLE
+"cap" FLOAT DOUBLE
+"ratio" FLOAT DOUBLE
 "__bsim4_diomod" FLOAT DOUBLE
 "__nn_accuracy" FLOAT DOUBLE
 "xsf__mos" FLOAT DOUBLE
@@ -1075,6 +1078,9 @@ VALUE
 1.000000000000000e-06
 2.500000000000000e-05
 6.200000000000000e-05
+3.000000000000000e-02
+2.000000000000000e-08
+3.000000000000000e+00
 0.000000000000000e+00
 1.000000000000000e+00
 3.000000000000000e+00

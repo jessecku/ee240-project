@@ -1,13 +1,16 @@
-    R1 (VSS G\<2\>) resistor r=1K
-    R3 (VSS G\<0\>) resistor r=1K
-    R0 (VSS G\<1\>) resistor r=1K
-    C4 (net9 VOUT) capacitor c=40f
-    C0 (net014 net9) capacitor c=400f
-    I4 (net9 VSS VOUT VDD VSS) pmos_cascode_wrap
-    W1 (VIN VSS CLK2 VSS) relay ropen=1T rclosed=1.0
-    W21 (VOUT net9 CLK2 VSS) relay ropen=1T rclosed=1.0
-    W0 (net014 VIN CLK1 VSS) relay ropen=1T rclosed=1.0
-    I5 (CLK2 CLK1 VDD VSS) inverter
-    I3 (CLK CLK2 VDD VSS) inverter
-ends PGA
-// End of subcircuit definition.
+
+// Library name: final_project
+// Cell name: zz_PGA_tester
+// View name: schematic
+I2 (CLK_PGA_1 CLK_PGA_2 net07\<0\> net07\<1\> net07\<2\> net03 net3 net5 \
+        0) PGA
+V6 (G\<2\> 0) vsource dc=0 type=dc
+V5 (G\<1\> 0) vsource dc=1.2 type=dc
+V4 (G\<0\> 0) vsource dc=1.2 type=dc
+V3 (net3 0) vsource dc=vin type=dc
+V0 (net03 0) vsource dc=1.2 type=dc
+V2 (CLK_PGA_2 0) vsource type=pulse val0=1.2 val1=0 period=10u delay=2u \
+        rise=10n fall=10n width=1u
+V1 (CLK_PGA_1 0) vsource type=pulse val0=0 val1=1.2V period=10u delay=2u \
+        rise=10n fall=10n width=1u
+R0 (net5 0) resistor r=100K

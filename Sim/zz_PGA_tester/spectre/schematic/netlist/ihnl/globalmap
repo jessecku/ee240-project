@@ -2,14 +2,17 @@ CADENCE IHNL11140
 $model
 final_project/PGA/schematic PGA
 final_project/zz_PGA_tester/schematic zz_PGA_tester
-lab5/pmos_cascode_wrap/schematic pmos_cascode_wrap
 final_project/inverter/schematic inverter
+final_project/mux2/schematic mux2
 $endmodel
 $net
 gnd! 0
 $endnet
 $param
+vin vin
 WLp WLp
 Lmin Lmin
+cap cap
+ratio ratio
 WLn WLn
 $endparam

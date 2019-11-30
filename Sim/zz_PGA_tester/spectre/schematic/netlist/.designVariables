@@ -1,1 +1,1 @@
-parameters Lmin=1u WLn=25u WLp=62u
+parameters Lmin=1u WLn=25u WLp=62u vin=30m cap=20n ratio=3

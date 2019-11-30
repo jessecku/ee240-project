@@ -1,6 +1,0 @@
-( ( model
-( "PGA" "PGA" )
-( "inverter" "inverter" )
-( "pmos_cascode_wrap" "pmos_cascode_wrap" )
- )
- )

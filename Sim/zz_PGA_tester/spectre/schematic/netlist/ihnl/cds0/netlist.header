@@ -1,5 +1,5 @@
 
 // Library name: final_project
-// Cell name: inverter
+// Cell name: PGA
 // View name: schematic
-subckt inverter IN OUT VDD VSS
+subckt PGA CLK_PGA_1 CLK_PGA_2 G\<2\> G\<1\> G\<0\> VDD VIN VOUT VSS

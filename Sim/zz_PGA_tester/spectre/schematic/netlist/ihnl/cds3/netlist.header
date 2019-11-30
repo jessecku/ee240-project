@@ -1,5 +1,5 @@
 
-// Library name: lab5
-// Cell name: pmos_cascode_wrap
+// Library name: final_project
+// Cell name: mux2
 // View name: schematic
-subckt pmos_cascode_wrap INN INP OUT VDD VSS
+subckt mux2 S\<0\> VDD VSS in0 in1 out

@@ -2,7 +2,7 @@ HEADER
 "PSFversion" "1.00"
 "simulator" "spectre"
 "version" "15.1.0.803.isr18"
-"date" "1:26:26 PM, Fri Nov 29, 2019"
+"date" "5:26:10 PM, Fri Nov 29, 2019"
 "design" "// Generated for: spectre"
 "analysis type" "info.subckts"
 "analysis name" "subckts"
@@ -99,7 +99,7 @@ VALUE
 )
 "PGA" "subckt" (
 ""
-"CLK VDD VIN VOUT VSS G<2> G<1> G<0>"
+"CLK_PGA_1 CLK_PGA_2 G<2> G<1> G<0> VDD VIN VOUT VSS"
 )
 "pe5ti" "subckt" (
 ""
@@ -156,10 +156,6 @@ VALUE
 "pe_5" "subckt" (
 ""
 ""
-)
-"pmos_cascode_wrap" "subckt" (
-""
-"INN INP OUT VDD VSS"
 )
 "qpvg" "subckt" (
 ""
@@ -450,8 +446,8 @@ VALUE
 ""
 )
 "pel" "subckt" (
-"sbl stimodl psl sb scc sdl mfu0 sccl ad wpemod nrs nrsl xf_subext as par1 pd sa sca w adl scb ps scal sd mfvt nrdl stimod l wpemodl asl nrd pdl sal scbl"
-"d g s b"
+""
+""
 )
 "cif5" "subckt" (
 ""
@@ -542,8 +538,8 @@ VALUE
 ""
 )
 "nel" "subckt" (
-"sbl stimodl psl sb scc sdl mfu0 sccl ad wpemod nrs nrsl xf_subext as par1 pd sa sca w adl scb ps scal sd mfvt nrdl stimod l wpemodl asl nrd pdl sal scbl"
-"d g s b"
+""
+""
 )
 "dfwdnhc" "subckt" (
 ""
@@ -656,6 +652,10 @@ VALUE
 "cmm6t" "subckt" (
 ""
 ""
+)
+"mux2" "subckt" (
+""
+"S<0> VDD VSS in0 in1 out"
 )
 "dn" "subckt" (
 ""

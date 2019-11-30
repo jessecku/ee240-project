@@ -1,11 +1,11 @@
 // Generated for: spectre
-// Generated on: Nov 29 13:26:24 2019
+// Generated on: Nov 29 17:26:09 2019
 // Design library name: final_project
 // Design cell name: zz_PGA_tester
 // Design view name: schematic
 simulator lang=spectre
 global 0
-parameters Lmin=1u WLn=25u WLp=62u
+parameters Lmin=1u WLn=25u WLp=62u vin=30m cap=20n ratio=3
 include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/config.scs" section=default
 include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/param.scs" section=3s
 include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/bip.scs" section=tm
@@ -13,95 +13,6 @@ include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/
 include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/dio.scs" section=tm
 include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/mos.scs" section=tm
 include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/res.scs" section=tm
-
-// Library name: lab5
-// Cell name: pmos_cascode_wrap
-// View name: schematic
-subckt pmos_cascode_wrap INN INP OUT VDD VSS
-    M23 (net062 net062 VDD VDD) pel w=0.5*WLp l=Lmin as=4.8e-07*(0.5*WLp) \
-        ad=4.8e-07*(0.5*WLp) ps=1*2*(4.8e-07+(0.5*WLp)) \
-        pd=2*(4.8e-07+(0.5*WLp)) nrs=2.7e-07/(0.5*WLp) \
-        nrd=2.7e-07/(0.5*WLp) m=(1)*(1) par1=((1)*(1))
-    M22 (net052 net062 VDD VDD) pel w=1*WLp l=Lmin as=4.8e-07*(1*WLp) \
-        ad=4.8e-07*(1*WLp) ps=1*2*(4.8e-07+(1*WLp)) pd=2*(4.8e-07+(1*WLp)) \
-        nrs=2.7e-07/(1*WLp) nrd=2.7e-07/(1*WLp) m=(1)*(1) par1=((1)*(1))
-    M27 (net063 net014 VDD VDD) pel w=0.5*WLp l=Lmin as=4.8e-07*(0.5*WLp) \
-        ad=4.8e-07*(0.5*WLp) ps=1*2*(4.8e-07+(0.5*WLp)) \
-        pd=2*(4.8e-07+(0.5*WLp)) nrs=2.7e-07/(0.5*WLp) \
-        nrd=2.7e-07/(0.5*WLp) m=(1)*(1) par1=((1)*(1))
-    M12 (net039 net014 VDD VDD) pel w=0.5*WLp l=Lmin as=4.8e-07*(0.5*WLp) \
-        ad=4.8e-07*(0.5*WLp) ps=1*2*(4.8e-07+(0.5*WLp)) \
-        pd=2*(4.8e-07+(0.5*WLp)) nrs=2.7e-07/(0.5*WLp) \
-        nrd=2.7e-07/(0.5*WLp) m=(1)*(1) par1=((1)*(1))
-    M11 (net014 net014 VDD VDD) pel w=0.5*WLp l=Lmin as=4.8e-07*(0.5*WLp) \
-        ad=4.8e-07*(0.5*WLp) ps=1*2*(4.8e-07+(0.5*WLp)) \
-        pd=2*(4.8e-07+(0.5*WLp)) nrs=2.7e-07/(0.5*WLp) \
-        nrd=2.7e-07/(0.5*WLp) m=(1)*(1) par1=((1)*(1))
-    M7 (net11 net014 VDD VDD) pel w=WLp l=Lmin as=4.8e-07*(WLp) \
-        ad=4.8e-07*(WLp) ps=1*2*(4.8e-07+(WLp)) pd=2*(4.8e-07+(WLp)) \
-        nrs=2.7e-07/(WLp) nrd=2.7e-07/(WLp) m=(1)*(1) par1=((1)*(1))
-    M6 (net044 INP net11 net11) pel w=0.5*WLp l=Lmin as=4.8e-07*(0.5*WLp) \
-        ad=4.8e-07*(0.5*WLp) ps=1*2*(4.8e-07+(0.5*WLp)) \
-        pd=2*(4.8e-07+(0.5*WLp)) nrs=2.7e-07/(0.5*WLp) \
-        nrd=2.7e-07/(0.5*WLp) m=(1)*(1) par1=((1)*(1))
-    M4 (net20 net20 VDD VDD) pel w=0.5*WLp l=Lmin as=4.8e-07*(0.5*WLp) \
-        ad=4.8e-07*(0.5*WLp) ps=1*2*(4.8e-07+(0.5*WLp)) \
-        pd=2*(4.8e-07+(0.5*WLp)) nrs=2.7e-07/(0.5*WLp) \
-        nrd=2.7e-07/(0.5*WLp) m=(1)*(1) par1=((1)*(1))
-    M3 (net19 net19 net20 net20) pel w=0.5*WLp l=Lmin as=4.8e-07*(0.5*WLp) \
-        ad=4.8e-07*(0.5*WLp) ps=1*2*(4.8e-07+(0.5*WLp)) \
-        pd=2*(4.8e-07+(0.5*WLp)) nrs=2.7e-07/(0.5*WLp) \
-        nrd=2.7e-07/(0.5*WLp) m=(1)*(1) par1=((1)*(1))
-    M2 (OUT net19 net23 net23) pel w=0.5*WLp l=Lmin as=4.8e-07*(0.5*WLp) \
-        ad=4.8e-07*(0.5*WLp) ps=1*2*(4.8e-07+(0.5*WLp)) \
-        pd=2*(4.8e-07+(0.5*WLp)) nrs=2.7e-07/(0.5*WLp) \
-        nrd=2.7e-07/(0.5*WLp) m=(1)*(1) par1=((1)*(1))
-    M1 (net23 net20 VDD VDD) pel w=0.5*WLp l=Lmin as=4.8e-07*(0.5*WLp) \
-        ad=4.8e-07*(0.5*WLp) ps=1*2*(4.8e-07+(0.5*WLp)) \
-        pd=2*(4.8e-07+(0.5*WLp)) nrs=2.7e-07/(0.5*WLp) \
-        nrd=2.7e-07/(0.5*WLp) m=(1)*(1) par1=((1)*(1))
-    M5 (net35 INN net11 net11) pel w=0.5*WLp l=Lmin as=4.8e-07*(0.5*WLp) \
-        ad=4.8e-07*(0.5*WLp) ps=1*2*(4.8e-07+(0.5*WLp)) \
-        pd=2*(4.8e-07+(0.5*WLp)) nrs=2.7e-07/(0.5*WLp) \
-        nrd=2.7e-07/(0.5*WLp) m=(1)*(1) par1=((1)*(1))
-    M24 (net052 net052 VSS VSS) nel w=0.2*WLn l=Lmin as=4.8e-07*(0.2*WLn) \
-        ad=4.8e-07*(0.2*WLn) ps=1*2*(4.8e-07+(0.2*WLn)) \
-        pd=2*(4.8e-07+(0.2*WLn)) nrs=2.7e-07/(0.2*WLn) \
-        nrd=2.7e-07/(0.2*WLn) m=(1)*(1) par1=((1)*(1))
-    M26 (net063 net063 VSS VSS) nel w=0.5*WLn l=Lmin as=4.8e-07*(0.5*WLn) \
-        ad=4.8e-07*(0.5*WLn) ps=1*2*(4.8e-07+(0.5*WLn)) \
-        pd=2*(4.8e-07+(0.5*WLn)) nrs=2.7e-07/(0.5*WLn) \
-        nrd=2.7e-07/(0.5*WLn) m=(1)*(1) par1=((1)*(1))
-    M25 (net062 net063 VSS VSS) nel w=0.5*WLn l=Lmin as=4.8e-07*(0.5*WLn) \
-        ad=4.8e-07*(0.5*WLn) ps=1*2*(4.8e-07+(0.5*WLn)) \
-        pd=2*(4.8e-07+(0.5*WLn)) nrs=2.7e-07/(0.5*WLn) \
-        nrd=2.7e-07/(0.5*WLn) m=(1)*(1) par1=((1)*(1))
-    M14 (net039 net039 VSS VSS) nel w=0.5*WLn l=Lmin as=4.8e-07*(0.5*WLn) \
-        ad=4.8e-07*(0.5*WLn) ps=1*2*(4.8e-07+(0.5*WLn)) \
-        pd=2*(4.8e-07+(0.5*WLn)) nrs=2.7e-07/(0.5*WLn) \
-        nrd=2.7e-07/(0.5*WLn) m=(1)*(1) par1=((1)*(1))
-    M13 (net014 net039 net051 net051) nel w=2*WLn l=Lmin \
-        as=4.8e-07*(2*WLn) ad=4.8e-07*(2*WLn) ps=1*2*(4.8e-07+(2*WLn)) \
-        pd=2*(4.8e-07+(2*WLn)) nrs=2.7e-07/(2*WLn) nrd=2.7e-07/(2*WLn) \
-        m=(1)*(1) par1=((1)*(1))
-    M10 (net35 net063 VSS VSS) nel w=1*WLn l=Lmin as=4.8e-07*(1*WLn) \
-        ad=4.8e-07*(1*WLn) ps=1*2*(4.8e-07+(1*WLn)) pd=2*(4.8e-07+(1*WLn)) \
-        nrs=2.7e-07/(1*WLn) nrd=2.7e-07/(1*WLn) m=(1)*(1) par1=((1)*(1))
-    M9 (OUT net052 net35 net35) nel w=0.5*WLn l=Lmin as=4.8e-07*(0.5*WLn) \
-        ad=4.8e-07*(0.5*WLn) ps=1*2*(4.8e-07+(0.5*WLn)) \
-        pd=2*(4.8e-07+(0.5*WLn)) nrs=2.7e-07/(0.5*WLn) \
-        nrd=2.7e-07/(0.5*WLn) m=(1)*(1) par1=((1)*(1))
-    M8 (net044 net063 VSS VSS) nel w=1*WLn l=Lmin as=4.8e-07*(1*WLn) \
-        ad=4.8e-07*(1*WLn) ps=1*2*(4.8e-07+(1*WLn)) pd=2*(4.8e-07+(1*WLn)) \
-        nrs=2.7e-07/(1*WLn) nrd=2.7e-07/(1*WLn) m=(1)*(1) par1=((1)*(1))
-    M0 (net19 net052 net044 net044) nel w=0.5*WLn l=Lmin \
-        as=4.8e-07*(0.5*WLn) ad=4.8e-07*(0.5*WLn) \
-        ps=1*2*(4.8e-07+(0.5*WLn)) pd=2*(4.8e-07+(0.5*WLn)) \
-        nrs=2.7e-07/(0.5*WLn) nrd=2.7e-07/(0.5*WLn) m=(1)*(1) \
-        par1=((1)*(1))
-    R0 (net051 VSS) resistor r=10k
-ends pmos_cascode_wrap
-// End of subcircuit definition.
 
 // Library name: final_project
 // Cell name: inverter
@@ -117,36 +28,60 @@ ends inverter
 // End of subcircuit definition.
 
 // Library name: final_project
+// Cell name: mux2
+// View name: schematic
+subckt mux2 S\<0\> VDD VSS in0 in1 out
+    W1 (in0 out net8 VSS) relay vt1=100m vt2=900m ropen=1T rclosed=1.0
+    W0 (in1 out S\<0\> VSS) relay vt1=100m vt2=900.0m ropen=1T rclosed=1.0
+    I0 (S\<0\> net8 VDD VSS) inverter
+ends mux2
+// End of subcircuit definition.
+
+// Library name: final_project
 // Cell name: PGA
 // View name: schematic
-subckt PGA CLK VDD VIN VOUT VSS G\<2\> G\<1\> G\<0\>
-    R1 (VSS G\<2\>) resistor r=1K
-    R3 (VSS G\<0\>) resistor r=1K
-    R0 (VSS G\<1\>) resistor r=1K
-    C4 (net9 VOUT) capacitor c=40f
-    C0 (net014 net9) capacitor c=400f
-    I4 (net9 VSS VOUT VDD VSS) pmos_cascode_wrap
-    W1 (VIN VSS CLK2 VSS) relay ropen=1T rclosed=1.0
-    W21 (VOUT net9 CLK2 VSS) relay ropen=1T rclosed=1.0
-    W0 (net014 VIN CLK1 VSS) relay ropen=1T rclosed=1.0
-    I5 (CLK2 CLK1 VDD VSS) inverter
-    I3 (CLK CLK2 VDD VSS) inverter
+subckt PGA CLK_PGA_1 CLK_PGA_2 G\<2\> G\<1\> G\<0\> VDD VIN VOUT VSS
+    C2 (net9 net034) capacitor c=4*cap
+    C7 (net9 net032) capacitor c=cap
+    C1 (net9 net033) capacitor c=2*cap
+    C4 (net9 VOUT) capacitor c=cap
+    C0 (net014 net9) capacitor c=cap
+    I1 (G\<1\> VDD VSS VSS net040 B\<1\>) mux2
+    I2 (G\<2\> VDD VSS VSS net039 B\<2\>) mux2
+    I0 (G\<0\> VDD VSS VSS net041 B\<0\>) mux2
+    W9 (net034 B\<2\> CLK_PGA_2 VSS) relay ropen=1T rclosed=1.0
+    W8 (net034 VIN CLK_PGA_1 VSS) relay ropen=1T rclosed=1.0
+    W22 (net032 VIN CLK_PGA_1 VSS) relay ropen=1T rclosed=1.0
+    W3 (net033 B\<1\> CLK_PGA_2 VSS) relay ropen=1T rclosed=1.0
+    W2 (net033 VIN CLK_PGA_1 VSS) relay ropen=1T rclosed=1.0
+    W23 (net032 B\<0\> CLK_PGA_2 VSS) relay ropen=1T rclosed=1.0
+    W1 (net014 VSS CLK_PGA_2 VSS) relay ropen=1T rclosed=1.0
+    W21 (VOUT net9 CLK_PGA_1 VSS) relay ropen=1T rclosed=1.0
+    W0 (net014 VIN CLK_PGA_1 VSS) relay ropen=1T rclosed=1.0
+    E1 (VOUT VSS VSS net9) vcvs gain=2000
 ends PGA
 // End of subcircuit definition.
 
 // Library name: final_project
 // Cell name: zz_PGA_tester
 // View name: schematic
-I0 (net4 net08 net3 net5 0 0 0 0) PGA
-V3 (net3 0) vsource dc=10.00m type=dc
-V0 (net08 0) vsource dc=1.2 type=dc
-V1 (net4 0) vsource type=pulse val0=1.8 val1=-1.8 period=1u
+I2 (CLK_PGA_1 CLK_PGA_2 net07\<0\> net07\<1\> net07\<2\> net03 net3 net5 \
+        0) PGA
+V6 (G\<2\> 0) vsource dc=0 type=dc
+V5 (G\<1\> 0) vsource dc=1.2 type=dc
+V4 (G\<0\> 0) vsource dc=1.2 type=dc
+V3 (net3 0) vsource dc=vin type=dc
+V0 (net03 0) vsource dc=1.2 type=dc
+V2 (CLK_PGA_2 0) vsource type=pulse val0=1.2 val1=0 period=10u delay=2u \
+        rise=10n fall=10n width=1u
+V1 (CLK_PGA_1 0) vsource type=pulse val0=0 val1=1.2V period=10u delay=2u \
+        rise=10n fall=10n width=1u
 R0 (net5 0) resistor r=100K
 simulatorOptions options reltol=100e-6 vabstol=1e-6 iabstol=1e-12 temp=27 \
     tnom=27 homotopy=all limit=delta scalem=1.0 scale=1.0 \
     compatible=spice2 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 digits=5 \
     cols=80 pivrel=1e-3 sensfile="../psf/sens.output" checklimitdest=psf 
-tran tran stop=10u errpreset=conservative write="spectre.ic" \
+tran tran stop=20u errpreset=conservative write="spectre.ic" \
     writefinal="spectre.fc" annotate=status maxiters=5 
 finalTimeOP info what=oppoint where=rawfile
 modelParameter info what=models where=rawfile
@@ -155,4 +90,5 @@ outputParameter info what=output where=rawfile
 designParamVals info what=parameters where=rawfile
 primitives info what=primitives where=rawfile
 subckts info what=subckts where=rawfile
+save I2:7 I2:8 I2:6 I2:9 I2:2 I2:1 V3:p V3:p 
 saveOptions options save=allpub
