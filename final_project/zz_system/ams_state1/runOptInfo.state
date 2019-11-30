@@ -1,11 +1,11 @@
 snapshotPrefix ""
 saveTimeInterval ""
 runSimOnly (t)
+snapshot ""
 restartFlag (nil)
 cleanSnapShot (nil)
 runCompOnly (t nil)
 saveStartTime ""
-snapshot ""
 runOpts "Batch (normal)"
 saveStopTime ""
 runElabOnly (t nil)
