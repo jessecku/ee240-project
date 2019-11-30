@@ -1,2 +1,0 @@
-netMap,*VBATDIV4,*gnd!,*cds_globals.\gnd! 
-cellMap,*VBATDIV4,*VBATDIV4,*final_project,*schematic

@@ -1,7 +1,0 @@
-CADENCE IHNL11145
-
-final_project zz_switchtest schematic cds0
-final_project inverter schematic cds1
-final_project sw_cmos schematic cds2
-final_project sw_pmos schematic cds3
-final_project sw_nmos schematic cds4

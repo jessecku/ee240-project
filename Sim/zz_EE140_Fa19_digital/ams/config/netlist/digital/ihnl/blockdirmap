@@ -1,9 +1,0 @@
-CADENCE IHNL04127
-
-ee140_gsi invr_dupe schematic nil schematic final_project zz_EE140_Fa19_digital config 0 cds0
-ee140_gsi NA2HDX0_dupe schematic nil schematic final_project zz_EE140_Fa19_digital config 0 cds1
-final_project clk_nonoverlapping schematic nil schematic final_project zz_EE140_Fa19_digital config 0 cds2
-ee140_gsi DFRRSHDX0_dupe schematic nil schematic final_project zz_EE140_Fa19_digital config 0 cds3
-ee140_gsi SAR_DFF schematic nil schematic final_project zz_EE140_Fa19_digital config 0 cds4
-final_project EE140_Fa19_digital schematic nil schematic final_project zz_EE140_Fa19_digital config 0 cds5
-final_project zz_EE140_Fa19_digital schematic nil schematic final_project zz_EE140_Fa19_digital config 1 cds6

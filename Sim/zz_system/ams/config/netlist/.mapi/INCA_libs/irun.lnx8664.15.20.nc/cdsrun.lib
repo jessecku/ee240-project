@@ -1,5 +1,0 @@
-SOFTINCLUDE /share/instsww/cadence/INCISIVE.15.20.076/tools/inca/files/IEEE_vhdlams/cds.lib
-include ../../cds.lib
-define ee140_gsi ../ee140_gsi
-define worklib ../worklib
-define vhdlspice_skeletons ../vhdlspice_skeletons
