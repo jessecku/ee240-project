@@ -1,1 +1,0 @@
-("out")("VDD")("VSS")("in")("Q")("VDD")("VSS")("A")("B")("PHI1")("PHI2")("VDD")("VSS")("CLK_IN")("Q")("QN")("VDD")("VSS")("C")("D")("RN")("SN")("DONE")("VDD")("VSS")("CLK")("COMP")("RESETB")("D" 7 0)("CLK_ADC")("CLK_PGA1")("CLK_PGA2")("CLK_PGA2")("DONE")("VDD")("VSS")("CLK")("COMP")("ENABLE")("DAC" 7 0)

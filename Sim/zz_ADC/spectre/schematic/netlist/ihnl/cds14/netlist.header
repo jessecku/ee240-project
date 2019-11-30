@@ -1,7 +1,0 @@
-
-// Library name: final_project
-// Cell name: ADC_ctrl_ideal
-// View name: schematic
-subckt ADC_ctrl_ideal B\<7\> B\<6\> B\<5\> B\<4\> B\<3\> B\<2\> B\<1\> \
-        B\<0\> S\<7\> S\<6\> S\<5\> S\<4\> S\<3\> S\<2\> S\<1\> S\<0\> VDD \
-        VREF VSS

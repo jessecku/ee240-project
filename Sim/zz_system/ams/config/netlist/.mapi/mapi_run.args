@@ -1,8 +1,0 @@
--64bit  -compile -NOCOPYRIGHT -nostdout -nowarn DLNOHV
--logfile /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi/mapirun.log
--nowarn DLNOHV -nowarn DLCLAP -v93 -allowredefinition -incdir /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/ 
--nclibdirpath /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi/
--cdslib /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi/cds.lib
--amscompilefile "file:/home/ff/ee140/fa19/cadence/ee140_gsi/SAR_FSM/functional/verilog.v lib:ee140_gsi cell:SAR_FSM view:functional"
-/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi//dummyMapi.vams
-/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/Sim/zz_system/ams/config/netlist/.mapi//dummyMapi.vhms

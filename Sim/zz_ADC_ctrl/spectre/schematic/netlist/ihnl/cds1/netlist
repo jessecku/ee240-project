@@ -1,5 +1,0 @@
-    W1 (in0 out net8 VSS) relay vt1=100m vt2=900m ropen=1T rclosed=1.0
-    W0 (in1 out S\<0\> VSS) relay vt1=100m vt2=900.0m ropen=1T rclosed=1.0
-    I0 (S\<0\> net8 VDD VSS) inverter
-ends mux2
-// End of subcircuit definition.

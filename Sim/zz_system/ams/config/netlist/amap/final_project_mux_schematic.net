@@ -1,9 +1,0 @@
-HEADER
-"PSFversion" "1.00"
-"IN<0>v" "IN[0]v"
-"IN<1>v" "IN[1]v"
-"IN<2>v" "IN[2]v"
-"IN<3>v" "IN[3]v"
-"S<0>v" "S[0]v"
-"S<1>v" "S[1]v"
-"gnd!v" "cds_globals.\\gnd! v"

@@ -1,9 +1,0 @@
-("analogLib" "vcvs" "spectre" "spectre") t
-("analogLib" "ipulse" "spectre" "spectre") t
-("analogLib" "vpulse" "spectre" "spectre") t
-("analogLib" "res" "spectre" "spectre") t
-("analogLib" "switch" "spectre" "spectre") t
-("PRIMLIB" "pe" "spectre" "spectre") t
-("analogLib" "cap" "spectre" "spectre") t
-("analogLib" "vsource" "spectre" "spectre") t
-("PRIMLIB" "ne" "spectre" "spectre") t
