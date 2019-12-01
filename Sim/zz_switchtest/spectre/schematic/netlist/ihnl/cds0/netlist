@@ -1,8 +1,0 @@
-
-// Library name: final_project
-// Cell name: zz_switchtest
-// View name: schematic
-W0 (net2 net4 net03 0) relay vt1=100.0m vt2=900.0m ropen=1T rclosed=1.0
-V1 (net03 0) vsource dc=control type=dc
-V0 (net2 0) vsource dc=vin type=dc
-R0 (net4 0) resistor r=1K

@@ -39,3 +39,10 @@ Thumbs.db
 # Large cadence files #
 #######################
 *.trn
+
+# Other cadence files #
+#######################
+*.history
+Sim/
+viva.ini
+*.cdslck

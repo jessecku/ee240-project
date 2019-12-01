@@ -1,5 +1,0 @@
-instMap,*mux2,*I0,*I0
-instMaster,*mux2,*I0,*final_project_inverter_schematic
-netMap,*mux2,*S<0>,*S[0]
-netMap,*mux2,*gnd!,*cds_globals.\gnd! 
-cellMap,*mux2,*mux2,*final_project,*schematic

@@ -1,5 +1,0 @@
-
-// Library name: final_project
-// Cell name: COMP
-// View name: schematic
-subckt COMP INN INP OUT VDD VSS CLK

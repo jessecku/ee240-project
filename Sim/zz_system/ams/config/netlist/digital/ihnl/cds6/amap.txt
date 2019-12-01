@@ -1,5 +1,0 @@
-netMap,*PGA,*G<2>,*G[2]
-netMap,*PGA,*G<1>,*G[1]
-netMap,*PGA,*G<0>,*G[0]
-netMap,*PGA,*gnd!,*cds_globals.\gnd! 
-cellMap,*PGA,*PGA,*final_project,*schematic

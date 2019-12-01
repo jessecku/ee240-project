@@ -1,2 +1,0 @@
-netMap,*DREG,*gnd!,*cds_globals.\gnd! 
-cellMap,*DREG,*DREG,*final_project,*schematic

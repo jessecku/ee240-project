@@ -1,2 +1,0 @@
-netMap,*NA2HDX0_dupe,*gnd!,*cds_globals.\gnd! 
-cellMap,*NA2HDX0_dupe,*NA2HDX0_dupe,*ee140_gsi,*schematic
