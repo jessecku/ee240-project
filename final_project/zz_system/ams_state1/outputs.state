@@ -1435,7 +1435,7 @@ list(tmp1 tmp2)
 list(tmp1)
 )
 tmp1->value = nil
-tmp1->plot = nil
+tmp1->plot = 't
 tmp1->save = 't
 tmp1->march = nil
 tmp1->index = 31
@@ -1493,7 +1493,7 @@ list(tmp1 tmp2)
 list(tmp1)
 )
 tmp1->value = nil
-tmp1->plot = nil
+tmp1->plot = 't
 tmp1->save = 't
 tmp1->march = nil
 tmp1->index = 32
@@ -1591,7 +1591,7 @@ tmp1->type = nil
 tmp1->areaTable = nil
 tmp1->selectionDetail = nil
 tmp1->value = nil
-tmp1->plot = 't
+tmp1->plot = nil
 tmp1->save = nil
 tmp1->march = nil
 tmp1->index = 34
@@ -1640,7 +1640,7 @@ tmp1->type = nil
 tmp1->areaTable = nil
 tmp1->selectionDetail = nil
 tmp1->value = nil
-tmp1->plot = 't
+tmp1->plot = nil
 tmp1->save = nil
 tmp1->march = nil
 tmp1->index = 35
