@@ -1,6 +1,0 @@
-
-// Library name: final_project
-// Cell name: clk_nonoverlapping
-// View name: schematic
-// Inherited view list: schematic
-subckt clk_nonoverlapping

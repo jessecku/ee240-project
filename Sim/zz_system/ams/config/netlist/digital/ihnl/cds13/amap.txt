@@ -1,2 +1,0 @@
-netMap,*invr_dupe,*gnd!,*cds_globals.\gnd! 
-cellMap,*invr_dupe,*invr_dupe,*ee140_gsi,*schematic

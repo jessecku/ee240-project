@@ -1,8 +1,0 @@
-HEADER
-"PSFversion" "1.00"
-"C0n C1n C2n C3n C4n C5n C6n C7n C8n" "analogLib_cap_spectre"
-"I1n" "final_project_COMP_schematic"
-"I10n I11n I12n I13n I14n I15n I16n I17n I18n I19n I20n I21n I22n I23n I24n I25n I26n I27n" "final_project_sw_cmos_schematic"
-"I29n" "final_project_sw_pmos_schematic"
-"I7n" "final_project_ADC_ctrl_schematic"
-"I8n" "final_project_inverter_schematic"

@@ -1,6 +1,0 @@
-
-EE140_Fa19_digital I33 ( .CLK_PGA1(CLK_PGA1), .CLK_ADC(CLK_ADC), 
-    .ENABLE(ENABLE), .CLK_PGA2(CLK_PGA2), .VSS(cds_globals.\gnd! ), 
-    .VDD(VDD), .DAC(D[7:0]), .DONE(DONE), .CLK(CLK), .COMP(COMP));
-
-endmodule

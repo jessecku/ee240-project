@@ -1,9 +1,0 @@
-HEADER
-"PSFversion" "1.00"
-"I0n" "inverter"
-"M0n" "PRIMLIB_pe_spectre"
-"VSSv" ":1v"
-"io0v" ":2v"
-"io1v" ":3v"
-"sw_ctrlv" ":4v"
-"VDDv" ":5v"

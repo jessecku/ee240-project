@@ -1,9 +1,0 @@
-HEADER
-"PSFversion" "1.00"
-"clkv" ".clkv"
-"run_conversionv" ".run_conversionv"
-"adc_donev" ".adc_donev"
-"clk_dffv" ".clk_dffv"
-"clk_pgav" ".clk_pgav"
-"adc_resetbv" ".adc_resetbv"
-"adc_convertv" ".adc_convertv"

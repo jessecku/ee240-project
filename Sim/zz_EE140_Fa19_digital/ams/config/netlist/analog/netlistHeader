@@ -1,7 +1,0 @@
-// Generated for: spectre
-// Generated on: Nov 29 01:12:46 2019
-// Design library name: final_project
-// Design cell name: zz_EE140_Fa19_digital
-// Design view name: config
-simulator lang=spectre binding=vlog  
-global 0

@@ -1,8 +1,0 @@
-    M0 (OUT IN VSS VSS) ne w=220.0n l=180.0n as=1.056e-13 ad=1.056e-13 \
-        ps=1.4e-06 pd=1.4e-06 nrs=1.22727 nrd=1.22727 m=(1)*(1) \
-        par1=((1)*(1))
-    M1 (OUT IN VDD VDD) pe w=220.0n l=180.0n as=1.056e-13 ad=1.056e-13 \
-        ps=1.4e-06 pd=1.4e-06 nrs=1.22727 nrd=1.22727 m=(1)*(1) \
-        par1=((1)*(1))
-ends inverter
-// End of subcircuit definition.

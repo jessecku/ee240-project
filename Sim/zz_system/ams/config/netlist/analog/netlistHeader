@@ -1,7 +1,0 @@
-// Generated for: spectre
-// Generated on: Nov 29 01:21:49 2019
-// Design library name: final_project
-// Design cell name: zz_system
-// Design view name: config
-simulator lang=spectre binding=vlog  
-global 0

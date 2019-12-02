@@ -1,5 +1,0 @@
-
-// Library name: final_project
-// Cell name: sw_pmos
-// View name: schematic
-subckt sw_pmos VDD io0 io1 sw_ctrl

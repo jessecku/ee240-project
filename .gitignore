@@ -43,3 +43,6 @@ Thumbs.db
 # Other cadence files #
 #######################
 *.history
+Sim/
+.cadence/dfII/
+*.cdslck

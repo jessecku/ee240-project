@@ -1,8 +1,0 @@
-desvar,*TSTART,*TSTART,*1/FCLK
-desvar,*VCLK,*VCLK,*VDD
-desvar,*VCOMP,*VCOMP,*VDD
-desvar,*FCLK,*FCLK,*1M
-desvar,*TFALL,*TFALL,*10n
-desvar,*TRISE,*TRISE,*10n
-desvar,*VDD,*VDD,*1.2
-desvar,*_EXPR_1,*_EXPR_1,*1.5e-05
