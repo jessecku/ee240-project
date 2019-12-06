@@ -1,0 +1,5 @@
+
+// Library name: final_project
+// Cell name: const_gm
+// View name: schematic
+subckt const_gm VBAT VBIAS VSS

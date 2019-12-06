@@ -1,0 +1,9 @@
+HEADER
+"PSFversion" "1.00"
+"M1n M0n" "PRIMLIB_pe_spectre"
+"M4n M3n M2n" "PRIMLIB_ne_spectre"
+"R0n" "PRIMLIB_rm1_spectre"
+"I2n" "inverter"
+"VBATv" ":1v"
+"VBIASv" ":2v"
+"VSSv" ":3v"

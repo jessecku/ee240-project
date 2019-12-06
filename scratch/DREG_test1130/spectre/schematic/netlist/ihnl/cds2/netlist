@@ -1,0 +1,18 @@
+    M4 (net11 net15 VSS VSS) nel w=200.0000u l=100.0000u as=9.6e-11 \
+        ad=9.6e-11 ps=0.00040096 pd=0.00040096 nrs=0.00135 nrd=0.00135 \
+        m=(1)*(1) par1=((1)*(1))
+    M1 (VOUT INN net11 net11) nel w=200.0000u l=100.0000u as=9.6e-11 \
+        ad=9.6e-11 ps=0.00040096 pd=0.00040096 nrs=0.00135 nrd=0.00135 \
+        m=(1)*(1) par1=((1)*(1))
+    M0 (net12 INP net11 net11) nel w=200.0000u l=100.0000u as=9.6e-11 \
+        ad=9.6e-11 ps=0.00040096 pd=0.00040096 nrs=0.00135 nrd=0.00135 \
+        m=(1)*(1) par1=((1)*(1))
+    M3 (VOUT net12 VBAT VBAT) pel w=200.0000u l=100.0000u as=9.6e-11 \
+        ad=9.6e-11 ps=0.00040096 pd=0.00040096 nrs=0.00135 nrd=0.00135 \
+        m=(1)*(1) par1=((1)*(1))
+    M2 (net12 net12 VBAT VBAT) pel w=200.0000u l=100.0000u as=9.6e-11 \
+        ad=9.6e-11 ps=0.00040096 pd=0.00040096 nrs=0.00135 nrd=0.00135 \
+        m=(1)*(1) par1=((1)*(1))
+    I0 (VBAT net15 VSS) const_gm
+ends opamp_BGR
+// End of subcircuit definition.

@@ -1,0 +1,19 @@
+    I9 (VREF_ADC VBG VBAT VREF_ADC VSS) opamp_BGR
+    I0 (net18 net8 VBAT net11 VSS) opamp_BGR
+    M2 (VPTAT net11 VBAT VBAT) pe w=2u l=1u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+    M1 (VBG net11 VBAT VBAT) pe w=2u l=1u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+    M0 (net19 net11 VBAT VBAT) pe w=2u l=1u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+    R3 (VPTAT VSS) rm1 l=64.8364 w=600n m=1 par1=(1)
+    R2 (VBG net18) rm1 l=529.082m w=600n m=1 par1=(1)
+    R1 (net8 net20) rm1 l=69.7508m w=600n m=1 par1=(1)
+    R0 (net19 net8) rm1 l=529.082m w=600n m=1 par1=(1)
+    D1 (net18 VSS) dp area=4e-12 perimeter=8u dbv=0.0 m=1 par1=(1)
+    D0 (net20 VSS) dp area=4e-12 perimeter=8u dbv=0.0 m=8 par1=(8)
+ends BGR
+// End of subcircuit definition.

@@ -1,0 +1,20 @@
+    M1 (VBIAS net5 VBAT VBAT) pe w=20u l=1u as=9.6e-12 ad=9.6e-12 \
+        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
+        par1=((1)*(1))
+    M0 (net5 net5 VBAT VBAT) pe w=20u l=1u as=9.6e-12 ad=9.6e-12 \
+        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
+        par1=((1)*(1))
+    M4 (net5 net014 VSS VSS) ne w=20u l=1u as=9.6e-12 ad=9.6e-12 \
+        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
+        par1=((1)*(1))
+    M3 (VBIAS VBIAS VSS VSS) ne w=20u l=1u as=9.6e-12 ad=9.6e-12 \
+        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
+        par1=((1)*(1))
+    M2 (net5 VBIAS net6 net6) ne w=20u l=1u as=9.6e-12 ad=9.6e-12 \
+        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
+        par1=((1)*(1))
+    R0 (net6 VSS) rm1 l=60.3138m w=600n m=1 par1=(1)
+    I2 (VBIAS net014 VBAT VSS) inverter GT_PDW=2u GT_PDL=180.00n \
+        sx=4.8e-07 lc=2.7e-07 GT_PUW=720n GT_PUL=180.00n
+ends const_gm
+// End of subcircuit definition.

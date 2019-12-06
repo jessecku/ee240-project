@@ -1,0 +1,138 @@
+// Generated for: spectre
+// Generated on: Dec  3 15:33:13 2019
+// Design library name: final_project
+// Design cell name: DREG_test1130
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters VBAT=1
+include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/config.scs" section=default
+include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/param.scs" section=3s
+include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/bip.scs" section=tm
+include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/cap.scs" section=tm
+include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/dio.scs" section=tm
+include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/mos.scs" section=tm
+include "/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/spectre/v8_0_2/lp5mos/res.scs" section=tm
+
+// Library name: final_project
+// Cell name: inverter
+// View name: schematic
+subckt inverter in out VDD VSS
+parameters GT_PDW GT_PDL=180.00n sx=4.8e-07 lc=2.7e-07 GT_PUW \
+        GT_PUL=180.00n
+    ne (out in VSS VSS) ne w=GT_PDW l=GT_PDL as=sx*(GT_PDW) ad=sx*(GT_PDW) \
+        ps=2*(sx+(GT_PDW)) pd=2*(sx+(GT_PDW)) nrs=lc/(GT_PDW) \
+        nrd=lc/(GT_PDW) m=(1)*(1) par1=((1)*(1))
+    pe (out in VDD VDD) pe w=GT_PUW l=GT_PUL as=sx*(GT_PUW) ad=sx*(GT_PUW) \
+        ps=2*(sx+(GT_PUW)) pd=2*(sx+(GT_PUW)) nrs=lc/(GT_PUW) \
+        nrd=lc/(GT_PUW) m=(1)*(1) par1=((1)*(1))
+ends inverter
+// End of subcircuit definition.
+
+// Library name: final_project
+// Cell name: const_gm
+// View name: schematic
+subckt const_gm VBAT VBIAS VSS
+    M1 (VBIAS net5 VBAT VBAT) pe w=20u l=1u as=9.6e-12 ad=9.6e-12 \
+        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
+        par1=((1)*(1))
+    M0 (net5 net5 VBAT VBAT) pe w=20u l=1u as=9.6e-12 ad=9.6e-12 \
+        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
+        par1=((1)*(1))
+    M4 (net5 net014 VSS VSS) ne w=20u l=1u as=9.6e-12 ad=9.6e-12 \
+        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
+        par1=((1)*(1))
+    M3 (VBIAS VBIAS VSS VSS) ne w=20u l=1u as=9.6e-12 ad=9.6e-12 \
+        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
+        par1=((1)*(1))
+    M2 (net5 VBIAS net6 net6) ne w=20u l=1u as=9.6e-12 ad=9.6e-12 \
+        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
+        par1=((1)*(1))
+    R0 (net6 VSS) rm1 l=60.3138m w=600n m=1 par1=(1)
+    I2 (VBIAS net014 VBAT VSS) inverter GT_PDW=2u GT_PDL=180.00n \
+        sx=4.8e-07 lc=2.7e-07 GT_PUW=720n GT_PUL=180.00n
+ends const_gm
+// End of subcircuit definition.
+
+// Library name: final_project
+// Cell name: opamp_BGR
+// View name: schematic
+subckt opamp_BGR INN INP VBAT VOUT VSS
+    M4 (net11 net15 VSS VSS) nel w=200.0000u l=100.0000u as=9.6e-11 \
+        ad=9.6e-11 ps=0.00040096 pd=0.00040096 nrs=0.00135 nrd=0.00135 \
+        m=(1)*(1) par1=((1)*(1))
+    M1 (VOUT INN net11 net11) nel w=200.0000u l=100.0000u as=9.6e-11 \
+        ad=9.6e-11 ps=0.00040096 pd=0.00040096 nrs=0.00135 nrd=0.00135 \
+        m=(1)*(1) par1=((1)*(1))
+    M0 (net12 INP net11 net11) nel w=200.0000u l=100.0000u as=9.6e-11 \
+        ad=9.6e-11 ps=0.00040096 pd=0.00040096 nrs=0.00135 nrd=0.00135 \
+        m=(1)*(1) par1=((1)*(1))
+    M3 (VOUT net12 VBAT VBAT) pel w=200.0000u l=100.0000u as=9.6e-11 \
+        ad=9.6e-11 ps=0.00040096 pd=0.00040096 nrs=0.00135 nrd=0.00135 \
+        m=(1)*(1) par1=((1)*(1))
+    M2 (net12 net12 VBAT VBAT) pel w=200.0000u l=100.0000u as=9.6e-11 \
+        ad=9.6e-11 ps=0.00040096 pd=0.00040096 nrs=0.00135 nrd=0.00135 \
+        m=(1)*(1) par1=((1)*(1))
+    I0 (VBAT net15 VSS) const_gm
+ends opamp_BGR
+// End of subcircuit definition.
+
+// Library name: final_project
+// Cell name: BGR
+// View name: schematic
+subckt BGR VBAT VBG VPTAT VREF_ADC VSS
+    I9 (VREF_ADC VBG VBAT VREF_ADC VSS) opamp_BGR
+    I0 (net18 net8 VBAT net11 VSS) opamp_BGR
+    M2 (VPTAT net11 VBAT VBAT) pe w=2u l=1u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+    M1 (VBG net11 VBAT VBAT) pe w=2u l=1u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+    M0 (net19 net11 VBAT VBAT) pe w=2u l=1u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+    R3 (VPTAT VSS) rm1 l=64.8364 w=600n m=1 par1=(1)
+    R2 (VBG net18) rm1 l=529.082m w=600n m=1 par1=(1)
+    R1 (net8 net20) rm1 l=69.7508m w=600n m=1 par1=(1)
+    R0 (net19 net8) rm1 l=529.082m w=600n m=1 par1=(1)
+    D1 (net18 VSS) dp area=4e-12 perimeter=8u dbv=0.0 m=1 par1=(1)
+    D0 (net20 VSS) dp area=4e-12 perimeter=8u dbv=0.0 m=8 par1=(8)
+ends BGR
+// End of subcircuit definition.
+
+// Library name: final_project
+// Cell name: DREG_test1130
+// View name: schematic
+I1 (VREF net23 net016 net22 0) opamp_BGR
+RF2 (net23 0) rm1 l=292.259m w=600n m=1 par1=(1)
+RF1 (net011 net23) rm1 l=75.3247m w=600n m=1 par1=(1)
+C1 (net011 0) csf3 area=4.8384e-11 perimeter=30.56u m=152000000 \
+        par1=(152000000)
+C0 (net011 0) csf3 area=4.8384e-11 perimeter=30.56u m=30400 par1=(30400)
+M0 (net07 net22 net016 net016) pel w=200.0000u l=220.0n as=6.8e-11 \
+        ad=6.8e-11 ps=0.000267347 pd=0.000267347 nrs=0.00135 nrd=0.00135 \
+        m=(1)*(3) par1=((1)*(3))
+I2 (net011 net015) isource type=pulse val0=1m val1=5m period=100n \
+        delay=10n rise=10n fall=10n width=30n
+V0 (net017 0) vsource dc=VBAT type=dc
+I5 (net016 VREF net013 net012 0) BGR
+IPRB1 (net015 0) iprobe
+IPRB0 (net07 net011) iprobe
+V3 (net018 0) vsource type=pulse edgetype=halfsine val0=0 val1=3.2 \
+        rise=10n
+R0 (net016 net018) resistor r=2
+simulatorOptions options reltol=100e-6 vabstol=1e-6 iabstol=1e-12 \
+    temp=27.0 tnom=27 homotopy=all limit=delta scalem=1.0 scale=1.0 \
+    compatible=spice2 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 digits=5 \
+    cols=80 pivrel=1e-3 sensfile="../psf/sens.output" checklimitdest=psf 
+tran tran stop=1m errpreset=moderate write="spectre.ic" \
+    writefinal="spectre.fc" annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

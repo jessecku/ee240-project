@@ -1,0 +1,8 @@
+simulator lang=spectre
+include "csf3.scs"
+include "dp.scs"
+include "ne.scs"
+include "nel.scs"
+include "pe.scs"
+include "pel.scs"
+include "rm1.scs"

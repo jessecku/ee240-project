@@ -1,0 +1,12 @@
+HEADER
+"PSFversion" "1.00"
+"I1n" "opamp_BGR"
+"RF2n RF1n" "PRIMLIB_rm1_spectre"
+"C1n C0n" "PRIMLIB_csf3_spectre"
+"M0n" "PRIMLIB_pel_spectre"
+"I2n" "analogLib_ipulse_spectre"
+"V0n" "analogLib_vdc_spectre"
+"I5n" "BGR"
+"IPRB1n IPRB0n" "analogLib_iprobe_spectre"
+"V3n" "analogLib_vpulse_spectre"
+"R0n" "analogLib_res_spectre"

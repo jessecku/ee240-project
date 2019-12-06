@@ -1,0 +1,7 @@
+CADENCE IHNL11145
+
+final_project inverter schematic cds0
+final_project const_gm schematic cds1
+final_project opamp_BGR schematic cds2
+final_project BGR schematic cds3
+final_project DREG_test1130 schematic cds4

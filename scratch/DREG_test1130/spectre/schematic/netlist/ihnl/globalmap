@@ -1,0 +1,14 @@
+CADENCE IHNL11140
+$model
+final_project/BGR/schematic BGR
+final_project/DREG_test1130/schematic DREG_test1130
+final_project/inverter/schematic inverter
+final_project/opamp_BGR/schematic opamp_BGR
+final_project/const_gm/schematic const_gm
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+VBAT VBAT
+$endparam

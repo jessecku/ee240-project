@@ -1,0 +1,5 @@
+
+// Library name: final_project
+// Cell name: BGR
+// View name: schematic
+subckt BGR VBAT VBG VPTAT VREF_ADC VSS

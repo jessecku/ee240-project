@@ -1,0 +1,5 @@
+
+// Library name: final_project
+// Cell name: opamp_BGR
+// View name: schematic
+subckt opamp_BGR INN INP VBAT VOUT VSS

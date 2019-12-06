@@ -1,0 +1,11 @@
+HEADER
+"PSFversion" "1.00"
+"I9n I0n" "opamp_BGR"
+"M2n M1n M0n" "PRIMLIB_pe_spectre"
+"R3n R2n R1n R0n" "PRIMLIB_rm1_spectre"
+"D1n D0n" "PRIMLIB_dp_spectre"
+"VBATv" ":1v"
+"VBGv" ":2v"
+"VPTATv" ":3v"
+"VREF_ADCv" ":4v"
+"VSSv" ":5v"
