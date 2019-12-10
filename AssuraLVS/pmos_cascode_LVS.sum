@@ -5,7 +5,7 @@
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.500.23 08/30/2019 01:02 (icmopt28) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on eda-1.EECS.Berkeley.EDU from /share/instsww/cadence/ASSURA-617.04.16.103/tools.lnx86/assura/bin/64bit/aveng on Mon Dec  9 18:58:06 2019
+run on eda-1.EECS.Berkeley.EDU from /share/instsww/cadence/ASSURA-617.04.16.103/tools.lnx86/assura/bin/64bit/aveng on Mon Dec  9 21:23:12 2019
 
 Echoing run specific file...
     ;----------------------------------------------------------------------------
@@ -4212,7 +4212,7 @@ Echoing run specific file...
                   Time Summary - Database
 
 reading DFII data. . . .      0 cpu      0 elap  464.6M virt       0 pf
-LVS preprocessing. . . .      0 cpu      2 elap  105.6M virt       0 pf
+LVS preprocessing. . . .      0 cpu      1 elap  105.6M virt       0 pf
 duplicate inst removal .      0 cpu      0 elap  105.6M virt       0 pf
 small cell flattening. .      0 cpu      0 elap  110.5M virt       0 pf
 recognize standard cells      0 cpu      0 elap  110.5M virt       0 pf
@@ -4234,7 +4234,7 @@ duplicate inst removal .      0 cpu      0 elap  113.0M virt       0 pf
 duplicate cell removal .      0 cpu      0 elap  113.0M virt       0 pf
 final VDB processing . .      0 cpu      0 elap  113.0M virt       0 pf
 -----------------------------------------------------------------------
-TOTALS (secs). . . . . .      0 cpu      2 elap  464.6M virt       0 pf
+TOTALS (secs). . . . . .      0 cpu      1 elap  464.6M virt       0 pf
 
 
 ************************************************************************
@@ -4697,7 +4697,7 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  464.6M virt       0 pf
 
  ;# 110
     polydg = geomOr( polydg ) 
-    cpu: 0.0   elapsed: 0   virtual: 135M   task sum: 16
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 16
 
  ;# 111
     T?320 = geomOr( polydg poly_dy ) 
@@ -4931,7 +4931,7 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  464.6M virt       0 pf
 
  ;# 167
     diffdti_ex2 = geomAnd( T?374 diff ) 
-    cpu: 0.0   elapsed: 0   virtual: 135M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 0
 
  ;# 168
  ;  region( diffdti_ex2 )
@@ -4963,7 +4963,7 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  464.6M virt       0 pf
 
  ;# 175
     diffdti_ex3 = geomAnd( T?379 T?380 ) 
-    cpu: 0.0   elapsed: 0   virtual: 135M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 0
 
  ;# 176
  ;  region( diffdti_ex3 )
@@ -5139,7 +5139,7 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  464.6M virt       0 pf
 
  ;# 219
     T?422 = _geomPushDown( T?421 dti_all1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 135M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 0
 
  ;# 220
     tub1 = geomAndNot( T?422 dti_all1 ) 
@@ -5171,15 +5171,15 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  464.6M virt       0 pf
 
  ;# 227
     hwtub = geomAndNot( T?426 diffdti_inner ) 
-    cpu: 0.0   elapsed: 0   virtual: 135M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 0
 
  ;# 228
     nwtrm0 = geomAndNot( nwell dti_all1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 135M   task sum: 1
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 1
 
  ;# 229
  ;  region( nwtrm0 )
-    cpu: 0.0   elapsed: 0   virtual: 135M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 0
 
  ;# 230
     pw4trm0 = geomAndNot( pwell4 dti_all1 ) 
@@ -11984,7 +11984,7 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  464.6M virt       0 pf
 
  ;# 1922
     T?1718 = geomOr( dfwdna_41 dfwdna_42 ) 
-    cpu: 0.0   elapsed: 1   virtual: 138M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 0
 
  ;# 1923
  ;  region( T?1718 )
@@ -13945,11 +13945,11 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  464.6M virt       0 pf
 
  ;# 2408
     contSD2 = groupVias(  via(contSD2) conn1(met1trm) conn2(nhv1_d_nsd phv1_d_psd nisj_d_psd) )
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2409
     dataReduction( contSD2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2410
  ;  region( contSD2 )
@@ -26672,7 +26672,7 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  464.6M virt       0 pf
 
  ;# 5563
     T?7964 = _geomPushDown( cmh T?6890 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 1   virtual: 147M   task sum: 0
 
  ;# 5564
     T?7965 = geomMerge( T?7964 ) 
@@ -35414,67 +35414,67 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  464.6M virt       0 pf
 
  ;# 7748
     nameParameter( dio_area "area" )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 7749
     nameParameter( dio_perim "perimeter" )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 7750
     nameParameter( dio_perim "pj" )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 7751
     saveProperty( d_dnw "w" 0 )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 7752
     saveProperty( d_dnw "l" 0 )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 7753
    saveRecognition( d_dp ("device" "drawing") )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 7754
     dio_area  = measureParameter( area ( d_dp ) 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 7755
     dio_perim  = measureParameter( length ( d_dp coincident diff outside dti ) 1e-06 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 7756
     nameParameter( dio_area "area" )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 7757
     nameParameter( dio_perim "perimeter" )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 7758
     nameParameter( dio_perim "pj" )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 7759
     saveProperty( d_dp "w" 0 )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 7760
     saveProperty( d_dp "l" 0 )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 7761
    saveRecognition( d_dnw ("device" "drawing") )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 7762
     dio_area  = measureParameter( area ( d_dnw ) 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 7763
     dio_perim  = measureParameter( length ( d_dnw coincident nwtrm0 outside dti ) 1e-06 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 7764
     nameParameter( dio_area "area" )
@@ -42591,7 +42591,7 @@ Total cells checked = 1
 Total rules checked = 9538
 
 Run time =  9.00 seconds
-CPU time =  1.84 seconds
+CPU time =  1.92 seconds
 VM HWM   =   465 Mbytes
 Disk HWM =     0 Mbytes
 Disk end =     0 Mbytes

@@ -1,6 +1,6 @@
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.500.23 08/30/2019 01:08 (icmopt28) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
-run on eda-1.EECS.Berkeley.EDU at Mon Dec  9 18:58:18 2019
+run on eda-1.EECS.Berkeley.EDU at Mon Dec  9 21:23:23 2019
 
 Schematic                           | Layout                           | Status
 --------------------------------------------------------------------------------
@@ -29,8 +29,8 @@ Extraction  Information
 
 Mismatch  Information
 --------------------
-     1 cells have 7 Net mismatches
-     1 cells have 5 Device mismatches
+     1 cells have 4 Net mismatches
+     1 cells have 6 Device mismatches
      0 cells have 0 Pin mismatches
      0 cells have 0 Parameter mismatches
 

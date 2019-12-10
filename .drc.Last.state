@@ -13,7 +13,7 @@
 vuiDRCFormTable = '(
 	format  "DFII"
 	vui2dbxor  nil
-	runName  "pmos_cascode_DRC"
+	runName  "const_gm_DRC"
 	runDir  "./AssuraDRC"
 	machineLoc  "local"
 	viewRules  t
@@ -30,7 +30,7 @@ vuiDRCFormTable = '(
 	additionalFunctionsButton  nil
 	limitDRCswitcher  nil
 	library  "final_project"
-	cell  "pmos_cascode"
+	cell  "const_gm"
 	view  "layout"
 	saveExtracted  nil
 	extractedView  "drc_extracted"

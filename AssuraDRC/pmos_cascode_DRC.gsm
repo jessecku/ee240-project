@@ -20,7 +20,7 @@
    --------------------------
    CellView          Rectangles  Polygons  Paths  Labels  Instances       AREF 
    ***************************************************************************
-   pmos_cascode/layo          0     62563      3       0          0          0
+   pmos_cascode/layo          0     62563      2       0          0          0
 
 
    Statistics Of Layers
@@ -28,7 +28,7 @@
    Layer#   Datatype#  Rectangles  Polygons     Paths  Labels
    **********************************************************
        33        1           0      9120         0       0
-       13        1           0     17008         1       0
+       13        1           0     17008         0       0
        18        1           0      7313         0       0
         3        1           0     16988         0       0
        16        1           0      4438         2       0
@@ -39,7 +39,7 @@
    ------------------
        0 Rectangles
    62563 Polygons
-       3 Paths
+       2 Paths
        0 Texts
        0 Instances
        0 AREF

@@ -1,2 +1,2 @@
 runDir = ./AssuraLVS
-runName = pmos_cascode_LVS
+runName = const_gm_LVS

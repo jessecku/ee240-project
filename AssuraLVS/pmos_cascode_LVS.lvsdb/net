@@ -2,10 +2,7 @@
 ; Do NOT rely on the content of this file, it may change.
 ;
 2 bind match unmatched shorts opens
-1 0 ((L "VDD")((11 "pel" ( "D" "S"))(15 "pel" ( "B")))(S "VDD")((11 "pel" ( "D" "S"))(11 "pel" ( "B"))))
-1 0 ((L "VSS")((9 "nel" ( "D" "S"))(12 "nel" ( "B"))(1 "rm1" ( "PLUS" "MINUS")))(S "VSS")((9 "nel" ( "D" "S"))(9 "nel" ( "B"))(1 "rm1" ( "PLUS" "MINUS"))))
-1 2 ((S "net044")(S "net11")(S "net20")(S "net23")(L "avC17")(L "avC19")(L "avC15")(L "avC21")(L "avC16")(L "avC22")(L "avC13"))
+1 2 ((L "avC17")(L "avC23")(L "avC13"))
 1 1 ((L "avC20")((1 "pel" ( "D" "S"))(1 "nel" ( "D" "S"))(1 "rm1" ( "PLUS" "MINUS")))(S "net037")((1 "pel" ( "D" "S"))(1 "pel" ( "G"))(1 "nel" ( "D" "S"))(1 "rm1" ( "PLUS" "MINUS"))))
-1 1 ((L "avC14")((1 "nel" ( "D" "S"))(1 "rm1" ( "PLUS" "MINUS")))(S "net017")((1 "nel" ( "D" "S"))(1 "nel" ( "B"))(1 "rm1" ( "PLUS" "MINUS"))))
-1 1 ((L "avC23")((2 "pel" ( "G"))(1 "nel" ( "G")))(S "net060")((1 "pel" ( "D" "S"))(2 "pel" ( "G"))(1 "nel" ( "D" "S"))(1 "nel" ( "G"))))
-1 1 ((L "avC18")((1 "pel" ( "D" "S"))(2 "nel" ( "D" "S")))(S "net35")((1 "pel" ( "D" "S"))(2 "nel" ( "D" "S"))(1 "nel" ( "B"))))
+1 1 ((L "avC15")((1 "pel" ( "D" "S"))(1 "nel" ( "D" "S")))(S "net060")((1 "pel" ( "D" "S"))(2 "pel" ( "G"))(1 "nel" ( "D" "S"))(1 "nel" ( "G"))))
+1 1 ((L "avC19")((1 "nel" ( "D" "S")))(S "net044")((1 "pel" ( "D" "S"))(2 "nel" ( "D" "S"))))

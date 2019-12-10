@@ -2,4 +2,4 @@
 ; Do NOT rely on the content of this file, it may change.
 ;
 2 device net parameter pin rewire total
-1  5 (( ( S "pmos_cascode layout final_project" )( L "pmos_cascode schematic final_project" ) )(( 1 20 15 )( 4 4 0 )))
+1  5 (( ( S "pmos_cascode layout final_project" )( L "pmos_cascode schematic final_project" ) )(( 1 15 9 )( 4 5 0 )))

@@ -1,0 +1,6 @@
+Schematic                        | Layout                         | Status
+-------------------------------------------------------------------------------
+const_gm schematic final_project | const_gm layout final_project  | errors   *
+
+Mismatch between Schematic and Layout
+   1 cell with errors

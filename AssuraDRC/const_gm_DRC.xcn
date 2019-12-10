@@ -1,0 +1,172 @@
+connect nsd ptapc
+connect psd ptapc
+connect ndiff ptapc
+connect psd ntapc
+connect nsd ntapc
+connect pdiff ntapc
+text poly_text attach polytrm
+text poly_label attach polytrm
+text met1_text attach met1trm
+text met1_label attach met1trm
+text met2_text attach met2trm
+text met2_label attach met2trm
+text met3_text attach met3trm
+text met3_label attach met3trm
+text mtp_text attach mtptrm
+text mtp_label attach mtptrm
+text hwclabel attach hwc_bs
+connect met1trm ndiff by cont
+connect met1trm pdiff by cont
+connect ndiff pdiff by cont
+connect met1trm nsd by contSD
+connect met1trm psd by contSD
+connect met1trm ntapc by contSD
+connect met1trm ptapc by contSD
+connect met1trm d_dsdf by contSD
+connect nsd psd by contSD
+connect nsd ntapc by contSD
+connect nsd ptapc by contSD
+connect nsd d_dsdf by contSD
+connect psd ntapc by contSD
+connect psd ptapc by contSD
+connect psd d_dsdf by contSD
+connect ntapc ptapc by contSD
+connect ntapc d_dsdf by contSD
+connect ptapc d_dsdf by contSD
+connect met1trm ndf_nsd by contSD1
+connect met1trm pdf_psd by contSD1
+connect ndf_nsd pdf_psd by contSD1
+connect met1trm nhv1_d_nsd by contSD2
+connect met1trm phv1_d_psd by contSD2
+connect met1trm nisj_d_psd by contSD2
+connect nhv1_d_nsd phv1_d_psd by contSD2
+connect nhv1_d_nsd nisj_d_psd by contSD2
+connect phv1_d_psd nisj_d_psd by contSD2
+connect met1trm polytrm by contP
+connect met1trm met2trm by via1
+connect met2trm met3trm by via2CON
+connect cm23f met3trm by v2cm
+connect cmh23f met3trm by v2cmh
+connect m3_dmm met3trm by v2cm2
+connect m3_dmmh met3trm by v2cmh2
+connect met3trm mtptrm by vtpCON
+connect cm mtptrm by vtpcm
+connect cmh mtptrm by vtpcmh
+connect mt_dmm mtptrm by vtpcm2
+connect mt_dmmh mtptrm by vtpcmh2
+stamp nwtrm by ntapc
+stamp nwtrm1 by ntapc
+stamp bulk by ptapc
+stamp ndftrm by ndf_nsd
+stamp nbase by nsd
+stamp pdftrm by pdf_psd
+stamp ndfmvtrm by nsd
+stamp pdfmvtrm by psd
+stamp dfntrm by nsd
+stamp dfptrm by psd
+stamp tiedtub_nbuf by psd
+stamp pdfntrm by nwtrm
+stamp hwntub by nwtrm
+stamp hwptub by bulk
+stamp hwafer1 by hwptub
+stamp pw4trm by ptapc
+stamp capswp1 by polytrm
+stamp capswm1 by met1trm
+stamp capswm2 by met2trm
+stamp capswm3 by met3trm
+stamp nwtrmmv by nwtrm
+stamp pad_b by mtptrm
+stamp m2_dmm by met2trm
+stamp mt_dm1 by mtptrm
+stamp m2_dmmh by met2trm
+stamp mt_dmh1 by mtptrm
+stamp subblk1 by nwtrm
+stamp dhw_nbur by hwntub
+stamp dhw2a_stamp by hwntub
+stamp dhw2_stamp by hwntub
+stamp dhw3_stamp by hwntub
+stamp polytrm_dg by polytrm
+stamp met1trm_dg by met1trm
+stamp met2trm_dg by met2trm
+stamp p1_v200 by polytrm_dg
+stamp p1_v100 by polytrm_dg
+stamp p1_v60 by polytrm_dg
+stamp p1_v25 by polytrm_dg
+stamp m1_v200 by met1trm_dg
+stamp m1_v100 by met1trm_dg
+stamp m1_v60 by met1trm_dg
+stamp m1_v25 by met1trm_dg
+stamp m2_v200 by met2trm_dg
+stamp m2_v100 by met2trm_dg
+stamp m2_v60 by met2trm_dg
+stamp m2_v25 by met2trm_dg
+stamp p1_vm200 by polytrm_dg
+stamp p1_vm100 by polytrm_dg
+stamp p1_vm60 by polytrm_dg
+stamp p1_vm25 by polytrm_dg
+stamp m1_vm200 by met1trm_dg
+stamp m1_vm100 by met1trm_dg
+stamp m1_vm60 by met1trm_dg
+stamp m1_vm25 by met1trm_dg
+stamp m2_vm200 by met2trm_dg
+stamp m2_vm100 by met2trm_dg
+stamp m2_vm60 by met2trm_dg
+stamp m2_vm25 by met2trm_dg
+stamp met3trm_dg by met3trm
+stamp m3_v200 by met3trm_dg
+stamp m3_v100 by met3trm_dg
+stamp m3_v60 by met3trm_dg
+stamp m3_v25 by met3trm_dg
+stamp m3_vm200 by met3trm_dg
+stamp m3_vm100 by met3trm_dg
+stamp m3_vm60 by met3trm_dg
+stamp m3_vm25 by met3trm_dg
+stamp mtptrm_dg by mtptrm
+stamp mt_v200 by mtptrm_dg
+stamp mt_v100 by mtptrm_dg
+stamp mt_v60 by mtptrm_dg
+stamp mt_v25 by mtptrm_dg
+stamp mt_vm200 by mtptrm_dg
+stamp mt_vm100 by mtptrm_dg
+stamp mt_vm60 by mtptrm_dg
+stamp mt_vm25 by mtptrm_dg
+stamp v25_p1 by polytrm_dg
+stamp v25_met1 by met1trm_dg
+stamp v25_met2 by met2trm_dg
+stamp v60_p1 by polytrm_dg
+stamp v60_met1 by met1trm_dg
+stamp v60_met2 by met2trm_dg
+stamp v100_p1 by polytrm_dg
+stamp v100_met1 by met1trm_dg
+stamp v100_met2 by met2trm_dg
+stamp v200_p1 by polytrm_dg
+stamp v200_met1 by met1trm_dg
+stamp v200_met2 by met2trm_dg
+stamp v25_met3 by met3trm_dg
+stamp v60_met3 by met3trm_dg
+stamp v100_met3 by met3trm_dg
+stamp v200_met3 by met3trm_dg
+stamp v25_mtp by mtptrm_dg
+stamp v60_mtp by mtptrm_dg
+stamp v100_mtp by mtptrm_dg
+stamp v200_mtp by mtptrm_dg
+stamp vm25_p1 by polytrm_dg
+stamp vm25_met1 by met1trm_dg
+stamp vm25_met2 by met2trm_dg
+stamp vm60_p1 by polytrm_dg
+stamp vm60_met1 by met1trm_dg
+stamp vm60_met2 by met2trm_dg
+stamp vm100_p1 by polytrm_dg
+stamp vm100_met1 by met1trm_dg
+stamp vm100_met2 by met2trm_dg
+stamp vm200_p1 by polytrm_dg
+stamp vm200_met1 by met1trm_dg
+stamp vm200_met2 by met2trm_dg
+stamp vm25_met3 by met3trm_dg
+stamp vm60_met3 by met3trm_dg
+stamp vm100_met3 by met3trm_dg
+stamp vm200_met3 by met3trm_dg
+stamp vm25_mtp by mtptrm_dg
+stamp vm60_mtp by mtptrm_dg
+stamp vm100_mtp by mtptrm_dg
+stamp vm200_mtp by mtptrm_dg
