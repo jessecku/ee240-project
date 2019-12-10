@@ -1,0 +1,13 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'opamp2_kevin_extract layout final_project':
+  info: Assign pin label "VSS" at (3.892, -7.360) to layer `met1trm'.
+  info: Assign pin label "VOUT" at (10.590, 2.080) to layer `met1trm'.
+  info: Assign pin label "VBAT" at (4.492, 10.415) to layer `met1trm'.
+  info: Assign pin label "INN" at (2.577, -0.312) to layer `polytrm'.
+  info: Assign pin label "VBIAS" at (7.157, -3.227) to layer `polytrm'.
+  info: Assign pin label "INP" at (6.335, -0.325) to layer `polytrm'.
+
+***** End of Label Report *****
+

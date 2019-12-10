@@ -1,0 +1,17 @@
+
+
+;----------------------------------------------------------------------------
+; vldb RSF file
+; Created by the Assura UI
+;----------------------------------------------------------------------------
+
+; form additions
+avSimName = "auLvs"
+avDisableWildcardPG = nil
+avVerilogBusMapIEEE = t
+avLibName  = "final_project"
+avCellName = "opamp2_kevin_extract"
+avViewName = "schematic"
+avViewList = "auLvs schematic cmos_sch symbol"
+avStopList = "auLvs"
+avVldbFile = "/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/AssuraLVS/opamp2_kevin_extract_LVS.sdb"

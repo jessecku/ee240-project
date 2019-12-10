@@ -1,0 +1,11 @@
+!<alc> v1 48
+0   15    0 bvFT_965
+0   11    0 bvFT_941
+0    9    0 bvFT_874
+0   16    0 bvFILLLayer_met3_dyf
+0   14    0 bvFILLLayer_met2_dyf
+0   12    0 bvFILLLayer_mtp_dyf
+0   10    0 bvFILLLayer_met1_dyf
+0    8    0 bvFILLLayer_diff_fill_all
+0    7    0 bvFILL_opamp2_kevin_extract layout final_project
+0    6    0 opamp2_kevin_extract layout final_project
