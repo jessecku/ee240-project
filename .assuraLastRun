@@ -1,2 +1,2 @@
-runDir = ./AssuraDRC
-runName = AREG_R1_DRC
+runDir = ./AssuraLVS
+runName = BGR_R8_LVS

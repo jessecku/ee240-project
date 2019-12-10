@@ -1,5 +1,5 @@
 #!/bin/ksh
-# This script was generated Mon Dec  9 20:54:57 2019 by:
+# This script was generated Tue Dec 10 05:19:49 2019 by:
 #
 # Program: /share/instsww/cadence/EXT171/tools/extraction/bin/64bit//RCXspice
 # Version: 15.2.0
@@ -24,7 +24,7 @@
 #	-macro_cell -lvs_source assura -ignore_gate_diffusion_fringing_cap \
 #	-hierarchy_delimiter / -fracture_length_units MICRONS \
 #	-extract_mos_diffusion_res -extract both -exclude_self_caps -df2 \
-#	-cap_models no -cap_ground out -cap_extract_mode coupled \
+#	-cap_models no -cap_ground VSS -cap_extract_mode coupled \
 #	-cap_coupling_factor 1.0 -array_vias_spacing auto
 set -e
 set -v
@@ -43,7 +43,7 @@ set -v
 ##BREAK_WIDTH=
 ##CAP_COUPLING_FACTOR=1.0
 ##CAP_EXTRACT_MODE=coupled
-##CAP_GROUND=out
+##CAP_GROUND=VSS
 ##CAP_MODELS=no
 ##DANGLINGR=N
 ##DENSITY_CHECK_METHOD=P
@@ -195,9 +195,26 @@ export GOALIE2DIR
 cat global.net > power_list
 
 #==========================================================#
+# Create ports for abutment
+#==========================================================#
+
+geom -C psd - psd,1,i,1
+geom -C ptapc - ptapc,1,i,1
+inter psd ptapc -t psd_ptapc_butt:edge
+
+#==========================================================#
 # Ensure vias do not extend beyond routing
 #==========================================================#
 
+geom -V psd ptapc - psd_ptapc_ovia,11,i,1
+geom -V psd psd_ptapc_butt - psd_psd_ptapc_butt_ovia,11,i,1
+geom -V ptapc psd_ptapc_butt - ptapc_psd_ptapc_butt_ovia,11,i,1
+geom -V cont met1trm pdiff - cont_met1trm_pdiff,111,i,2
+geom -V contSD met1trm psd - contSD_met1trm_psd,111,i,2
+geom -V contSD met1trm ptapc - contSD_met1trm_ptapc,111,i,2
+geom -V contSD psd ptapc - contSD_psd_ptapc,111,i,2
+geom -V contP met1trm polytrm - contP,111,i,2
+geom -V bulk ptapc - bulk_ptapc_ovia,11,i,1
 
 #==========================================================#
 # Flatten net file, routing, via and device layers
@@ -208,18 +225,21 @@ export SAVEDIR
 /bin/mv -f NET h_NET
 flatnet -V -li -h '/' h_NET NET
 netprint -V -N1 power_list:power_list_nums NET
-flattenResData met1res_RES_102 meters
-flattenLayers -m met1trm bulk
+flattenResData rpp1s_3_pw_RES_90 meters
+flattenLayers -m cont contSD met1trm polytrm psd bulk psd_ptapc_ovia ptapc \
+	psd_psd_ptapc_butt_ovia psd_ptapc_butt ptapc_psd_ptapc_butt_ovia \
+	cont_met1trm_pdiff pdiff contSD_met1trm_psd contSD_met1trm_ptapc \
+	contSD_psd_ptapc contP bulk_ptapc_ovia
 endFlattenInputs
 
 #==========================================================#
 # Initialize CAP_GROUND variable
 #==========================================================#
 
-CAP_GROUND=`findCapGround -g out NET`
+CAP_GROUND=`findCapGround -g VSS NET`
 echo "CAP_GROUND=" ${CAP_GROUND}
 export CAP_GROUND
-reconnect -float floatlvsnetsfile -rf met1res_RES_102 -probe \
+reconnect -float floatlvsnetsfile -rf rpp1s_3_pw_RES_90 -probe \
 	met1_text:met1trm:met1_text_fvia
 createEmptyLayer qrcgate
 
@@ -229,6 +249,7 @@ createEmptyLayer qrcgate
 
 cat <<ENDCAT> p2elayermapfile
 MET1 p_rmet1trm,np_rmet1trm
+POLY1 p_rpolytrm,np_rpolytrm
 ENDCAT
 iprint -imerge power_list_nums floatlvsnetsfile power_list_nums2
 mv power_list_nums power_list_nums_orig
@@ -240,30 +261,74 @@ cp power_list_nums2 power_list_nums
 
 selectNetsByNumber power_list_nums bulk p_rbulk np_rbulk
 selectNetsByNumber power_list_nums met1trm p_rmet1trm np_rmet1trm
+selectNetsByNumber power_list_nums pdiff p_rpdiff np_rpdiff
+selectNetsByNumber power_list_nums polytrm p_rpolytrm np_rpolytrm
+selectNetsByNumber power_list_nums psd p_rpsd np_rpsd
+selectNetsByNumber power_list_nums psd_ptapc_butt p_rpsd_ptapc_butt np_rpsd_ptapc_butt
+selectNetsByNumber power_list_nums ptapc p_rptapc np_rptapc
+selectNetsByNumber power_list_nums contP p_rcontP np_rcontP
 mv power_list_nums_orig power_list_nums
+
+#==========================================================#
+# Create resistor cut regions between resistive
+# interconnect levels
+#==========================================================#
+
+mergevia -V -tech \
+	/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/QRC_assura/v8_0_1/XT018_1231/QRC-Typ \
+	-cnt np_rcontP rcontP - np_rmet1trm np_rpolytrm
 
 #==========================================================#
 # Create resistive interconnect RES terminals
 #==========================================================#
 
-createResistorTerminals met1res_RES_102 np_rmet1trm met1res_RES_102_rvia
+createResistorTerminals rpp1s_3_pw_RES_90 np_rpolytrm rpp1s_3_pw_RES_90_rvia
 
 #==========================================================#
 # Assign net numbers to cut regions
 #==========================================================#
 
-connect -V -relocate NET np_rbulk:np_rbulk.conn met1res_RES_102_rvia - -
+connect -V -relocate NET np_rbulk:np_rbulk.conn np_rpsd:np_rpsd.conn \
+	np_rpdiff:np_rpdiff.conn np_rpsd_ptapc_butt:np_rpsd_ptapc_butt.conn \
+	np_rptapc:np_rptapc.conn rcontP rpp1s_3_pw_RES_90_rvia - \
+	bulk_ptapc_ovia,1,5 contSD_psd_ptapc,2,5 psd_psd_ptapc_butt_ovia,2,4 \
+	psd_ptapc_ovia,2,5 ptapc_psd_ptapc_butt_ovia,5,4 -
 
 #==========================================================#
 # Assign net numbers to resistor vias
 #==========================================================#
 
+geom -V contSD_met1trm_psd np_rpsd.conn - tmp_rcontSD_met1trm_psd,11,i,2
+mergevia -V -i -tech \
+	/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/QRC_assura/v8_0_1/XT018_1231/QRC-Typ \
+	-cnt tmp_rcontSD_met1trm_psd rcontSD_met1trm_psd - np_rmet1trm \
+	np_rpsd
+/bin/rm -f tmp_rcontSD_met1trm_psd
+geom -V contSD_met1trm_ptapc np_rptapc.conn - tmp_rcontSD_met1trm_ptapc,11,i,2
+mergevia -V -i -tech \
+	/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/QRC_assura/v8_0_1/XT018_1231/QRC-Typ \
+	-cnt tmp_rcontSD_met1trm_ptapc rcontSD_met1trm_ptapc - np_rmet1trm \
+	np_rptapc
+/bin/rm -f tmp_rcontSD_met1trm_ptapc
+geom -V cont_met1trm_pdiff np_rpdiff.conn - tmp_rcont_met1trm_pdiff,11,i,2
+mergevia -V -i -tech \
+	/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/QRC_assura/v8_0_1/XT018_1231/QRC-Typ \
+	-cnt tmp_rcont_met1trm_pdiff rcont_met1trm_pdiff - np_rmet1trm \
+	np_rpdiff
+/bin/rm -f tmp_rcont_met1trm_pdiff
 
 #==========================================================#
 # Assign net numbers to nonresistive layers
 #==========================================================#
 
-epick -V -reo np_rbulk.conn tmp_bulk
+epick -V -reo -e rcontSD_met1trm_psd -e rcontSD_met1trm_ptapc -e \
+	rcont_met1trm_pdiff np_rpsd.conn tmp_psd
+epick -V -reo -e tmp_psd -c np_rpsd.conn tmp1_psd
+geom -V tmp1_psd np_rpsd - tmp1_psd,11,i,2
+geom -V tmp_psd,tmp1_psd - np_rpsd,1,i,1
+/bin/rm -f tmp_psd tmp1_psd
+epick -V -reo -e rcontSD_met1trm_psd -e rcontSD_met1trm_ptapc -e \
+	rcont_met1trm_pdiff np_rbulk.conn tmp_bulk
 epick -V -reo -e tmp_bulk -c np_rbulk.conn tmp1_bulk
 geom -V tmp1_bulk np_rbulk - tmp1_bulk,11,i,2
 geom -V tmp_bulk,tmp1_bulk - np_rbulk,1,i,1
@@ -281,29 +346,36 @@ flatlabel -V  -tc -F met1_text L1T0
 
 rex -V -m -pd -I'#' -tech \
 	/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/QRC_assura/v8_0_1/XT018_1231/QRC-Typ \
-	-map p2elayermapfile -N NET -e2 -rP res.mod np_rmet1trm::MET1_cut - \
-	met1res_RES_102_rvia,1,z - L1T0,1,I
+	-map p2elayermapfile -N NET -e2 -rP res.mod np_rpolytrm::POLY1_cut \
+	np_rmet1trm::MET1_cut - rcontP,1,2,t rcontSD_met1trm_psd,2,t \
+	rcontSD_met1trm_ptapc,2,t rcont_met1trm_pdiff,2 \
+	rpp1s_3_pw_RES_90_rvia,1,z - L1T0,2,I
 
 #==========================================================#
 # Combine power non-power
 #==========================================================#
 
-/bin/rm -f met1trm
-geom np_rmet1trm,p_rmet1trm - met1trm,1,i,1
+/bin/rm -f bulk
+geom np_rbulk,p_rbulk - bulk,1,i,1
+/bin/rm -f polytrm
+geom np_rpolytrm,p_rpolytrm - polytrm,1,i,1
 
 #==========================================================#
 # Reconnect RES devices
 #==========================================================#
 
-geom p_rmet1trm,met1res_RES_102_rvia - met1res_RES_102_rvia,1,i,1
+geom p_rpolytrm,rpp1s_3_pw_RES_90_rvia - rpp1s_3_pw_RES_90_rvia,1,i,1
+createLink bulk rpp1s_3_pw_RES_90_bulk_rvia
 reconnect -V -se2 rwires.res -n NET -r \
-	met1res_RES_102.res:met1res_RES_102.resr met1res_RES_102 \
-	met1res_RES_102_rvia
+	rpp1s_3_pw_RES_90.res:rpp1s_3_pw_RES_90.resr rpp1s_3_pw_RES_90 \
+	rpp1s_3_pw_RES_90_rvia,rpp1s_3_pw_RES_90_bulk_rvia
 
 #==========================================================#
 # Form capacitance layers for resistive process layers
 #==========================================================#
 
+geom -V -i p_rpolytrm,np_rpolytrm - so_POLY1,1,n
+geom -V p_rpolytrm,np_rpolytrm - POLY1,1,i,1
 geom -V -i p_rmet1trm,np_rmet1trm - so_MET1,1,n
 geom -V p_rmet1trm,np_rmet1trm - MET1,1,i,1
 
@@ -311,11 +383,10 @@ geom -V p_rmet1trm,np_rmet1trm - MET1,1,i,1
 # Form capacitance layers for non-resistive process layers
 #==========================================================#
 
-createEmptyLayer active
+geom -V p_rpsd,np_rpsd - active,1,i,1
 createEmptyLayer METTP
 createEmptyLayer MET3
 createEmptyLayer MET2
-createEmptyLayer POLY1
 
 #==========================================================#
 # Form substrate
@@ -341,9 +412,6 @@ createEmptyLayer qrcgate
 #==========================================================#
 
 cat <<ENDCAT> sip.cmd
-sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -cp POLY1,GateLayers,active -n 2.5 -i \
-	0,2.501 -b active,sub -t MET1,MET2,MET3,METTP -j 0.18 -Maxw 2.7 -p \
-	POLY1,key 0,2.5 - POLY1.sip
 sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc POLY1,MET1 -n 2.8 -i 0,2.801 -b \
 	MET1,POLY1,active,sub -t MET3,METTP -j 0.28 -Maxw 4.2 -p MET2,key \
 	0,2.8 - MET2.sip
@@ -353,6 +421,9 @@ sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc MET1,MET2 -n 5.6 -i 0,5.601 -b \
 sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc MET2,MET3 -n 4.6 -i 0,4.601 -b \
 	MET3,MET2,MET1,POLY1,active,sub -j 0.44 -Maxw 6.6 -p METTP,key 0,4.6 \
 	- METTP.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -cp POLY1,GateLayers,active -n 2.5 -i \
+	0,2.501 -b active,sub -t MET1,MET2,MET3,METTP -j 0.18 -Maxw 2.7 -p \
+	POLY1,key 0,2.5 - POLY1.sip
 sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc POLY1 -n 2.3 -i 0,2.301 -b \
 	POLY1,active,sub -t MET2,MET3,METTP -j 0.23 -Maxw 3.45 -p MET1,key \
 	0,2.3 - MET1.sip
@@ -368,11 +439,11 @@ sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R MET3 -b POLY1,active,sub -t \
 sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b POLY1,active,sub -t MET3,METTP \
 	-Maxw 4.2 -p MET1:MET1_cut,key,MET2,key 0,2.8,0 - MET1_MET2.sip
 sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R MET2 -b active,sub -t \
-	MET3,METTP -k MET1:0.565 -Maxw 4.2 -p POLY1,key,MET2,key 0,2.8,0 - \
-	POLY1_MET2.sip
+	MET3,METTP -k MET1:0.565 -Maxw 4.2 -p POLY1:POLY1_cut,key,MET2,key \
+	0,2.8,0 - POLY1_MET2.sip
 sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -R MET1,POLY1 -b active,sub -t \
-	MET2,MET3,METTP -Maxw 3.45 -p POLY1,key,MET1:MET1_cut,key 0,2.5,0 - \
-	POLY1_MET1.sip
+	MET2,MET3,METTP -Maxw 3.45 -p POLY1:POLY1_cut,key,MET1:MET1_cut,key \
+	0,2.5,0 - POLY1_MET1.sip
 sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b MET2,MET1,POLY1,active,sub -p \
 	MET3,METTP - MET3_METTP.sw3d
 sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b MET1,POLY1,active,sub -t METTP -p \
@@ -380,7 +451,7 @@ sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b MET1,POLY1,active,sub -t METTP -p \
 sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b POLY1,active,sub -t MET3,METTP -p \
 	MET1:MET1_cut,MET2 - MET1_MET2.sw3d
 sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b active,sub -t MET2,MET3,METTP -p \
-	POLY1,MET1:MET1_cut - POLY1_MET1.sw3d
+	POLY1:POLY1_cut,MET1:MET1_cut - POLY1_MET1.sw3d
 ENDCAT
 
 #==========================================================#
@@ -394,9 +465,10 @@ createEmptyLayer GateLayers
 #==========================================================#
 
 pax16 -V -gnd ${CAP_GROUND} -rmselfC -ignore_cf_table -scf sip.cmd -rP \
-	np_rmet1trm.res,rwires.res -M_perim_off -c \
+	np_rmet1trm.res,np_rpolytrm.res,rwires.res -M_perim_off -c \
 	/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/QRC_assura/v8_0_1/XT018_1231/QRC-Typ/qrcTechFile \
-	-f sub active POLY1 MET1:MET1_cut MET2 MET3 METTP GateLayers - \
+	-f sub active POLY1:POLY1_cut MET1:MET1_cut MET2 MET3 METTP \
+	GateLayers - \
 	/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/QRC_assura/v8_0_1/XT018_1231/QRC-Typ/qrcTechFile \
 	- - NET - capfile
 
@@ -411,9 +483,10 @@ pax16 -V -gnd ${CAP_GROUND} -rmselfC -ignore_cf_table -scf sip.cmd -rP \
 
 xreduce -V -mergecap -n NET -tech \
 	/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/QRC_assura/v8_0_1/XT018_1231/QRC-Typ \
-	-d1 -e METTP,MET3,MET2,MET1,POLY1,active,sub -sr -g ${CAP_GROUND},1.0 \
-	-danglingR -minR 0.001 -rP np_rmet1trm.res,rwires.res -minC 1e-17 \
-	-minCper 0.1 -cap capfile L1T0 met1res_RES_102.resr
+	-d1 -e METTP,MET3,MET2,MET1,POLY1,active,sub,rcontP -sr -g \
+	${CAP_GROUND},1.0 -danglingR -minR 0.001 -rP \
+	np_rmet1trm.res,np_rpolytrm.res,rwires.res -minC 1e-17 -minCper 0.1 \
+	-cap capfile L1T0 rpp1s_3_pw_RES_90.resr
 
 #==========================================================#
 # Generate HSPICE file
@@ -421,9 +494,9 @@ xreduce -V -mergecap -n NET -tech \
 
 advgen -V -g0 -li -f -n -o HSPICE -TL L1T0 -sc caps2dversion -mx capfile \
 	METTP,MET3,MET2,MET1,POLY1,active,sub -rPm res.mod \
-	np_rmet1trm.res,Rnp_rmet1trm.dev2 -rPm rwires.mod \
-	rwires.res,rwires.dev2 -ra lvsres.mod,met1res_RES_102.net \
-	met1res_RES_102.resr - NET - \
+	np_rmet1trm.res,Rnp_rmet1trm.dev2 np_rpolytrm.res,Rnp_rpolytrm.dev2 \
+	-rPm rwires.mod rwires.res,rwires.dev2 -rau \
+	lvsres.mod,rpp1s_3_pw_RES_90.net rpp1s_3_pw_RES_90.resr - NET - \
 	/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/AssuraLVS/AREG_R1_LVS/extview.tmp
 
 #==========================================================#
@@ -431,13 +504,41 @@ advgen -V -g0 -li -f -n -o HSPICE -TL L1T0 -sc caps2dversion -mx capfile \
 #==========================================================#
 
 geom MET1 np_rmet1trm - np_rmet1trm,11,i,1
+geom POLY1 np_rpolytrm - np_rpolytrm,11,i,1
+stamp -i2 np_rmet1trm rcontP np_rcontP
+ereduce  rcontSD_met1trm_psd rcontSD_met1trm_psd.reduce
+stamp -i  np_rmet1trm rcontSD_met1trm_psd.reduce
+stamp -i  rcontSD_met1trm_psd.reduce rcontSD_met1trm_psd
+stamp -i  rcontSD_met1trm_psd contSD_met1trm_psd
+/bin/rm -f rcontSD_met1trm_psd.reduce
+ereduce  rcontSD_met1trm_ptapc rcontSD_met1trm_ptapc.reduce
+stamp -i  np_rmet1trm rcontSD_met1trm_ptapc.reduce
+stamp -i  rcontSD_met1trm_ptapc.reduce rcontSD_met1trm_ptapc
+stamp -i  rcontSD_met1trm_ptapc contSD_met1trm_ptapc
+/bin/rm -f rcontSD_met1trm_ptapc.reduce
+ereduce  rcont_met1trm_pdiff rcont_met1trm_pdiff.reduce
+stamp -i  np_rmet1trm rcont_met1trm_pdiff.reduce
+stamp -i  rcont_met1trm_pdiff.reduce rcont_met1trm_pdiff
+stamp -i  rcont_met1trm_pdiff cont_met1trm_pdiff
+/bin/rm -f rcont_met1trm_pdiff.reduce
 cat <<ENDCAT> _save_layers
 sub bulk
-POLY1 POLY1
 MET2 MET2
 MET3 MET3
 METTP METTP
-active active
+active np_rpsd p_rpsd
+cont cont_met1trm_pdiff
+contSD contSD_psd_ptapc contSD_met1trm_ptapc contSD_met1trm_psd
 met1trm np_rmet1trm p_rmet1trm
+polytrm np_rpolytrm p_rpolytrm
+psd np_rpsd p_rpsd
 bulk bulk.df2
+psd_ptapc_ovia psd_ptapc_ovia
+ptapc np_rptapc p_rptapc
+psd_psd_ptapc_butt_ovia psd_psd_ptapc_butt_ovia
+psd_ptapc_butt np_rpsd_ptapc_butt p_rpsd_ptapc_butt
+ptapc_psd_ptapc_butt_ovia ptapc_psd_ptapc_butt_ovia
+pdiff np_rpdiff p_rpdiff
+contP np_rcontP p_rcontP
+bulk_ptapc_ovia bulk_ptapc_ovia
 ENDCAT

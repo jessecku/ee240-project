@@ -3,7 +3,7 @@
 #
 capacitance \
 	 -decoupling_factor 1.0 \
-	 -ground_net "VSS"
+	 -ground_net "out"
 extract \
 	 -selection "all" \
 	 -type "rc_coupled"

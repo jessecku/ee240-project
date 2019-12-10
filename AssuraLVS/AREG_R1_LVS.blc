@@ -1,5 +1,5 @@
-"rm1(RES)" "rm1(RES)"
-"AREG_R1 layout final_project" "AREG_R1 schematic final_project" "rm1(RES)"
+"rpp1s_3(RES)" "rpp1s_3(RES)"
+"AREG_R1 layout final_project" "AREG_R1 schematic final_project" "rpp1s_3(RES)"
 Devices filtered from layout
 "pcapacitor"
 "presistor"

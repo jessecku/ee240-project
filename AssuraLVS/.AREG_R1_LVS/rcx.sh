@@ -1,5 +1,5 @@
 #!/bin/ksh
-# This script was generated Mon Dec  9 20:52:37 2019 by:
+# This script was generated Mon Dec  9 20:54:57 2019 by:
 #
 # Program: /share/instsww/cadence/EXT171/tools/extraction/bin/64bit//RCXspice
 # Version: 15.2.0
@@ -24,7 +24,7 @@
 #	-macro_cell -lvs_source assura -ignore_gate_diffusion_fringing_cap \
 #	-hierarchy_delimiter / -fracture_length_units MICRONS \
 #	-extract_mos_diffusion_res -extract both -exclude_self_caps -df2 \
-#	-cap_models no -cap_ground VSS -cap_extract_mode coupled \
+#	-cap_models no -cap_ground out -cap_extract_mode coupled \
 #	-cap_coupling_factor 1.0 -array_vias_spacing auto
 set -e
 set -v
@@ -43,7 +43,7 @@ set -v
 ##BREAK_WIDTH=
 ##CAP_COUPLING_FACTOR=1.0
 ##CAP_EXTRACT_MODE=coupled
-##CAP_GROUND=VSS
+##CAP_GROUND=out
 ##CAP_MODELS=no
 ##DANGLINGR=N
 ##DENSITY_CHECK_METHOD=P
@@ -216,7 +216,7 @@ endFlattenInputs
 # Initialize CAP_GROUND variable
 #==========================================================#
 
-CAP_GROUND=`findCapGround -g VSS NET`
+CAP_GROUND=`findCapGround -g out NET`
 echo "CAP_GROUND=" ${CAP_GROUND}
 export CAP_GROUND
 reconnect -float floatlvsnetsfile -rf met1res_RES_102 -probe \

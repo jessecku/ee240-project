@@ -1,0 +1,51 @@
+avParameters(
+	?cellName "AREG_R0"
+	?viewName "layout"
+	?inputLayout ( "DFII" "final_project" )
+	?runName "AREG_R0_LVS"
+	?workingDirectory "/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/AssuraLVS"
+	?techRuleSet ( "default" )
+	?techLib "/home/ff/ee140/fa19/xfab/XKIT/assura_tech.lib"
+	?technology "XT018_1231"
+
+)
+rcxParameters(
+	?capCouplingFactor 1.0
+	?capGround "gnd!"
+	?arrayViasSpacing "auto"
+	?macroCellsType "default"
+	?maxFractureLength "infinite"
+	?fractureLengthUnits "MICRONS"
+	?maxMergedViaSize "auto"
+	?netNameSpace "layout"
+	?excludeSelfCaps t
+	?minC 1e-17
+	?minCByPercentage 0.1
+	?mergeParallelR nil
+	?minR 0.001
+	?lvsSource "assura"
+	?extractMosDiffusionRes t
+	?capacitor "p_cap auLvs PRIMLIB"
+	?capPropName "c"
+	?checkCellView t
+	?capModels "no"
+	?parasiticCapModels "no"
+	?parasiticResModels "comment"
+	?resModels "no"
+	?resistor "p_res auLvs PRIMLIB"
+	?resPropName "r"
+	?outputFormat "dfii"
+	?lvsExtractedCellView nil
+	?extractedView "analog_extracted"
+	?runName "AREG_R0_LVS"
+	?tempdir "/home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/AssuraLVS/AREG_R0_LVS/rcx_temp"
+	?rcxSetupDir ( "/home/ff/ee140/fa19/xfab/XKIT/.assuraSetup/Assura/../../.xkit/setup/xt018/cadence/QRC_assura/XT018_1231/QRC-Typ" )
+	?temperature ( 27.0 )
+	?type "full"
+	?extract "both"
+	?capExtractMode "coupled"
+
+)
+(avRCX)
+
+
