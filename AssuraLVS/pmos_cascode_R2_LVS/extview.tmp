@@ -1,0 +1,54 @@
+*
+*
+*
+*                       LINUX           Tue Dec 10 05:41:53 2019
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus QRC - (64-bit)
+*  Version        : 17.1.2-s041
+*  Build Date     : Wed Aug 23 16:57:50 PDT 2017
+*
+*  HSPICE LIBRARY
+*
+*!LENGTH_UNITS METERS
+*
+*
+*
+*
+.SUBCKT pmos_cascode_R2 VSS in out
+*
+*
+*  caps2d version: 10
+*
+*
+*       CANONICAL RESISTOR AND CAP/DIODE CARDS
+*
+RavD90_1	in#1	out#2	  497.4810	rtot="****" lstrip=0.000130345
++ $SUB=VSS#2 
+*
+*       PARASITIC RESISTOR AND CAP/DIODE CARDS
+*
+Rd1	VSS	VSS#1	    0.1390	$MET1	$X=-3.04 $Y=-2.1765
+Rd3	VSS#1	VSS#2	    7.5000	$MET1	$X=-3.045 $Y=-1.565
+Rd4	VSS#2	VSS#1	    7.5000	$MET1	$X=-3.045 $Y=-1.565
+Rd5	in#2	in	4.438E-02	$MET1	$X=0.2585 $Y=-2.18
+Rd6	out	out#1	3.514E-02	$MET1	$X=131.8335 $Y=-2.18
+Re1	in#1	in#2	    2.2898	$POLY1	$X=0.89 $Y=-2.18
+Re2	out#1	out#2	    2.2898	$POLY1	$X=131.455 $Y=-2.18
+*
+*       CAPACITOR CARDS
+*
+*
+C1	in	VSS#2	2.84865E-16	$X=-0.44 $Y=-2.1795
+C2	VSS#1	in	2.87316E-17	$X=-2.607 $Y=-1.7955
+C3	out	VSS#2	2.88215E-16	$X=132.396 $Y=-2.1795
+C4	out#1	VSS#2	3.60117E-16	$X=131.5135 $Y=-2.1795
+C5	in#2	VSS#2	3.80711E-16	$X=0.7595 $Y=-2.1795
+C6	in	VSS	2.89512E-17	$X=-2.6505 $Y=-2.521
+*
+*
+.ENDS pmos_cascode_R2
+*

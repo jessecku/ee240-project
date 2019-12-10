@@ -1,0 +1,13 @@
+
+*** Checking layout cellview 'final_project/pmos_cascode/layout' against source cellview 'final_project/pmos_cascode/schematic'. - Mon Dec  9 03:03:29 2019 ***
+
+INFO (LX-1018): Schematic pin 'INP' has no corresponding layout pin.
+INFO (LX-1018): Schematic pin 'VDD' has no corresponding layout pin.
+INFO (LX-1041): Layout terminal 'INN' has no pin figures.
+INFO (LX-1041): Layout terminal 'VSS' has no pin figures.
+INFO (LX-1072): Layout pin 'VSS' which has direction 'input' is bound to
+schematic pin 'VSS' which has direction 'inputOutput'.
+INFO (LX-1001): Schematic instance 'M5' has no corresponding layout instance.
+
+*** Check Against Source complete. ***
+

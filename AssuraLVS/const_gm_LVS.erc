@@ -1,0 +1,10 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'const_gm layout final_project':
+  info: Assign pin label "VSS" at (1.127, -9.360) to layer `met1trm'.
+  info: Assign pin label "VBIAS" at (0.320, -3.280) to layer `met1trm'.
+  info: Assign pin label "VBAT" at (3.687, 5.587) to layer `met1trm'.
+
+***** End of Label Report *****
+

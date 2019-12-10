@@ -1,0 +1,12 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'pmos_cascode layout final_project':
+  info: Assign pin label "VSS" at (465.092, -310.887) to layer `met1trm'.
+  info: Assign pin label "OUT" at (510.305, -177.402) to layer `met1trm'.
+  info: Assign pin label "INN" at (489.745, -105.047) to layer `met1trm'.
+  info: Assign pin label "INP" at (494.240, -105.157) to layer `met1trm'.
+  info: Assign pin label "VDD" at (488.352, -43.060) to layer `met1trm'.
+
+***** End of Label Report *****
+
