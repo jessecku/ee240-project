@@ -1,0 +1,63 @@
+;----------------------------------------------------------------------------
+; @(#)$CDS: assura version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.500.23 08/30/19 00:25 (icmopt28) $
+; sub-version 4.1_USR6_HF3
+;----------------------------------------------------------------------------
+
+
+;----------------------------------------------------------------------------
+; Assura VLW saved state
+;----------------------------------------------------------------------------
+
+vuiLayerListOrder  =  "Alphabetical"
+vuiLayerList  = '(
+		("bmh" 2060 "bmh = geomEnclose(met3trm cmh) keepLayer(bmh)" 0 4 t "y0 (drawing)" t)
+		("bulk" 495 "bulk = geomOr(bulk1 bulk2) keepLayer(bulk)" 0 6 t "y0 (drawing)" t)
+		("cmh" 2039 "cmh = geomOr( cmh  )" 1 3 t "y3 (drawing)" t)
+		("cmmh" 2072 "cmmh = geomAnd(cmh bmh)" 0 27 t "y3 (drawing)" t)
+		("cmmh_CAP_66" 4029 "cmmh_CAP_66 = extractCAP(\"cmmh4t\" cmmh (cmh \"PLUS\") (bmh \"MINUS\") (spiceModel \"cmmh4t\") (ce..." 0 37 t "y4 (drawing)" t)
+		("cont" 568 "cont = geomOr( cont  )" 1 2 t "y2 (drawing)" t)
+		("contP" 8535 "contP = groupVias(  via(contP) conn1(met1trm) conn2(polytrm) )" 1 9 t "y3 (drawing)" t)
+		("contP" 2112 "contP = geomOutside( cont diff1 )" 0 40 t "y7 (drawing)" t)
+		("contSD" 2111 "contSD = geomAnd( cont diff )" 0 20 t "y3 (drawing)" t)
+		("diff" 318 "diff = geomOr(diff_dg diff_dy) keepLayer(diff)" 0 46 t "y9 (drawing)" t)
+		("met1_text" 46 "met1_text = pinText( \"MET1\" )" 0 1 t "y0 (drawing)" t)
+		("met1dg" 292 "met1dg = geomOr(met1dg met1b met1pin) keepLayer(met1dg)" 2 33 t "y0 (drawing)" t)
+		("met1trm" 1537 "met1trm = geomAndNot(met1 met1res) keepLayer(met1trm)" 0 15 t "y8 (drawing)" t)
+		("met2dg" 300 "met2dg = geomOr(met2dg met2b met2pin) keepLayer(met2dg)" 2 38 t "y2 (drawing)" t)
+		("met2trm" 1538 "met2trm = geomAndNot(met2 met2res) keepLayer(met2trm)" 0 16 t "y1 (drawing)" t)
+		("met3dg" 308 "met3dg = geomOr(met3dg met3b met3pin) keepLayer(met3dg)" 2 41 t "y4 (drawing)" t)
+		("met3trm" 1541 "met3trm = geomAndNot(met3 met3res) keepLayer(met3trm)" 0 18 t "y3 (drawing)" t)
+		("mtpdg" 316 "mtpdg = geomOr(mtpdg mtpb mtppin) keepLayer(mtpdg)" 2 45 t "y6 (drawing)" t)
+		("mtptrm" 1544 "mtptrm = geomAndNot(mtp mtpres) keepLayer(mtptrm)" 0 19 t "y5 (drawing)" t)
+		("ndiff" 1391 "ndiff = geomAndNot( ndiff1 rdn_a )" 0 5 t "y6 (drawing)" t)
+		("nel" 1143 "nel = geomInside(geomAndNot(ngate1 pwblk) lvt)" 0 26 t "y9 (drawing)" t)
+		("nel_MOS_44" 3741 "nel_MOS_44 = extractMOS(\"nel\" nel (polytrm \"G\") (nsd \"S\" \"D\") (bulk \"B\") (spiceModel \"nel\"..." 0 25 t "y0 (drawing)" t)
+		("nimp" 213 "nimp = geomOr( nimp  )" 1 48 t "y1 (drawing)" t)
+		("nsd" 2119 "nsd = geomAndNot(ndiff geomOr(ndf_nsd nhv1_d_nsd)) keepLayer(nsd)" 0 21 t "y8 (drawing)" t)
+		("ntapc" 2131 "ntapc = geomAndNot(ntap geomSize(geomGetEdge(geomAnd(ntap sblk) butting psd) ..." 0 23 t "y2 (drawing)" t)
+		("nwell" 182 "nwell = geomOr( nwell  )" 1 36 t "y4 (drawing)" t)
+		("nwtrm" 1530 "nwtrm = geomAndNot(nwtrm0_nscr rnw1) keepLayer(nwtrm)" 0 11 t "y0 (drawing)" t)
+		("nwtrm1" 1532 "nwtrm1 = geomAndNot(geomOr(nwtrm nwtrm_scr) pfuse_nw) keepLayer(nwtrm1)" 0 12 t "y1 (drawing)" t)
+		("p_dnw" 2004 "p_dnw = geomAndNot(p_dnw_a mv)" 0 42 t "y7 (drawing)" t)
+		("p_dnw_DIODE_157" 6266 "p_dnw_DIODE_157 = extractDIODE(\"p_dnw\" p_dnw (bulk \"PLUS\") (nwtrm \"MINUS\") (spiceModel \"dnw\") (..." 0 30 t "y8 (drawing)" t)
+		("pdiff" 1411 "pdiff = geomAndNot( pdiff1 rdp_a )" 0 7 t "y2 (drawing)" t)
+		("pel" 1182 "pel = geomAndNot(pel0 pel_5)" 0 31 t "y0 (drawing)" t)
+		("pel_MOS_46" 3768 "pel_MOS_46 = extractMOS(\"pel\" pel (polytrm \"G\") (psd \"S\" \"D\") (nwtrm \"B\") (spiceModel \"pel..." 0 28 t "y1 (drawing)" t)
+		("pimp" 214 "pimp = geomOr( pimp  )" 1 49 t "y2 (drawing)" t)
+		("poly" 322 "poly = geomOr(geomOr(polydg poly_dy) polypin) keepLayer(poly)" 0 47 t "y3 (drawing)" t)
+		("poly_text" 40 "poly_text = pinText( \"POLY1\" )" 0 0 t "y5 (drawing)" t)
+		("polytrm" 1526 "polytrm = geomAndNot( p1trm2 pfuse )" 0 8 t "y5 (drawing)" t)
+		("psd" 2121 "psd = geomAndNot(pdiff geomOr(pdf_psd phv1_d_psd)) keepLayer(psd)" 0 22 t "y7 (drawing)" t)
+		("ptapc" 2135 "ptapc = geomAndNot(ptap geomSize(geomGetEdge(geomAnd(ptap sblk) butting nsd) ..." 0 24 t "y2 (drawing)" t)
+		("sd" 2122 "sd = geomOr(nsd psd) keepLayer(sd)" 0 44 t "y7 (drawing)" t)
+		("via1" 8545 "via1 = groupVias(  via(via1) conn1(met1trm) conn2(met2trm) )" 3 17 t "y8 (drawing)" t)
+		("via1" 295 "via1 = geomOr(via1 via1b) keepLayer(via1)" 2 35 t "y2 (drawing)" t)
+		("via2" 303 "via2 = geomOr(via2 via2b) keepLayer(via2)" 2 39 t "y0 (drawing)" t)
+		("via2CON" 8539 "via2CON = groupVias(  via(via2CON) conn1(met2trm) conn2(met3trm) )" 1 13 t "y5 (drawing)" t)
+		("via2CON" 2092 "via2CON = geomAndNot( via2CON1 T?2091 )" 0 32 t "y2 (drawing)" t)
+		("vtp" 311 "vtp = geomOr(vtp vtpb) keepLayer(vtp)" 2 43 t "y3 (drawing)" t)
+		("vtpCON" 8536 "vtpCON = groupVias(  via(vtpCON) conn1(met3trm) conn2(mtptrm) )" 1 10 t "y7 (drawing)" t)
+		("vtpCON" 2102 "vtpCON = geomAndNot( vtpCON1 T?2101 )" 0 34 t "y5 (drawing)" t)
+		("vtpcmh" 8543 "vtpcmh = groupVias(  via(vtpcmh) conn1(cmh) conn2(mtptrm) )" 1 14 t "y8 (drawing)" t)
+		("vtpcmh" 2074 "vtpcmh = geomAnd( vtp cmh )" 0 29 t "y7 (drawing)" t)
+)
