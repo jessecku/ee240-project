@@ -1,0 +1,35 @@
+@(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.500.23 08/30/2019 01:08 (icmopt28) $
+sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
+run on eda-1.EECS.Berkeley.EDU at Tue Dec 10 05:52:38 2019
+
+Schematic                       | Layout                        | Status
+-------------------------------------------------------------------------------
+BGR_R8 schematic final_project  | BGR_R8 layout final_project   | matched   
+
+Schematic and Layout Match
+
+Schematic:
+  Library:final_project
+  Cell   :BGR_R8
+  View   :schematic
+
+Layout:
+  Library:final_project
+  Cell   :BGR_R8
+  View   :layout
+
+
+
+Extraction  Information
+--------------------
+     0 cells have 0 mal-formed device problems
+     0 cells have 0 label short problems
+     0 cells have 0 label open problems
+
+Mismatch  Information
+--------------------
+     0 cells have 0 Net mismatches
+     0 cells have 0 Device mismatches
+     0 cells have 0 Pin mismatches
+     0 cells have 0 Parameter mismatches
+

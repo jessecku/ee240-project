@@ -1,0 +1,19 @@
+sub bulk
+MET2 MET2
+MET3 MET3
+METTP METTP
+active np_rpsd p_rpsd
+cont cont_met1trm_pdiff
+contSD contSD_psd_ptapc contSD_met1trm_ptapc contSD_met1trm_psd
+met1trm np_rmet1trm p_rmet1trm
+polytrm np_rpolytrm p_rpolytrm
+psd np_rpsd p_rpsd
+bulk bulk.df2
+psd_ptapc_ovia psd_ptapc_ovia
+ptapc np_rptapc p_rptapc
+psd_psd_ptapc_butt_ovia psd_psd_ptapc_butt_ovia
+psd_ptapc_butt np_rpsd_ptapc_butt p_rpsd_ptapc_butt
+ptapc_psd_ptapc_butt_ovia ptapc_psd_ptapc_butt_ovia
+pdiff np_rpdiff p_rpdiff
+contP np_rcontP p_rcontP
+bulk_ptapc_ovia bulk_ptapc_ovia

@@ -1,6 +1,0 @@
-; Assura generated file -- DO NOT EDIT --
-; Do NOT rely on the content of this file, it may change.
-;
-2 bind match unmatched shorts opens
-1 0 ((L "VSS")((1 "ne" ( "D" "S"))(2 "ne" ( "B"))(1 "rm1" ( "PLUS" "MINUS")))(S "VSS")((1 "ne" ( "D" "S"))(1 "ne" ( "B"))(1 "rm1" ( "PLUS" "MINUS"))))
-1 1 ((L "avC5")((1 "ne" ( "D" "S"))(1 "rm1" ( "PLUS" "MINUS")))(S "net6")((1 "ne" ( "D" "S"))(1 "ne" ( "B"))(1 "rm1" ( "PLUS" "MINUS"))))

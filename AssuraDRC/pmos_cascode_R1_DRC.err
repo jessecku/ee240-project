@@ -1,0 +1,44 @@
+================================================================================
+Rule No. 443 : Q1NW__NWELL_should_be_contacted_by_NDIFF
+
+Real Error Count : 1; Flat Error Count : 1
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : pmos_cascode_R1 layout final_project
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             1              1                 1                1
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1          X2           Y2
+
+  1        1                  0.500       -4.455      27.360       -1.000
+
+Shape               Environments Status & Error Marker 
+
+          1           X1         Y1         X2         Y2
+
+   1      X        0.500     -4.455     27.360     -1.000
+
+================================================================================
+Rule No. 446 : PTUB_should_be_contacted
+
+Real Error Count : 1; Flat Error Count : 1
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : pmos_cascode_R1 layout final_project
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             1              1                 1                1
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1          X2           Y2
+
+  1        1                 -0.500       -5.455      28.360        0.000
+
+Shape               Environments Status & Error Marker 
+
+          1           X1         Y1         X2         Y2
+
+   1      X       -0.500     -5.455     28.360      0.000
+

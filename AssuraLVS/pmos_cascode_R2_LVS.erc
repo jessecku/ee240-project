@@ -1,0 +1,10 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'pmos_cascode_R2 layout final_project':
+  info: Assign pin label "VSS" at (-3.030, -2.612) to layer `met1trm'.
+  info: Assign pin label "in" at (-0.205, -2.185) to layer `met1trm'.
+  info: Assign pin label "out" at (132.322, -2.112) to layer `met1trm'.
+
+***** End of Label Report *****
+
