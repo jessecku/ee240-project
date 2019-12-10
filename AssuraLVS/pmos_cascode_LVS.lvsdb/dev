@@ -1,0 +1,9 @@
+; Assura generated file -- DO NOT EDIT --
+; Do NOT rely on the content of this file, it may change.
+;
+2 unmatched connect pin
+1 1 ((S "M28" "pel")(L "avD46_12" "pel")(("G" "net037" "avC13")))
+1 1 ((S "M32" "pel")(L "avD46_3" "pel")(("D" "net060" "avC15")("S" "VDD" "VDD")))
+1 1 ((S "M35" "nel")(L "avD44_10" "nel")(("D" "net060" "avC15")("S" "VSS" "VSS")))
+1 1 ((S "M13" "nel")(L "avD44_3" "nel")(("B" "net017" "VSS")))
+1 1 ((S "M9" "nel")(L "avD44_7" "nel")(("B" "net35" "VSS")))

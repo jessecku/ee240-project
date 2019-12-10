@@ -1,0 +1,6 @@
+#!/bin/sh -f
+#--------------------------------------------------------------------------------------
+# THE RUN FILE created by Cadence Extraction Quantus QRC UI Version 17.12-s041
+#--------------------------------------------------------------------------------------
+
+qrc  -log_file /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/ee240-project/AssuraLVS/qrc.pmos_cascode_LVS.log -cmd /home/cc/ee140/fa19/class/ee140-abd/Desktop/ee140/cadence/ee240-project/AssuraLVS/qrc.pmos_cascode_LVS.ccl 
