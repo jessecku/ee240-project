@@ -1,0 +1,13 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'COMP layout final_project':
+  info: Assign pin label "VSS" at (11.645, -20.042) to layer `met1trm'.
+  info: Assign pin label "CLK" at (7.360, -8.915) to layer `met1trm'.
+  info: Assign pin label "OUT" at (13.185, -13.315) to layer `met1trm'.
+  info: Assign pin label "INP" at (7.977, -6.892) to layer `met1trm'.
+  info: Assign pin label "INN" at (10.825, -7.175) to layer `met1trm'.
+  info: Assign pin label "VDD" at (3.800, 0.990) to layer `met1trm'.
+
+***** End of Label Report *****
+

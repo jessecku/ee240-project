@@ -1,0 +1,11 @@
+!<alc> v1 32
+0   16    0 bvFT_1000
+0   12    0 bvFT_1042
+0    8    0 bvFT_874
+0   15    0 bvFILLLayer_met3_dyf
+0   13    0 bvFILLLayer_met2_dyf
+0   11    0 bvFILLLayer_mtp_dyf
+0    9    0 bvFILLLayer_met1_dyf
+0    7    0 bvFILLLayer_diff_fill_all
+0    6    0 bvFILL_COMP layout final_project
+0    5    0 COMP layout final_project
