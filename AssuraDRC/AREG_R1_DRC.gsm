@@ -1,0 +1,46 @@
+
+********************************************************************************
+**                                                                            **
+**                        avout Summary Report File                         **
+**                                                                            **
+********************************************************************************
+
+   GDS2 file name     : /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/TOP_Dummy.gds
+   GDS2 lib name      : Dummy_output
+   GDS2 version       : 6.000000
+   DBU per User Unit  : 1000.000
+   User Units         : micron
+
+   Identifying cell variants ...
+   There are no cell variants in the hierarchy.
+
+   Converting VDB to GDS2(Flat) ...
+
+   Individual Cell Statistics
+   --------------------------
+   CellView          Rectangles  Polygons  Paths  Labels  Instances       AREF 
+   ***************************************************************************
+
+
+   Statistics Of Layers
+   --------------------
+   Layer#   Datatype#  Rectangles  Polygons     Paths  Labels
+   **********************************************************
+
+
+   Summary Of Objects
+   ------------------
+       0 Rectangles
+       0 Polygons
+       0 Paths
+       0 Texts
+       0 Instances
+       0 AREF
+       1 Cells
+
+   Completed converting VDB to GDS2.
+
+--------------------------------------------------------------------------------
+Top Cell is AREG_R1
+
+--------------------------------------------------------------------------------

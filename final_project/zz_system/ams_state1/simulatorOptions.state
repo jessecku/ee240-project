@@ -190,7 +190,7 @@
 (UltraSimOpts skip_subckt) ""
 (UltraSimOpts skip_subckt_insts) ""
 (UltraSimOpts speed) "Default (5)"
-(UltraSimOpts temp) "25.0"
+(UltraSimOpts temp) "27"
 (UltraSimOpts tnom) "27"
 (UltraSimOpts tol) "0.01"
 (UltraSimOpts ups_options_enable) nil
@@ -274,7 +274,7 @@
 (apsSimOpts sensbinparam) ""
 (apsSimOpts sensfileonly) ""
 (apsSimOpts simstat) ""
-(apsSimOpts temp) "25.0"
+(apsSimOpts temp) "27"
 (apsSimOpts tempeffects) ""
 (apsSimOpts tmevthmod) ""
 (apsSimOpts tnom) "27"
@@ -524,7 +524,7 @@
 (opts spDisableAll) nil
 (opts spEnableAll) nil
 (opts spSeverity) ""
-(opts temp) "25.0"
+(opts temp) "27"
 (opts tempeffects) ""
 (opts tmevthmod) ""
 (opts tnom) "27"

@@ -1,0 +1,42 @@
+;----------------------------------------------------------------------------
+; @(#)$CDS: assura version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.500.23 08/30/19 00:25 (icmopt28) $
+; sub-version 4.1_USR6_HF3
+;----------------------------------------------------------------------------
+
+
+;----------------------------------------------------------------------------
+; RSF include(/home/ff/ee140/fa19/xfab/XKIT/xt018/cadence/v8_0/assura/v8_0_1/Assura/XT018_1231/DRCinclude_DummyOut.rsf) Section
+; Specified in the Assura UI
+;----------------------------------------------------------------------------
+
+; DRCinclude.rsf
+
+
+avParameters(
+?textPriOnly t
+?keepOriginal t
+?autoGrid nil
+?outputErrorLib t
+?set ("DUMMY_FILL")
+)
+outFile( "gds2" "Dummy_output" "TOP_Dummy.gds" flat 
+	setCellPrefix "Dummy_" )
+
+
+;----------------------------------------------------------------------------
+; avParameter Section
+; Created by the Assura UI
+;----------------------------------------------------------------------------
+
+avParameters(
+  ?inputLayout ( "df2" "final_project" )
+  ?cellName "AREG_R1"
+  ?viewName "layout"
+  ?runName "AREG_R1_DRC"
+  ?workingDirectory "./AssuraDRC"
+  ?technology "XT018_1231"
+  ?techLib "./assura_tech.lib"
+  ?techRuleSet "DRC & Dummy Output"
+  ?set ("noAntenna")
+  ?avrpt t
+)

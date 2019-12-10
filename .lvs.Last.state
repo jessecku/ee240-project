@@ -13,7 +13,7 @@
 vuiLVSFormTable = '(
 	schematicSource  "DFII"
 	layoutSource  "DFII"
-	runName  "COMP_LVS"
+	runName  "AREG_R1_LVS"
 	runDir  "./AssuraLVS"
 	machineLoc  "local"
 	viewRules  t
@@ -32,12 +32,12 @@ vuiLVSFormTable = '(
 	avCompareView  nil
 	additionalFunctionsButton  nil
 	schLibrary  "final_project"
-	schCell  "COMP"
+	schCell  "AREG_R1"
 	schView  "schematic"
 	existingSchNetlist  nil
 	useVerilogTopCell  nil
 	layLibrary  "final_project"
-	layCell  "COMP"
+	layCell  "AREG_R1"
 	layView  "layout"
 	layUseExistingNL  nil
 	extractButton  nil

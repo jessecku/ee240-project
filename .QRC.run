@@ -3,4 +3,4 @@
 # THE RUN FILE created by Cadence Extraction Quantus QRC UI Version 17.12-s041
 #--------------------------------------------------------------------------------------
 
-qrc  -log_file /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/AssuraLVS/qrc.COMP_LVS.log -cmd /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/AssuraLVS/qrc.COMP_LVS.ccl 
+qrc  -log_file /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/AssuraLVS/qrc.AREG_R1_LVS.log -cmd /home/cc/ee140/fa19/class/ee140-abc/Documents/ee240-project/AssuraLVS/qrc.AREG_R1_LVS.ccl 

@@ -12,7 +12,7 @@
 (envOpts advTBRUnconfigItemList) nil
 (envOpts advTBRUpdateInstList) ""
 (envOpts advTBRv2001ConfigName) ""
-(envOpts amsIEsList) ((t "global" "" "DVS NET" "/VDDA" "connectLib.CR_dynsup_full_fast" "" "logic" "connrules=connectLib.CR_dynsup_full_fast;discipline=logic;vddnet=/VDDA;vssnet=/gnd!;" "Built-in"))
+(envOpts amsIEsList) ((t "global" "" "DVS NET" "1.2" "connectLib.CR_full_fast" "" "logic" "discipline=logic;" "Built-in"))
 (envOpts analysisOrder) ("tran")
 (envOpts autoConfigNameForConfigCreation) "auto_config"
 (envOpts autoDisplay) t
