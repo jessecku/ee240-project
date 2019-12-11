@@ -79,7 +79,7 @@ tmp9 = make_sevVariableStruct()
 tmp9 = (ncons nil)
 )
 tmp9->name = "G_1"
-tmp9->expression = "0"
+tmp9->expression = "1"
 tmp9->index = 9
 (unless tmp10
 tmp10 = make_sevVariableStruct()
@@ -88,7 +88,7 @@ tmp10 = make_sevVariableStruct()
 tmp10 = (ncons nil)
 )
 tmp10->name = "G_0"
-tmp10->expression = "0"
+tmp10->expression = "1"
 tmp10->index = 10
 (unless tmp11
 tmp11 = make_sevVariableStruct()
