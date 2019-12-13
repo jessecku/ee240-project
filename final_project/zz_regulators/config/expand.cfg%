@@ -1,0 +1,26 @@
+//Revision 5
+//NOTE
+// Default template for spectre
+// Note:
+//      Please remember to replace Top Cell Library, Cell, and View
+//      fields with the actual names used by your design.
+//END_NOTE
+
+config zz_regulators;
+design final_project.zz_regulators:schematic;
+liblist myLib;
+
+viewlist spectre, cmos_sch, \cmos.sch , schematic, veriloga, ahdl, pspice, dspf;
+stoplist spectre;
+
+
+cell final_project.BGR_R0_2 binding :analog_extracted;
+cell final_project.BGR_R1 binding :analog_extracted;
+cell final_project.BGR_R3 binding :analog_extracted;
+cell final_project.BGR_R8 binding :analog_extracted;
+cell final_project.BGR_R9 binding :analog_extracted;
+cell final_project.opamp2 binding :schematic;
+cell final_project.const_gm binding :schematic;
+
+
+endconfig
